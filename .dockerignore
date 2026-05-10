@@ -1,0 +1,47 @@
+###############################################################################
+# Path: /.dockerignore
+# Filename: .dockerignore | Version: v7.8.0
+# Agent: DevOps-V
+# Status: Production
+# Logic: Docker build context exclusions for optimized image builds
+###############################################################################
+
+.git
+.gitignore
+.gitattributes
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+.devcontainer
+node_modules
+vendor
+package-lock.json
+composer.lock
+public/dist
+*.log
+storage/cache/*
+storage/sessions/*
+!storage/cache/.gitkeep
+!storage/sessions/.gitkeep
+public/media/*
+!public/media/.gitkeep
+.env
+.env.*
+!.env.example
+*.md
+!README.md
+docs/
+tests/
+*.test.js
+*.spec.js
+.github
+.gitlab-ci.yml
+tmp/
+temp/
+*.tmp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
