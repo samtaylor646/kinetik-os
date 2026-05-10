@@ -24,16 +24,16 @@ FAILED=0
 verify() {
     local check_name="$1"
     local command="$2"
-    
+
     echo -n "Checking $check_name... "
-    
+
     if eval "$command" > /dev/null 2>&1; then
         echo -e "${GREEN}✓ PASS${NC}"
-        ((PASSED++))
+        PASSED=$((PASSED + 1))
         return 0
     else
         echo -e "${RED}✗ FAIL${NC}"
-        ((FAILED++))
+        FAILED=$((FAILED + 1))
         return 1
     fi
 }
@@ -42,18 +42,18 @@ verify_version() {
     local name="$1"
     local command="$2"
     local expected_pattern="$3"
-    
+
     echo -n "Checking $name version... "
-    
-    version=$($command 2>&1)
-    
+
+    version=$(eval "$command" 2>&1)
+
     if echo "$version" | grep -qE "$expected_pattern"; then
         echo -e "${GREEN}✓ PASS${NC} ($version)"
-        ((PASSED++))
+        PASSED=$((PASSED + 1))
         return 0
     else
         echo -e "${RED}✗ FAIL${NC}"
-        ((FAILED++))
+        FAILED=$((FAILED + 1))
         return 1
     fi
 }
@@ -61,7 +61,7 @@ verify_version() {
 echo "1. Core Runtime Verification"
 echo "----------------------------"
 
-verify_version "PHP" "php -v | head -n 1" "8\.4\."
+verify_version "PHP" "php -v | grep '^PHP' | head -n 1" "8\.4\."
 verify_version "Node.js" "node -v" "v24\."
 verify_version "npm" "npm -v" "[0-9]+\.[0-9]+\.[0-9]+"
 verify_version "Composer" "composer -V | cut -d' ' -f3" "2\."
@@ -73,7 +73,7 @@ echo "-----------------"
 extensions=("gd" "mbstring" "opcache" "zip" "intl" "exif" "pdo" "curl" "dom" "fileinfo" "xdebug")
 
 for ext in "${extensions[@]}"; do
-    verify "PHP Extension: $ext" "php -m | grep -i '^$ext$'"
+    verify "PHP Extension: $ext" "php -m | grep -i '$ext'"
 done
 
 echo ""

@@ -1,98 +1,22 @@
-/**
- * Path: /.devcontainer/devcontainer.json
- * Filename: devcontainer.json | Version: v7.8.0
- * Agent: DevOps-V
- * Status: Production
- * Logic: VS Code DevContainer configuration for Kinetik-OS with PHP 8.4-FPM, Node 24 LTS, Rancher Desktop optimization
- */
 
 {
-  "name": "Kinetik-OS V7.8.0 - Boutique Federal Design System",
+  "name": "Kinetik-OS",
   "dockerFile": "../docker/development/Dockerfile",
-  
   "context": "..",
-  "workspaceFolder": "/workspace",
-  
-  "forwardPorts": [8000, 3000],
-  
-  "portsAttributes": {
-    "8000": {
-      "label": "PHP Server",
-      "onAutoForward": "notify"
-    },
-    "3000": {
-      "label": "Vite HMR",
-      "onAutoForward": "silent"
-    }
-  },
+  "workspaceFolder": "/workspaces/kinetik-os", 
   
   "customizations": {
     "vscode": {
       "extensions": [
         "bmewburn.vscode-intelephense-client",
-        "xdebug.php-debug",
-        "wongjn.php-sniffer",
         "bradlc.vscode-tailwindcss",
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "ms-azuretools.vscode-docker",
-        "ms-vscode-remote.remote-containers",
-        "editorconfig.editorconfig",
-        "redhat.vscode-yaml",
-        "streetsidesoftware.code-spell-checker"
+        "miku86.kirby-snippets"
       ],
-      
       "settings": {
-        "php.validate.executablePath": "/usr/local/bin/php",
-        "php.suggest.basic": false,
-        "intelephense.stubs": [
-          "apache", "bcmath", "Core", "ctype", "curl", "date", "dom",
-          "fileinfo", "filter", "gd", "hash", "iconv", "intl", "json",
-          "libxml", "mbstring", "openssl", "pcre", "PDO", "session",
-          "SimpleXML", "standard", "zip"
-        ],
-        "tailwindCSS.experimental.classRegex": [
-          ["class:\\s*['\"]([^'\"]*)['\"]", "['\"]([^'\"]*)"],
-          ["className:\\s*['\"]([^'\"]*)['\"]", "['\"]([^'\"]*)"]
-        ],
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "files.associations": {
-          "*.php": "php",
-          "*.yml": "yaml",
-          "*.css": "tailwindcss"
-        }
+        "php.validate.executablePath": "/usr/local/bin/php"
       }
     }
   },
-  
-  "postCreateCommand": "composer install && npm install && chmod +x /workspace/scripts/*.sh",
-  
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": true,
-      "configureZshAsDefaultShell": true,
-      "username": "vscode"
-    }
-  },
-  
-  "remoteUser": "vscode",
-  
-  "mounts": [
-    "source=kinetik-os-bashhistory,target=/home/vscode/.bash_history,type=volume",
-    "source=kinetik-os-composer-cache,target=/home/vscode/.composer,type=volume",
-    "source=kinetik-os-npm-cache,target=/home/vscode/.npm,type=volume"
-  ],
-  
-  "runArgs": ["--init", "--privileged"],
-  
-  "initializeCommand": "echo '🚀 Initializing Kinetik-OS DevContainer...'",
-  "onCreateCommand": "echo '📦 Installing dependencies...'",
-  "updateContentCommand": "echo '🔄 Updating workspace...'",
-  "postStartCommand": "echo '✅ DevContainer ready! PHP 8.4 + Node 24 active.'"
+  "postCreateCommand": "composer install && npm install",
+  "remoteUser": "vscode"
 }
