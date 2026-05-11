@@ -22,3 +22,35 @@ fields:
       - "1/2, 1/4, 1/4"
       - "1/12, 5/12, 5/12, 1/12"
       - "1/5, 1/5, 1/5, 1/5, 1/5"
+    fieldsets:
+      custom_blocks:
+        label: Boutique Blocks
+        type: group
+        fieldsets:
+          - section-header
+          - split-hero
+          - feature-grid
+          - bento-grid
+          - strategy-card
+          - asymmetric-image
+          - statement-quote
+          - accordion-group
+          - data-table
+          - logo-cloud
+          - tabbed-interface
+          - cta-banner
+          - video-modal
+      standard_blocks:
+        label: Standard Blocks
+        type: group
+        fieldsets:
+          - text
+          - heading
+          - image
+          - video
+          - list
+          - quote
+          - line
+          - markdown
+          - code
+          - gallery
