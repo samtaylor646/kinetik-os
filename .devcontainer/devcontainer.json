@@ -1,4 +1,3 @@
-
 {
   "name": "Kinetik-OS",
   "dockerFile": "../docker/development/Dockerfile",
@@ -10,13 +9,33 @@
       "extensions": [
         "bmewburn.vscode-intelephense-client",
         "bradlc.vscode-tailwindcss",
-        "miku86.kirby-snippets"
-      ],
+        "miku86.kirby-snippets",
+        "RooVeterinaryInc.roo-cline"
+    ],
       "settings": {
-        "php.validate.executablePath": "/usr/local/bin/php"
+        "php.validate.executablePath": "/usr/local/bin/php",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        }
       }
     }
   },
+  
+  "forwardPorts": [8000, 3000],
+  "portsAttributes": {
+    "8000": {
+      "label": "PHP Server",
+      "onAutoForward": "notify"
+    },
+    "3000": {
+      "label": "Vite HMR",
+      "onAutoForward": "notify"
+    }
+  },
+  
   "postCreateCommand": "composer install && npm install",
   "remoteUser": "vscode"
 }
