@@ -1,0 +1,24 @@
+name: Logo Cloud
+icon: images
+preview: fields
+
+fields:
+  heading:
+    type: text
+    label: Heading
+    help: Optional heading above logos
+  logos:
+    type: files
+    label: Logos
+    multiple: true
+    layout: cards
+    size: tiny
+  airy_spacing:
+    type: select
+    label: Airy Spacing
+    default: md
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)

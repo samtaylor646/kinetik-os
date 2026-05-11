@@ -1,0 +1,51 @@
+name: Data Table
+icon: table
+preview: fields
+
+fields:
+  heading:
+    type: text
+    label: Heading
+    help: Optional heading for the table
+  table_data:
+    type: structure
+    label: Table Rows
+    fields:
+      col1:
+        type: text
+        label: Column 1
+      col2:
+        type: text
+        label: Column 2
+      col3:
+        type: text
+        label: Column 3
+      col4:
+        type: text
+        label: Column 4
+  headers:
+    type: structure
+    label: Table Headers
+    max: 1
+    fields:
+      col1:
+        type: text
+        label: Column 1 Header
+      col2:
+        type: text
+        label: Column 2 Header
+      col3:
+        type: text
+        label: Column 3 Header
+      col4:
+        type: text
+        label: Column 4 Header
+  airy_spacing:
+    type: select
+    label: Airy Spacing
+    default: md
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)

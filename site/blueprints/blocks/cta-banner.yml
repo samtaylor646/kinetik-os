@@ -1,0 +1,48 @@
+name: CTA Banner
+icon: bell
+preview: fields
+
+fields:
+  heading:
+    type: text
+    label: Heading
+  text:
+    type: textarea
+    label: Text
+    size: small
+  buttons:
+    type: structure
+    label: Buttons
+    fields:
+      label:
+        type: text
+        label: Button Label
+      url:
+        type: url
+        label: Button URL
+      style:
+        type: select
+        label: Button Style
+        default: primary
+        options:
+          primary: Primary
+          secondary: Secondary
+          ghost: Ghost
+  theme:
+    type: select
+    label: Theme
+    default: oceanic
+    options:
+      oceanic: Oceanic Dark
+      gold: Warm Gold
+      light: Light (Canvas)
+      dark: Dark (Ink)
+  airy_spacing:
+    type: select
+    label: Airy Spacing
+    default: md
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)

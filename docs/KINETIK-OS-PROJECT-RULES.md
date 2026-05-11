@@ -565,6 +565,42 @@ jobs:
 
 ---
 
+### ✅ RULE 3.5: KIRBY BLOCK INTELEPHENSE DOCUMENTATION
+
+**Enforcement:** Automated (PHP linting) + Manual review
+
+**Statement:**  
+All Kirby block snippets MUST include a PHPDoc variable declaration for `$block` to prevent false positive "Undefined variable" errors in static analysis tools like Intelephense.
+
+**Required:**
+```php
+<?php
+/**
+ * Path: /site/snippets/blocks/example.php
+ * Filename: example.php | Version: v1.0.0
+ * Agent: Architect-K
+ * Status: Production
+ * Logic: Example block rendering
+ * 
+ * @var \Kirby\Cms\Block $block
+ */
+?>
+```
+
+**Prohibited:**
+```php
+❌ // Missing @var declaration
+<?php
+$title = $block->title();
+?>
+```
+
+**Consequence of Violation:**
+- Add PHPDoc type hint
+- Editor/Linting errors unresolved
+
+---
+
 ## SECTION 4: ADVISORY RULES (BEST PRACTICES)
 
 These rules are guidelines that may be violated with documented justification.

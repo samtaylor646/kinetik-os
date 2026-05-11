@@ -1,0 +1,47 @@
+name: Video Modal
+icon: play-circle
+preview: fields
+
+fields:
+  thumbnail:
+    type: files
+    label: Thumbnail Image
+    max: 1
+    layout: cards
+    size: tiny
+  video_type:
+    type: select
+    label: Video Type
+    default: youtube
+    options:
+      youtube: YouTube URL
+      vimeo: Vimeo URL
+      upload: Hosted File (MP4)
+  video_url:
+    type: url
+    label: Video URL
+    help: Use for YouTube or Vimeo
+    when:
+      video_type:
+        - youtube
+        - vimeo
+  video_file:
+    type: files
+    label: Video File
+    max: 1
+    layout: cards
+    size: tiny
+    when:
+      video_type: upload
+  caption:
+    type: text
+    label: Caption
+  airy_spacing:
+    type: select
+    label: Airy Spacing
+    default: md
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)

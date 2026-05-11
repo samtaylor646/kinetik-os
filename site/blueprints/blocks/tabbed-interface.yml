@@ -1,0 +1,28 @@
+name: Tabbed Interface
+icon: list-bullet
+preview: fields
+
+fields:
+  tabs:
+    type: structure
+    label: Tabs
+    fields:
+      title:
+        type: text
+        label: Tab Title
+      content:
+        type: textarea
+        label: Tab Content
+      icon:
+        type: text
+        label: Lucide Icon Name
+        help: Optional (e.g., arrow-right, check, etc.)
+  airy_spacing:
+    type: select
+    label: Airy Spacing
+    default: md
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)
