@@ -2,8 +2,8 @@
  * Path: /src/index.css
  * Filename: index.css | Version: v7.8.0
  * Agent: DX-Curator
- * Status: Draft (Complete @theme implementation in Week 2)
- * Logic: Tailwind 4 entry point with minimal placeholder tokens for Week 1 testing
+ * Status: Production
+ * Logic: Tailwind 4 entry point with CSS-first @theme configuration and variables
  */
 
 @import "tailwindcss";
@@ -12,23 +12,63 @@
 @source "../content/**/*.txt";
 
 @theme {
-  /* PLACEHOLDER TOKENS - Week 1 Testing Only */
-  /* Complete design system implementation: Week 2, Day 1-2 */
-  
-  --color-oceanic-dark: #005B6D;
-  --color-canvas: #FAF9F6;
-  --color-ink: #0F151B;
-  
-  --spacing-airy-md: 4rem;
-  
-  --font-size-base: 1rem;
-  --font-size-4xl: 2.25rem;
+  /* PRIMARY STRATEGY: OCEANIC */
+  --color-oceanic-dark: #005B6D;      /* Primary brand, high contrast */
+  --color-oceanic-accent: #007489;    /* Interactive elements */
+  --color-oceanic-secondary: #218993; /* Secondary actions */
+  --color-oceanic-subtle: #7A9FA7;    /* Muted text, borders */
+
+  /* VERIFIED ACCENTS */
+  --color-warm-gold: #D4C19C;         /* Premium highlights */
+  --color-slate-teal: #4A6163;        /* Neutral complement */
+  --color-liberty-blue: #2E4A62;      /* Federal aesthetic */
+  --color-heritage-red: #8B3E2F;      /* Alert, emphasis */
+  --color-frost-mint: #E2F0E9;        /* Success, subtle bg */
+
+  /* UI FOUNDATION */
+  --color-ink: #0F151B;               /* Primary text */
+  --color-canvas: #FAF9F6;            /* Page background */
+  --color-soft-smoke: #F0F0F0;        /* Subtle dividers */
+
+  /* AIRY SPACING (FEDERAL SCALE) */
+  --spacing-airy-sm: 2rem;            /* 32px - Compact sections */
+  --spacing-airy-md: 4rem;            /* 64px - Standard vertical rhythm */
+  --spacing-airy-lg: 6rem;            /* 96px - Generous breathing room */
+  --spacing-airy-xl: 10rem;           /* 160px - Statement sections */
+  --spacing-airy-2xl: 14rem;          /* 224px - Hero padding */
+  --spacing-airy-massive: 20rem;      /* 320px - Ultra-premium spacing */
+
+  /* TYPOGRAPHY SCALE */
+  --font-size-xs: 0.75rem;            /* 12px - Metadata */
+  --font-size-sm: 0.875rem;           /* 14px - Body small */
+  --font-size-base: 1rem;             /* 16px - Body text */
+  --font-size-lg: 1.125rem;           /* 18px - Lead paragraph */
+  --font-size-xl: 1.25rem;            /* 20px - Subheading */
+  --font-size-2xl: 1.5rem;            /* 24px - Section title */
+  --font-size-3xl: 1.875rem;          /* 30px - Page title */
+  --font-size-4xl: 2.25rem;           /* 36px - Hero headline */
+  --font-size-5xl: 3rem;              /* 48px - Statement piece */
+  --font-size-6xl: 3.75rem;           /* 60px - Massive display */
+
+  /* FONT FAMILIES */
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-mono: 'SF Mono', 'Consolas', monospace;
 }
 
-/* Base styles */
+/* Base resets & utilities */
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
   color: var(--color-ink);
   background-color: var(--color-canvas);
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Motion Lab CSS Variables for GSAP (populated later via site blueprint) */
+:root {
+  --kinetik-duration: 1.2s;
+  --kinetik-ease: power3.out;
+  --kinetik-parallax-speed: 0.5;
 }
