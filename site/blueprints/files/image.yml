@@ -1,0 +1,18 @@
+# Path: /site/blueprints/files/image.yml
+# Filename: image.yml | Version: v7.8.0
+# Agent: Architect-K
+# Status: Production
+# Logic: Starterkit ported image blueprint for metadata
+
+title: Image
+accept:
+  mime: image/jpeg, image/png, image/webp, image/svg+xml
+fields:
+  alt:
+    label: Alt Text
+    type: text
+    help: Important for accessibility and SEO.
+  caption:
+    label: Caption
+    type: textarea
+    buttons: false

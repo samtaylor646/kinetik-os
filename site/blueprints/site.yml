@@ -1,21 +1,40 @@
 # Path: /site/blueprints/site.yml
 # Filename: site.yml | Version: v7.8.0
-# Agent: DX-Curator
+# Agent: DX-Curator + Architect-K
 # Status: Production
-# Logic: Global site blueprint with Motion Lab configuration
+# Logic: Hybrid Global site blueprint (Starterkit + Motion Lab)
 
 title: Site Settings
 
 tabs:
-  content:
-    label: Content
+  pages:
+    label: Pages
+    icon: text
+    sections:
+      listed:
+        type: pages
+        status: listed
+        layout: list
+      unlisted:
+        type: pages
+        status: unlisted
+        layout: list
+
+  seo:
+    label: SEO & Meta
+    icon: search
     fields:
       title:
         type: text
         label: Site Title
+      description:
+        type: textarea
+        label: SEO Description
+        size: small
   
   motion:
     label: Motion Lab
+    icon: bolt
     fields:
       kinetik_duration:
         type: text
