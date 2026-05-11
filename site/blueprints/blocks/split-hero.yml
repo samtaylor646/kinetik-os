@@ -1,0 +1,46 @@
+name: Split Hero
+icon: header
+preview: fields
+
+fields:
+  heading:
+    label: Heading
+    type: text
+  
+  subheading:
+    label: Subheading
+    type: textarea
+    buttons: false
+    
+  image:
+    label: Image
+    type: files
+    max: 1
+    layout: cards
+    
+  cta_text:
+    label: CTA Button Text
+    type: text
+    
+  cta_link:
+    label: CTA Button Link
+    type: url
+    
+  theme:
+    label: Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light
+
+  airy_spacing:
+    label: Airy Spacing
+    type: select
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)
+    default: md

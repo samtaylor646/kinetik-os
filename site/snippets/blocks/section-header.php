@@ -1,0 +1,31 @@
+<?php
+/**
+ * Path: /site/snippets/blocks/section-header.php
+ */
+$themeClass = $block->theme()->toTheme();
+$spacingClass = $block->airy_spacing()->toAiry();
+$alignClass = $block->alignment()->value() === 'center' ? 'text-center mx-auto' : 'text-left';
+?>
+<header class="<?= $themeClass ?> <?= $spacingClass ?> section-header" data-gsap="section">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl <?= $alignClass ?>">
+            <?php if ($block->eyebrow()->isNotEmpty()): ?>
+                <span class="block text-sm font-semibold uppercase tracking-wider text-oceanic-accent mb-3">
+                    <?= $block->eyebrow()->html() ?>
+                </span>
+            <?php endif; ?>
+            
+            <?php if ($block->heading()->isNotEmpty()): ?>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                    <?= $block->heading()->html() ?>
+                </h2>
+            <?php endif; ?>
+            
+            <?php if ($block->subheading()->isNotEmpty()): ?>
+                <div class="text-lg sm:text-xl opacity-80 max-w-2xl <?= $block->alignment()->value() === 'center' ? 'mx-auto' : '' ?> prose prose-lg">
+                    <?= $block->subheading()->kt() ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</header>

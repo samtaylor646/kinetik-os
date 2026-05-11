@@ -1,0 +1,50 @@
+name: Feature Grid
+icon: grid
+preview: fields
+
+fields:
+  columns:
+    label: Columns (Desktop)
+    type: select
+    options:
+      2: 2 Columns
+      3: 3 Columns
+      4: 4 Columns
+    default: 3
+
+  theme:
+    label: Block Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light
+    
+  airy_spacing:
+    label: Airy Spacing
+    type: select
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)
+    default: md
+
+  features:
+    label: Features
+    type: structure
+    fields:
+      icon:
+        label: Icon Name (Lucide)
+        type: text
+        width: 1/4
+        default: "check"
+      title:
+        label: Title
+        type: text
+        width: 3/4
+      description:
+        label: Description
+        type: textarea
+        buttons: false

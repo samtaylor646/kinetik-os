@@ -1,0 +1,35 @@
+name: Strategy Card
+icon: box
+preview: fields
+
+fields:
+  icon:
+    label: Icon Name (Lucide)
+    type: text
+    width: 1/2
+    default: "check"
+    
+  title:
+    label: Title
+    type: text
+    width: 1/2
+
+  summary:
+    label: Summary
+    type: textarea
+    buttons: false
+    help: Short description always visible
+
+  details:
+    label: Full Details
+    type: textarea
+    help: Detailed text revealed on expand
+    
+  theme:
+    label: Card Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light

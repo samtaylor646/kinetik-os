@@ -1,0 +1,38 @@
+name: Statement Quote
+icon: quote
+preview: fields
+
+fields:
+  quote:
+    label: Quote
+    type: textarea
+    buttons: false
+    
+  author:
+    label: Author
+    type: text
+    width: 1/2
+    
+  role:
+    label: Role / Title
+    type: text
+    width: 1/2
+    
+  theme:
+    label: Block Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light
+    
+  airy_spacing:
+    label: Airy Spacing
+    type: select
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)
+    default: md

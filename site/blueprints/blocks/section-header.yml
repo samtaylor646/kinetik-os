@@ -1,0 +1,45 @@
+name: Section Header
+icon: text-left
+preview: fields
+
+fields:
+  eyebrow:
+    label: Eyebrow
+    type: text
+    help: Small text above the heading
+
+  heading:
+    label: Heading
+    type: text
+
+  subheading:
+    label: Subheading
+    type: textarea
+    buttons: false
+
+  alignment:
+    label: Alignment
+    type: select
+    options:
+      left: Left Aligned
+      center: Center Aligned
+    default: left
+
+  theme:
+    label: Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light
+
+  airy_spacing:
+    label: Airy Spacing
+    type: select
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)
+    default: sm

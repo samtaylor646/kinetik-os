@@ -1,0 +1,36 @@
+name: Bento Grid
+icon: grid-cell
+preview: fields
+
+fields:
+  layout_type:
+    label: Grid Layout
+    type: select
+    options:
+      2-col: 2 Columns
+      3-col: 3 Columns
+      asymmetric: Asymmetric Grid
+    default: 3-col
+    
+  theme:
+    label: Block Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light
+    
+  airy_spacing:
+    label: Airy Spacing
+    type: select
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)
+    default: md
+
+  items:
+    label: Grid Items
+    type: blocks

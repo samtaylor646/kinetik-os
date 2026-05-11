@@ -1,0 +1,42 @@
+name: Accordion Group
+icon: list-bullet
+preview: fields
+
+fields:
+  allow_multiple:
+    label: Allow Multiple Open
+    type: toggle
+    text:
+      - "No (Close others when opening)"
+      - "Yes (Keep others open)"
+    default: false
+    
+  theme:
+    label: Block Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light
+    
+  airy_spacing:
+    label: Airy Spacing
+    type: select
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)
+    default: md
+
+  items:
+    label: Accordion Items
+    type: structure
+    fields:
+      title:
+        label: Title
+        type: text
+      content:
+        label: Content
+        type: blocks

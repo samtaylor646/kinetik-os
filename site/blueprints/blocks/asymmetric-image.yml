@@ -1,0 +1,41 @@
+name: Asymmetric Image
+icon: image
+preview: fields
+
+fields:
+  image:
+    label: Image
+    type: files
+    max: 1
+    layout: cards
+    
+  caption:
+    label: Caption
+    type: text
+    
+  alignment:
+    label: Image Alignment
+    type: select
+    options:
+      left: Left Aligned
+      right: Right Aligned
+    default: right
+    
+  theme:
+    label: Block Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light
+    
+  airy_spacing:
+    label: Airy Spacing
+    type: select
+    options:
+      sm: Small (sm)
+      md: Medium (md)
+      lg: Large (lg)
+      xl: Extra Large (xl)
+    default: lg
