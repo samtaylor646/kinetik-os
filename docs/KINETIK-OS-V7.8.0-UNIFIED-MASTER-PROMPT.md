@@ -182,7 +182,7 @@ ROOT/
 | **Strict Typing** | `declare(strict_types=1);` on line 3 of ALL PHP files | Type safety, prevents runtime errors |
 | **Constructor Promotion** | All Page Models and DTOs MUST use PHP 8.4 promoted properties | Reduces boilerplate, enforces immutability |
 | **Zero Database** | ❌ NO MySQL, NO PDO, NO SQLite, NO database mention | Flat-file architecture is non-negotiable |
-| **Plainkit Only** | ❌ NO Kirby Starterkit files | All blueprints built from zero-byte baseline |
+| **Hybrid-Boutique Baseline** | ❌ NO Kirby Starterkit files EXCEPT whitelisted elements | All custom blueprints/blocks built from scratch, while specific Starterkit structural features (SEO, nav, base models) are ported via the Hybrid strategy. |
 | **No Inline Styles** | ❌ NO `style=""` attributes in any template | All styling via Tailwind utility classes |
 
 ### 4.3 Tailwind 4 Atomic Standards
@@ -270,17 +270,22 @@ ROOT/
 
 ---
 
-## SECTION 6: THE 13-BLOCK BOUTIQUE LIBRARY
+## SECTION 6: THE HYBRID BLOCK SYSTEM & 13-BLOCK BOUTIQUE LIBRARY
 
-### 6.1 Structural Components
+### 6.1 The Hybrid-Boutique Architecture Strategy
+We use a "Hybrid-Boutique" approach. We avoid the Kirby Starterkit's "all-or-nothing" structure, but we whitelist the following structural components from the Starterkit to be ported:
+- **Base Blueprints:** `site.yml` and `files/image.yml` (for SEO and metadata baseline).
+- **Page Models:** Concept of `AboutPage` to encapsulate business logic.
+- **Recursive Navigation:** Nested menu logic (wrapped in Alpine.js).
 
-| Block Name | Purpose | Tailwind Classes | Agent |
-|------------|---------|------------------|-------|
-| **Split Hero** | Large header with 50/50 image/text split | `grid grid-cols-2 gap-0` | DX-Curator |
-| **Section Header** | Typography-focused page anchors | `text-center py-airy-xl` | DX-Curator |
-| **Bento Grid** | Recursive slot container (mixed content) | `grid auto-rows-auto gap-4` | DX-Curator + Architect-K |
+### 6.2 Standard "Utility" Blocks (Overrides)
+To minimize technical debt, we retain and override standard Kirby blocks rather than rebuilding them.
+- **text**: Inject Tailwind 4 prose classes and `--spacing-airy` margins.
+- **heading**: Link to DX-Curator typography tokens.
+- **list**: Custom SVG bullets.
+- **quote**: Implementation of the "Boutique-Border" left-accent.
 
-### 6.2 Boutique Design Components
+### 6.3 Boutique Design Components (Custom)
 
 | Block Name | Purpose | Signature Feature | Agent |
 |------------|---------|-------------------|-------|
@@ -288,16 +293,19 @@ ROOT/
 | **Statement Quote** | High-contrast pull quote | Massive serif font, warm-gold accent | DX-Curator |
 | **Asymmetric Image** | Floating image with caption | GSAP parallax on scroll | Motion-G |
 
-### 6.3 Functional Components
+### 6.4 Structural & Functional Components (Custom)
 
 | Block Name | Purpose | Technology | Agent |
 |------------|---------|------------|-------|
+| **Split Hero** | Large header with 50/50 split | `grid grid-cols-2 gap-0` | DX-Curator |
+| **Section Header** | Typography-focused anchor | `text-center py-airy-xl` | DX-Curator |
+| **Bento Grid** | Recursive slot container | `grid auto-rows-auto gap-4` | DX-Curator + Architect-K |
 | **Accordion Group** | Collapsible FAQ/technical info | Alpine.js `x-collapse` | Logic-A |
 | **CTA Banner** | Full-width conversion strip | Oceanic flood background | DX-Curator |
 | **Data Table** | Responsive technical specs | Horizontal scroll on mobile | Architect-K |
 | **Tabbed Interface** | State-based content switching | Alpine.js state management | Logic-A |
 
-### 6.4 Media Components
+### 6.5 Media Components (Custom)
 
 | Block Name | Purpose | Technology | Agent |
 |------------|---------|------------|-------|
@@ -333,60 +341,60 @@ declare(strict_types=1);
  * Filename: BoutiqueBridge.php | Version: v7.8.0
  * Agent: Architect-K
  * Status: Production
- * Logic: Kirby field method extensions for Tailwind token interpolation
+ * Logic: Kirby field method extensions and GSAP requirements handshake
  */
 
-namespace Site\Traits;
+namespace Kinetik\Models;
 
 trait BoutiqueBridge
 {
     /**
+     * Logic gate: Check if any "Boutique" blocks exist in the layout requiring GSAP
+     */
+    public function needsGsap(): bool
+    {
+        if (!method_exists($this, 'layout')) return false;
+        
+        $blocks = $this->layout()->toBlocks();
+        foreach ($blocks as $block) {
+            if (in_array($block->type(), ['split-hero', 'video-modal', 'asymmetric-image'])) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
+    /**
      * Convert spacing field to Tailwind airy utility
-     * 
-     * @return string Tailwind padding classes
      */
     public function toAiry(): string
     {
         $value = $this->value();
-        if (empty($value)) {
-            return 'py-airy-md'; // Default fallback
-        }
-        
+        if (empty($value)) return 'py-airy-md';
         return "pt-airy-{$value} pb-airy-{$value}";
     }
 
     /**
      * Inject Lucide SVG icon
-     * 
-     * @return string Raw SVG markup
      */
     public function toIcon(): string
     {
         $iconName = $this->value();
-        if (empty($iconName)) {
-            return '';
-        }
+        if (empty($iconName)) return '';
         
-        // Load from lucide icon directory
         $iconPath = kirby()->root('assets') . "/icons/{$iconName}.svg";
-        
-        if (file_exists($iconPath)) {
-            return file_get_contents($iconPath);
-        }
+        if (file_exists($iconPath)) return file_get_contents($iconPath);
         
         return "<!-- Icon not found: {$iconName} -->";
     }
 
     /**
      * Convert theme field to Tailwind flood classes
-     * 
-     * @return string Background and text color classes
      */
     public function toTheme(): string
     {
-        $theme = $this->value();
-        
-        return match($theme) {
+        return match($this->value()) {
             'oceanic' => 'bg-oceanic-dark text-canvas',
             'gold' => 'bg-warm-gold text-ink',
             'light' => 'bg-canvas text-ink',
@@ -412,27 +420,11 @@ declare(strict_types=1);
  */
 
 use Kirby\Cms\Page;
-use Site\Traits\BoutiqueBridge;
+use Kinetik\Models\BoutiqueBridge;
 
 class DefaultPage extends Page
 {
     use BoutiqueBridge;
-
-    /**
-     * Logic gate: Check if page needs GSAP
-     */
-    public function needsGsap(): bool
-    {
-        $blocks = $this->blocks()->toBlocks();
-        
-        foreach ($blocks as $block) {
-            if (in_array($block->type(), ['split-hero', 'video-modal', 'asymmetric-image'])) {
-                return true;
-            }
-        }
-        
-        return false;
-    }
 }
 ```
 

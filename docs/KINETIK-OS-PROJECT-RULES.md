@@ -180,18 +180,22 @@ fi
 
 ---
 
-### ❌ RULE 1.4: KIRBY STARTERKIT PROHIBITION
+### ❌ RULE 1.4: KIRBY STARTERKIT PROHIBITION (WITH WHITELIST)
 
-**Enforcement:** Manual review + File hash validation
+**Enforcement:** Manual review + File hash validation (Skipping whitelisted files)
 
 **Statement:**  
-ZERO Kirby Starterkit files are permitted. All blueprints, templates, and snippets MUST be built from Plainkit zero-byte baseline.
+Except for specific whitelisted files governed by the Hybrid-Boutique Architecture, ZERO Kirby Starterkit files are permitted. All custom blueprints, templates, and snippets MUST be built from a Plainkit zero-byte baseline.
 
-**Prohibited Files:**
-- Default Starterkit blueprints (about, home, default, etc.)
-- Default Starterkit templates
-- Example content from Starterkit
-- Starterkit media assets
+**Whitelisted Starterkit Elements (Allowed):**
+- Page Models mapping to Starterkit logic (e.g., `AboutPage` to encapsulate filtering).
+- Base Blueprints for SEO and metadata (`site.yml` and `files/image.yml`).
+- Recursive Navigation snippets/logic (must be wrapped in Alpine.js for accessibility).
+
+**Prohibited Files (Terminal Violation):**
+- Default Starterkit global CSS/JS
+- Default Starterkit content and media assets
+- Default Starterkit templates and snippets (unless explicitly overridden per Hybrid block rules)
 
 **Validation Method:**
 ```bash
@@ -200,14 +204,13 @@ ZERO Kirby Starterkit files are permitted. All blueprints, templates, and snippe
 
 STARTERKIT_HASHES=(
   "7f8a9b2c3d4e5f6a"  # home.php template
-  "8e9f0a1b2c3d4e5f"  # about.yml blueprint
-  # ... add known Starterkit file hashes
+  # ... add known Starterkit file hashes, excluding whitelisted files like about.yml
 )
 
 for HASH in "${STARTERKIT_HASHES[@]}"; do
   FOUND=$(find site/ -type f -exec md5sum {} \; | grep "$HASH")
   if [ -n "$FOUND" ]; then
-    echo "❌ TERMINAL VIOLATION: Starterkit file detected"
+    echo "❌ TERMINAL VIOLATION: Non-whitelisted Starterkit file detected"
     exit 1
   fi
 done

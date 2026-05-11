@@ -451,11 +451,30 @@ curl -O https://unpkg.com/lucide-static@latest/icons/[icon-name].svg
 - ✅ Icons scale with font-size
 - ✅ ARIA labels present
 
-### Day 4-5: Motion Lab Blueprint
+### Day 4: Starterkit Whitelist Porting
+
+**Owner:** Architect-K + DX-Curator  
+**Deliverables:**
+- [ ] Port `site.yml` and `files/image.yml` from Starterkit
+- [ ] Port `AboutPage` model logic (if needed)
+- [ ] Implement Starterkit recursive navigation with Alpine.js
+- [ ] Verify standard block overrides (`text`, `heading`, `list`, `quote`)
+
+**Technical Tasks:**
+- Pull required files from Kirby Starterkit repo
+- Wrap navigation in Alpine.js toggle
+- Apply Tailwind 4 typography to text/heading blocks
+
+**Success Criteria:**
+- ✅ Navigation is accessible and responsive
+- ✅ SEO blueprints active in Panel
+- ✅ Standard blocks render with Oceanic theme
+
+### Day 5: Motion Lab Blueprint
 
 **Owner:** DX-Curator + Motion-G  
 **Deliverables:**
-- [ ] `site/blueprints/site.yml` created
+- [ ] `site/blueprints/site.yml` updated with Motion Lab
 - [ ] Motion Lab tab with physics variables
 - [ ] Default values set
 - [ ] Panel UI functional
