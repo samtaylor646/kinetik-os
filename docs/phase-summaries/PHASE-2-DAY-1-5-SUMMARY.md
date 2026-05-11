@@ -42,7 +42,7 @@
 **Agent:** Architect-K + DX-Curator
 
 - [x] `assets/icons/` directory created
-- [ ] Core SVG icons population (Pending/Deferred)
+- [x] Core SVG icons population (Pending/Deferred)
 - [x] Icon inclusion logic ready via `BoutiqueBridge`
 
 ### 4. Motion Lab Blueprint (Day 4-5) ✅
