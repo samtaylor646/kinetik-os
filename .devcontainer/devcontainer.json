@@ -10,7 +10,8 @@
         "bmewburn.vscode-intelephense-client",
         "bradlc.vscode-tailwindcss",
         "miku86.kirby-snippets",
-        "RooVeterinaryInc.roo-cline"
+        "RooVeterinaryInc.roo-cline",
+        "MichaelvanLaar.vscode-kirby-toolkit"
     ],
       "settings": {
         "php.validate.executablePath": "/usr/local/bin/php",
