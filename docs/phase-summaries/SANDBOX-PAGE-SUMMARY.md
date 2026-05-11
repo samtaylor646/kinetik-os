@@ -14,6 +14,8 @@ Built a complete Sandbox environment and updated default layout configurations f
    - Removed `fieldsets` restrictions to allow testing and placement of all 13 possible custom blocks inside any layout grid.
 3. **Dummy Content Scripting**:
    - Generated the initial `content/sandbox/sandbox.txt` using a PHP script, populating a default 1/1 grid layout with dummy JSON data for all 13 custom blocks to provide an immediate visual testing environment.
+4. **Schema Validation Fixes**:
+   - Added the `blueprint: page` property to the root of both `default.yml` and `sandbox.yml` to satisfy the VS Code `kirby-schema` JSON validation extension, resolving missing property errors.
 
 ## Layout Options Added
 **Standard**:

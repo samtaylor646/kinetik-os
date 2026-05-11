@@ -1,5 +1,7 @@
 title: Default Page
 
+blueprint: page
+
 fields:
   layout:
     label: Page Layout
