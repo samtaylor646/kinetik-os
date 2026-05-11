@@ -1,0 +1,43 @@
+# Path: /site/blueprints/site.yml
+# Filename: site.yml | Version: v7.8.0
+# Agent: DX-Curator
+# Status: Production
+# Logic: Global site blueprint with Motion Lab configuration
+
+title: Site Settings
+
+tabs:
+  content:
+    label: Content
+    fields:
+      title:
+        type: text
+        label: Site Title
+  
+  motion:
+    label: Motion Lab
+    fields:
+      kinetik_duration:
+        type: text
+        label: Animation Duration
+        default: "1.2s"
+        help: Default duration for GSAP animations
+      
+      kinetik_ease:
+        type: select
+        label: Animation Easing
+        default: power3.out
+        options:
+          power1.out: Power1
+          power2.out: Power2
+          power3.out: Power3
+          power4.out: Power4
+          elastic.out: Elastic
+      
+      kinetik_parallax_speed:
+        type: number
+        label: Parallax Speed
+        default: 0.5
+        min: 0
+        max: 1
+        step: 0.1
