@@ -1,0 +1,34 @@
+/**
+ * Path: /src/index.css
+ * Filename: index.css | Version: v7.8.0
+ * Agent: DX-Curator
+ * Status: Draft (Complete @theme implementation in Week 2)
+ * Logic: Tailwind 4 entry point with minimal placeholder tokens for Week 1 testing
+ */
+
+@import "tailwindcss";
+
+@source "../site/**/*.php";
+@source "../content/**/*.txt";
+
+@theme {
+  /* PLACEHOLDER TOKENS - Week 1 Testing Only */
+  /* Complete design system implementation: Week 2, Day 1-2 */
+  
+  --color-oceanic-dark: #005B6D;
+  --color-canvas: #FAF9F6;
+  --color-ink: #0F151B;
+  
+  --spacing-airy-md: 4rem;
+  
+  --font-size-base: 1rem;
+  --font-size-4xl: 2.25rem;
+}
+
+/* Base styles */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--color-ink);
+  background-color: var(--color-canvas);
+  line-height: 1.5;
+}

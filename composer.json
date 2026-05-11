@@ -1,7 +1,8 @@
 {
     "name": "kinetik/os",
     "require": {
-        "getkirby/cms": "^4.0"
+        "getkirby/cms": "^4.0",
+        "arnoson/kirby-vite": "^5.7"
     },
     "config": {
         "allow-plugins": {
