@@ -27,7 +27,7 @@ $flexDirection = $alignment === 'left' ? 'lg:flex-row-reverse' : 'lg:flex-row';
                 <?php if ($image): ?>
                     <figure class="relative w-full overflow-hidden rounded-2xl shadow-2xl" data-gsap="parallax-container">
                         <!-- Intentionally taller image for parallax scrolling -->
-                        <div class="aspect-[4/5] sm:aspect-[16/9] lg:aspect-[4/3] w-full relative">
+                        <div class="aspect-4/5 sm:aspect-video lg:aspect-4/3 w-full relative">
                             <img 
                                 src="<?= $image->url() ?>" 
                                 alt="<?= $image->alt()->html() ?>" 

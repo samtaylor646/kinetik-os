@@ -35,7 +35,7 @@ $image = $block->image()->toFile();
             <!-- Image Content -->
             <div class="w-full lg:w-1/2">
                 <?php if ($image): ?>
-                    <figure class="relative w-full aspect-square sm:aspect-[4/3] rounded-xl overflow-hidden shadow-xl">
+                    <figure class="relative w-full aspect-square sm:aspect-4/3 rounded-xl overflow-hidden shadow-xl">
                         <img 
                             src="<?= $image->url() ?>" 
                             alt="<?= $image->alt()->html() ?>" 

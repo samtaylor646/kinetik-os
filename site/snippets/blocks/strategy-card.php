@@ -10,12 +10,12 @@ $themeClass = $block->theme()->toTheme();
 >
     <div class="flex items-start gap-4">
         <?php if ($block->icon()->isNotEmpty()): ?>
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-oceanic-accent/10 flex items-center justify-center text-oceanic-accent">
+            <div class="shrink-0 w-12 h-12 rounded-full bg-oceanic-accent/10 flex items-center justify-center text-oceanic-accent">
                 <?= $block->icon()->toIcon() ?>
             </div>
         <?php endif; ?>
         
-        <div class="flex-grow">
+        <div class="grow">
             <?php if ($block->title()->isNotEmpty()): ?>
                 <h3 class="text-xl sm:text-2xl font-bold mb-2">
                     <?= $block->title()->html() ?>

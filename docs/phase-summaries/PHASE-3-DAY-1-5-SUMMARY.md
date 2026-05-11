@@ -47,7 +47,11 @@
 ### 6. Architectural Support Plugin ✅
 **Agent:** Architect-K
 - [x] Created `site/plugins/boutique-bridge/index.php`.
-- Exposed the `BoutiqueBridge` trait globally as Kirby `fieldMethods` (`toAiry()`, `toTheme()`, `toIcon()`) enabling direct injection of Tailwind tokens from Block fields.
+- [x] Exposed the `BoutiqueBridge` trait globally as Kirby `fieldMethods` (`toAiry()`, `toTheme()`, `toIcon()`) enabling direct injection of Tailwind tokens from Block fields.
+
+### 7. Code Quality & Linting Updates ✅
+**Agent:** Roo
+- [x] Resolved Tailwind CSS IntelliSense warnings across `split-hero`, `strategy-card`, and `asymmetric-image` blocks by adopting canonical class names (e.g., `aspect-4/5`, `shrink-0`, `grow`).
 
 ---
 
