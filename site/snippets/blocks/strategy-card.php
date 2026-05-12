@@ -45,7 +45,7 @@ $themeClass = $block->theme()->toTheme();
                 >
                     <span x-text="expanded ? 'Show Less' : 'Read Full Strategy'">Read Full Strategy</span>
                     <span class="transform transition-transform duration-300" :class="{ 'rotate-180': expanded }">
-                        <?= (new \Kirby\Cms\Field($block, 'icon', 'chevron-down'))->toIcon() ?>
+                        <?= (new \Kirby\Cms\Field($page, 'icon', 'chevron-down'))->toIcon() ?>
                     </span>
                 </button>
             <?php endif; ?>

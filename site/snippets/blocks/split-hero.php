@@ -27,7 +27,7 @@ $image = $block->image()->toFile();
                 <?php if ($block->cta_text()->isNotEmpty() && $block->cta_link()->isNotEmpty()): ?>
                     <a href="<?= $block->cta_link()->toUrl() ?>" class="inline-flex items-center gap-2 px-6 py-3 bg-oceanic-accent text-white font-medium rounded hover:bg-oceanic-dark transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-oceanic-accent">
                         <?= $block->cta_text()->html() ?>
-                        <?= (new \Kirby\Cms\Field($block, 'icon', 'arrow-right'))->toIcon() ?>
+                        <?= (new \Kirby\Cms\Field($page, 'icon', 'arrow-right'))->toIcon() ?>
                     </a>
                 <?php endif; ?>
             </div>

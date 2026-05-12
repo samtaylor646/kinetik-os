@@ -13,6 +13,7 @@ import morph from '@alpinejs/morph';
 
 // Import styles
 import './index.css';
+import { sectionEntrance } from './motion.js';
 
 // Register Alpine plugins
 Alpine.plugin(intersect);
@@ -21,6 +22,13 @@ Alpine.plugin(morph);
 
 // Global Alpine data components will be added in Week 3-4
 // Placeholder for future component registration
+
+// The Handshake (Alpine -> GSAP)
+Alpine.directive('motion-entrance', (el) => {
+  sectionEntrance(el);
+});
+
+window.sectionEntrance = sectionEntrance;
 
 // Start Alpine
 Alpine.start();

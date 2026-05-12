@@ -1,19 +1,20 @@
 <?php
-declare(strict_types=1);
-
-/**
- * Path: /site/templates/default.php
- * Filename: default.php | Version: v7.8.0
- * Agent: Architect-K
- * Status: Production
- * Logic: Default page template integrating global header/footer
- */
+/** @var \Kirby\Cms\Page $page */
 ?>
 <?php snippet('header') ?>
 
 <main class="py-airy-xl px-4 max-w-7xl mx-auto">
-  <h1 class="text-4xl font-bold text-oceanic-dark mb-4"><?= $page->title() ?></h1>
-  <p class="text-lg">Kinetik-OS V7.8.0 Integration Successful!</p>
+  <?php foreach ($page->layout()->toLayouts() as $layout): ?>
+    <section class="grid" id="<?= $layout->id() ?>">
+      <?php foreach ($layout->columns() as $column): ?>
+        <div class="column" style="--span:<?= $column->span() ?>">
+          <div class="blocks">
+            <?= $column->blocks() ?>
+          </div>
+        </div>
+      <?php endforeach ?>
+    </section>
+  <?php endforeach ?>
 </main>
 
 <?php snippet('footer') ?>

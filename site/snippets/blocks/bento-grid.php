@@ -30,7 +30,7 @@ $gridClass = match($layout) {
                     }
                 }
             ?>
-                <div class="bento-item rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 <?= $spanClass ?> flex flex-col">
+                <div class="bento-item rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 <?= $spanClass ?> flex flex-col p-6">
                     <?= $item ?>
                 </div>
             <?php 

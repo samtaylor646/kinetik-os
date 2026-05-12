@@ -26,7 +26,14 @@ export default defineConfig({
     emptyOutDir: true,
     manifest: true,
     rollupOptions: {
-      input: 'src/main.js'
+      input: 'src/main.js',
+      output: {
+        manualChunks: {
+          gsap: ['gsap'],
+          lenis: ['lenis'],
+          alpine: ['alpinejs', '@alpinejs/intersect', '@alpinejs/collapse', '@alpinejs/morph']
+        }
+      }
     }
   },
 

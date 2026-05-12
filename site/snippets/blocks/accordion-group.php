@@ -54,7 +54,7 @@ $allowMultiple = $block->allow_multiple()->toBool() ? 'true' : 'false';
                                       :class="{ 'rotate-180': activeItem === '<?= $id ?>' }"
                                       <?php endif; ?>
                                 >
-                                    <?= (new \Kirby\Cms\Field($block, 'icon', 'chevron-down'))->toIcon() ?>
+                                    <?= (new \Kirby\Cms\Field($page, 'icon', 'chevron-down'))->toIcon() ?>
                                 </span>
                             </span>
                         </button>

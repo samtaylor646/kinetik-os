@@ -1,0 +1,9 @@
+Title: Home
+
+----
+
+Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"layout_type":"asymmetric","theme":"light","airy_spacing":"","items":[{"title":"Crough Mountain","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu turpis libero. Nulla ut gravida purus. Ut imperdiet ornare commodo. Nulla facilisi. Nulla orci eros.","image":["file://jx3mw46tn7txsips"]},{"title":"Crough Mountain","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu turpis libero. Nulla ut gravida purus. Ut imperdiet ornare commodo. Nulla facilisi. Nulla orci eros.","image":["file://jx3mw46tn7txsips"]},{"title":"Crough Video Test","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu turpis libero. Nulla ut gravida purus. Ut imperdiet ornare commodo. Nulla facilisi. Nulla orci eros.","image":["file://edr3nxvh9mfamkaz"]}]},"id":"b89ef2de-72b4-487c-ab06-cf452b2fc7fb","isHidden":false,"type":"bento-grid"}],"id":"407fe2f4-f055-46f4-a490-84fecfc55dd9","width":"1/1"}],"id":"3b22a0e7-d1a4-423e-ba89-abbfb032bbc2"}]
+
+----
+
+Uuid: oogKPZ2r6jXgab6t

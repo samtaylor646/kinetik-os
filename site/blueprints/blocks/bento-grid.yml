@@ -1,6 +1,5 @@
 name: Bento Grid
 icon: grid-cell
-preview: fields
 
 fields:
   layout_type:

@@ -7,7 +7,13 @@
  */
 $thumbnail = $block->thumbnail()->toFile();
 $type = $block->video_type()->value();
+if (!$type && $block->content()->get('type')->value()) $type = $block->content()->get('type')->value();
+if (!$type) $type = 'youtube'; // default
+
 $url = $block->video_url()->value();
+if (!$url) $url = $block->videourl()->value();
+if (!$url) $url = $block->content()->get('videoUrl')->value();
+
 $file = $block->video_file()->toFile();
 
 // Extract video ID for embed
