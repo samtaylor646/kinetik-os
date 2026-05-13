@@ -12,10 +12,23 @@ tabs:
     icon: text
     sections:
       listed:
+        headline: Main Pages
         type: pages
         status: listed
         layout: list
+        templates:
+          - default
+          - sandbox
+          - home
+      design_system:
+        headline: Design System
+        type: pages
+        status: listed
+        layout: list
+        templates:
+          - design-system
       unlisted:
+        headline: Unlisted Pages
         type: pages
         status: unlisted
         layout: list

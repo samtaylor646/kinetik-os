@@ -14,7 +14,7 @@ $headers = $block->headers()->toStructure()->first();
             <h3 class="text-2xl font-bold text-ink mb-6"><?= $block->heading()->html() ?></h3>
         <?php endif ?>
 
-        <div class="relative  border border-gray-200 shadow-sm" x-data="{ scrolled: false }">
+        <div class="relative  border border-ink/10 " x-data="{ scrolled: false }">
             <!-- Scroll Indicator -->
             <div 
                 class="absolute right-0 top-0 bottom-0 w-8 bg-linear-to-l from-canvas to-transparent pointer-events-none transition-opacity duration-300 z-10 md:hidden"
@@ -24,7 +24,7 @@ $headers = $block->headers()->toStructure()->first();
             <div class="overflow-x-auto min-w-full" @scroll.passive="scrolled = $el.scrollLeft > 20">
                 <table class="w-full text-left border-collapse text-ink">
                     <?php if ($headers): ?>
-                        <thead class="bg-gray-50 border-b border-gray-200 sticky top-0 z-10">
+                        <thead class="bg-ink/5 border-b border-ink/10 sticky top-0 z-10">
                             <tr>
                                 <?php foreach (['col1', 'col2', 'col3', 'col4'] as $col): ?>
                                     <?php if ($headers->$col()->isNotEmpty()): ?>
@@ -37,9 +37,9 @@ $headers = $block->headers()->toStructure()->first();
                         </thead>
                     <?php endif ?>
                     
-                    <tbody class="divide-y divide-gray-200">
+                    <tbody class="divide-y divide-ink/10">
                         <?php foreach ($rows as $row): ?>
-                            <tr class="hover:bg-gray-50 transition-colors">
+                            <tr class="hover:bg-ink/5 transition-colors">
                                 <?php foreach (['col1', 'col2', 'col3', 'col4'] as $col): ?>
                                     <?php if ($headers && $headers->$col()->isNotEmpty()): ?>
                                         <td class="px-6 py-4 whitespace-nowrap">
@@ -54,7 +54,7 @@ $headers = $block->headers()->toStructure()->first();
             </div>
             
             <!-- Mobile Swipe Hint -->
-            <div class="text-center py-3 text-xs text-gray-500 md:hidden flex items-center justify-center gap-2 border-t border-gray-200">
+            <div class="text-center py-3 text-xs text-ink/60 md:hidden flex items-center justify-center gap-2 border-t border-ink/10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-horizontal"><polyline points="18 8 22 12 18 16"/><polyline points="6 8 2 12 6 16"/><line x1="2" x2="22" y1="12" y2="12"/></svg>
                 Swipe to see more
             </div>

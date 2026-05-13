@@ -1,0 +1,9 @@
+Title: Colors
+
+----
+
+Text: Our color palette is designed for high contrast, absolute WCAG compliance, and a strong brand identity.
+
+----
+
+Uuid: lfjaacn8kdwbce7c

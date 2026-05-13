@@ -24,7 +24,7 @@
                     <?php 
                     $styleClass = match($btn->style()->value()) {
                         'primary' => 'bg-oceanic-accent text-canvas hover:bg-oceanic-dark border-2 border-oceanic-accent hover:border-oceanic-dark',
-                        'secondary' => 'bg-canvas text-oceanic-dark hover:bg-gray-100 border-2 border-canvas',
+                        'secondary' => 'bg-canvas text-oceanic-dark hover:bg-ink/10 border-2 border-canvas',
                         'ghost' => 'bg-transparent text-current hover:bg-current hover:text-canvas border-2 border-current',
                         default => 'bg-oceanic-accent text-canvas hover:bg-oceanic-dark border-2 border-oceanic-accent hover:border-oceanic-dark'
                     };

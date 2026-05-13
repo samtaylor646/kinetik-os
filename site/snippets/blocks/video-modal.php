@@ -36,7 +36,7 @@ if ($type === 'youtube' && $url) {
     <div class="max-w-5xl mx-auto relative group cursor-pointer" @click="modalOpen = true" @keydown.enter="modalOpen = true" tabindex="0" role="button" aria-label="Play Video">
         
         <!-- Thumbnail -->
-        <div class="relative  overflow-hidden bg-ink aspect-video shadow-lg">
+        <div class="relative  overflow-hidden bg-ink aspect-video ">
             <?php if ($thumbnail): ?>
                 <img 
                     src="<?= $thumbnail->url() ?>" 
@@ -45,19 +45,19 @@ if ($type === 'youtube' && $url) {
                     loading="lazy"
                 >
             <?php else: ?>
-                <div class="w-full h-full bg-gray-900"></div>
+                <div class="w-full h-full bg-ink"></div>
             <?php endif ?>
 
             <!-- Play Button -->
             <div class="absolute inset-0 flex items-center justify-center">
-                <div class="w-20 h-20 bg-oceanic-accent text-canvas  flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                <div class="w-20 h-20 bg-oceanic-accent text-canvas  flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                 </div>
             </div>
         </div>
 
         <?php if ($block->caption()->isNotEmpty()): ?>
-            <p class="text-center text-sm text-gray-500 mt-4"><?= $block->caption()->html() ?></p>
+            <p class="text-center text-sm text-ink/60 mt-4"><?= $block->caption()->html() ?></p>
         <?php endif ?>
     </div>
 
@@ -84,7 +84,7 @@ if ($type === 'youtube' && $url) {
 
             <!-- Video Container -->
             <div 
-                class="relative w-full max-w-6xl aspect-video bg-black  overflow-hidden shadow-2xl ring-1 ring-white/10"
+                class="relative w-full max-w-6xl aspect-video bg-black  overflow-hidden  ring-1 ring-white/10"
                 x-show="modalOpen"
                 x-transition:enter="transition ease-out duration-500"
                 x-transition:enter-start="opacity-0 scale-95"

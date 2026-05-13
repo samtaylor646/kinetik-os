@@ -1,0 +1,9 @@
+Title: Overview
+
+----
+
+Text: Welcome to the Kinetik OS Design System. This document serves as the single source of truth for our visual language and UI architecture.
+
+----
+
+Uuid: xowvui2edqmg8prs

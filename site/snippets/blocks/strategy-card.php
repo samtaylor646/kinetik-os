@@ -5,7 +5,7 @@
 $themeClass = $block->theme()->toTheme();
 ?>
 <div 
-    class="strategy-card <?= $themeClass ?>  p-6 sm:p-8 shadow-sm transition-all duration-300 hover:shadow-md"
+    class="strategy-card <?= $themeClass ?>  p-6 sm:p-8  transition-all duration-300 hover:"
     x-data="{ expanded: false }"
 >
     <div class="flex items-start gap-4">

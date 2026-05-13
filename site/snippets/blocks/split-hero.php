@@ -64,7 +64,7 @@ $innerClass = $bgWidth === 'contained' ? $themeClass . ' tech-border' : '';
             <!-- Image Content -->
             <div class="w-full lg:w-1/2">
                 <?php if ($image): ?>
-                    <figure class="relative w-full aspect-square sm:aspect-[4/3] overflow-hidden shadow-xl tech-border group">
+                    <figure class="relative w-full aspect-square sm:aspect-[4/3] overflow-hidden  tech-border group">
                         <img 
                             src="<?= $image->url() ?>" 
                             alt="<?= $image->alt()->html() ?>" 

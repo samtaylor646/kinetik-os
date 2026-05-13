@@ -28,9 +28,9 @@ $themeContainerClass = match($theme) {
 };
 
 $themeCellClass = match($theme) {
-    'oceanic', 'accent', 'dark', 'slate', 'liberty', 'heritage' => 'bg-white/10 tech-border shadow-xl',
-    'gold', 'frost', 'light', '' => 'bg-white tech-border shadow-sm',
-    default => 'bg-white tech-border shadow-sm'
+    'oceanic', 'accent', 'dark', 'slate', 'liberty', 'heritage' => 'bg-white/10 tech-border ',
+    'gold', 'frost', 'light', '' => 'bg-white tech-border ',
+    default => 'bg-white tech-border '
 };
 
 // Fixed gap strategy per FLUID-GLASS-BENTO-SCHEMA.md

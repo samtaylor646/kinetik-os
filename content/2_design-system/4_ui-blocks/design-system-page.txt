@@ -1,0 +1,9 @@
+Title: UI Blocks
+
+----
+
+Text: Foundational UI building blocks showcasing theme colors and technical border styling.
+
+----
+
+Uuid: svoeuaxnbjdyznrf
