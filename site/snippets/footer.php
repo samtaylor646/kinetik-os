@@ -9,5 +9,7 @@ declare(strict_types=1);
  * Logic: Global footer component
  */
 ?>
+</main>
+</div>
 </body>
 </html>

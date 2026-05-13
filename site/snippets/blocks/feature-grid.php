@@ -16,9 +16,9 @@ $gridClass = match($columns) {
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 <?= $gridClass ?> gap-airy-sm sm:gap-airy-md">
             <?php foreach ($block->features()->toStructure() as $feature): ?>
-                <div class="feature-item p-6 rounded-xl bg-black/5 dark:bg-white/5 transition-transform hover:-translate-y-1">
+                <div class="feature-item p-6  bg-black/5 dark:bg-white/5 transition-transform hover:-translate-y-1">
                     <?php if ($feature->icon()->isNotEmpty()): ?>
-                        <div class="w-12 h-12 mb-6 rounded-lg bg-oceanic-accent text-white flex items-center justify-center">
+                        <div class="w-12 h-12 mb-6  bg-oceanic-accent text-white flex items-center justify-center">
                             <?= $feature->icon()->toIcon() ?>
                         </div>
                     <?php endif; ?>

@@ -6,7 +6,7 @@
 ?>
 <div class="p-8 flex flex-col h-full justify-center">
   <?php if ($block->icon()->isNotEmpty()): ?>
-    <div class="w-12 h-12 bg-black/5 rounded-xl flex items-center justify-center mb-6">
+    <div class="w-12 h-12 bg-black/5  flex items-center justify-center mb-6">
       <?php 
         $iconPath = kirby()->root('base') . '/assets/icons/' . $block->icon() . '.svg';
         if(\Kirby\Filesystem\F::exists($iconPath)) {

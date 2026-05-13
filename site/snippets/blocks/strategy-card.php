@@ -5,12 +5,12 @@
 $themeClass = $block->theme()->toTheme();
 ?>
 <div 
-    class="strategy-card <?= $themeClass ?> rounded-xl p-6 sm:p-8 shadow-sm transition-all duration-300 hover:shadow-md"
+    class="strategy-card <?= $themeClass ?>  p-6 sm:p-8 shadow-sm transition-all duration-300 hover:shadow-md"
     x-data="{ expanded: false }"
 >
     <div class="flex items-start gap-4">
         <?php if ($block->icon()->isNotEmpty()): ?>
-            <div class="shrink-0 w-12 h-12 rounded-full bg-oceanic-accent/10 flex items-center justify-center text-oceanic-accent">
+            <div class="shrink-0 w-12 h-12  bg-oceanic-accent/10 flex items-center justify-center text-oceanic-accent">
                 <?= $block->icon()->toIcon() ?>
             </div>
         <?php endif; ?>
@@ -40,7 +40,7 @@ $themeClass = $block->theme()->toTheme();
                 
                 <button 
                     @click="expanded = !expanded" 
-                    class="inline-flex items-center gap-2 text-sm font-semibold text-oceanic-accent hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-oceanic-accent rounded px-2 py-1 -ml-2"
+                    class="inline-flex items-center gap-2 text-sm font-semibold text-oceanic-accent hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-oceanic-accent  px-2 py-1 -ml-2"
                     :aria-expanded="expanded.toString()"
                 >
                     <span x-text="expanded ? 'Show Less' : 'Read Full Strategy'">Read Full Strategy</span>

@@ -5,77 +5,92 @@
  */
 $layout = $block->layout_type()->value();
 $theme = $block->theme()->value();
-$spacing = $block->airy_spacing()->value();
 
-// Map layout types to Tailwind CSS grid classes
+// Map layout types to Tailwind CSS grid classes (for outer container)
 $gridClass = match($layout) {
-    '2-col' => 'grid-cols-1 md:grid-cols-2',
-    '3-col' => 'grid-cols-1 md:grid-cols-3',
-    'asymmetric' => 'grid-cols-1 md:grid-cols-4 lg:grid-cols-6',
-    default => 'grid-cols-1 md:grid-cols-3'
+    'hero_split' => 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
+    'quadrant' => 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2',
+    'feature_showcase' => 'grid-cols-1 md:grid-cols-3 lg:grid-cols-4',
+    default => 'grid-cols-1 md:grid-cols-3 lg:grid-cols-4'
 };
 
-// Map spacing to gap utility classes
-$gapClass = match($spacing) {
-    'sm' => 'gap-4',
-    'md' => 'gap-8',
-    'lg' => 'gap-12',
-    'xl' => 'gap-16',
-    default => 'gap-8'
-};
-
-// Map themes to Tailwind classes (using Design System colors)
+// Map themes to Tailwind classes
 $themeContainerClass = match($theme) {
-    'oceanic' => 'bg-oceanic-dark dark text-white tech-border',
-    'accent' => 'bg-oceanic-accent dark text-white tech-border',
-    'dark' => 'bg-ink dark text-white tech-border',
-    'slate' => 'bg-slate-teal dark text-white tech-border',
-    'liberty' => 'bg-liberty-blue dark text-white tech-border',
-    'heritage' => 'bg-heritage-red dark text-white tech-border',
-    'gold' => 'bg-warm-gold text-ink tech-border',
-    'frost' => 'bg-frost-mint text-ink tech-border',
-    default => 'bg-canvas text-ink tech-border' // light
+    'oceanic' => 'bg-oceanic-dark dark text-white',
+    'accent' => 'bg-oceanic-accent dark text-white',
+    'dark' => 'bg-ink dark text-white',
+    'slate' => 'bg-slate-teal dark text-white',
+    'liberty' => 'bg-liberty-blue dark text-white',
+    'heritage' => 'bg-heritage-red dark text-white',
+    'gold' => 'bg-warm-gold text-ink',
+    'frost' => 'bg-frost-mint text-ink',
+    default => 'bg-canvas text-ink'
 };
 
 $themeCellClass = match($theme) {
-    'oceanic' => 'bg-white/5 border-white/20 shadow-xl',
-    'accent' => 'bg-white/5 border-white/20 shadow-xl',
-    'dark' => 'bg-white/5 border-white/10 shadow-xl',
-    'slate' => 'bg-white/5 border-white/20 shadow-xl',
-    'liberty' => 'bg-white/5 border-white/20 shadow-xl',
-    'heritage' => 'bg-white/5 border-white/20 shadow-xl',
-    'gold' => 'bg-white tech-border shadow-sm',
-    'frost' => 'bg-white tech-border shadow-sm',
-    default => 'bg-white tech-border shadow-sm' // light
+    'oceanic', 'accent', 'dark', 'slate', 'liberty', 'heritage' => 'bg-white/10 tech-border shadow-xl',
+    'gold', 'frost', 'light', '' => 'bg-white tech-border shadow-sm',
+    default => 'bg-white tech-border shadow-sm'
 };
+
+// Fixed gap strategy per FLUID-GLASS-BENTO-SCHEMA.md
+// Instead of margins or variable gaps, we enforce a strict --grid-gap.
 ?>
-<div class="bento-grid w-full p-6 md:p-12 transition-colors duration-500 <?= $themeContainerClass ?>">
-  <div class="grid <?= $gridClass ?> <?= $gapClass ?>">
+<style>
+.bento-container[data-bento-grid] {
+    display: grid;
+    grid-auto-rows: 240px !important;
+}
+.bento-item {
+    border-radius: 0 !important;
+    overflow: hidden;
+    position: relative;
+}
+.bento-content-wrapper {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+</style>
+
+<section class="bento-container w-full transition-colors duration-500 <?= $themeContainerClass ?> <?= $gridClass ?> grid-flow-dense gap-4 md:gap-6 p-4 md:p-6" data-bento-grid>
     <?php foreach ($block->items()->toBlocks() as $index => $item): ?>
-      <?php 
-        // Logic for asymmetric grid spanning
-        $spanClass = '';
-        if ($layout === 'asymmetric') {
-           if ($index === 0) {
-              $spanClass = 'md:col-span-2 lg:col-span-2 row-span-2'; // Tall cell
-           } elseif ($index === 1) {
-              $spanClass = 'md:col-span-2 lg:col-span-4 row-span-2'; // Wide/Hero cell
-           } elseif ($index === 2) {
-              $spanClass = 'md:col-span-2 lg:col-span-2'; // Square cell
-           } elseif ($index === 3) {
-              $spanClass = 'md:col-span-2 lg:col-span-2'; // Square cell
-           } elseif ($index === 4) {
-              $spanClass = 'md:col-span-2 lg:col-span-2'; // Square cell
-           } elseif ($index === 5) {
-              $spanClass = 'md:col-span-4 lg:col-span-3 row-span-2'; // Wide cell
-           } else {
-              $spanClass = 'md:col-span-2 lg:col-span-3'; // Default
-           }
-        }
-      ?>
-      <div class="bento-cell overflow-hidden transition-all hover:scale-[1.01] <?= $themeCellClass ?> <?= $spanClass ?>">
-        <?= snippet('blocks/bento-items/' . $item->type(), ['block' => $item, 'theme' => $theme]) ?>
-      </div>
+        <?php 
+            $colSpanClass = 'col-span-1';
+            $rowSpanClass = 'row-span-1'; 
+
+            // True staggered masonry layout
+            $pattern = $index % 7;
+            
+            if ($pattern === 0) {
+                $colSpanClass = 'md:col-span-2 lg:col-span-2';
+                $rowSpanClass = 'md:row-span-3 lg:row-span-3'; // Large, wide
+            } elseif ($pattern === 1) {
+                $colSpanClass = 'md:col-span-1 lg:col-span-1';
+                $rowSpanClass = 'md:row-span-2 lg:row-span-2'; // Tall
+            } elseif ($pattern === 2) {
+                $colSpanClass = 'md:col-span-1 lg:col-span-1';
+                $rowSpanClass = 'md:row-span-1 lg:row-span-1'; // Small
+            } elseif ($pattern === 3) {
+                $colSpanClass = 'md:col-span-1 lg:col-span-1';
+                $rowSpanClass = 'md:row-span-2 lg:row-span-2'; // Tall
+            } elseif ($pattern === 4) {
+                $colSpanClass = 'md:col-span-2 lg:col-span-2';
+                $rowSpanClass = 'md:row-span-2 lg:row-span-2'; // Wide
+            } elseif ($pattern === 5) {
+                $colSpanClass = 'md:col-span-1 lg:col-span-1';
+                $rowSpanClass = 'md:row-span-3 lg:row-span-3'; // Very tall
+            } elseif ($pattern === 6) {
+                $colSpanClass = 'md:col-span-1 lg:col-span-1';
+                $rowSpanClass = 'md:row-span-1 lg:row-span-1'; // Small
+            }
+        ?>
+        <article class="bento-item bento-cell transition-all hover:scale-[1.01] <?= $themeCellClass ?> <?= $colSpanClass ?> <?= $rowSpanClass ?>">
+            <div class="bento-content-wrapper h-full w-full">
+                <?= snippet('blocks/bento-items/' . $item->type(), ['block' => $item, 'theme' => $theme]) ?>
+            </div>
+        </article>
     <?php endforeach ?>
-  </div>
-</div>
+</section>

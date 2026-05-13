@@ -29,7 +29,7 @@
                         default => 'bg-oceanic-accent text-canvas hover:bg-oceanic-dark border-2 border-oceanic-accent hover:border-oceanic-dark'
                     };
                     ?>
-                    <a href="<?= $btn->url() ?>" class="inline-flex items-center justify-center min-h-12 px-8 py-3 rounded-full font-semibold transition-colors duration-300 <?= $styleClass ?>">
+                    <a href="<?= $btn->url() ?>" class="inline-flex items-center justify-center min-h-12 px-8 py-3  font-semibold transition-colors duration-300 <?= $styleClass ?>">
                         <?= $btn->label()->html() ?>
                     </a>
                 <?php endforeach ?>

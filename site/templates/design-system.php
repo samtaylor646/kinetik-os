@@ -2,7 +2,6 @@
 
 <!-- High-Tech Minimalist Overrides -->
 <style>
-  .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
   .pantone-chip {
     display: flex;
     flex-direction: column;
@@ -27,15 +26,9 @@
     justify-content: flex-end;
     border-top: 1px solid rgba(0,0,0,0.05);
   }
-  .tech-border {
-    border: 1px solid rgba(0,0,0,0.1);
-  }
-  .dark.tech-border {
-    border: 1px solid rgba(255,255,255,0.1);
-  }
 </style>
 
-<main class="py-32 md:py-48 px-6 md:px-16 max-w-400 mx-auto bg-canvas min-h-screen text-ink">
+<main class="py-32 md:py-48 px-6 md:px-16 max-w-[1600px] mx-auto bg-canvas min-h-screen text-ink">
   
   <header class="mb-48 border-b border-ink/10 pb-24">
     <div class="flex items-center gap-6 mb-8">

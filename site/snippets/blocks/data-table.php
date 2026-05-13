@@ -14,7 +14,7 @@ $headers = $block->headers()->toStructure()->first();
             <h3 class="text-2xl font-bold text-ink mb-6"><?= $block->heading()->html() ?></h3>
         <?php endif ?>
 
-        <div class="relative rounded-xl border border-gray-200 shadow-sm" x-data="{ scrolled: false }">
+        <div class="relative  border border-gray-200 shadow-sm" x-data="{ scrolled: false }">
             <!-- Scroll Indicator -->
             <div 
                 class="absolute right-0 top-0 bottom-0 w-8 bg-linear-to-l from-canvas to-transparent pointer-events-none transition-opacity duration-300 z-10 md:hidden"

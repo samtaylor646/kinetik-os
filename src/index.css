@@ -7,6 +7,7 @@
  */
 
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 @source "../site/**/*.php";
 @source "../content/**/*.txt";
@@ -38,20 +39,20 @@
   --spacing-airy-2xl: 14rem;          /* 224px - Hero padding */
   --spacing-airy-massive: 20rem;      /* 320px - Ultra-premium spacing */
 
-  /* TYPOGRAPHY SCALE */
+  /* TYPOGRAPHY SCALE (STRATEGY-2 INSPIRED) */
   --font-size-xs: 0.75rem;            /* 12px - Metadata */
-  --font-size-sm: 0.875rem;           /* 14px - Body small */
+  --font-size-sm: 0.9rem;             /* 14px - Label */
   --font-size-base: 1rem;             /* 16px - Body text */
   --font-size-lg: 1.125rem;           /* 18px - Lead paragraph */
   --font-size-xl: 1.25rem;            /* 20px - Subheading */
   --font-size-2xl: 1.5rem;            /* 24px - Section title */
-  --font-size-3xl: 1.875rem;          /* 30px - Page title */
-  --font-size-4xl: 2.25rem;           /* 36px - Hero headline */
-  --font-size-5xl: 3rem;              /* 48px - Statement piece */
-  --font-size-6xl: 3.75rem;           /* 60px - Massive display */
+  --font-size-3xl: 1.8rem;            /* 28px - Display text clamp min */
+  --font-size-4xl: 2.5rem;            /* 40px - Hero title clamp min */
+  --font-size-5xl: 3.2rem;            /* 51px - Display text max */
+  --font-size-6xl: 5.5rem;            /* 88px - Hero title max */
 
   /* FONT FAMILIES */
-  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-serif: 'Georgia', 'Times New Roman', serif;
   --font-mono: 'SF Mono', 'Consolas', monospace;
 }
@@ -64,6 +65,47 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+@layer utilities {
+  .section-padding {
+    padding: 12rem 2rem;
+  }
+  
+  .text-label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+  
+  .display-text {
+    font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+    line-height: 1.25;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.5rem, 9vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+}
+
+/* Fluid.Glass / Brutalist Components */
+.tech-border {
+  border: 1px solid rgba(15, 21, 27, 0.1); /* Based on ink */
+}
+.dark .tech-border,
+.dark.tech-border {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mono {
+  font-family: var(--font-mono);
 }
 
 /* Motion Lab CSS Variables for GSAP (populated later via site blueprint) */

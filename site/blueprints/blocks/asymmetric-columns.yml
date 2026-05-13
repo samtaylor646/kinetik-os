@@ -1,25 +1,27 @@
-name: Asymmetric Image
-icon: image
+name: Sticky Asymmetric Columns
+icon: columns
 preview: fields
 
 fields:
-  image:
-    label: Image
-    type: files
-    max: 1
-    layout: cards
-    
-  caption:
-    label: Caption
+  heading:
+    label: Sticky Heading
     type: text
     
+  text:
+    label: Sticky Text
+    type: writer
+    
   alignment:
-    label: Image Alignment
+    label: Sticky Column Alignment
     type: select
     options:
       left: Left Aligned
       right: Right Aligned
-    default: right
+    default: left
+    
+  media_blocks:
+    label: Scrolling Media Blocks
+    type: blocks
     
   theme:
     label: Block Theme

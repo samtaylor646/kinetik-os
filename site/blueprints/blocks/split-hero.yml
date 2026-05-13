@@ -30,6 +30,23 @@ fields:
     help: If selected, this video will loop silently in the background instead of the theme color.
     query: page.files.template('video')
     uploads: video
+
+  video_fit:
+    label: Video Fit
+    type: select
+    options:
+      cover: Crop to Fill Section (Cover)
+      contain: Fit inside Section (Contain)
+    default: cover
+
+  video_overlay_opacity:
+    label: Video Tint / Overlay Opacity
+    type: range
+    min: 0
+    max: 100
+    step: 5
+    default: 60
+    help: "Set to 0 for no color tint (original video colors). Higher values mean stronger theme color overlay."
     
   cta_text:
     label: CTA Button Text
@@ -39,6 +56,14 @@ fields:
     label: CTA Button Link
     type: url
     
+  background_width:
+    label: Background Width
+    type: select
+    options:
+      fluid: Full Width (Edge-to-Edge)
+      contained: Contained (Aligned with Grid)
+    default: fluid
+    
   theme:
     label: Theme
     type: select
@@ -46,7 +71,7 @@ fields:
       light: Light (Canvas)
       oceanic: Oceanic Dark
       dark: Dark (Ink)
-    default: light
+    default: oceanic
 
   airy_spacing:
     label: Airy Spacing

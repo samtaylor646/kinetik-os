@@ -1,17 +1,18 @@
 name: Bento Grid
-icon: grid-cell
+icon: grid
 blueprint: block
 
 fields:
   layout_type:
-    label: Grid Layout
+    label: Grid Layout Preset
     type: select
     options:
-      2-col: 2 Columns
-      3-col: 3 Columns
-      asymmetric: Asymmetric Grid
-    default: 3-col
-    
+      hero_split: Hero Split
+      quadrant: Quadrant
+      feature_showcase: Feature Showcase
+    default: feature_showcase
+    help: Select a pre-defined mathematical layout preset.
+
   theme:
     label: Block Theme
     type: select
@@ -27,16 +28,6 @@ fields:
       frost: Frost Mint
     default: light
     
-  airy_spacing:
-    label: Airy Spacing
-    type: select
-    options:
-      sm: Small (sm)
-      md: Medium (md)
-      lg: Large (lg)
-      xl: Extra Large (xl)
-    default: md
-
   items:
     label: Grid Cells
     type: blocks

@@ -1,1 +1,17 @@
 Title: Site
+
+----
+
+Description: 
+
+----
+
+Kinetik-duration: 
+
+----
+
+Kinetik-ease: power2.out
+
+----
+
+Kinetik-parallax-speed: 1

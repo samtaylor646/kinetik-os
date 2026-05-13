@@ -36,7 +36,7 @@ if ($type === 'youtube' && $url) {
     <div class="max-w-5xl mx-auto relative group cursor-pointer" @click="modalOpen = true" @keydown.enter="modalOpen = true" tabindex="0" role="button" aria-label="Play Video">
         
         <!-- Thumbnail -->
-        <div class="relative rounded-2xl overflow-hidden bg-ink aspect-video shadow-lg">
+        <div class="relative  overflow-hidden bg-ink aspect-video shadow-lg">
             <?php if ($thumbnail): ?>
                 <img 
                     src="<?= $thumbnail->url() ?>" 
@@ -50,7 +50,7 @@ if ($type === 'youtube' && $url) {
 
             <!-- Play Button -->
             <div class="absolute inset-0 flex items-center justify-center">
-                <div class="w-20 h-20 bg-oceanic-accent text-canvas rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                <div class="w-20 h-20 bg-oceanic-accent text-canvas  flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                 </div>
             </div>
@@ -84,7 +84,7 @@ if ($type === 'youtube' && $url) {
 
             <!-- Video Container -->
             <div 
-                class="relative w-full max-w-6xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl ring-1 ring-white/10"
+                class="relative w-full max-w-6xl aspect-video bg-black  overflow-hidden shadow-2xl ring-1 ring-white/10"
                 x-show="modalOpen"
                 x-transition:enter="transition ease-out duration-500"
                 x-transition:enter-start="opacity-0 scale-95"
@@ -95,7 +95,7 @@ if ($type === 'youtube' && $url) {
             >
                 <button 
                     @click="modalOpen = false" 
-                    class="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-black/80 text-white rounded-full flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-oceanic-accent"
+                    class="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-black/80 text-white  flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-oceanic-accent"
                     aria-label="Close modal"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>

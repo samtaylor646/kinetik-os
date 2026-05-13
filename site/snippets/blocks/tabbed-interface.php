@@ -47,7 +47,7 @@ $tabs = $block->tabs()->toStructure();
                     x-transition:enter="transition ease-out duration-300"
                     x-transition:enter-start="opacity-0 translate-y-2"
                     x-transition:enter-end="opacity-100 translate-y-0"
-                    class="prose prose-lg text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-oceanic-accent rounded-lg"
+                    class="prose prose-lg text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-oceanic-accent "
                 >
                     <?= $tab->content()->kirbytext() ?>
                 </div>
