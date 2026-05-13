@@ -5,6 +5,7 @@
 # Logic: Starterkit ported image blueprint for metadata
 
 title: Image
+blueprint: file
 accept:
   mime: image/jpeg, image/png, image/webp, image/svg+xml
 fields:

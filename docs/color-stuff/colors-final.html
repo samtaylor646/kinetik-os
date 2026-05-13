@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDS Master Color Guide | Final Sync</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+            /* OCEANIC (PRIMARY REPLACING FOREST GREEN) */
+            --color-oceanic-dark: #005B6D;
+            --color-oceanic-accent: #007489;
+            --color-oceanic-secondary: #218993;
+            --color-oceanic-subtle: #7A9FA7;
+
+            /* VERIFIED PALETTE (STRICT SYNC WITH COLORS-2.HTML) */
+            --color-warm-gold: #D4C19C;
+            --color-slate-teal: #4A6163;
+            --color-liberty-blue: #2E4A62;
+            --color-heritage-red: #8B3E2F;
+            --color-frost-mint: #E2F0E9;
+
+            /* NEUTRALS & UI FOUNDATION */
+            --color-ink: #0F151B;
+            --color-canvas: #FAF9F6;
+            --color-soft-smoke: #F0F0F0;
+            --color-smoke: #E5E7E9;
+        }
+
+        :root {
+            --oceanic-dark: #005B6D;
+            --warm-gold: #D4C19C;
+            --slate-teal: #4A6163;
+            --liberty-blue: #2E4A62;
+            --heritage-red: #8B3E2F;
+            --frost-mint: #E2F0E9;
+            --ink: #0F151B;
+            --canvas: #FAF9F6;
+            --soft-smoke: #F0F0F0;
+            --smoke: #E5E7E9;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--canvas); 
+            color: var(--ink); 
+            margin: 0;
+            padding: 4rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        
+        .swatch-stack { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 2.5rem; 
+            max-width: 900px; 
+            margin: 0 auto; 
+        }
+        
+        .color-row { 
+            display: grid; 
+            grid-template-columns: 80px 1fr 120px; 
+            align-items: center; 
+            gap: 2rem; 
+            padding: 1.25rem 1.5rem; 
+            background: white; 
+            border-radius: 12px; 
+            border: 1px solid rgba(0,0,0,0.06);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+        
+        .preview-box { 
+            height: 54px; 
+            width: 100%; 
+            border-radius: 8px; 
+            border: 1px solid rgba(0,0,0,0.08); 
+        }
+
+        h1, h2, h3 {
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="swatch-stack">
+        <header class="mb-8 border-b border-black/10 pb-10">
+            <h1 class="text-4xl font-bold text-[#005B6D]">Final Master Sync</h1>
+            <p class="text-sm text-black/50 mt-2 font-medium">Font Family: Inter | Source: colors-2.html</p>
+        </header>
+
+        <!-- 01. PRIMARY STRATEGY -->
+        <section class="space-y-6">
+            <h3 class="text-[11px] font-bold uppercase tracking-[0.25em] text-black/40">01. Primary (Oceanic)</h3>
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #005B6D;"></div>
+                <div>
+                    <p class="text-[15px] font-semibold">Oceanic Dark</p>
+                    <p class="text-[11px] mono text-black/40 mt-0.5">--oceanic-dark</p>
+                </div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#005B6D</p>
+            </div>
+        </section>
+
+        <!-- 02. VERIFIED CORE PALETTE -->
+        <section class="space-y-4">
+            <h3 class="text-[11px] font-bold uppercase tracking-[0.25em] text-black/40">02. Verified Palette (colors-2.html)</h3>
+            
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #D4C19C;"></div>
+                <div>
+                    <p class="text-[15px] font-semibold">Warm Gold</p>
+                    <p class="text-[11px] mono text-black/40 mt-0.5">--warm-gold</p>
+                </div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#D4C19C</p>
+            </div>
+
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #4A6163;"></div>
+                <div>
+                    <p class="text-[15px] font-semibold">Slate Teal</p>
+                    <p class="text-[11px] mono text-black/40 mt-0.5">--slate-teal</p>
+                </div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#4A6163</p>
+            </div>
+
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #2E4A62;"></div>
+                <div>
+                    <p class="text-[15px] font-semibold">Liberty Blue</p>
+                    <p class="text-[11px] mono text-black/40 mt-0.5">--liberty-blue</p>
+                </div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#2E4A62</p>
+            </div>
+
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #8B3E2F;"></div>
+                <div>
+                    <p class="text-[15px] font-semibold">Heritage Red</p>
+                    <p class="text-[11px] mono text-black/40 mt-0.5">--heritage-red</p>
+                </div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#8B3E2F</p>
+            </div>
+
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #E2F0E9;"></div>
+                <div>
+                    <p class="text-[15px] font-semibold">Frost Mint</p>
+                    <p class="text-[11px] mono text-black/40 mt-0.5">--frost-mint</p>
+                </div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#E2F0E9</p>
+            </div>
+        </section>
+
+        <!-- 03. UI FOUNDATION -->
+        <section class="space-y-4">
+            <h3 class="text-[11px] font-bold uppercase tracking-[0.25em] text-black/40">03. UI Foundation</h3>
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #0F151B;"></div>
+                <div><p class="text-[15px] font-semibold">Ink</p><p class="text-[11px] mono text-black/40 mt-0.5">--ink</p></div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#0F151B</p>
+            </div>
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #FAF9F6;"></div>
+                <div><p class="text-[15px] font-semibold">Canvas</p><p class="text-[11px] mono text-black/40 mt-0.5">--canvas</p></div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#FAF9F6</p>
+            </div>
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #F0F0F0;"></div>
+                <div><p class="text-[15px] font-semibold">Soft Smoke</p><p class="text-[11px] mono text-black/40 mt-0.5">--soft-smoke</p></div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#F0F0F0</p>
+            </div>
+            <div class="color-row">
+                <div class="preview-box" style="background-color: #E5E7E9;"></div>
+                <div><p class="text-[15px] font-semibold">Smoke</p><p class="text-[11px] mono text-black/40 mt-0.5">--smoke</p></div>
+                <p class="text-right text-[13px] mono font-medium text-black/60">#E5E7E9</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

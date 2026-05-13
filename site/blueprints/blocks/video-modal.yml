@@ -1,6 +1,7 @@
 name: Video Modal
 icon: play-circle
 preview: fields
+blueprint: block
 
 fields:
   thumbnail:
@@ -9,6 +10,8 @@ fields:
     max: 1
     layout: cards
     size: tiny
+    query: page.files.template('image')
+    uploads: image
   video_type:
     type: select
     label: Video Type
@@ -22,15 +25,15 @@ fields:
     label: Video URL
     help: Use for YouTube or Vimeo
     when:
-      video_type:
-        - youtube
-        - vimeo
+      video_type: youtube, vimeo
   video_file:
     type: files
     label: Video File
     max: 1
     layout: cards
     size: tiny
+    query: page.files.template('video')
+    uploads: video
     when:
       video_type: upload
   caption:

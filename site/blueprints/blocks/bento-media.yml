@@ -1,0 +1,13 @@
+name: Media Card
+icon: image
+blueprint: block
+
+fields:
+  image:
+    label: Media / Image
+    type: files
+    max: 1
+    layout: cards
+    size: large
+    query: page.files.template('image')
+    uploads: image

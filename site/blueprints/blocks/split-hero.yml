@@ -1,6 +1,7 @@
 name: Split Hero
 icon: header
 preview: fields
+blueprint: block
 
 fields:
   heading:
@@ -13,10 +14,22 @@ fields:
     buttons: false
     
   image:
-    label: Image
+    label: Primary Image
     type: files
     max: 1
     layout: cards
+    query: page.files.template('image')
+    uploads: image
+
+  background_video:
+    label: Background Video (Optional)
+    type: files
+    max: 1
+    layout: cards
+    size: tiny
+    help: If selected, this video will loop silently in the background instead of the theme color.
+    query: page.files.template('video')
+    uploads: video
     
   cta_text:
     label: CTA Button Text

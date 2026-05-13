@@ -1,5 +1,6 @@
 name: Bento Grid
 icon: grid-cell
+blueprint: block
 
 fields:
   layout_type:
@@ -16,8 +17,14 @@ fields:
     type: select
     options:
       light: Light (Canvas)
-      oceanic: Oceanic Dark
+      oceanic: Oceanic Prime
       dark: Dark (Ink)
+      accent: Oceanic Accent
+      slate: Slate Teal
+      liberty: Liberty Blue
+      heritage: Heritage Red
+      gold: Warm Gold
+      frost: Frost Mint
     default: light
     
   airy_spacing:
@@ -31,5 +38,10 @@ fields:
     default: md
 
   items:
-    label: Grid Items
+    label: Grid Cells
     type: blocks
+    fieldsets:
+      - bento-feature
+      - bento-media
+      - bento-stat
+      - bento-standard

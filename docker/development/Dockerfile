@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
     libzip-dev libicu-dev libonig-dev libxml2-dev sudo \
     && rm -rf /var/lib/apt/lists/*
 
-RUN docker-php-ext-install -j$(nproc) gd opcache zip intl exif
+RUN docker-php-ext-configure gd --with-webp --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd opcache zip intl exif
 
 # Opcache & JIT Activation
 RUN { \

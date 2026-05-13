@@ -9,6 +9,15 @@ declare(strict_types=1);
  * Logic: Kirby bootstrap with custom roots for public folder architecture
  */
 
+if (php_sapi_name() === 'cli-server') {
+    $uri = parse_url('http://localhost/' . ltrim($_SERVER['REQUEST_URI'], '/'), PHP_URL_PATH) ?? '/';
+    $uri = urldecode($uri);
+    $path = __DIR__ . '/' . ltrim($uri, '/');
+    if ($uri !== '/' && file_exists($path) === true) {
+        return false;
+    }
+}
+
 require dirname(__DIR__) . '/kirby/bootstrap.php';
 
 $kirby = new Kirby([

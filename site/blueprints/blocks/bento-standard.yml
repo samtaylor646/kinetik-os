@@ -1,0 +1,16 @@
+name: Standard Card
+icon: text
+
+fields:
+  image:
+    label: Media / Image
+    type: files
+    max: 1
+    layout: list
+  title:
+    label: Title
+    type: text
+  text:
+    label: Description
+    type: textarea
+    buttons: false

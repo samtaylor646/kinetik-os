@@ -1,0 +1,9 @@
+title: Design-system
+
+fields:
+  title:
+    type: text
+    label: Title
+  text:
+    type: textarea
+    label: Text

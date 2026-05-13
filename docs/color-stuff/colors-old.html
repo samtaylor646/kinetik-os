@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-in {
+            animation-fill-mode: backwards;
+            animation-duration: 500ms;
+        }
+
+        .duration-700 {
+            animation-duration: 700ms !important;
+        }
+
+        .animate-in.slide-in-from-bottom-4 {
+            animation-name: slideInFromBottom;
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(1rem);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+
+
+
+
+
+    <main class="flex-1 overflow-y-auto scroll-smooth">
+        <header
+            class="sticky top-0 bg-[#FAF9F6]/90 backdrop-blur-md z-10 border-b border-black/5 px-12 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-2 text-[10px] font-bold text-black/40 uppercase tracking-[0.2em]">
+                <span>Westport</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-right" aria-hidden="true">
+                    <path d="m9 18 6-6-6-6"></path>
+                </svg><span class="text-black">Colors</span>
+            </div>
+        </header>
+
+
+        <!-- Big Swatch Section -->
+        <!-- Pantone style big chips with name, hex, and usage. Maybe some copy about the inspiration behind the colors and how to use them. -->
+
+        <div class="max-w-5xl mx-auto px-12 py-20">
+            <section class="animate-in slide-in-from-bottom-4 duration-500">
+                <h2 class="text-3xl font-light text-[#1E392A] tracking-tight mb-4">
+                    The Palette
+                </h2>
+                <p class="text-base text-[#6A604E] font-light leading-relaxed mt-4 mb-16 max-w-2xl">
+                    High-contrast, prestigious, and deeply professional.
+                </p>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(30, 57, 42);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Primary
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Forest Green</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#1E392A</code>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(212, 193, 156);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Secondary
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Warm Gold</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#D4C19C</code>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(74, 97, 99);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Tertiary
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Slate Teal</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#4A6163</code>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(46, 74, 98);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Accent
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Liberty Blue</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#2E4A62</code>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(139, 62, 47);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Accent
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Heritage Red</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#8B3E2F</code>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(226, 240, 233);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Accent
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Frost Mint</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#E2F0E9</code>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(15, 21, 27);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Neutral
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Ink</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#0F151B</code>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(250, 249, 246);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Neutral
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Canvas</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#FAF9F6</code>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-square w-full mb-4 transition-transform group-hover:scale-[0.98] duration-300 shadow-sm border border-black/5"
+                            style="background-color: rgb(229, 231, 233);"></div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-black/40">
+                            Neutral
+                        </span>
+                        <h4 class="text-lg font-medium text-[#1E392A]">Soft Smoke</h4>
+                        <code class="text-xs text-black/40 font-mono uppercase">#E5E7E9</code>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Detailed Swatch Section -->
+        <!-- More traditional style with smaller chips, hex codes, and usage examples. -->
+
+
+        <div class="max-w-5xl mx-auto px-12 py-20">
+            <section class="animate-in fade-in slide-in-from-bottom-4 duration-700">
+                <header class="mb-16">
+                    <h2 class="text-3xl font-light tracking-tight text-[#1E392A] mb-4">Refined Palette</h2>
+                    <p class="text-base text-[#6A604E] font-light leading-relaxed mt-4 max-w-2xl">A technical color system designed for
+                        high-contrast accessibility and premium federal branding.</p>
+                </header>
+                <div class="space-y-24">
+                    <div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-px flex-1 bg-black/5"></div>
+                            <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-[#1E392A]">Primary: Forest
+                                Green</h3>
+                            <div class="h-px flex-1 bg-black/5"></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(30, 57, 42);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Base Color</h4><span
+                                            class="text-xs font-mono text-black/40">#1E392A</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-primary</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(18, 34, 25);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Shade 10</h4><span
+                                            class="text-xs font-mono text-black/40">#122219</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-primary-dark</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(75, 97, 85);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 10</h4><span
+                                            class="text-xs font-mono text-black/40">#4B6155</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-primary-light</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(142, 160, 150);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 20</h4><span
+                                            class="text-xs font-mono text-black/40">#8EA096</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">border-primary-tint</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-px flex-1 bg-black/5"></div>
+                            <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-[#D4C19C]">Secondary: Warm
+                                Gold</h3>
+                            <div class="h-px flex-1 bg-black/5"></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(212, 193, 156);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Base Color</h4><span
+                                            class="text-xs font-mono text-black/40">#D4C19C</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-gold-base</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(106, 96, 78);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Shade 10</h4><span
+                                            class="text-xs font-mono text-black/40">#6A604E</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">text-gold-dark</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(220, 205, 176);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 10</h4><span
+                                            class="text-xs font-mono text-black/40">#DCCDB0</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-gold-tint</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(242, 236, 225);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 30</h4><span
+                                            class="text-xs font-mono text-black/40">#F2ECE1</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-gold-soft</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-px flex-1 bg-black/5"></div>
+                            <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-[#4A6163]">Tertiary: Slate
+                                Teal</h3>
+                            <div class="h-px flex-1 bg-black/5"></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(74, 97, 99);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Base Color</h4><span
+                                            class="text-xs font-mono text-black/40">#4A6163</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-slate-teal</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(15, 19, 20);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Shade 20</h4><span
+                                            class="text-xs font-mono text-black/40">#0F1314</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-slate-darkest</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(110, 129, 130);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 10</h4><span
+                                            class="text-xs font-mono text-black/40">#6E8182</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">border-slate-muted</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-px flex-1 bg-black/5"></div>
+                            <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-[#2E4A62]">Accent: Liberty
+                                Blue</h3>
+                            <div class="h-px flex-1 bg-black/5"></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(46, 74, 98);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Base Color</h4><span
+                                            class="text-xs font-mono text-black/40">#2E4A62</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-liberty-blue</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(67, 92, 114);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 10</h4><span
+                                            class="text-xs font-mono text-black/40">#435C72</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-liberty-blue-90</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(151, 165, 177);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 50</h4><span
+                                            class="text-xs font-mono text-black/40">#97A5B1</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-liberty-blue-50</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-px flex-1 bg-black/5"></div>
+                            <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-[#8B3E2F]">Accent: Heritage
+                                Red</h3>
+                            <div class="h-px flex-1 bg-black/5"></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(139, 62, 47);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Base Color</h4><span
+                                            class="text-xs font-mono text-black/40">#8B3E2F</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-heritage-red</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(151, 81, 68);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 10</h4><span
+                                            class="text-xs font-mono text-black/40">#975144</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-heritage-red-90</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(197, 159, 151);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 50</h4><span
+                                            class="text-xs font-mono text-black/40">#C59F97</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-heritage-red-50</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-px flex-1 bg-black/5"></div>
+                            <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-[#E2F0E9]">Accent: Frost Mint
+                            </h3>
+                            <div class="h-px flex-1 bg-black/5"></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(226, 240, 233);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Base Color</h4><span
+                                            class="text-xs font-mono text-black/40">#E2F0E9</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-frost-mint</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(229, 242, 236);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 10</h4><span
+                                            class="text-xs font-mono text-black/40">#E5F2EC</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-frost-mint-90</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                            <div
+                                class="group flex items-center justify-between py-4 border-b border-black/5 hover:bg-black/[0.02] transition-colors px-4 -mx-4 rounded-lg">
+                                <div class="flex items-center gap-6">
+                                    <div class="w-12 h-12 rounded-sm shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(241, 248, 244);"></div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-[#1E392A]">Tint 50</h4><span
+                                            class="text-xs font-mono text-black/40">#F1F8F4</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4"><code
+                                        class="text-[11px] bg-black/5 px-3 py-1.5 rounded text-black/70 font-mono">bg-frost-mint-50</code><button
+                                        class="p-2 text-black/20 hover:text-[#1E392A] transition-colors"
+                                        title="Copy Hex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"
+                                            aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Tints & Variants Section -->
+        <!-- Generated Tints & Variants -->
+
+
+        <div class="max-w-5xl mx-auto px-12 py-20">
+            <section class="animate-in slide-in-from-bottom-4 duration-500 pb-20">
+                <div class="flex justify-between items-end mb-16">
+                    <div>
+                        <h2 class="text-3xl font-light text-[#1E392A] tracking-tight mb-4">Brand Colors &amp; Tints
+                        </h2>
+                        <p class="text-base text-[#6A604E] font-light leading-relaxed mt-4 max-w-2xl">Definitive hex values and generated
+                            variants for the Westport Partners system.</p>
+                    </div>
+                </div>
+                <div class="space-y-24">
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Forest Green</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Primary
+                                    / Identity</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(30, 57, 42);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#1E392A</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(53, 77, 63);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#354D3F</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(98, 116, 106);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#62746A</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(142, 156, 149);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#8E9C95</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(188, 195, 191);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#BCC3BF</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(233, 235, 234);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#E9EBEA</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Warm Gold</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Secondary
+                                    / Accent</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(212, 193, 156);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#D4C19C</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(216, 199, 166);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#D8C7A6</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(225, 212, 187);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#E1D4BB</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(233, 224, 206);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#E9E0CE</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(242, 237, 226);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#F2EDE2</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(250, 249, 245);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#FAF9F5</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Liberty Blue</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Accent
+                                    / Action</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(46, 74, 98);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#2E4A62</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(67, 92, 114);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#435C72</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(109, 128, 145);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#6D8091</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(151, 165, 177);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#97A5B1</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(193, 201, 208);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#C1C9D0</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(234, 236, 239);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#EAECEF</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Heritage Red</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Accent
+                                    / Alert</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(139, 62, 47);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#8B3E2F</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(151, 81, 68);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#975144</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(174, 120, 109);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#AE786D</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(197, 159, 151);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#C59F97</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(220, 197, 193);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#DCC5C1</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(243, 236, 235);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#F3ECEB</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Slate Teal</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Tertiary
+                                    / Support</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(74, 97, 99);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#4A6163</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(92, 113, 115);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#5C7173</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(128, 144, 146);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#809092</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(165, 176, 177);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#A5B0B1</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(201, 208, 209);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#C9D0D1</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(237, 240, 240);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded">#EDF0F0</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- Full Palette with Tints section -->
+        <!-- swatches include what the colors are used for and their tints -->
+
+        <div class="max-w-5xl mx-auto px-12 py-20">
+            <section class="animate-in slide-in-from-bottom-4 duration-500">
+                <div class="flex justify-between items-end mb-16">
+                    <div>
+                        <h2 class="text-3xl font-light text-[#1E392A] tracking-tight mb-4">Brand Colors</h2>
+                        <p class="text-base text-[#6A604E] font-light leading-relaxed mt-4 max-w-2xl">The official color specification for
+                            westportpartners.com.</p>
+                    </div>
+                    <div class="text-right"><span
+                            class="text-[10px] font-mono text-black/30 uppercase tracking-widest">Global CSS Vars</span>
+                        <div class="mt-2 flex gap-2">
+                            <div class="w-4 h-4 rounded-full bg-[#1E392A]"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#D4C19C]"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#4A6163]"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#2E4A62]"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#8B3E2F]"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#E2F0E9]"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#0F151B]"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#FAF9F6] border border-black/10"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#E5E7E9]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-8 pb-12">
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(30, 57, 42);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">Used for headers, primary
+                                    backgrounds, and brand marks.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Primary
+                                / Identity</span>
+                            <h4 class="text-xl font-medium text-[#1E392A] tracking-tight">Forest Green</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#1E392A</code>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(212, 193, 156);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">Used for highlights, borders,
+                                    and call-to-action details.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Secondary
+                                / Accent</span>
+                            <h4 class="text-xl font-medium text-[#1E392A] tracking-tight">Warm Gold</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#D4C19C</code>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(74, 97, 99);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">Used for secondary buttons,
+                                    icons, and status indicators.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Tertiary
+                                / Support</span>
+                            <h4 class="text-xl font-medium text-[#1E392A] tracking-tight">Slate Teal</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#4A6163</code>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(46, 74, 98);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">Used for interactive elements,
+                                    action states, and key navigation.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Accent
+                                / Action</span>
+                            <h4 class="text-xl font-medium text-[#1E392A] tracking-tight">Liberty Blue</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#2E4A62</code>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(139, 62, 47);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">Used for critical alerts,
+                                    error states, and destructive actions.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Accent
+                                / Alert</span>
+                            <h4 class="text-xl font-medium text-[#1E392A] tracking-tight">Heritage Red</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#8B3E2F</code>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(226, 240, 233);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">Used for success states,
+                                    positive trends, and subtle highlights.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Accent
+                                / Highlight</span>
+                            <h4 class="text-xl font-medium text-[#1E392A] tracking-tight">Frost Mint</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#E2F0E9</code>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(15, 21, 27);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">The deepest base for
+                                    navigation and application UI.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Neutral
+                                / Dark</span>
+                            <h4 class="text-xl font-medium text-[#1E392A] tracking-tight">Ink</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#0F151B</code>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(250, 249, 246);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">The primary surface color for
+                                    all content and reports.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Neutral
+                                / Light</span>
+                            <h4 c lass="text-xl font-medium text-[#1E392A] tracking-tight">Canvas</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#FAF9F6</code>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group cursor-pointer bg-white border border-black/10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-[380px] overflow-hidden rounded-sm hover:-translate-y-1">
+                        <div class="w-full flex-1 relative" style="background-color: rgb(229, 231, 233);">
+                            <div
+                                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 text-center backdrop-blur-sm">
+                                <p class="text-white text-sm font-medium leading-relaxed">Subtle separation for cards
+                                    and grid layouts.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 pt-5 h-[110px] flex-shrink-0">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-black/40 block mb-1">Neutral
+                                / Border</span>
+                            <h4 class="text-xl font-medium text-[#1E392A] tracking-tight">Soft Smoke</h4>
+                            <code class="text-xs text-black/50 font-mono uppercase mt-1 block">#E5E7E9</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+        <!--Section: Brand Colors & Tints-->
+
+
+        <div class="max-w-5xl mx-auto px-12 py-20">
+            <section class="animate-in slide-in-from-bottom-4 duration-500 pb-20">
+                <div class="flex justify-between items-end mb-16">
+                    <div>
+                        <h2 class="text-3xl font-light text-[#1E392A] tracking-tight mb-4">Brand Colors &amp; Tints
+                        </h2>
+                        <p class="text-base text-[#6A604E] font-light leading-relaxed mt-4 max-w-2xl">Definitive hex values and generated
+                            variants for the Westport Partners system.</p>
+                    </div>
+                </div>
+                <div class="space-y-24">
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Forest Green</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Primary
+                                    / Identity</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(30, 57, 42);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#1E392A</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(53, 77, 63);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#354D3F</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(98, 116, 106);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#62746A</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(142, 156, 149);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#8E9C95</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(188, 195, 191);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#BCC3BF</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(233, 235, 234);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Forest Green 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#E9EBEA</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Warm Gold</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Secondary
+                                    / Accent</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(212, 193, 156);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#D4C19C</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(216, 199, 166);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#D8C7A6</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(225, 212, 187);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#E1D4BB</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(233, 224, 206);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#E9E0CE</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(242, 237, 226);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#F2EDE2</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(250, 249, 245);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Warm Gold 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#FAF9F5</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Liberty Blue</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Accent
+                                    / Action</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(46, 74, 98);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#2E4A62</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(67, 92, 114);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#435C72</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(109, 128, 145);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#6D8091</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(151, 165, 177);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#97A5B1</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(193, 201, 208);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#C1C9D0</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(234, 236, 239);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Liberty Blue 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#EAECEF</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Heritage Red</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Accent
+                                    / Alert</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(139, 62, 47);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#8B3E2F</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(151, 81, 68);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#975144</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(174, 120, 109);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#AE786D</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(197, 159, 151);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#C59F97</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(220, 197, 193);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#DCC5C1</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(243, 236, 235);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Heritage Red 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#F3ECEB</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Slate Teal</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Tertiary
+                                    / Support</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(74, 97, 99);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#4A6163</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(92, 113, 115);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#5C7173</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(128, 144, 146);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#809092</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(165, 176, 177);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#A5B0B1</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(201, 208, 209);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#C9D0D1</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(237, 240, 240);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Slate Teal 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#EDF0F0</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Frost Mint</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Accent
+                                    / Highlight</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(226, 240, 233);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#E2F0E9</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(229, 242, 236);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Frost Mint 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#E5F2EC</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(235, 245, 240);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Frost Mint 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#EBF5F0</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(241, 248, 244);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Frost Mint 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#F1F8F4</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(246, 251, 249);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Frost Mint 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#F6FBF9</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(252, 253, 253);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Frost Mint 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#FCFDFD</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Ink</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Neutral
+                                    / Dark</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(15, 21, 27);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#0F151B</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(39, 44, 50);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Ink 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#272C32</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(87, 91, 95);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Ink 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#575B5F</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(135, 138, 141);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Ink 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#878A8D</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(183, 184, 186);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Ink 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#B7B8BA</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(231, 232, 232);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Ink 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#E7E8E8</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Canvas</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Neutral
+                                    / Light</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(250, 249, 246);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#FAF9F6</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(251, 251, 250);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Canvas 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#FBFBFA</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(252, 252, 251);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Canvas 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#FCFCFB</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(253, 253, 252);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Canvas 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#FDFDFC</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(254, 254, 253);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Canvas 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#FEFEFD</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(255, 255, 255);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Canvas 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#FFFFFF</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="flex items-baseline gap-4 mb-8 border-b border-black/5 pb-4">
+                            <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Soft Smoke</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/50 block mb-6">Neutral
+                                    / Border</span>
+                                <div class="w-full aspect-video shadow-sm border border-black/5 mb-6 relative group/main"
+                                    style="background-color: rgb(229, 231, 233);">
+                                    <div
+                                        class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-sm border border-black/5">
+                                        <span class="text-[10px] font-bold text-black/40 uppercase block mb-1">Base
+                                            Hex</span><code
+                                            class="text-sm font-mono font-bold text-[#1E392A] uppercase">#E5E7E9</code>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-black/60 leading-relaxed font-light">The primary anchor for this
+                                    color group. Use for dominant UI elements and structural containers.</p>
+                            </div>
+                            <div class="space-y-4"><span
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30 block mb-6">Variants
+                                    &amp; Tints</span>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(232, 233, 234);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">90%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Soft Smoke 90%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#E8E9EA</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(237, 238, 240);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">70%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Soft Smoke 70%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#EDEEF0</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(242, 243, 244);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">50%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Soft Smoke 50%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#F2F3F4</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(247, 248, 248);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">30%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Soft Smoke 30%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#F7F8F8</code>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 group/tint">
+                                    <div class="w-12 h-12 shadow-sm border border-black/5 flex-shrink-0"
+                                        style="background-color: rgb(252, 252, 252);"></div>
+                                    <div class="flex-1 flex items-center justify-between border-b border-black/5 pb-3">
+                                        <div><span
+                                                class="text-[10px] font-bold text-black/40 uppercase block">10%</span>
+                                            <h5 class="text-sm font-bold text-[#1E392A]">Soft Smoke 10%</h5>
+                                        </div><code
+                                            class="text-[11px] font-mono text-black/50 bg-black/5 px-2 py-1 rounded select-all cursor-copy hover:bg-[#D4C19C]/20 transition-colors">#FCFCFC</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        
+        
+        
+        <!-- Section Medium Swatch-->
+
+
+
+        <div class="max-w-5xl mx-auto px-12 py-20">
+            <section class="animate-in slide-in-from-bottom-4 duration-500 pb-20">
+                <div class="mb-20">
+                    <h2 class="text-4xl font-light text-[#1E392A] tracking-tight mb-6">Colors.</h2>
+                    <p class="text-lg text-[#6A604E] font-light leading-relaxed mt-4 max-w-3xl leading-relaxed">The Westport Partners color
+                        system is defined by deep, sophisticated tones that command authority while maintaining digital
+                        clarity.</p>
+                </div>
+                <div class="space-y-32">
+                    <div class="grid grid-cols-1 gap-20">
+                        <div class="group">
+                            <div class="flex items-center justify-between mb-8 border-b border-black/5 pb-6">
+                                <div>
+                                    <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Forest Green</h3>
+                                    <p class="text-sm text-black/40 mt-1">Our flagship signature color, representing
+                                        stability and growth.</p>
+                                </div>
+                                <div class="text-right"><span
+                                        class="text-[10px] font-bold uppercase tracking-widest text-black/30 block mb-1">Primary
+                                        Identity</span><code
+                                        class="text-sm font-mono font-bold text-[#1E392A]">#1E392A</code></div>
+                            </div>
+                            <div class="grid grid-cols-6 gap-4">
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(30, 57, 42);">
+                                    <div class="p-2 text-[8px] font-bold text-white/30 uppercase tracking-widest">Base
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(53, 77, 63); transition-delay: 0ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">90%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(98, 116, 106); transition-delay: 50ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">70%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(142, 156, 149); transition-delay: 100ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">50%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(188, 195, 191); transition-delay: 150ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">30%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(233, 235, 234); transition-delay: 200ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">10%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="flex items-center justify-between mb-8 border-b border-black/5 pb-6">
+                                <div>
+                                    <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Warm Gold</h3>
+                                    <p class="text-sm text-black/40 mt-1">Used for highlights, CTAs, and distinctive
+                                        branding elements.</p>
+                                </div>
+                                <div class="text-right"><span
+                                        class="text-[10px] font-bold uppercase tracking-widest text-black/30 block mb-1">Premium
+                                        Accent</span><code
+                                        class="text-sm font-mono font-bold text-[#1E392A]">#D4C19C</code></div>
+                            </div>
+                            <div class="grid grid-cols-6 gap-4">
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(212, 193, 156);">
+                                    <div class="p-2 text-[8px] font-bold text-white/30 uppercase tracking-widest">Base
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(216, 199, 166); transition-delay: 0ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">90%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(225, 212, 187); transition-delay: 50ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">70%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(233, 224, 206); transition-delay: 100ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">50%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(242, 237, 226); transition-delay: 150ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">30%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(250, 249, 245); transition-delay: 200ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">10%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="flex items-center justify-between mb-8 border-b border-black/5 pb-6">
+                                <div>
+                                    <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Liberty Blue</h3>
+                                    <p class="text-sm text-black/40 mt-1">The functional color for interaction, links,
+                                        and deep navigation.</p>
+                                </div>
+                                <div class="text-right"><span
+                                        class="text-[10px] font-bold uppercase tracking-widest text-black/30 block mb-1">Action
+                                        / Trust</span><code
+                                        class="text-sm font-mono font-bold text-[#1E392A]">#2E4A62</code></div>
+                            </div>
+                            <div class="grid grid-cols-6 gap-4">
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(46, 74, 98);">
+                                    <div class="p-2 text-[8px] font-bold text-white/30 uppercase tracking-widest">Base
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(67, 92, 114); transition-delay: 0ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">90%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(109, 128, 145); transition-delay: 50ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">70%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(151, 165, 177); transition-delay: 100ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">50%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(193, 201, 208); transition-delay: 150ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">30%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(234, 236, 239); transition-delay: 200ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">10%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="flex items-center justify-between mb-8 border-b border-black/5 pb-6">
+                                <div>
+                                    <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Heritage Red</h3>
+                                    <p class="text-sm text-black/40 mt-1">Reserved for error states, destructive
+                                        actions, and critical alerts.</p>
+                                </div>
+                                <div class="text-right"><span
+                                        class="text-[10px] font-bold uppercase tracking-widest text-black/30 block mb-1">Alert
+                                        / Critical</span><code
+                                        class="text-sm font-mono font-bold text-[#1E392A]">#8B3E2F</code></div>
+                            </div>
+                            <div class="grid grid-cols-6 gap-4">
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(139, 62, 47);">
+                                    <div class="p-2 text-[8px] font-bold text-white/30 uppercase tracking-widest">Base
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(151, 81, 68); transition-delay: 0ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">90%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(174, 120, 109); transition-delay: 50ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">70%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(197, 159, 151); transition-delay: 100ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">50%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(220, 197, 193); transition-delay: 150ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">30%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(243, 236, 235); transition-delay: 200ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">10%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="flex items-center justify-between mb-8 border-b border-black/5 pb-6">
+                                <div>
+                                    <h3 class="text-3xl font-light text-[#1E392A] tracking-tight">Slate Teal</h3>
+                                    <p class="text-sm text-black/40 mt-1">A sophisticated neutral for secondary
+                                        information and iconography.</p>
+                                </div>
+                                <div class="text-right"><span
+                                        class="text-[10px] font-bold uppercase tracking-widest text-black/30 block mb-1">Support
+                                        / Depth</span><code
+                                        class="text-sm font-mono font-bold text-[#1E392A]">#4A6163</code></div>
+                            </div>
+                            <div class="grid grid-cols-6 gap-4">
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(74, 97, 99);">
+                                    <div class="p-2 text-[8px] font-bold text-white/30 uppercase tracking-widest">Base
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(92, 113, 115); transition-delay: 0ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">90%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(128, 144, 146); transition-delay: 50ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">70%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(165, 176, 177); transition-delay: 100ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">50%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(201, 208, 209); transition-delay: 150ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">30%
+                                    </div>
+                                </div>
+                                <div class="col-span-1 h-32 shadow-sm border border-black/5 group-hover:translate-y-[-4px] transition-transform duration-300"
+                                    style="background-color: rgb(237, 240, 240); transition-delay: 200ms;">
+                                    <div class="p-2 text-[8px] font-bold text-black/20 uppercase tracking-widest">10%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-[#D4C19C] mb-12">Surface &amp;
+                            Foundation</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-white p-8 border border-black/5 shadow-sm">
+                                <div class="w-12 h-12 mb-6 border border-black/5 shadow-inner"
+                                    style="background-color: rgb(15, 21, 27);"></div>
+                                <h5 class="text-lg font-medium text-[#1E392A] mb-2">Ink Black</h5><code
+                                    class="text-xs font-mono text-[#D4C19C] block mb-4">#0F151B</code>
+                                <p class="text-[13px] text-black/60 leading-relaxed">Primary text, deep backgrounds,
+                                    sidebar navigation.</p>
+                            </div>
+                            <div class="bg-white p-8 border border-black/5 shadow-sm">
+                                <div class="w-12 h-12 mb-6 border border-black/5 shadow-inner"
+                                    style="background-color: rgb(250, 249, 246);"></div>
+                                <h5 class="text-lg font-medium text-[#1E392A] mb-2">Canvas White</h5><code
+                                    class="text-xs font-mono text-[#D4C19C] block mb-4">#FAF9F6</code>
+                                <p class="text-[13px] text-black/60 leading-relaxed">Main application background,
+                                    minimalist canvas.</p>
+                            </div>
+                            <div class="bg-white p-8 border border-black/5 shadow-sm">
+                                <div class="w-12 h-12 mb-6 border border-black/5 shadow-inner"
+                                    style="background-color: rgb(229, 231, 235);"></div>
+                                <h5 class="text-lg font-medium text-[#1E392A] mb-2">Stone Grey</h5><code
+                                    class="text-xs font-mono text-[#D4C19C] block mb-4">#E5E7EB</code>
+                                <p class="text-[13px] text-black/60 leading-relaxed">Dividers, borders, and subtle
+                                    structural elements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+        <!-- Section: Alerts and Status -->
+
+        <div class="max-w-5xl mx-auto px-12 py-20">
+            <section class="animate-in slide-in-from-bottom-4 duration-500 pb-20">
+                <h2 class="text-3xl font-light text-[#1E392A] tracking-tight mb-4">Alerts &amp; Status</h2>
+                <p class="text-base text-[#6A604E] font-light leading-relaxed mt-4 mb-16 max-w-2xl italic">A system for communicating feedback,
+                    urgency, and operational states across the Westport Partners environment.</p>
+                <div class="space-y-24">
+                    <div>
+                        <h3
+                            class="text-xs font-bold uppercase tracking-[0.3em] text-black/40 mb-10 border-b border-black/5 pb-4">
+                            Standard Badges</h3>
+                        <div class="flex flex-wrap gap-6">
+                            <div class="flex flex-col items-center gap-3"><span
+                                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full"
+                                    style="background-color: rgb(234, 240, 237); color: rgb(45, 90, 67); border: 1px solid rgba(45, 90, 67, 0.125);">Completed</span><span
+                                    class="text-[10px] font-mono text-black/30">Success</span></div>
+                            <div class="flex flex-col items-center gap-3"><span
+                                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full"
+                                    style="background-color: rgb(243, 236, 235); color: rgb(139, 62, 47); border: 1px solid rgba(139, 62, 47, 0.125);">Failed</span><span
+                                    class="text-[10px] font-mono text-black/30">Error</span></div>
+                            <div class="flex flex-col items-center gap-3"><span
+                                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full"
+                                    style="background-color: rgb(249, 244, 235); color: rgb(201, 142, 61); border: 1px solid rgba(201, 142, 61, 0.125);">Pending</span><span
+                                    class="text-[10px] font-mono text-black/30">Warning</span></div>
+                            <div class="flex flex-col items-center gap-3"><span
+                                    class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full"
+                                    style="background-color: rgb(234, 236, 239); color: rgb(46, 74, 98); border: 1px solid rgba(46, 74, 98, 0.125);">New
+                                    Update</span><span class="text-[10px] font-mono text-black/30">Information</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="text-xs font-bold uppercase tracking-[0.3em] text-black/40 mb-10 border-b border-black/5 pb-4">
+                            Banner Notifications</h3>
+                        <div class="space-y-6">
+                            <div class="p-6 border-l-4 flex items-start gap-4 shadow-sm"
+                                style="background-color: rgb(234, 240, 237); border-left-color: rgb(45, 90, 67);">
+                                <div style="color: rgb(45, 90, 67);"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                        height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-circle-check" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg></div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-widest mb-1"
+                                        style="color: rgb(45, 90, 67);">Success Event</h4>
+                                    <p class="text-sm text-black/70 font-medium leading-relaxed">System authorization
+                                        successful. All project permissions have been updated for the current cycle.</p>
+                                </div>
+                            </div>
+                            <div class="p-6 border-l-4 flex items-start gap-4 shadow-sm"
+                                style="background-color: rgb(243, 236, 235); border-left-color: rgb(139, 62, 47);">
+                                <div style="color: rgb(139, 62, 47);"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                        height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-circle-x" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m15 9-6 6"></path>
+                                        <path d="m9 9 6 6"></path>
+                                    </svg></div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-widest mb-1"
+                                        style="color: rgb(139, 62, 47);">Error Event</h4>
+                                    <p class="text-sm text-black/70 font-medium leading-relaxed">Critical failure
+                                        detected in the data pipeline. Please re-authenticate your secure credentials.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-6 border-l-4 flex items-start gap-4 shadow-sm"
+                                style="background-color: rgb(249, 244, 235); border-left-color: rgb(201, 142, 61);">
+                                <div style="color: rgb(201, 142, 61);"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-triangle-alert" aria-hidden="true">
+                                        <path
+                                            d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3">
+                                        </path>
+                                        <path d="M12 9v4"></path>
+                                        <path d="M12 17h.01"></path>
+                                    </svg></div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-widest mb-1"
+                                        style="color: rgb(201, 142, 61);">Warning Event</h4>
+                                    <p class="text-sm text-black/70 font-medium leading-relaxed">Your account
+                                        subscription is set to expire in 7 days. Please review contract details to avoid
+                                        service gaps.</p>
+                                </div>
+                            </div>
+                            <div class="p-6 border-l-4 flex items-start gap-4 shadow-sm"
+                                style="background-color: rgb(234, 236, 239); border-left-color: rgb(46, 74, 98);">
+                                <div style="color: rgb(46, 74, 98);"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                        height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-info" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 16v-4"></path>
+                                        <path d="M12 8h.01"></path>
+                                    </svg></div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-widest mb-1"
+                                        style="color: rgb(46, 74, 98);">Information Event</h4>
+                                    <p class="text-sm text-black/70 font-medium leading-relaxed">A new federal
+                                        guidelines report has been uploaded to the shared repository for your review.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="text-xs font-bold uppercase tracking-[0.3em] text-black/40 mb-10 border-b border-black/5 pb-4">
+                            Toast Notifications</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div
+                                class="bg-[#0F151B] p-6 flex items-center justify-between border border-white/10 shadow-2xl relative overflow-hidden">
+                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#2D5A43]"></div>
+                                <div class="flex items-center gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-circle-check text-[#2D5A43]" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg><span class="text-white text-sm font-medium tracking-tight">Changes saved
+                                        successfully</span></div><button
+                                    class="text-white/30 hover:text-white transition-colors"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-circle-x" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m15 9-6 6"></path>
+                                        <path d="m9 9 6 6"></path>
+                                    </svg></button>
+                            </div>
+                            <div
+                                class="bg-[#FAF9F6] p-6 flex items-center justify-between border border-black/10 shadow-xl relative overflow-hidden">
+                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#8B3E2F]"></div>
+                                <div class="flex items-center gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-circle-alert text-[#8B3E2F]" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" x2="12" y1="8" y2="12"></line>
+                                        <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                                    </svg><span class="text-[#1E392A] text-sm font-bold tracking-tight">Upload
+                                        interrupted</span></div><button
+                                    class="text-black/20 hover:text-black transition-colors"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-circle-x" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m15 9-6 6"></path>
+                                        <path d="m9 9 6 6"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

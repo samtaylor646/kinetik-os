@@ -1,0 +1,15 @@
+name: Stat Card
+icon: chart
+
+fields:
+  stat:
+    label: Statistic (e.g. 99.9%)
+    type: text
+    width: 1/2
+  label:
+    label: Label
+    type: text
+    width: 1/2
+  text:
+    label: Additional Context
+    type: text
