@@ -550,7 +550,7 @@ CLOUDFRONT_URL=https://[distribution].cloudfront.net
 - [ ] PHP 8.4 with JIT tracing enabled (`opcache.jit=tracing`)
 - [ ] Vite HMR active on port 3000 with live reload
 - [ ] Kirby Panel accessible at `http://localhost:8000/panel`
-- [ ] All 13 blocks available in Panel block selector
+- [ ] All 18 blocks available in Panel block selector
 
 ### 10.2 Design System Integrity
 

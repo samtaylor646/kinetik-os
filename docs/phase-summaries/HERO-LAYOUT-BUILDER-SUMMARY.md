@@ -41,4 +41,4 @@ We successfully transitioned from monolithic, rigid Hero blocks to a highly flex
 
 ## Next Steps
 - Implement the GSAP "Motion-G" logic to tie into the `data-motion="reveal"` tags added to the layout rows.
-- Continue expanding the block library based on the 13-block PRD specification.
+- Continue expanding the block library based on the 18-block PRD specification.

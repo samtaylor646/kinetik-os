@@ -713,7 +713,7 @@ tabs:
 
 **Owner:** All Agents  
 **Deliverables:**
-- [ ] All 13 blocks tested in Panel
+- [ ] All 18 blocks tested in Panel
 - [ ] Cross-browser testing complete
 - [ ] Mobile testing on real devices
 - [ ] Bug fixes implemented
@@ -1025,7 +1025,7 @@ aws route53 change-resource-record-sets \
 **Owner:** All Agents  
 **Deliverables:**
 - [ ] Homepage loads successfully
-- [ ] All 13 blocks render correctly
+- [ ] All 18 blocks render correctly
 - [ ] Kirby Panel accessible
 - [ ] Media uploads work
 - [ ] Performance metrics verified
@@ -1033,7 +1033,7 @@ aws route53 change-resource-record-sets \
 **Smoke Test Checklist:**
 - [ ] Homepage: https://[domain]
 - [ ] Panel: https://[domain]/panel
-- [ ] Create test page with all 13 blocks
+- [ ] Create test page with all 18 blocks
 - [ ] Upload test image
 - [ ] Verify CloudFront serves assets
 - [ ] Check EFS volume persistence

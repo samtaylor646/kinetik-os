@@ -28,7 +28,7 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 |-----------|----------------|----------|
 | Launch boutique CMS platform | Production deployment to AWS | 6 weeks |
 | Achieve 90+ Lighthouse scores | All pages ≥ 90 performance | Week 5 |
-| Build 13-block component library | All blocks functional in Panel | Week 4 |
+| Build 18-block component library | All blocks functional in Panel | Week 4 |
 | Enable one-click local development | DevContainer operational | Week 1 |
 | Zero security vulnerabilities | OWASP scan clean | Week 6 |
 
@@ -67,7 +67,7 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 
 **Core Features:**
 - ✅ Kirby 5.4 flat-file CMS with custom blueprints
-- ✅ 13-block boutique component library
+- ✅ 18-block boutique component library
 - ✅ Tailwind 4 CSS-first design token system
 - ✅ GSAP 3.12.5 physics-based animations
 - ✅ Alpine.js 3.14 reactive UI components
@@ -846,7 +846,7 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
    
    **ONGOING (Post-Launch - All Projects):**
    - All future content managed via Kirby Panel (no technical skills required)
-   - Content editors use drag-and-drop block builder with 13-block library
+   - Content editors use drag-and-drop block builder with 18-block library
    - Export to JSON available for backup/archival purposes if needed
 
 4. **Timeline:**
@@ -892,7 +892,7 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 | **Content Editor Onboarding** | < 30 minutes | User testing sessions |
 | **Page Creation Time** | < 10 minutes | Analytics tracking |
 | **Panel Login Success Rate** | ≥ 95% | Server logs |
-| **Block Usage Distribution** | All 13 blocks used | Panel analytics |
+| **Block Usage Distribution** | All 18 blocks used | Panel analytics |
 
 ### 8.3 Performance Metrics (Ongoing)
 

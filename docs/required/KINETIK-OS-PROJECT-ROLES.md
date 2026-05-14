@@ -432,7 +432,7 @@ window.Alpine = Alpine;
 
 - Tailwind 4 @theme token architecture
 - Design system documentation
-- Component library curation (13-block shopping list)
+- Component library curation (18-block shopping list)
 - Lucide SVG icon integration
 - Recursive slot logic for Bento Grid
 - Typography scale definition
