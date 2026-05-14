@@ -31,8 +31,13 @@ We successfully transitioned from monolithic, rigid Hero blocks to a highly flex
 - Introduced a **Backdrop Tint (Glass Effect)** setting utilizing Tailwind's `backdrop-blur-md` and `bg-opacity` to make text perfectly legible over complex background videos without requiring a solid color block.
 - Implemented unified alignment controls that align both the text and the buttons simultaneously.
 
-### 5. Documentation
-- Authored `docs/architecture/HERO-COMPOSITION-GUIDE.md` to instruct the DX-Curator on how to combine Layout Rows + the Hero Content Block to generate Centered, Split, and Minimalist Heroes.
+### 5. Subgrid Block (Nested Layouts)
+- Developed a `subgrid` block that acts as a container for nested layouts, achieving "Zero One" style complexity natively.
+- By dropping the Subgrid block inside a primary layout row, editors can create 3-column splits (or other fractional subdivisions) that seamlessly inherit the master row's background video/image.
+- Resolved panel UI bugs by ensuring `preview: fields` is stripped, allowing Kirby's native layout UI to handle nested column manipulation beautifully.
+
+### 6. Documentation
+- Authored `docs/architecture/HERO-COMPOSITION-GUIDE.md` to instruct the DX-Curator on how to combine Layout Rows + the Hero Content Block + Subgrids to generate Centered, Split, and Minimalist Heroes.
 
 ## Next Steps
 - Implement the GSAP "Motion-G" logic to tie into the `data-motion="reveal"` tags added to the layout rows.

@@ -15,6 +15,7 @@ layouts:
   - "1/5, 1/5, 1/5, 1/5, 1/5"
 fieldsets:
   - hero-content
+  - subgrid
   - section-header
   - split-hero
   - feature-grid
