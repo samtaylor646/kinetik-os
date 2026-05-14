@@ -1,9 +1,0 @@
-Title: Employment (Sandbox)
-
-----
-
-Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>Welcome to the Kinetik OS Sandbox. This page is built using the robust layout builder and utilizes the Fluid Glass design principles.</p>"},"id":"123","isHidden":false,"type":"text"}],"id":"col1","width":"1/1"}],"id":"fe62c5e0-9143-4740-852d-87940093371c"}]
-
-----
-
-Uuid: v90hbatjeppzok2p

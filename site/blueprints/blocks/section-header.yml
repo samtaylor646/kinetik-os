@@ -29,10 +29,11 @@ fields:
     label: Theme
     type: select
     options:
+      transparent: Transparent (Inherit Row Color)
       light: Light (Canvas)
       oceanic: Oceanic Dark
       dark: Dark (Ink)
-    default: light
+    default: transparent
 
   airy_spacing:
     label: Airy Spacing

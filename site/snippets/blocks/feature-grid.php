@@ -16,21 +16,21 @@ $gridClass = match($columns) {
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 <?= $gridClass ?> gap-airy-sm sm:gap-airy-md">
             <?php foreach ($block->features()->toStructure() as $feature): ?>
-                <div class="feature-item p-6  bg-black/5 dark:bg-white/5 transition-transform hover:-translate-y-1">
+                <div class="feature-item p-8 tech-border bg-white dark:bg-white/5 transition-transform hover:-translate-y-1">
                     <?php if ($feature->icon()->isNotEmpty()): ?>
-                        <div class="w-12 h-12 mb-6  bg-oceanic-accent text-white flex items-center justify-center">
+                        <div class="w-12 h-12 mb-8 bg-oceanic-accent text-white flex items-center justify-center">
                             <?= $feature->icon()->toIcon() ?>
                         </div>
                     <?php endif; ?>
                     
                     <?php if ($feature->title()->isNotEmpty()): ?>
-                        <h3 class="text-xl font-bold mb-3">
+                        <h3 class="text-xl font-medium mb-4 mono">
                             <?= $feature->title()->html() ?>
                         </h3>
                     <?php endif; ?>
                     
                     <?php if ($feature->description()->isNotEmpty()): ?>
-                        <div class="text-base opacity-80 prose">
+                        <div class="text-base opacity-70 prose">
                             <?= $feature->description()->kt() ?>
                         </div>
                     <?php endif; ?>

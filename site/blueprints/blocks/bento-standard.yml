@@ -1,12 +1,24 @@
+# Path: /site/blueprints/blocks/bento-standard.yml
+# Filename: bento-standard.yml | Version: v7.8.0
+# Agent: Architect-K
+# Status: Production
+# Logic: Standard card for Bento Grid with WCAG compliant media handling
+
 name: Standard Card
 icon: text
+preview: fields
+blueprint: block
 
 fields:
   image:
-    label: Media / Image
+    label: Media (Image or Video)
     type: files
     max: 1
     layout: list
+  alt_text:
+    label: Contextual Alt Text
+    type: text
+    help: Provide descriptive text if the media is informative (WCAG). Leave blank if purely decorative (will output alt=""). Overrides file-level alt text.
   title:
     label: Title
     type: text

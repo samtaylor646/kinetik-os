@@ -11,6 +11,14 @@ tabs:
     label: Pages
     icon: text
     sections:
+      drafts:
+        headline: Drafts
+        type: pages
+        status: draft
+        layout: list
+        templates:
+          - default
+          - sandbox
       listed:
         headline: Main Pages
         type: pages

@@ -1,0 +1,974 @@
+[Wed May 13 03:55:57 2026] PHP 8.4.21 Development Server (http://0.0.0.0:8001) started
+[Wed May 13 03:55:58 2026] 127.0.0.1:42232 Accepted
+[Wed May 13 03:55:58 2026] 127.0.0.1:42232 Closing
+/bin/sh: 1: kill: No such process
+
+[Wed May 13 03:56:02 2026] 127.0.0.1:54190 Accepted
+[Wed May 13 03:56:02 2026] 127.0.0.1:54190 Closing
+[Wed May 13 03:56:02 2026] 127.0.0.1:54196 Accepted
+[Wed May 13 03:56:02 2026] 127.0.0.1:54198 Accepted
+[Wed May 13 03:56:02 2026] 127.0.0.1:54196 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:56:02 2026] 127.0.0.1:54198 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:56:02 2026] 127.0.0.1:54196 Closing
+[Wed May 13 03:56:02 2026] 127.0.0.1:54198 Closing
+[Wed May 13 03:56:02 2026] 127.0.0.1:54204 Accepted
+[Wed May 13 03:56:02 2026] 127.0.0.1:54204 Closing
+[Wed May 13 03:56:13 2026] 127.0.0.1:58612 Accepted
+[Wed May 13 03:56:13 2026] 127.0.0.1:58612 Closing
+[Wed May 13 03:56:13 2026] 127.0.0.1:58614 Accepted
+[Wed May 13 03:56:13 2026] 127.0.0.1:58614 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:56:13 2026] 127.0.0.1:58614 Closing
+[Wed May 13 03:56:13 2026] 127.0.0.1:58620 Accepted
+[Wed May 13 03:56:13 2026] 127.0.0.1:58620 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:56:13 2026] 127.0.0.1:58620 Closing
+[Wed May 13 03:56:45 2026] 127.0.0.1:56082 Accepted
+[Wed May 13 03:56:45 2026] 127.0.0.1:56082 Closing
+[Wed May 13 03:56:45 2026] 127.0.0.1:56086 Accepted
+[Wed May 13 03:56:45 2026] 127.0.0.1:56088 Accepted
+[Wed May 13 03:56:45 2026] 127.0.0.1:56086 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:56:45 2026] 127.0.0.1:56088 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:56:45 2026] 127.0.0.1:56086 Closing
+[Wed May 13 03:56:45 2026] 127.0.0.1:56088 Closing
+[Wed May 13 03:57:53 2026] 127.0.0.1:35718 Accepted
+[Wed May 13 03:57:53 2026] 127.0.0.1:35718 Closing
+[Wed May 13 03:57:53 2026] 127.0.0.1:35734 Accepted
+[Wed May 13 03:57:53 2026] 127.0.0.1:35744 Accepted
+[Wed May 13 03:57:53 2026] 127.0.0.1:35734 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:57:53 2026] 127.0.0.1:35744 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:57:53 2026] 127.0.0.1:35734 Closing
+[Wed May 13 03:57:53 2026] 127.0.0.1:35744 Closing
+[Wed May 13 03:57:58 2026] 127.0.0.1:35752 Accepted
+[Wed May 13 03:57:58 2026] 127.0.0.1:35752 Closing
+[Wed May 13 03:57:58 2026] 127.0.0.1:35760 Accepted
+[Wed May 13 03:57:58 2026] 127.0.0.1:35772 Accepted
+[Wed May 13 03:57:58 2026] 127.0.0.1:35760 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:57:58 2026] 127.0.0.1:35772 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:57:58 2026] 127.0.0.1:35760 Closing
+[Wed May 13 03:57:58 2026] 127.0.0.1:35772 Closing
+[Wed May 13 03:58:00 2026] 127.0.0.1:35786 Accepted
+[Wed May 13 03:58:00 2026] 127.0.0.1:35786 Closing
+[Wed May 13 03:58:00 2026] 127.0.0.1:35794 Accepted
+[Wed May 13 03:58:00 2026] 127.0.0.1:35804 Accepted
+[Wed May 13 03:58:00 2026] 127.0.0.1:35794 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:58:00 2026] 127.0.0.1:35804 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:58:00 2026] 127.0.0.1:35794 Closing
+[Wed May 13 03:58:00 2026] 127.0.0.1:35804 Closing
+[Wed May 13 03:58:22 2026] 127.0.0.1:42226 Accepted
+[Wed May 13 03:58:22 2026] 127.0.0.1:42226 Closing
+[Wed May 13 03:58:22 2026] 127.0.0.1:42238 Accepted
+[Wed May 13 03:58:22 2026] 127.0.0.1:42238 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:58:22 2026] 127.0.0.1:42238 Closing
+[Wed May 13 03:58:22 2026] 127.0.0.1:42246 Accepted
+[Wed May 13 03:58:22 2026] 127.0.0.1:42246 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:58:22 2026] 127.0.0.1:42246 Closing
+[Wed May 13 03:58:26 2026] 127.0.0.1:42258 Accepted
+[Wed May 13 03:58:26 2026] 127.0.0.1:42258 Closing
+[Wed May 13 03:58:26 2026] 127.0.0.1:42272 Accepted
+[Wed May 13 03:58:26 2026] 127.0.0.1:42272 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:58:26 2026] 127.0.0.1:42272 Closing
+[Wed May 13 03:58:26 2026] 127.0.0.1:42286 Accepted
+[Wed May 13 03:58:26 2026] 127.0.0.1:42286 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:58:26 2026] 127.0.0.1:42286 Closing
+[Wed May 13 03:59:24 2026] 127.0.0.1:45314 Accepted
+[Wed May 13 03:59:24 2026] 127.0.0.1:45314 Closing
+[Wed May 13 03:59:24 2026] 127.0.0.1:45328 Accepted
+[Wed May 13 03:59:24 2026] 127.0.0.1:45332 Accepted
+[Wed May 13 03:59:24 2026] 127.0.0.1:45328 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:59:24 2026] 127.0.0.1:45332 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:59:24 2026] 127.0.0.1:45328 Closing
+[Wed May 13 03:59:24 2026] 127.0.0.1:45332 Closing
+[Wed May 13 03:59:26 2026] 127.0.0.1:45344 Accepted
+[Wed May 13 03:59:26 2026] 127.0.0.1:45344 Closing
+[Wed May 13 03:59:26 2026] 127.0.0.1:45356 Accepted
+[Wed May 13 03:59:26 2026] 127.0.0.1:45368 Accepted
+[Wed May 13 03:59:26 2026] 127.0.0.1:45356 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:59:26 2026] 127.0.0.1:45368 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:59:26 2026] 127.0.0.1:45356 Closing
+[Wed May 13 03:59:26 2026] 127.0.0.1:45368 Closing
+[Wed May 13 03:59:27 2026] 127.0.0.1:45384 Accepted
+[Wed May 13 03:59:27 2026] 127.0.0.1:45384 Closing
+[Wed May 13 03:59:27 2026] 127.0.0.1:45388 Accepted
+[Wed May 13 03:59:27 2026] 127.0.0.1:45388 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:59:27 2026] 127.0.0.1:45388 Closing
+[Wed May 13 03:59:27 2026] 127.0.0.1:45400 Accepted
+[Wed May 13 03:59:27 2026] 127.0.0.1:45400 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:59:27 2026] 127.0.0.1:45400 Closing
+[Wed May 13 03:59:28 2026] 127.0.0.1:45412 Accepted
+[Wed May 13 03:59:28 2026] 127.0.0.1:45412 Closing
+[Wed May 13 03:59:28 2026] 127.0.0.1:45424 Accepted
+[Wed May 13 03:59:28 2026] 127.0.0.1:45428 Accepted
+[Wed May 13 03:59:28 2026] 127.0.0.1:45428 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:59:28 2026] 127.0.0.1:45428 Closing
+[Wed May 13 03:59:28 2026] 127.0.0.1:45424 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:59:28 2026] 127.0.0.1:45424 Closing
+[Wed May 13 03:59:29 2026] 127.0.0.1:45432 Accepted
+[Wed May 13 03:59:29 2026] 127.0.0.1:45432 Closing
+[Wed May 13 03:59:29 2026] 127.0.0.1:45436 Accepted
+[Wed May 13 03:59:29 2026] 127.0.0.1:45450 Accepted
+[Wed May 13 03:59:29 2026] 127.0.0.1:45436 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:59:29 2026] 127.0.0.1:45450 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:59:29 2026] 127.0.0.1:45436 Closing
+[Wed May 13 03:59:29 2026] 127.0.0.1:45450 Closing
+[Wed May 13 03:59:30 2026] 127.0.0.1:45460 Accepted
+[Wed May 13 03:59:30 2026] 127.0.0.1:45460 Closing
+[Wed May 13 03:59:30 2026] 127.0.0.1:45470 Accepted
+[Wed May 13 03:59:30 2026] 127.0.0.1:45470 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 03:59:30 2026] 127.0.0.1:45474 Accepted
+[Wed May 13 03:59:30 2026] 127.0.0.1:45470 Closing
+[Wed May 13 03:59:30 2026] 127.0.0.1:45474 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 03:59:30 2026] 127.0.0.1:45474 Closing
+[Wed May 13 03:59:34 2026] 127.0.0.1:48376 Accepted
+[Wed May 13 04:25:41 2026] 127.0.0.1:51318 Accepted
+[Wed May 13 04:28:13 2026] 127.0.0.1:43186 Accepted
+[Wed May 13 04:28:32 2026] 127.0.0.1:53520 Accepted
+[Wed May 13 04:28:40 2026] 127.0.0.1:33844 Accepted
+[Wed May 13 04:28:40 2026] 127.0.0.1:33844 Closing
+[Wed May 13 04:28:40 2026] 127.0.0.1:33858 Accepted
+[Wed May 13 04:28:40 2026] 127.0.0.1:33858 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:28:40 2026] 127.0.0.1:33858 Closing
+[Wed May 13 04:28:40 2026] 127.0.0.1:33868 Accepted
+[Wed May 13 04:28:40 2026] 127.0.0.1:33868 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:28:40 2026] 127.0.0.1:33868 Closing
+[Wed May 13 04:28:46 2026] 127.0.0.1:33880 Accepted
+[Wed May 13 04:28:46 2026] 127.0.0.1:33880 Closing
+[Wed May 13 04:29:42 2026] 127.0.0.1:43326 Accepted
+[Wed May 13 04:29:42 2026] 127.0.0.1:43326 Closing
+[Wed May 13 04:29:42 2026] 127.0.0.1:43336 Accepted
+[Wed May 13 04:29:42 2026] 127.0.0.1:43348 Accepted
+[Wed May 13 04:29:42 2026] 127.0.0.1:43336 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:29:42 2026] 127.0.0.1:43348 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:29:42 2026] 127.0.0.1:43336 Closing
+[Wed May 13 04:29:42 2026] 127.0.0.1:43348 Closing
+[Wed May 13 04:30:39 2026] 127.0.0.1:60050 Accepted
+[Wed May 13 04:30:39 2026] 127.0.0.1:60050 Closing
+[Wed May 13 04:30:39 2026] 127.0.0.1:60062 Accepted
+[Wed May 13 04:30:39 2026] 127.0.0.1:60072 Accepted
+[Wed May 13 04:30:39 2026] 127.0.0.1:60062 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:30:39 2026] 127.0.0.1:60072 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:30:39 2026] 127.0.0.1:60062 Closing
+[Wed May 13 04:30:39 2026] 127.0.0.1:60072 Closing
+[Wed May 13 04:30:43 2026] 127.0.0.1:60074 Accepted
+[Wed May 13 04:30:43 2026] 127.0.0.1:60074 Closing
+[Wed May 13 04:30:43 2026] 127.0.0.1:60086 Accepted
+[Wed May 13 04:30:43 2026] 127.0.0.1:60086 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:30:43 2026] 127.0.0.1:60096 Accepted
+[Wed May 13 04:30:43 2026] 127.0.0.1:60086 Closing
+[Wed May 13 04:30:43 2026] 127.0.0.1:60096 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:30:43 2026] 127.0.0.1:60096 Closing
+[Wed May 13 04:30:44 2026] 127.0.0.1:60098 Accepted
+[Wed May 13 04:30:44 2026] 127.0.0.1:60098 Closing
+[Wed May 13 04:30:44 2026] 127.0.0.1:60104 Accepted
+[Wed May 13 04:30:44 2026] 127.0.0.1:60104 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:30:44 2026] 127.0.0.1:60104 Closing
+[Wed May 13 04:30:44 2026] 127.0.0.1:60108 Accepted
+[Wed May 13 04:30:44 2026] 127.0.0.1:60108 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:30:44 2026] 127.0.0.1:60108 Closing
+[Wed May 13 04:30:45 2026] 127.0.0.1:60122 Accepted
+[Wed May 13 04:30:45 2026] 127.0.0.1:60122 Closing
+[Wed May 13 04:30:45 2026] 127.0.0.1:60134 Accepted
+[Wed May 13 04:30:45 2026] 127.0.0.1:60134 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:30:45 2026] 127.0.0.1:60134 Closing
+[Wed May 13 04:30:45 2026] 127.0.0.1:60136 Accepted
+[Wed May 13 04:30:45 2026] 127.0.0.1:60136 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:30:45 2026] 127.0.0.1:60136 Closing
+[Wed May 13 04:30:46 2026] 127.0.0.1:60144 Accepted
+[Wed May 13 04:30:46 2026] 127.0.0.1:60144 Closing
+[Wed May 13 04:30:46 2026] 127.0.0.1:60146 Accepted
+[Wed May 13 04:30:46 2026] 127.0.0.1:60146 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:30:46 2026] 127.0.0.1:60146 Closing
+[Wed May 13 04:30:46 2026] 127.0.0.1:60148 Accepted
+[Wed May 13 04:30:46 2026] 127.0.0.1:60148 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:30:46 2026] 127.0.0.1:60148 Closing
+[Wed May 13 04:30:47 2026] 127.0.0.1:60158 Accepted
+[Wed May 13 04:30:47 2026] 127.0.0.1:60158 Closing
+[Wed May 13 04:30:47 2026] 127.0.0.1:60166 Accepted
+[Wed May 13 04:30:47 2026] 127.0.0.1:60168 Accepted
+[Wed May 13 04:30:47 2026] 127.0.0.1:60166 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:30:47 2026] 127.0.0.1:60168 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:30:47 2026] 127.0.0.1:60166 Closing
+[Wed May 13 04:30:47 2026] 127.0.0.1:60168 Closing
+[Wed May 13 04:31:03 2026] 127.0.0.1:34394 Accepted
+[Wed May 13 04:31:03 2026] 127.0.0.1:34394 Closing
+[Wed May 13 04:31:03 2026] 127.0.0.1:34398 Accepted
+[Wed May 13 04:31:03 2026] 127.0.0.1:34398 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:31:03 2026] 127.0.0.1:34398 Closing
+[Wed May 13 04:31:03 2026] 127.0.0.1:34402 Accepted
+[Wed May 13 04:31:03 2026] 127.0.0.1:34402 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:31:03 2026] 127.0.0.1:34402 Closing
+[Wed May 13 04:31:29 2026] 127.0.0.1:43736 Accepted
+[Wed May 13 04:31:29 2026] 127.0.0.1:43736 Closing
+[Wed May 13 04:31:29 2026] 127.0.0.1:43744 Accepted
+[Wed May 13 04:31:29 2026] 127.0.0.1:43744 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:31:29 2026] 127.0.0.1:43744 Closing
+[Wed May 13 04:31:29 2026] 127.0.0.1:43746 Accepted
+[Wed May 13 04:31:29 2026] 127.0.0.1:43746 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:31:29 2026] 127.0.0.1:43746 Closing
+[Wed May 13 04:31:42 2026] 127.0.0.1:51504 Accepted
+[Wed May 13 04:31:42 2026] 127.0.0.1:51504 Closing
+[Wed May 13 04:31:42 2026] 127.0.0.1:51512 Accepted
+[Wed May 13 04:31:42 2026] 127.0.0.1:51512 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:31:42 2026] 127.0.0.1:51512 Closing
+[Wed May 13 04:31:42 2026] 127.0.0.1:51520 Accepted
+[Wed May 13 04:31:42 2026] 127.0.0.1:51520 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:31:42 2026] 127.0.0.1:51520 Closing
+[Wed May 13 04:32:52 2026] 127.0.0.1:38678 Accepted
+[Wed May 13 04:32:52 2026] 127.0.0.1:38678 Closing
+[Wed May 13 04:32:52 2026] 127.0.0.1:38688 Accepted
+[Wed May 13 04:32:52 2026] 127.0.0.1:38702 Accepted
+[Wed May 13 04:32:52 2026] 127.0.0.1:38702 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:32:52 2026] 127.0.0.1:38702 Closing
+[Wed May 13 04:32:52 2026] 127.0.0.1:38688 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:32:52 2026] 127.0.0.1:38688 Closing
+[Wed May 13 04:32:53 2026] 127.0.0.1:38718 Accepted
+[Wed May 13 04:32:53 2026] 127.0.0.1:38718 Closing
+[Wed May 13 04:32:53 2026] 127.0.0.1:38730 Accepted
+[Wed May 13 04:32:53 2026] 127.0.0.1:38734 Accepted
+[Wed May 13 04:32:53 2026] 127.0.0.1:38734 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:32:53 2026] 127.0.0.1:38734 Closing
+[Wed May 13 04:32:53 2026] 127.0.0.1:38730 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:32:53 2026] 127.0.0.1:38730 Closing
+[Wed May 13 04:32:57 2026] 127.0.0.1:38746 Accepted
+[Wed May 13 04:32:57 2026] 127.0.0.1:38746 Closing
+[Wed May 13 04:32:57 2026] 127.0.0.1:38760 Accepted
+[Wed May 13 04:32:57 2026] 127.0.0.1:38772 Accepted
+[Wed May 13 04:32:57 2026] 127.0.0.1:38760 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:32:57 2026] 127.0.0.1:38760 Closing
+[Wed May 13 04:32:57 2026] 127.0.0.1:38772 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:32:57 2026] 127.0.0.1:38772 Closing
+[Wed May 13 04:32:58 2026] 127.0.0.1:56002 Accepted
+[Wed May 13 04:32:58 2026] 127.0.0.1:56002 Closing
+[Wed May 13 04:32:58 2026] 127.0.0.1:56004 Accepted
+[Wed May 13 04:32:58 2026] 127.0.0.1:56004 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:32:58 2026] 127.0.0.1:56004 Closing
+[Wed May 13 04:32:58 2026] 127.0.0.1:56008 Accepted
+[Wed May 13 04:32:58 2026] 127.0.0.1:56008 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:32:58 2026] 127.0.0.1:56008 Closing
+[Wed May 13 04:32:59 2026] 127.0.0.1:56016 Accepted
+[Wed May 13 04:32:59 2026] 127.0.0.1:56016 Closing
+[Wed May 13 04:32:59 2026] 127.0.0.1:56018 Accepted
+[Wed May 13 04:32:59 2026] 127.0.0.1:56020 Accepted
+[Wed May 13 04:32:59 2026] 127.0.0.1:56018 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:32:59 2026] 127.0.0.1:56020 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:32:59 2026] 127.0.0.1:56018 Closing
+[Wed May 13 04:32:59 2026] 127.0.0.1:56020 Closing
+[Wed May 13 04:33:00 2026] 127.0.0.1:56034 Accepted
+[Wed May 13 04:33:00 2026] 127.0.0.1:56034 Closing
+[Wed May 13 04:33:00 2026] 127.0.0.1:56044 Accepted
+[Wed May 13 04:33:00 2026] 127.0.0.1:56052 Accepted
+[Wed May 13 04:33:00 2026] 127.0.0.1:56052 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:33:00 2026] 127.0.0.1:56052 Closing
+[Wed May 13 04:33:00 2026] 127.0.0.1:56044 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:33:00 2026] 127.0.0.1:56044 Closing
+[Wed May 13 04:33:05 2026] 127.0.0.1:56056 Accepted
+[Wed May 13 04:33:05 2026] 127.0.0.1:56056 Closing
+[Wed May 13 04:33:05 2026] 127.0.0.1:56066 Accepted
+[Wed May 13 04:33:05 2026] 127.0.0.1:56074 Accepted
+[Wed May 13 04:33:05 2026] 127.0.0.1:56066 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:33:05 2026] 127.0.0.1:56074 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:33:05 2026] 127.0.0.1:56066 Closing
+[Wed May 13 04:33:05 2026] 127.0.0.1:56074 Closing
+[Wed May 13 04:33:07 2026] 127.0.0.1:56086 Accepted
+[Wed May 13 04:33:07 2026] 127.0.0.1:56086 Closing
+[Wed May 13 04:33:07 2026] 127.0.0.1:56096 Accepted
+[Wed May 13 04:33:07 2026] 127.0.0.1:56096 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:33:07 2026] 127.0.0.1:56102 Accepted
+[Wed May 13 04:33:07 2026] 127.0.0.1:56102 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:33:07 2026] 127.0.0.1:56096 Closing
+[Wed May 13 04:33:07 2026] 127.0.0.1:56102 Closing
+[Wed May 13 04:33:08 2026] 127.0.0.1:50672 Accepted
+[Wed May 13 04:33:08 2026] 127.0.0.1:50672 Closing
+[Wed May 13 04:33:08 2026] 127.0.0.1:50676 Accepted
+[Wed May 13 04:33:08 2026] 127.0.0.1:50690 Accepted
+[Wed May 13 04:33:08 2026] 127.0.0.1:50676 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:33:08 2026] 127.0.0.1:50690 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:33:08 2026] 127.0.0.1:50676 Closing
+[Wed May 13 04:33:08 2026] 127.0.0.1:50690 Closing
+[Wed May 13 04:33:14 2026] 127.0.0.1:50698 Accepted
+[Wed May 13 04:33:14 2026] 127.0.0.1:50698 Closing
+[Wed May 13 04:33:14 2026] 127.0.0.1:50700 Accepted
+[Wed May 13 04:33:14 2026] 127.0.0.1:50708 Accepted
+[Wed May 13 04:33:14 2026] 127.0.0.1:50708 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:33:14 2026] 127.0.0.1:50708 Closing
+[Wed May 13 04:33:14 2026] 127.0.0.1:50700 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:33:14 2026] 127.0.0.1:50700 Closing
+[Wed May 13 04:33:18 2026] 127.0.0.1:34838 Accepted
+[Wed May 13 04:33:18 2026] 127.0.0.1:34838 Closing
+[Wed May 13 04:33:18 2026] 127.0.0.1:34844 Accepted
+[Wed May 13 04:33:18 2026] 127.0.0.1:34844 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:33:18 2026] 127.0.0.1:34844 Closing
+[Wed May 13 04:33:18 2026] 127.0.0.1:34854 Accepted
+[Wed May 13 04:33:18 2026] 127.0.0.1:34854 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:33:18 2026] 127.0.0.1:34854 Closing
+[Wed May 13 04:33:23 2026] 127.0.0.1:34858 Accepted
+[Wed May 13 04:33:23 2026] 127.0.0.1:34858 Closing
+[Wed May 13 04:33:23 2026] 127.0.0.1:34864 Accepted
+[Wed May 13 04:33:23 2026] 127.0.0.1:34880 Accepted
+[Wed May 13 04:33:23 2026] 127.0.0.1:34864 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:33:23 2026] 127.0.0.1:34880 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:33:23 2026] 127.0.0.1:34864 Closing
+[Wed May 13 04:33:23 2026] 127.0.0.1:34880 Closing
+[Wed May 13 04:34:00 2026] 127.0.0.1:43648 Accepted
+[Wed May 13 04:34:00 2026] 127.0.0.1:43648 Closing
+[Wed May 13 04:34:00 2026] 127.0.0.1:43658 Accepted
+[Wed May 13 04:34:00 2026] 127.0.0.1:43658 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:34:00 2026] 127.0.0.1:43664 Accepted
+[Wed May 13 04:34:00 2026] 127.0.0.1:43658 Closing
+[Wed May 13 04:34:00 2026] 127.0.0.1:43664 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:34:00 2026] 127.0.0.1:43664 Closing
+[Wed May 13 04:34:04 2026] 127.0.0.1:43672 Accepted
+[Wed May 13 04:34:04 2026] 127.0.0.1:43672 Closing
+[Wed May 13 04:34:04 2026] 127.0.0.1:43676 Accepted
+[Wed May 13 04:34:04 2026] 127.0.0.1:43678 Accepted
+[Wed May 13 04:34:04 2026] 127.0.0.1:43676 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:34:04 2026] 127.0.0.1:43678 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:34:04 2026] 127.0.0.1:43676 Closing
+[Wed May 13 04:34:04 2026] 127.0.0.1:43678 Closing
+[Wed May 13 04:35:08 2026] 127.0.0.1:60660 Accepted
+[Wed May 13 04:35:34 2026] 127.0.0.1:51324 Accepted
+[Wed May 13 04:35:47 2026] 127.0.0.1:51776 Accepted
+[Wed May 13 04:38:00 2026] 127.0.0.1:46018 Accepted
+[Wed May 13 04:39:05 2026] 127.0.0.1:40790 Accepted
+[Wed May 13 04:39:05 2026] 127.0.0.1:40790 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:39:05 2026] 127.0.0.1:40790 Closing
+[Wed May 13 04:39:07 2026] 127.0.0.1:40806 Accepted
+[Wed May 13 04:40:24 2026] 127.0.0.1:50046 Accepted
+[Wed May 13 04:40:31 2026] 127.0.0.1:48380 Accepted
+[Wed May 13 04:40:31 2026] 127.0.0.1:48380 Closing
+[Wed May 13 04:40:31 2026] 127.0.0.1:48394 Accepted
+[Wed May 13 04:40:31 2026] 127.0.0.1:48400 Accepted
+[Wed May 13 04:40:31 2026] 127.0.0.1:48402 Accepted
+[Wed May 13 04:40:31 2026] 127.0.0.1:48400 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:40:31 2026] 127.0.0.1:48402 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:40:31 2026] 127.0.0.1:48400 Closing
+[Wed May 13 04:40:31 2026] 127.0.0.1:48402 Closing
+[Wed May 13 04:40:31 2026] 127.0.0.1:48394 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:40:31 2026] 127.0.0.1:48394 Closing
+[Wed May 13 04:40:45 2026] 127.0.0.1:58722 Accepted
+[Wed May 13 04:40:51 2026] 127.0.0.1:38970 Accepted
+[Wed May 13 04:41:56 2026] 127.0.0.1:53638 Accepted
+[Wed May 13 04:42:06 2026] 127.0.0.1:37764 Accepted
+[Wed May 13 04:42:22 2026] 127.0.0.1:33622 Accepted
+[Wed May 13 04:42:22 2026] 127.0.0.1:33622 Closing
+[Wed May 13 04:42:22 2026] 127.0.0.1:33636 Accepted
+[Wed May 13 04:42:22 2026] 127.0.0.1:33640 Accepted
+[Wed May 13 04:42:22 2026] 127.0.0.1:33650 Accepted
+[Wed May 13 04:42:22 2026] 127.0.0.1:33636 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:42:22 2026] 127.0.0.1:33640 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:42:22 2026] 127.0.0.1:33650 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:42:22 2026] 127.0.0.1:33636 Closing
+[Wed May 13 04:42:22 2026] 127.0.0.1:33640 Closing
+[Wed May 13 04:42:22 2026] 127.0.0.1:33650 Closing
+[Wed May 13 04:42:29 2026] 127.0.0.1:58140 Accepted
+[Wed May 13 04:42:45 2026] 127.0.0.1:38858 Accepted
+[Wed May 13 04:45:43 2026] 127.0.0.1:36428 Accepted
+[Wed May 13 04:45:59 2026] 127.0.0.1:34150 Accepted
+[Wed May 13 04:47:16 2026] 127.0.0.1:45466 Accepted
+[Wed May 13 04:49:36 2026] 127.0.0.1:34804 Accepted
+[Wed May 13 04:51:27 2026] 127.0.0.1:51968 Accepted
+[Wed May 13 04:51:27 2026] 127.0.0.1:51968 Closing
+[Wed May 13 04:51:27 2026] 127.0.0.1:51970 Accepted
+[Wed May 13 04:51:27 2026] 127.0.0.1:51970 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:51:27 2026] 127.0.0.1:51972 Accepted
+[Wed May 13 04:51:27 2026] 127.0.0.1:51972 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:51:27 2026] 127.0.0.1:51970 Closing
+[Wed May 13 04:51:27 2026] 127.0.0.1:51988 Accepted
+[Wed May 13 04:51:27 2026] 127.0.0.1:51988 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:51:27 2026] 127.0.0.1:51988 Closing
+[Wed May 13 04:51:27 2026] 127.0.0.1:51972 Closing
+[Wed May 13 04:51:27 2026] 127.0.0.1:51994 Accepted
+[Wed May 13 04:51:27 2026] 127.0.0.1:51994 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:51:27 2026] 127.0.0.1:51994 Closing
+[Wed May 13 04:51:28 2026] 127.0.0.1:52008 Accepted
+[Wed May 13 04:51:48 2026] 127.0.0.1:56246 Accepted
+[Wed May 13 04:55:32 2026] 127.0.0.1:49632 Accepted
+[Wed May 13 04:55:32 2026] 127.0.0.1:49632 Closing
+[Wed May 13 04:55:32 2026] 127.0.0.1:49644 Accepted
+[Wed May 13 04:55:32 2026] 127.0.0.1:49648 Accepted
+[Wed May 13 04:55:32 2026] 127.0.0.1:49644 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:55:32 2026] 127.0.0.1:49648 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:55:32 2026] 127.0.0.1:49644 Closing
+[Wed May 13 04:55:32 2026] 127.0.0.1:49648 Closing
+[Wed May 13 04:55:32 2026] 127.0.0.1:49652 Accepted
+[Wed May 13 04:55:32 2026] 127.0.0.1:49652 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:55:32 2026] 127.0.0.1:49652 Closing
+[Wed May 13 04:56:18 2026] 127.0.0.1:34812 Accepted
+[Wed May 13 04:56:18 2026] 127.0.0.1:34812 Closing
+[Wed May 13 04:56:18 2026] 127.0.0.1:34814 Accepted
+[Wed May 13 04:56:18 2026] 127.0.0.1:34814 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:56:18 2026] 127.0.0.1:34814 Closing
+[Wed May 13 04:56:18 2026] 127.0.0.1:34818 Accepted
+[Wed May 13 04:56:18 2026] 127.0.0.1:34818 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:56:18 2026] 127.0.0.1:34818 Closing
+[Wed May 13 04:56:18 2026] 127.0.0.1:34826 Accepted
+[Wed May 13 04:56:18 2026] 127.0.0.1:34826 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:56:18 2026] 127.0.0.1:34826 Closing
+[Wed May 13 04:56:36 2026] 127.0.0.1:36042 Accepted
+[Wed May 13 04:56:36 2026] 127.0.0.1:36042 Closing
+[Wed May 13 04:56:36 2026] 127.0.0.1:36046 Accepted
+[Wed May 13 04:56:36 2026] 127.0.0.1:36058 Accepted
+[Wed May 13 04:56:36 2026] 127.0.0.1:36046 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:56:36 2026] 127.0.0.1:36064 Accepted
+[Wed May 13 04:56:36 2026] 127.0.0.1:36058 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:56:36 2026] 127.0.0.1:36064 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:56:36 2026] 127.0.0.1:36046 Closing
+[Wed May 13 04:56:36 2026] 127.0.0.1:36064 Closing
+[Wed May 13 04:56:36 2026] 127.0.0.1:36058 Closing
+[Wed May 13 04:56:42 2026] 127.0.0.1:59706 Accepted
+[Wed May 13 04:56:42 2026] 127.0.0.1:59706 Closing
+[Wed May 13 04:56:42 2026] 127.0.0.1:59718 Accepted
+[Wed May 13 04:56:42 2026] 127.0.0.1:59718 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 04:56:42 2026] 127.0.0.1:59718 Closing
+[Wed May 13 04:56:42 2026] 127.0.0.1:59732 Accepted
+[Wed May 13 04:56:42 2026] 127.0.0.1:59732 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 04:56:42 2026] 127.0.0.1:59742 Accepted
+[Wed May 13 04:56:42 2026] 127.0.0.1:59742 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 04:56:42 2026] 127.0.0.1:59742 Closing
+[Wed May 13 04:56:42 2026] 127.0.0.1:59732 Closing
+[Wed May 13 04:56:44 2026] 127.0.0.1:59744 Accepted
+[Wed May 13 05:01:19 2026] 127.0.0.1:50516 Accepted
+[Wed May 13 05:01:34 2026] 127.0.0.1:58278 Accepted
+[Wed May 13 05:02:58 2026] 127.0.0.1:41306 Accepted
+[Wed May 13 05:02:58 2026] 127.0.0.1:41306 Closing
+[Wed May 13 05:02:58 2026] 127.0.0.1:41312 Accepted
+[Wed May 13 05:02:58 2026] 127.0.0.1:41316 Accepted
+[Wed May 13 05:02:58 2026] 127.0.0.1:41322 Accepted
+[Wed May 13 05:02:58 2026] 127.0.0.1:41312 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:02:58 2026] 127.0.0.1:41316 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:02:58 2026] 127.0.0.1:41322 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:02:58 2026] 127.0.0.1:41312 Closing
+[Wed May 13 05:02:58 2026] 127.0.0.1:41316 Closing
+[Wed May 13 05:02:58 2026] 127.0.0.1:41322 Closing
+[Wed May 13 05:03:05 2026] 127.0.0.1:41328 Accepted
+[Wed May 13 05:03:21 2026] 127.0.0.1:39296 Accepted
+[Wed May 13 05:03:34 2026] 127.0.0.1:48670 Accepted
+[Wed May 13 05:04:35 2026] 127.0.0.1:33176 Accepted
+[Wed May 13 05:04:43 2026] 127.0.0.1:41452 Accepted
+[Wed May 13 05:06:34 2026] 127.0.0.1:44490 Accepted
+[Wed May 13 05:06:34 2026] 127.0.0.1:44490 Closing
+[Wed May 13 05:06:34 2026] 127.0.0.1:44506 Accepted
+[Wed May 13 05:06:34 2026] 127.0.0.1:44510 Accepted
+[Wed May 13 05:06:34 2026] 127.0.0.1:44506 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:06:34 2026] 127.0.0.1:44510 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:06:34 2026] 127.0.0.1:44506 Closing
+[Wed May 13 05:06:34 2026] 127.0.0.1:44510 Closing
+[Wed May 13 05:06:34 2026] 127.0.0.1:44526 Accepted
+[Wed May 13 05:06:34 2026] 127.0.0.1:44526 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:06:34 2026] 127.0.0.1:44526 Closing
+[Wed May 13 05:06:34 2026] 127.0.0.1:44536 Accepted
+[Wed May 13 05:06:34 2026] 127.0.0.1:44536 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:06:34 2026] 127.0.0.1:44536 Closing
+[Wed May 13 05:06:35 2026] 127.0.0.1:44550 Accepted
+[Wed May 13 05:06:49 2026] 127.0.0.1:52988 Accepted
+[Wed May 13 05:07:01 2026] 127.0.0.1:43450 Accepted
+[Wed May 13 05:07:01 2026] 127.0.0.1:43450 Closing
+[Wed May 13 05:07:01 2026] 127.0.0.1:43452 Accepted
+[Wed May 13 05:07:01 2026] 127.0.0.1:43458 Accepted
+[Wed May 13 05:07:01 2026] 127.0.0.1:43466 Accepted
+[Wed May 13 05:07:01 2026] 127.0.0.1:43458 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:07:01 2026] 127.0.0.1:43466 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:07:01 2026] 127.0.0.1:43466 Closing
+[Wed May 13 05:07:01 2026] 127.0.0.1:43458 Closing
+[Wed May 13 05:07:01 2026] 127.0.0.1:43452 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:07:01 2026] 127.0.0.1:43452 Closing
+[Wed May 13 05:07:01 2026] 127.0.0.1:43476 Accepted
+[Wed May 13 05:07:01 2026] 127.0.0.1:43476 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:07:01 2026] 127.0.0.1:43476 Closing
+[Wed May 13 05:07:02 2026] 127.0.0.1:43486 Accepted
+[Wed May 13 05:07:54 2026] 127.0.0.1:51426 Accepted
+[Wed May 13 05:07:54 2026] 127.0.0.1:51426 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:07:54 2026] 127.0.0.1:51426 Closing
+[Wed May 13 05:07:55 2026] 127.0.0.1:51440 Accepted
+[Wed May 13 05:07:55 2026] 127.0.0.1:51440 Closing
+[Wed May 13 05:07:55 2026] 127.0.0.1:51452 Accepted
+[Wed May 13 05:07:55 2026] 127.0.0.1:51460 Accepted
+[Wed May 13 05:07:55 2026] 127.0.0.1:51472 Accepted
+[Wed May 13 05:07:55 2026] 127.0.0.1:51452 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:07:55 2026] 127.0.0.1:51460 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:07:55 2026] 127.0.0.1:51472 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:07:55 2026] 127.0.0.1:51452 Closing
+[Wed May 13 05:07:55 2026] 127.0.0.1:51472 Closing
+[Wed May 13 05:07:55 2026] 127.0.0.1:51460 Closing
+[Wed May 13 05:08:19 2026] 127.0.0.1:59722 Accepted
+[Wed May 13 05:08:19 2026] 127.0.0.1:59722 Closing
+[Wed May 13 05:08:19 2026] 127.0.0.1:59730 Accepted
+[Wed May 13 05:08:19 2026] 127.0.0.1:59730 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:08:19 2026] 127.0.0.1:59730 Closing
+[Wed May 13 05:08:19 2026] 127.0.0.1:59740 Accepted
+[Wed May 13 05:08:19 2026] 127.0.0.1:59740 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:08:19 2026] 127.0.0.1:59740 Closing
+[Wed May 13 05:08:19 2026] 127.0.0.1:59756 Accepted
+[Wed May 13 05:08:19 2026] 127.0.0.1:59756 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:08:19 2026] 127.0.0.1:59756 Closing
+[Wed May 13 05:08:23 2026] 127.0.0.1:59766 Accepted
+[Wed May 13 05:08:23 2026] 127.0.0.1:59766 Closing
+[Wed May 13 05:08:23 2026] 127.0.0.1:59782 Accepted
+[Wed May 13 05:08:23 2026] 127.0.0.1:59782 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:08:23 2026] 127.0.0.1:59782 Closing
+[Wed May 13 05:08:23 2026] 127.0.0.1:59784 Accepted
+[Wed May 13 05:08:23 2026] 127.0.0.1:59784 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:08:23 2026] 127.0.0.1:59794 Accepted
+[Wed May 13 05:08:23 2026] 127.0.0.1:59794 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:08:23 2026] 127.0.0.1:59784 Closing
+[Wed May 13 05:08:23 2026] 127.0.0.1:59794 Closing
+[Wed May 13 05:08:27 2026] 127.0.0.1:59796 Accepted
+[Wed May 13 05:08:27 2026] 127.0.0.1:59796 Closing
+[Wed May 13 05:08:27 2026] 127.0.0.1:59798 Accepted
+[Wed May 13 05:08:27 2026] 127.0.0.1:59798 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:08:27 2026] 127.0.0.1:59798 Closing
+[Wed May 13 05:08:27 2026] 127.0.0.1:59810 Accepted
+[Wed May 13 05:08:27 2026] 127.0.0.1:59810 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:08:27 2026] 127.0.0.1:59810 Closing
+[Wed May 13 05:08:27 2026] 127.0.0.1:59822 Accepted
+[Wed May 13 05:08:27 2026] 127.0.0.1:59822 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:08:27 2026] 127.0.0.1:59822 Closing
+[Wed May 13 05:08:47 2026] 127.0.0.1:46092 Accepted
+[Wed May 13 05:09:35 2026] 127.0.0.1:48482 Accepted
+[Wed May 13 05:09:37 2026] 127.0.0.1:48532 Accepted
+[Wed May 13 05:09:37 2026] 127.0.0.1:48532 Closing
+[Wed May 13 05:09:37 2026] 127.0.0.1:48544 Accepted
+[Wed May 13 05:09:37 2026] 127.0.0.1:48548 Accepted
+[Wed May 13 05:09:37 2026] 127.0.0.1:48548 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:37 2026] 127.0.0.1:48548 Closing
+[Wed May 13 05:09:37 2026] 127.0.0.1:48560 Accepted
+[Wed May 13 05:09:37 2026] 127.0.0.1:48560 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:37 2026] 127.0.0.1:48560 Closing
+[Wed May 13 05:09:37 2026] 127.0.0.1:48544 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:37 2026] 127.0.0.1:48544 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49228 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49228 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49236 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49248 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49236 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:38 2026] 127.0.0.1:49248 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:38 2026] 127.0.0.1:49236 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49248 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49262 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49262 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:38 2026] 127.0.0.1:49262 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49266 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49266 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49270 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49270 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:38 2026] 127.0.0.1:49280 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49280 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:38 2026] 127.0.0.1:49270 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49280 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49296 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49296 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:38 2026] 127.0.0.1:49296 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49300 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49300 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49308 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49316 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49308 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:38 2026] 127.0.0.1:49316 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:38 2026] 127.0.0.1:49308 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49322 Accepted
+[Wed May 13 05:09:38 2026] 127.0.0.1:49316 Closing
+[Wed May 13 05:09:38 2026] 127.0.0.1:49322 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:38 2026] 127.0.0.1:49322 Closing
+[Wed May 13 05:09:39 2026] 127.0.0.1:49330 Accepted
+[Wed May 13 05:09:39 2026] 127.0.0.1:49330 Closing
+[Wed May 13 05:09:39 2026] 127.0.0.1:49342 Accepted
+[Wed May 13 05:09:39 2026] 127.0.0.1:49358 Accepted
+[Wed May 13 05:09:39 2026] 127.0.0.1:49372 Accepted
+[Wed May 13 05:09:39 2026] 127.0.0.1:49342 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:39 2026] 127.0.0.1:49358 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:39 2026] 127.0.0.1:49372 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:39 2026] 127.0.0.1:49342 Closing
+[Wed May 13 05:09:39 2026] 127.0.0.1:49358 Closing
+[Wed May 13 05:09:39 2026] 127.0.0.1:49372 Closing
+[Wed May 13 05:09:40 2026] 127.0.0.1:49380 Accepted
+[Wed May 13 05:09:40 2026] 127.0.0.1:49380 Closing
+[Wed May 13 05:09:40 2026] 127.0.0.1:49390 Accepted
+[Wed May 13 05:09:40 2026] 127.0.0.1:49398 Accepted
+[Wed May 13 05:09:40 2026] 127.0.0.1:49390 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:40 2026] 127.0.0.1:49398 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:40 2026] 127.0.0.1:49398 Closing
+[Wed May 13 05:09:40 2026] 127.0.0.1:49414 Accepted
+[Wed May 13 05:09:40 2026] 127.0.0.1:49414 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:40 2026] 127.0.0.1:49414 Closing
+[Wed May 13 05:09:40 2026] 127.0.0.1:49390 Closing
+[Wed May 13 05:09:40 2026] 127.0.0.1:49430 Accepted
+[Wed May 13 05:09:40 2026] 127.0.0.1:49430 Closing
+[Wed May 13 05:09:40 2026] 127.0.0.1:49442 Accepted
+[Wed May 13 05:09:40 2026] 127.0.0.1:49450 Accepted
+[Wed May 13 05:09:40 2026] 127.0.0.1:49458 Accepted
+[Wed May 13 05:09:40 2026] 127.0.0.1:49442 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:40 2026] 127.0.0.1:49450 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:40 2026] 127.0.0.1:49458 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:40 2026] 127.0.0.1:49442 Closing
+[Wed May 13 05:09:40 2026] 127.0.0.1:49450 Closing
+[Wed May 13 05:09:40 2026] 127.0.0.1:49458 Closing
+[Wed May 13 05:09:41 2026] 127.0.0.1:49474 Accepted
+[Wed May 13 05:09:41 2026] 127.0.0.1:49474 Closing
+[Wed May 13 05:09:41 2026] 127.0.0.1:49478 Accepted
+[Wed May 13 05:09:41 2026] 127.0.0.1:49478 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:41 2026] 127.0.0.1:49478 Closing
+[Wed May 13 05:09:41 2026] 127.0.0.1:49486 Accepted
+[Wed May 13 05:09:41 2026] 127.0.0.1:49486 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:41 2026] 127.0.0.1:49486 Closing
+[Wed May 13 05:09:41 2026] 127.0.0.1:49496 Accepted
+[Wed May 13 05:09:41 2026] 127.0.0.1:49496 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:41 2026] 127.0.0.1:49496 Closing
+[Wed May 13 05:09:41 2026] 127.0.0.1:49500 Accepted
+[Wed May 13 05:09:41 2026] 127.0.0.1:49500 Closing
+[Wed May 13 05:09:42 2026] 127.0.0.1:49508 Accepted
+[Wed May 13 05:09:42 2026] 127.0.0.1:49508 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:09:42 2026] 127.0.0.1:49522 Accepted
+[Wed May 13 05:09:42 2026] 127.0.0.1:49534 Accepted
+[Wed May 13 05:09:42 2026] 127.0.0.1:49522 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:09:42 2026] 127.0.0.1:49508 Closing
+[Wed May 13 05:09:42 2026] 127.0.0.1:49534 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:09:42 2026] 127.0.0.1:49522 Closing
+[Wed May 13 05:09:42 2026] 127.0.0.1:49534 Closing
+[Wed May 13 05:09:42 2026] 127.0.0.1:49536 Accepted
+[Wed May 13 05:10:06 2026] 127.0.0.1:33634 Accepted
+[Wed May 13 05:10:19 2026] 127.0.0.1:53568 Accepted
+[Wed May 13 05:10:24 2026] 127.0.0.1:53618 Accepted
+[Wed May 13 05:10:24 2026] 127.0.0.1:53618 Closing
+[Wed May 13 05:10:24 2026] 127.0.0.1:53628 Accepted
+[Wed May 13 05:10:24 2026] 127.0.0.1:53632 Accepted
+[Wed May 13 05:10:24 2026] 127.0.0.1:53644 Accepted
+[Wed May 13 05:10:24 2026] 127.0.0.1:53628 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:10:24 2026] 127.0.0.1:53632 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:10:24 2026] 127.0.0.1:53644 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:10:24 2026] 127.0.0.1:53628 Closing
+[Wed May 13 05:10:24 2026] 127.0.0.1:53644 Closing
+[Wed May 13 05:10:24 2026] 127.0.0.1:53632 Closing
+[Wed May 13 05:10:44 2026] 127.0.0.1:60952 Accepted
+[Wed May 13 05:10:44 2026] 127.0.0.1:60952 Closing
+[Wed May 13 05:10:44 2026] 127.0.0.1:60956 Accepted
+[Wed May 13 05:10:44 2026] 127.0.0.1:60956 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:10:44 2026] 127.0.0.1:60956 Closing
+[Wed May 13 05:10:44 2026] 127.0.0.1:60972 Accepted
+[Wed May 13 05:10:44 2026] 127.0.0.1:60972 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:10:44 2026] 127.0.0.1:60972 Closing
+[Wed May 13 05:10:44 2026] 127.0.0.1:60986 Accepted
+[Wed May 13 05:10:44 2026] 127.0.0.1:60986 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:10:44 2026] 127.0.0.1:60986 Closing
+[Wed May 13 05:10:57 2026] 127.0.0.1:55044 Accepted
+[Wed May 13 05:10:57 2026] 127.0.0.1:55044 Closing
+[Wed May 13 05:10:57 2026] 127.0.0.1:55054 Accepted
+[Wed May 13 05:10:57 2026] 127.0.0.1:55066 Accepted
+[Wed May 13 05:10:57 2026] 127.0.0.1:55072 Accepted
+[Wed May 13 05:10:57 2026] 127.0.0.1:55054 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:10:57 2026] 127.0.0.1:55066 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:10:57 2026] 127.0.0.1:55072 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:10:57 2026] 127.0.0.1:55054 Closing
+[Wed May 13 05:10:57 2026] 127.0.0.1:55072 Closing
+[Wed May 13 05:10:57 2026] 127.0.0.1:55066 Closing
+[Wed May 13 05:10:57 2026] 127.0.0.1:55086 Accepted
+[Wed May 13 05:10:57 2026] 127.0.0.1:55086 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:10:57 2026] 127.0.0.1:55086 Closing
+[Wed May 13 05:10:58 2026] 127.0.0.1:39690 Accepted
+[Wed May 13 05:10:58 2026] 127.0.0.1:39690 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:10:58 2026] 127.0.0.1:39690 Closing
+[Wed May 13 05:11:01 2026] 127.0.0.1:39692 Accepted
+[Wed May 13 05:11:01 2026] 127.0.0.1:39692 Closing
+[Wed May 13 05:11:01 2026] 127.0.0.1:39702 Accepted
+[Wed May 13 05:11:01 2026] 127.0.0.1:39708 Accepted
+[Wed May 13 05:11:01 2026] 127.0.0.1:39702 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:11:01 2026] 127.0.0.1:39708 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:11:01 2026] 127.0.0.1:39702 Closing
+[Wed May 13 05:11:01 2026] 127.0.0.1:39722 Accepted
+[Wed May 13 05:11:01 2026] 127.0.0.1:39722 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:11:01 2026] 127.0.0.1:39722 Closing
+[Wed May 13 05:11:01 2026] 127.0.0.1:39708 Closing
+[Wed May 13 05:11:16 2026] 127.0.0.1:43568 Accepted
+[Wed May 13 05:11:16 2026] 127.0.0.1:43568 Closing
+[Wed May 13 05:11:16 2026] 127.0.0.1:43578 Accepted
+[Wed May 13 05:11:16 2026] 127.0.0.1:43578 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:11:16 2026] 127.0.0.1:43588 Accepted
+[Wed May 13 05:11:16 2026] 127.0.0.1:43604 Accepted
+[Wed May 13 05:11:16 2026] 127.0.0.1:43588 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:11:16 2026] 127.0.0.1:43604 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:11:16 2026] 127.0.0.1:43588 Closing
+[Wed May 13 05:11:16 2026] 127.0.0.1:43578 Closing
+[Wed May 13 05:11:16 2026] 127.0.0.1:43604 Closing
+[Wed May 13 05:11:20 2026] 127.0.0.1:56744 Accepted
+[Wed May 13 05:11:20 2026] 127.0.0.1:56744 Closing
+[Wed May 13 05:11:20 2026] 127.0.0.1:56760 Accepted
+[Wed May 13 05:11:20 2026] 127.0.0.1:56768 Accepted
+[Wed May 13 05:11:20 2026] 127.0.0.1:56770 Accepted
+[Wed May 13 05:11:20 2026] 127.0.0.1:56768 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:11:20 2026] 127.0.0.1:56770 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:11:20 2026] 127.0.0.1:56770 Closing
+[Wed May 13 05:11:20 2026] 127.0.0.1:56768 Closing
+[Wed May 13 05:11:20 2026] 127.0.0.1:56760 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:11:20 2026] 127.0.0.1:56760 Closing
+[Wed May 13 05:11:24 2026] 127.0.0.1:56778 Accepted
+[Wed May 13 05:17:30 2026] 127.0.0.1:43452 Accepted
+[Wed May 13 05:17:42 2026] 127.0.0.1:39756 Accepted
+[Wed May 13 05:17:51 2026] 127.0.0.1:52036 Accepted
+[Wed May 13 05:18:53 2026] 127.0.0.1:57228 Accepted
+[Wed May 13 05:20:09 2026] 127.0.0.1:34030 Accepted
+[Wed May 13 05:20:09 2026] 127.0.0.1:34030 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:20:09 2026] 127.0.0.1:34030 Closing
+[Wed May 13 05:20:11 2026] 127.0.0.1:34046 Accepted
+[Wed May 13 05:20:11 2026] 127.0.0.1:34046 Closing
+[Wed May 13 05:20:11 2026] 127.0.0.1:34060 Accepted
+[Wed May 13 05:20:11 2026] 127.0.0.1:34072 Accepted
+[Wed May 13 05:20:11 2026] 127.0.0.1:34086 Accepted
+[Wed May 13 05:20:11 2026] 127.0.0.1:34072 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:20:11 2026] 127.0.0.1:34086 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:20:11 2026] 127.0.0.1:34072 Closing
+[Wed May 13 05:20:11 2026] 127.0.0.1:34086 Closing
+[Wed May 13 05:20:11 2026] 127.0.0.1:34060 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:20:11 2026] 127.0.0.1:34060 Closing
+[Wed May 13 05:22:00 2026] 127.0.0.1:58824 Accepted
+[Wed May 13 05:22:00 2026] 127.0.0.1:58824 Closing
+[Wed May 13 05:22:00 2026] 127.0.0.1:58840 Accepted
+[Wed May 13 05:22:00 2026] 127.0.0.1:58840 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:22:00 2026] 127.0.0.1:58840 Closing
+[Wed May 13 05:22:00 2026] 127.0.0.1:58854 Accepted
+[Wed May 13 05:22:00 2026] 127.0.0.1:58854 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:22:00 2026] 127.0.0.1:58854 Closing
+[Wed May 13 05:22:00 2026] 127.0.0.1:58864 Accepted
+[Wed May 13 05:22:00 2026] 127.0.0.1:58864 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:22:00 2026] 127.0.0.1:58864 Closing
+[Wed May 13 05:22:02 2026] 127.0.0.1:58878 Accepted
+[Wed May 13 05:25:35 2026] 127.0.0.1:36794 Accepted
+[Wed May 13 05:26:04 2026] 127.0.0.1:35110 Accepted
+[Wed May 13 05:26:26 2026] 127.0.0.1:41060 Accepted
+[Wed May 13 05:26:34 2026] 127.0.0.1:44330 Accepted
+[Wed May 13 05:26:44 2026] 127.0.0.1:44372 Accepted
+[Wed May 13 05:27:39 2026] 127.0.0.1:50116 Accepted
+[Wed May 13 05:29:38 2026] 127.0.0.1:55662 Accepted
+[Wed May 13 05:29:38 2026] 127.0.0.1:55662 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:29:38 2026] 127.0.0.1:55662 Closing
+[Wed May 13 05:29:39 2026] 127.0.0.1:55672 Accepted
+[Wed May 13 05:29:39 2026] 127.0.0.1:55672 Closing
+[Wed May 13 05:29:39 2026] 127.0.0.1:55688 Accepted
+[Wed May 13 05:29:39 2026] 127.0.0.1:55688 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:29:39 2026] 127.0.0.1:55694 Accepted
+[Wed May 13 05:29:39 2026] 127.0.0.1:55694 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:29:39 2026] 127.0.0.1:55688 Closing
+[Wed May 13 05:29:39 2026] 127.0.0.1:55698 Accepted
+[Wed May 13 05:29:39 2026] 127.0.0.1:55694 Closing
+[Wed May 13 05:29:39 2026] 127.0.0.1:55698 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:29:39 2026] 127.0.0.1:55698 Closing
+[Wed May 13 05:29:59 2026] 127.0.0.1:57960 Accepted
+[Wed May 13 05:31:23 2026] 127.0.0.1:55536 Accepted
+[Wed May 13 05:31:29 2026] 127.0.0.1:39744 Accepted
+[Wed May 13 05:31:29 2026] 127.0.0.1:39744 Closing
+[Wed May 13 05:31:29 2026] 127.0.0.1:39760 Accepted
+[Wed May 13 05:31:29 2026] 127.0.0.1:39764 Accepted
+[Wed May 13 05:31:29 2026] 127.0.0.1:39776 Accepted
+[Wed May 13 05:31:29 2026] 127.0.0.1:39760 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:31:29 2026] 127.0.0.1:39776 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:31:29 2026] 127.0.0.1:39760 Closing
+[Wed May 13 05:31:29 2026] 127.0.0.1:39776 Closing
+[Wed May 13 05:31:29 2026] 127.0.0.1:39764 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:31:29 2026] 127.0.0.1:39764 Closing
+[Wed May 13 05:31:31 2026] 127.0.0.1:39784 Accepted
+[Wed May 13 05:31:34 2026] 127.0.0.1:39826 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40556 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40556 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40560 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40570 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40582 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40560 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:07 2026] 127.0.0.1:40582 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:07 2026] 127.0.0.1:40560 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40582 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40570 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:07 2026] 127.0.0.1:40570 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40588 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40588 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40592 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40598 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40612 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40592 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:07 2026] 127.0.0.1:40598 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:07 2026] 127.0.0.1:40612 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:07 2026] 127.0.0.1:40592 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40598 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40612 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40620 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40620 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40626 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40626 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:07 2026] 127.0.0.1:40634 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40648 Accepted
+[Wed May 13 05:32:07 2026] 127.0.0.1:40634 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:07 2026] 127.0.0.1:40626 Closing
+[Wed May 13 05:32:07 2026] 127.0.0.1:40634 Closing
+[Wed May 13 05:32:08 2026] 127.0.0.1:40648 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:08 2026] 127.0.0.1:40648 Closing
+[Wed May 13 05:32:08 2026] 127.0.0.1:47978 Accepted
+[Wed May 13 05:32:08 2026] 127.0.0.1:47978 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:08 2026] 127.0.0.1:47978 Closing
+[Wed May 13 05:32:08 2026] 127.0.0.1:47994 Accepted
+[Wed May 13 05:32:08 2026] 127.0.0.1:47994 Closing
+[Wed May 13 05:32:09 2026] 127.0.0.1:48010 Accepted
+[Wed May 13 05:32:09 2026] 127.0.0.1:48022 Accepted
+[Wed May 13 05:32:09 2026] 127.0.0.1:48034 Accepted
+[Wed May 13 05:32:09 2026] 127.0.0.1:48010 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:09 2026] 127.0.0.1:48022 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:09 2026] 127.0.0.1:48034 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:09 2026] 127.0.0.1:48022 Closing
+[Wed May 13 05:32:09 2026] 127.0.0.1:48034 Closing
+[Wed May 13 05:32:09 2026] 127.0.0.1:48010 Closing
+[Wed May 13 05:32:09 2026] 127.0.0.1:48038 Accepted
+[Wed May 13 05:32:09 2026] 127.0.0.1:48038 Closing
+[Wed May 13 05:32:09 2026] 127.0.0.1:48054 Accepted
+[Wed May 13 05:32:09 2026] 127.0.0.1:48056 Accepted
+[Wed May 13 05:32:09 2026] 127.0.0.1:48054 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:09 2026] 127.0.0.1:48056 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:09 2026] 127.0.0.1:48054 Closing
+[Wed May 13 05:32:09 2026] 127.0.0.1:48056 Closing
+[Wed May 13 05:32:09 2026] 127.0.0.1:48066 Accepted
+[Wed May 13 05:32:09 2026] 127.0.0.1:48066 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:09 2026] 127.0.0.1:48066 Closing
+[Wed May 13 05:32:10 2026] 127.0.0.1:48078 Accepted
+[Wed May 13 05:32:10 2026] 127.0.0.1:48078 Closing
+[Wed May 13 05:32:10 2026] 127.0.0.1:48086 Accepted
+[Wed May 13 05:32:10 2026] 127.0.0.1:48100 Accepted
+[Wed May 13 05:32:10 2026] 127.0.0.1:48104 Accepted
+[Wed May 13 05:32:10 2026] 127.0.0.1:48086 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:10 2026] 127.0.0.1:48100 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:10 2026] 127.0.0.1:48104 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:10 2026] 127.0.0.1:48086 Closing
+[Wed May 13 05:32:10 2026] 127.0.0.1:48100 Closing
+[Wed May 13 05:32:10 2026] 127.0.0.1:48104 Closing
+[Wed May 13 05:32:10 2026] 127.0.0.1:48112 Accepted
+[Wed May 13 05:32:10 2026] 127.0.0.1:48112 Closing
+[Wed May 13 05:32:10 2026] 127.0.0.1:48116 Accepted
+[Wed May 13 05:32:10 2026] 127.0.0.1:48118 Accepted
+[Wed May 13 05:32:10 2026] 127.0.0.1:48118 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:10 2026] 127.0.0.1:48118 Closing
+[Wed May 13 05:32:10 2026] 127.0.0.1:48120 Accepted
+[Wed May 13 05:32:10 2026] 127.0.0.1:48120 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:10 2026] 127.0.0.1:48120 Closing
+[Wed May 13 05:32:10 2026] 127.0.0.1:48116 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:10 2026] 127.0.0.1:48116 Closing
+[Wed May 13 05:32:23 2026] 127.0.0.1:48538 Accepted
+[Wed May 13 05:32:23 2026] 127.0.0.1:48538 Closing
+[Wed May 13 05:32:23 2026] 127.0.0.1:48550 Accepted
+[Wed May 13 05:32:23 2026] 127.0.0.1:48550 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:23 2026] 127.0.0.1:48550 Closing
+[Wed May 13 05:32:23 2026] 127.0.0.1:48556 Accepted
+[Wed May 13 05:32:23 2026] 127.0.0.1:48556 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:23 2026] 127.0.0.1:48560 Accepted
+[Wed May 13 05:32:23 2026] 127.0.0.1:48560 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:23 2026] 127.0.0.1:48560 Closing
+[Wed May 13 05:32:23 2026] 127.0.0.1:48556 Closing
+[Wed May 13 05:32:24 2026] 127.0.0.1:48562 Accepted
+[Wed May 13 05:32:24 2026] 127.0.0.1:48562 Closing
+[Wed May 13 05:32:24 2026] 127.0.0.1:48568 Accepted
+[Wed May 13 05:32:24 2026] 127.0.0.1:48574 Accepted
+[Wed May 13 05:32:24 2026] 127.0.0.1:48578 Accepted
+[Wed May 13 05:32:24 2026] 127.0.0.1:48574 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:24 2026] 127.0.0.1:48578 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:24 2026] 127.0.0.1:48574 Closing
+[Wed May 13 05:32:24 2026] 127.0.0.1:48578 Closing
+[Wed May 13 05:32:24 2026] 127.0.0.1:48568 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:24 2026] 127.0.0.1:48568 Closing
+[Wed May 13 05:32:24 2026] 127.0.0.1:48594 Accepted
+[Wed May 13 05:32:24 2026] 127.0.0.1:48594 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:24 2026] 127.0.0.1:48594 Closing
+[Wed May 13 05:32:33 2026] 127.0.0.1:35938 Accepted
+[Wed May 13 05:32:33 2026] 127.0.0.1:35938 Closing
+[Wed May 13 05:32:33 2026] 127.0.0.1:35952 Accepted
+[Wed May 13 05:32:33 2026] 127.0.0.1:35952 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:33 2026] 127.0.0.1:35966 Accepted
+[Wed May 13 05:32:33 2026] 127.0.0.1:35966 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:33 2026] 127.0.0.1:35966 Closing
+[Wed May 13 05:32:33 2026] 127.0.0.1:35952 Closing
+[Wed May 13 05:32:33 2026] 127.0.0.1:35970 Accepted
+[Wed May 13 05:32:33 2026] 127.0.0.1:35970 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:33 2026] 127.0.0.1:35970 Closing
+[Wed May 13 05:32:42 2026] 127.0.0.1:43456 Accepted
+[Wed May 13 05:32:42 2026] 127.0.0.1:43456 Closing
+[Wed May 13 05:32:42 2026] 127.0.0.1:43470 Accepted
+[Wed May 13 05:32:42 2026] 127.0.0.1:43474 Accepted
+[Wed May 13 05:32:42 2026] 127.0.0.1:43470 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:42 2026] 127.0.0.1:43474 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:42 2026] 127.0.0.1:43470 Closing
+[Wed May 13 05:32:42 2026] 127.0.0.1:43488 Accepted
+[Wed May 13 05:32:42 2026] 127.0.0.1:43488 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:42 2026] 127.0.0.1:43474 Closing
+[Wed May 13 05:32:42 2026] 127.0.0.1:43488 Closing
+[Wed May 13 05:32:46 2026] 127.0.0.1:43502 Accepted
+[Wed May 13 05:32:46 2026] 127.0.0.1:43502 Closing
+[Wed May 13 05:32:46 2026] 127.0.0.1:43504 Accepted
+[Wed May 13 05:32:46 2026] 127.0.0.1:43504 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:32:46 2026] 127.0.0.1:43504 Closing
+[Wed May 13 05:32:46 2026] 127.0.0.1:43516 Accepted
+[Wed May 13 05:32:46 2026] 127.0.0.1:43516 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:32:46 2026] 127.0.0.1:43532 Accepted
+[Wed May 13 05:32:46 2026] 127.0.0.1:43532 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:32:46 2026] 127.0.0.1:43516 Closing
+[Wed May 13 05:32:46 2026] 127.0.0.1:43532 Closing
+[Wed May 13 05:32:49 2026] 127.0.0.1:46060 Accepted
+[Wed May 13 05:35:19 2026] 127.0.0.1:34732 Accepted
+[Wed May 13 05:35:19 2026] 127.0.0.1:34732 Closing
+[Wed May 13 05:35:19 2026] 127.0.0.1:34748 Accepted
+[Wed May 13 05:35:19 2026] 127.0.0.1:34748 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:35:19 2026] 127.0.0.1:34748 Closing
+[Wed May 13 05:35:19 2026] 127.0.0.1:34758 Accepted
+[Wed May 13 05:35:19 2026] 127.0.0.1:34758 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:35:19 2026] 127.0.0.1:34758 Closing
+[Wed May 13 05:35:19 2026] 127.0.0.1:34770 Accepted
+[Wed May 13 05:35:19 2026] 127.0.0.1:34770 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:35:19 2026] 127.0.0.1:34770 Closing
+[Wed May 13 05:35:21 2026] 127.0.0.1:34778 Accepted
+[Wed May 13 05:36:16 2026] 127.0.0.1:45102 Accepted
+[Wed May 13 05:36:16 2026] 127.0.0.1:45102 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:36:16 2026] 127.0.0.1:45102 Closing
+[Wed May 13 05:36:19 2026] 127.0.0.1:50844 Accepted
+[Wed May 13 05:36:19 2026] 127.0.0.1:50844 Closing
+[Wed May 13 05:36:19 2026] 127.0.0.1:50860 Accepted
+[Wed May 13 05:36:19 2026] 127.0.0.1:50872 Accepted
+[Wed May 13 05:36:19 2026] 127.0.0.1:50860 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:36:19 2026] 127.0.0.1:50872 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:36:19 2026] 127.0.0.1:50860 Closing
+[Wed May 13 05:36:19 2026] 127.0.0.1:50880 Accepted
+[Wed May 13 05:36:19 2026] 127.0.0.1:50872 Closing
+[Wed May 13 05:36:19 2026] 127.0.0.1:50880 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:36:19 2026] 127.0.0.1:50880 Closing
+[Wed May 13 05:36:20 2026] 127.0.0.1:50888 Accepted
+[Wed May 13 05:36:20 2026] 127.0.0.1:50888 Closing
+[Wed May 13 05:36:20 2026] 127.0.0.1:50900 Accepted
+[Wed May 13 05:36:20 2026] 127.0.0.1:50904 Accepted
+[Wed May 13 05:36:20 2026] 127.0.0.1:50900 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:36:20 2026] 127.0.0.1:50904 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:36:20 2026] 127.0.0.1:50920 Accepted
+[Wed May 13 05:36:20 2026] 127.0.0.1:50900 Closing
+[Wed May 13 05:36:20 2026] 127.0.0.1:50904 Closing
+[Wed May 13 05:36:20 2026] 127.0.0.1:50920 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:36:20 2026] 127.0.0.1:50920 Closing
+[Wed May 13 05:38:11 2026] 127.0.0.1:55738 Accepted
+[Wed May 13 05:38:11 2026] 127.0.0.1:55738 Closing
+[Wed May 13 05:38:11 2026] 127.0.0.1:55754 Accepted
+[Wed May 13 05:38:11 2026] 127.0.0.1:55754 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:38:11 2026] 127.0.0.1:55754 Closing
+[Wed May 13 05:38:11 2026] 127.0.0.1:55766 Accepted
+[Wed May 13 05:38:11 2026] 127.0.0.1:55766 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:38:11 2026] 127.0.0.1:55766 Closing
+[Wed May 13 05:38:11 2026] 127.0.0.1:55778 Accepted
+[Wed May 13 05:38:11 2026] 127.0.0.1:55778 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:38:11 2026] 127.0.0.1:55778 Closing
+[Wed May 13 05:38:13 2026] 127.0.0.1:55780 Accepted
+[Wed May 13 05:38:13 2026] 127.0.0.1:55780 Closing
+[Wed May 13 05:38:13 2026] 127.0.0.1:55794 Accepted
+[Wed May 13 05:38:13 2026] 127.0.0.1:55802 Accepted
+[Wed May 13 05:38:13 2026] 127.0.0.1:55794 [200]: GET /media/pages/home/2b07c0083b-1778631014/gettyimages-963131214-170667a.webp
+[Wed May 13 05:38:13 2026] 127.0.0.1:55818 Accepted
+[Wed May 13 05:38:13 2026] 127.0.0.1:55794 Closing
+[Wed May 13 05:38:13 2026] 127.0.0.1:55818 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:38:13 2026] 127.0.0.1:55818 Closing
+[Wed May 13 05:38:13 2026] 127.0.0.1:55802 [200]: GET /media/pages/home/6b6816ea55-1778631475/unsplash-image-oalh2mojuuk.webp
+[Wed May 13 05:38:13 2026] 127.0.0.1:55802 Closing
+[Wed May 13 05:38:13 2026] 127.0.0.1:55824 Accepted
+[Wed May 13 05:38:13 2026] 127.0.0.1:55824 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:38:13 2026] 127.0.0.1:55824 Closing
+[Wed May 13 05:38:16 2026] 127.0.0.1:55834 Accepted
+[Wed May 13 05:40:56 2026] 127.0.0.1:55786 Accepted
+[Wed May 13 05:41:27 2026] 127.0.0.1:42114 Accepted
+[Wed May 13 05:42:18 2026] 127.0.0.1:55878 Accepted
+[Wed May 13 05:42:18 2026] 127.0.0.1:55878 [200]: GET /media/pages/home/93b093a513-1778646772/croagh.mp4
+[Wed May 13 05:42:18 2026] 127.0.0.1:55878 Closing
+[Wed May 13 05:42:19 2026] 127.0.0.1:55888 Accepted
+[Wed May 13 05:52:06 2026] 127.0.0.1:35702 Accepted

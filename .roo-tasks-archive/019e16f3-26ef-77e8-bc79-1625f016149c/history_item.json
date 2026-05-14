@@ -1,0 +1,1 @@
+{"id":"019e16f3-26ef-77e8-bc79-1625f016149c","number":1,"ts":1778508010329,"task":"I have an error when running npm install @alpinejs/intersect @alpinejs/collapse @alpinejs/morph","tokensIn":5916880,"tokensOut":15467,"cacheWrites":0,"cacheReads":4662651,"totalCost":3.8089202,"size":2693206,"workspace":"/workspaces/kinetik-os","mode":"code","apiConfigName":"default"}

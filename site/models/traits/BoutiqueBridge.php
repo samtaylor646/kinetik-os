@@ -60,11 +60,12 @@ trait BoutiqueBridge
         $theme = $this->value();
         
         return match($theme) {
-            'oceanic' => 'bg-oceanic-dark text-canvas',
-            'gold' => 'bg-warm-gold text-ink',
-            'light' => 'bg-canvas text-ink',
-            'dark' => 'bg-ink text-canvas',
-            default => 'bg-canvas text-ink',
+            'oceanic' => 'bg-[var(--color-oceanic-dark)] text-[var(--color-canvas)]',
+            'gold' => 'bg-[var(--color-warm-gold)] text-[var(--color-ink)]',
+            'light' => 'bg-[var(--color-canvas)] text-[var(--color-ink)]',
+            'dark' => 'bg-[var(--color-ink)] text-[var(--color-canvas)]',
+            'transparent' => 'bg-transparent',
+            default => 'bg-transparent', // Default to transparent so layout handles color
         };
     }
 }

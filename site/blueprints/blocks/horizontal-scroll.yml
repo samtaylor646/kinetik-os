@@ -1,22 +1,26 @@
 name: Horizontal Scroll Carousel
 icon: arrow-right-square
-preview: blocks
-blueprint: block
+preview: fields
 
-fields:
-  theme:
-    label: Section Theme
-    type: select
-    options:
-      light: Light (Canvas)
-      oceanic: Oceanic Prime
-      dark: Dark (Ink)
-      accent: Oceanic Accent
-      slate: Slate Teal
-    default: light
-    help: Select a background theme for the scroll section.
-
-  panels:
-    label: Carousel Panels
-    type: blocks
-    help: Add the blocks that will become horizontally scrolling panels.
+tabs:
+  content:
+    label: Content
+    fields:
+      panels:
+        label: Carousel Panels
+        type: blocks
+        help: Add the blocks that will become horizontally scrolling panels.
+  settings:
+    label: Settings
+    fields:
+      theme:
+        label: Section Theme
+        type: select
+        options:
+          light: Light (Canvas)
+          oceanic: Oceanic Prime
+          dark: Dark (Ink)
+          accent: Oceanic Accent
+          slate: Slate Teal
+        default: light
+        help: Select a background theme for the scroll section.

@@ -1,6 +1,6 @@
 name: Logo Cloud
 icon: images
-preview: fields
+preview: block
 
 fields:
   heading:
@@ -8,11 +8,46 @@ fields:
     label: Heading
     help: Optional heading above logos
   logos:
-    type: files
+    type: structure
     label: Logos
-    multiple: true
-    layout: cards
-    size: tiny
+    fields:
+      image:
+        type: files
+        label: Logo Image
+        max: 1
+        layout: cards
+        size: tiny
+      alt_text:
+        type: text
+        label: Alt Text
+        help: Describe the logo for screen readers
+      link:
+        type: url
+        label: Link (Optional)
+        help: Where should this logo link to?
+  enable_animation:
+    type: toggle
+    label: Enable Animation
+    default: true
+    text: 
+      - Static
+      - Animated
+  animation_type:
+    type: select
+    label: Animation Type
+    default: marquee
+    options:
+      marquee: Marquee Scroll
+    when:
+      enable_animation: true
+  theme:
+    label: Block Theme
+    type: select
+    options:
+      light: Light (Canvas)
+      oceanic: Oceanic Dark
+      dark: Dark (Ink)
+    default: light
   airy_spacing:
     type: select
     label: Airy Spacing

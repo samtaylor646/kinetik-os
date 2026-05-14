@@ -27,7 +27,7 @@ $allowMultiple = $block->allow_multiple()->toBool() ? 'true' : 'false';
             foreach ($items as $item): 
                 $id = 'accordion_' . $block->id() . '_' . $index;
             ?>
-                <div class="border-b border-black/10 dark:border-white/10 last:border-0"
+                <div class="tech-border border-b border-t-0 border-l-0 border-r-0 last:border-b-0"
                      <?php if ($allowMultiple === 'true'): ?>
                      x-data="{ <?= $id ?>: false }"
                      <?php endif; ?>
@@ -35,7 +35,7 @@ $allowMultiple = $block->allow_multiple()->toBool() ? 'true' : 'false';
                     <h3>
                         <button 
                             type="button"
-                            class="flex w-full items-center justify-between py-5 text-left font-bold text-xl hover:text-oceanic-accent transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-oceanic-accent"
+                            class="flex w-full items-center justify-between py-6 text-left font-medium text-2xl hover:text-oceanic-accent transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-oceanic-accent"
                             <?php if ($allowMultiple === 'true'): ?>
                             @click="toggle('<?= $id ?>')"
                             :aria-expanded="<?= $id ?>.toString()"

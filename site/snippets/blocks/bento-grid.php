@@ -56,41 +56,30 @@ $themeCellClass = match($theme) {
 </style>
 
 <section class="bento-container w-full transition-colors duration-500 <?= $themeContainerClass ?> <?= $gridClass ?> grid-flow-dense gap-4 md:gap-6 p-4 md:p-6" data-bento-grid>
-    <?php foreach ($block->items()->toBlocks() as $index => $item): ?>
+    <?php 
+    $index = 0;
+    foreach ($block->items()->toBlocks() as $item): ?>
         <?php 
             $colSpanClass = 'col-span-1';
             $rowSpanClass = 'row-span-1'; 
 
-            // True staggered masonry layout
-            $pattern = $index % 7;
-            
-            if ($pattern === 0) {
-                $colSpanClass = 'md:col-span-2 lg:col-span-2';
-                $rowSpanClass = 'md:row-span-3 lg:row-span-3'; // Large, wide
-            } elseif ($pattern === 1) {
-                $colSpanClass = 'md:col-span-1 lg:col-span-1';
-                $rowSpanClass = 'md:row-span-2 lg:row-span-2'; // Tall
-            } elseif ($pattern === 2) {
-                $colSpanClass = 'md:col-span-1 lg:col-span-1';
-                $rowSpanClass = 'md:row-span-1 lg:row-span-1'; // Small
-            } elseif ($pattern === 3) {
-                $colSpanClass = 'md:col-span-1 lg:col-span-1';
-                $rowSpanClass = 'md:row-span-2 lg:row-span-2'; // Tall
-            } elseif ($pattern === 4) {
-                $colSpanClass = 'md:col-span-2 lg:col-span-2';
-                $rowSpanClass = 'md:row-span-2 lg:row-span-2'; // Wide
-            } elseif ($pattern === 5) {
-                $colSpanClass = 'md:col-span-1 lg:col-span-1';
-                $rowSpanClass = 'md:row-span-3 lg:row-span-3'; // Very tall
-            } elseif ($pattern === 6) {
-                $colSpanClass = 'md:col-span-1 lg:col-span-1';
-                $rowSpanClass = 'md:row-span-1 lg:row-span-1'; // Small
+            if ($layout === 'hero_split') {
+                if ($index === 0) {
+                    $colSpanClass = 'md:col-span-2 lg:col-span-2';
+                    $rowSpanClass = 'md:row-span-2 lg:row-span-2';
+                }
+            } elseif ($layout === 'feature_showcase') {
+                if ($index === 0 || $index === 3) {
+                    $colSpanClass = 'md:col-span-2 lg:col-span-2';
+                    $rowSpanClass = 'md:row-span-2 lg:row-span-2';
+                }
             }
+            // quadrant uses default 1x1 cells
         ?>
         <article class="bento-item bento-cell transition-all hover:scale-[1.01] <?= $themeCellClass ?> <?= $colSpanClass ?> <?= $rowSpanClass ?>">
             <div class="bento-content-wrapper h-full w-full">
                 <?= snippet('blocks/bento-items/' . $item->type(), ['block' => $item, 'theme' => $theme]) ?>
             </div>
         </article>
-    <?php endforeach ?>
+    <?php $index++; endforeach ?>
 </section>

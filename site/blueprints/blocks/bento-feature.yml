@@ -1,5 +1,6 @@
 name: Feature Card
 icon: star
+preview: fields
 blueprint: block
 
 fields:

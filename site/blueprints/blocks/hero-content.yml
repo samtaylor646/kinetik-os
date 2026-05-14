@@ -1,0 +1,65 @@
+name: Hero Content
+icon: star
+preview: fields
+
+fields:
+  eyebrow:
+    label: Eyebrow
+    type: text
+    help: Small text above the heading
+
+  heading:
+    label: Heading (H1)
+    type: text
+    help: The primary hero statement
+
+  subheading:
+    label: Subheading
+    type: textarea
+    buttons: false
+    help: Supporting text below the heading
+
+  alignment:
+    label: Content Alignment
+    type: select
+    options:
+      left: Left Aligned
+      center: Center Aligned
+      right: Right Aligned
+    default: left
+    width: 1/2
+
+  backdrop_tint:
+    label: Backdrop Tint (Glass Effect)
+    type: select
+    options:
+      transparent: Transparent (None)
+      frost-light: Frost Light (Light Glass)
+      frost-dark: Frost Dark (Dark Glass)
+      solid-canvas: Solid Canvas
+      solid-ink: Solid Ink
+    default: transparent
+    width: 1/2
+    help: Adds a background tint behind the text for legibility over media.
+
+  # Primary CTA
+  primary_cta_text:
+    label: Primary Button Text
+    type: text
+    width: 1/2
+
+  primary_cta_link:
+    label: Primary Button Link
+    type: url
+    width: 1/2
+
+  # Secondary CTA
+  secondary_cta_text:
+    label: Secondary Button Text
+    type: text
+    width: 1/2
+
+  secondary_cta_link:
+    label: Secondary Button Link
+    type: url
+    width: 1/2

@@ -17,11 +17,11 @@ $flexDirection = $alignment === 'left' ? 'lg:flex-row' : 'lg:flex-row-reverse';
             <div class="w-full lg:w-1/3 lg:sticky lg:top-24 lg:h-max" data-sticky-target>
                 <div class="asymmetric-split__content">
                     <?php if ($block->heading()->isNotEmpty()): ?>
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-light mb-6"><?= $block->heading()->html() ?></h2>
+                        <h2 class="display-text mb-8"><?= $block->heading()->html() ?></h2>
                     <?php endif; ?>
                     
                     <?php if ($block->text()->isNotEmpty()): ?>
-                        <div class="prose prose-lg opacity-80">
+                        <div class="prose prose-xl opacity-80 font-light">
                             <?= $block->text()->html() ?>
                         </div>
                     <?php endif; ?>
