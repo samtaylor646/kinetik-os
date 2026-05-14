@@ -7,6 +7,8 @@ declare(strict_types=1);
  * Agent: DX-Curator
  * Status: Production
  * Logic: Redefined core heading block with typographic tokens
+ *
+ * @var \Kirby\Cms\Block $block
  */
 
 $level = $block->level()->or('h2');

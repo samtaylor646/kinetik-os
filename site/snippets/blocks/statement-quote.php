@@ -1,6 +1,8 @@
 <?php
 /**
  * Path: /site/snippets/blocks/statement-quote.php
+ *
+ * @var \Kirby\Cms\Block $block
  */
 $themeClass = $block->theme()->toTheme();
 $spacingClass = $block->airy_spacing()->toAiry();

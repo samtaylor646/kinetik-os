@@ -7,7 +7,8 @@
   },
   "require": {
         "getkirby/cms": "^5.0",
-        "arnoson/kirby-vite": "^5.7"
+        "arnoson/kirby-vite": "^5.7",
+        "tobimori/kirby-icon-field": "^2.3"
     },
     "config": {
         "allow-plugins": {

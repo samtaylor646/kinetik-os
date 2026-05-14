@@ -6,12 +6,9 @@ blueprint: block
 fields:
   icon:
     label: Icon
-    type: select
-    options: query
-    query:
-      fetch: site.iconOptions
-      text: "{{ arrayItem.text }}"
-      value: "{{ arrayItem.value }}"
+    type: icon
+    max: 1
+    folder: "{{ kirby.root('base') }}/assets/icons"
     width: 1/4
   title:
     label: Title

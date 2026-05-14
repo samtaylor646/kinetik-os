@@ -66,6 +66,26 @@ A clean, text-driven hero with no heavy imagery. Relies on the "Airy" spacing sc
 
 ---
 
+## 4. The Massive Nested Hero (Row Grouping)
+
+If you want a huge Hero section where the top half is a video with text, and the bottom half contains 3 or 4 feature columns—all sharing the exact same background—you don't need confusing subgrids. You just group multiple layout rows together!
+
+**How to Group Rows:**
+1. **Row 1 (The Top Half):**
+   * Select a `1/1` layout.
+   * Add your **Hero Content** block.
+   * In the Row Settings, set your Background Video and Dimensions (e.g., `vh-75` or `vh-100`).
+   * **Crucial Step:** Go to the Advanced tab and toggle ON **"Extend Background to Next Row"**.
+
+2. **Row 2 (The Bottom Half):**
+   * Right below Row 1, add a new layout (e.g., `1/3, 1/3, 1/3`).
+   * Add your 3 feature blocks or strategy cards into these columns.
+   * You do *not* need to set a background on Row 2! Because Row 1 has "Extend Background" turned on, the system automatically swallows Row 2 into Row 1's background container.
+
+*You can string together as many rows as you want into a single background by turning on "Extend Background" for each consecutive row!*
+
+---
+
 ### Pro-Tips for the DX-Curator:
 * **Text Legibility:** If you set a `Background Image`, always set the `Image Dark Overlay` to Light, Medium, or Heavy. The text color will automatically invert to white.
 * **Motion:** Go to the Advanced tab and toggle `GSAP Scroll Reveal` to add a cinematic entrance to the hero content.

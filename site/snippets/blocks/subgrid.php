@@ -20,10 +20,24 @@ if ($layouts->isEmpty()) return;
             '2/3' => 'col-span-12 md:col-span-8',
             '1/4' => 'col-span-12 md:col-span-6 lg:col-span-3',
             '3/4' => 'col-span-12 lg:col-span-9',
+            // Fallbacks for Kirby 12-col fractions
+            '6/12' => 'col-span-12 md:col-span-6',
+            '4/12' => 'col-span-12 md:col-span-4',
+            '8/12' => 'col-span-12 md:col-span-8',
+            '3/12' => 'col-span-12 md:col-span-6 lg:col-span-3',
+            '9/12' => 'col-span-12 lg:col-span-9',
+            '12/12' => 'col-span-12',
+            // Fallbacks for raw integers
+            '6' => 'col-span-12 md:col-span-6',
+            '4' => 'col-span-12 md:col-span-4',
+            '8' => 'col-span-12 md:col-span-8',
+            '3' => 'col-span-12 md:col-span-6 lg:col-span-3',
+            '9' => 'col-span-12 lg:col-span-9',
+            '12' => 'col-span-12',
           ];
           $colClass = $spanMap[$span] ?? 'col-span-12';
         ?>
-        <div class="<?= $colClass ?> subgrid-column flex flex-col gap-6">
+        <div class="<?= $colClass ?> subgrid-column flex flex-col gap-6" data-span="<?= $span ?>">
           <?php foreach ($column->blocks() as $childBlock): ?>
             <div class="block-wrapper">
                <?= $childBlock ?>

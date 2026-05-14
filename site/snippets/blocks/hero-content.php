@@ -14,10 +14,10 @@ $alignClass = match($align) {
 // Backdrop Tint Logic
 $tint = $block->backdrop_tint()->value();
 $tintClass = match($tint) {
-    'frost-light'  => 'bg-canvas/80 backdrop-blur-md p-6 md:p-12 rounded-xl text-ink shadow-lg',
-    'frost-dark'   => 'bg-ink/80 backdrop-blur-md p-6 md:p-12 rounded-xl text-canvas shadow-lg',
-    'solid-canvas' => 'bg-canvas p-6 md:p-12 rounded-xl text-ink shadow-xl',
-    'solid-ink'    => 'bg-ink p-6 md:p-12 rounded-xl text-canvas shadow-xl',
+    'frost-light'  => 'bg-canvas/80 backdrop-blur-md p-6 md:p-12 text-ink shadow-lg',
+    'frost-dark'   => 'bg-ink/80 backdrop-blur-md p-6 md:p-12 text-canvas shadow-lg',
+    'solid-canvas' => 'bg-canvas p-6 md:p-12 text-ink shadow-xl',
+    'solid-ink'    => 'bg-ink p-6 md:p-12 text-canvas shadow-xl',
     default        => 'bg-transparent p-0', // Inherits from layout row
 };
 
@@ -31,7 +31,7 @@ $btnAlignClass = match($align) {
 <div class="hero-content w-full max-w-4xl <?= $alignClass ?> <?= $tintClass ?>" data-gsap="hero">
     
     <?php if ($block->eyebrow()->isNotEmpty()): ?>
-        <span class="block text-label font-bold text-[var(--color-oceanic-accent)] mb-4 tracking-widest uppercase">
+        <span class="block text-label font-bold text-oceanic-accent mb-4 tracking-widest uppercase">
             <?= $block->eyebrow()->html() ?>
         </span>
     <?php endif; ?>
@@ -51,13 +51,13 @@ $btnAlignClass = match($align) {
     <?php if ($block->primary_cta_text()->isNotEmpty() || $block->secondary_cta_text()->isNotEmpty()): ?>
         <div class="flex flex-wrap gap-4 mt-8 <?= $btnAlignClass ?>">
             <?php if ($block->primary_cta_text()->isNotEmpty()): ?>
-                <a href="<?= $block->primary_cta_link()->toUrl() ?>" class="inline-block bg-[var(--color-brand-accent)] text-white px-8 py-4 rounded font-medium hover:bg-opacity-90 transition-all shadow-md">
+                <a href="<?= $block->primary_cta_link()->toUrl() ?>" class="inline-block bg-(--color-brand-accent) text-white px-8 py-4 rounded font-medium hover:bg-opacity-90 transition-all shadow-md">
                     <?= $block->primary_cta_text()->html() ?>
                 </a>
             <?php endif; ?>
 
             <?php if ($block->secondary_cta_text()->isNotEmpty()): ?>
-                <a href="<?= $block->secondary_cta_link()->toUrl() ?>" class="inline-block bg-transparent border-2 border-current px-8 py-4 rounded font-medium hover:bg-[var(--color-ink)] hover:text-[var(--color-canvas)] hover:border-[var(--color-ink)] transition-all">
+                <a href="<?= $block->secondary_cta_link()->toUrl() ?>" class="inline-block bg-transparent border-2 border-current px-8 py-4 rounded font-medium hover:bg-ink hover:text-canvas hover:border-ink transition-all">
                     <?= $block->secondary_cta_text()->html() ?>
                 </a>
             <?php endif; ?>

@@ -1,6 +1,8 @@
 <?php
 /**
  * Bento Stat Cell Snippet
+ *
+ * @var \Kirby\Cms\Block $block
  */
 ?>
 <div class="p-8 flex flex-col justify-center h-full text-center">

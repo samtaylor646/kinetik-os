@@ -1,6 +1,8 @@
 <?php
 /**
  * Path: /site/snippets/blocks/accordion-group.php
+ *
+ * @var \Kirby\Cms\Block $block
  */
 $themeClass = $block->theme()->toTheme();
 $spacingClass = $block->airy_spacing()->toAiry();

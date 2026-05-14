@@ -37,7 +37,9 @@ fields:
     fields:
       icon:
         label: Icon Name (Lucide)
-        type: text
+        type: icon
+        max: 1
+        folder: "{{ kirby.root('base') }}/assets/icons"
         width: 1/4
         default: "check"
       title:

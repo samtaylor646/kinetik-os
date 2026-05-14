@@ -7,6 +7,8 @@ declare(strict_types=1);
  * Agent: DX-Curator
  * Status: Production
  * Logic: Redefined core quote block with "Boutique-Border" left-accent
+ *
+ * @var \Kirby\Cms\Block $block
  */
 ?>
 <blockquote class="border-l-4 border-warm-gold pl-6 py-2 my-airy-sm bg-canvas italic">

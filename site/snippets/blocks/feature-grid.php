@@ -1,6 +1,8 @@
 <?php
 /**
  * Path: /site/snippets/blocks/feature-grid.php
+ *
+ * @var \Kirby\Cms\Block $block
  */
 $themeClass = $block->theme()->toTheme();
 $spacingClass = $block->airy_spacing()->toAiry();

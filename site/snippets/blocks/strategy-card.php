@@ -1,6 +1,8 @@
 <?php
 /**
  * Path: /site/snippets/blocks/strategy-card.php
+ *
+ * @var \Kirby\Cms\Block $block
  */
 $themeClass = $block->theme()->toTheme();
 ?>

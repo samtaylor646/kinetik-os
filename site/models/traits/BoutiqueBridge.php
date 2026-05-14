@@ -35,13 +35,20 @@ trait BoutiqueBridge
      */
     public function toIcon(): string
     {
-        $iconName = $this->value();
+                $iconName = $this->value();
+        if (str_starts_with($iconName, '[')) {
+            $decoded = json_decode($iconName, true);
+            if (is_array($decoded) && count($decoded) > 0) {
+                $iconName = $decoded[0];
+            }
+        }
         if (empty($iconName)) {
             return '';
         }
         
         // Load from lucide icon directory
-        $iconPath = kirby()->root('assets') . "/icons/{$iconName}.svg";
+                $iconFile = str_ends_with($iconName, '.svg') ? $iconName : $iconName . '.svg';
+        $iconPath = kirby()->root('base') . '/assets' . "/icons/{$iconFile}";
         
         if (file_exists($iconPath)) {
             return file_get_contents($iconPath);

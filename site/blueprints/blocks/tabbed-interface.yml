@@ -14,7 +14,9 @@ fields:
         type: textarea
         label: Tab Content
       icon:
-        type: text
+        type: icon
+        max: 1
+        folder: "{{ kirby.root('base') }}/assets/icons"
         label: Lucide Icon Name
         help: Optional (e.g., arrow-right, check, etc.)
   airy_spacing:

@@ -7,6 +7,8 @@ declare(strict_types=1);
  * Agent: DX-Curator
  * Status: Production
  * Logic: Redefined core list block with Federal branding SVG bullets
+ *
+ * @var \Kirby\Cms\Block $block
  */
 ?>
 <div class="py-airy-sm text-lg text-ink space-y-2">
