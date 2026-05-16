@@ -9,14 +9,33 @@
   </div>
   
   <?php foreach ($page->layout()->toLayouts() as $layout): ?>
-    <section class="grid w-full" id="<?= $layout->id() ?>">
+    <?php
+      $bgClass = 'bg-transparent text-ink';
+      if ($bg = $layout->attrs()->row_bg()->value()) {
+          $map = [
+            'canvas' => 'bg-canvas text-ink',
+            'ink' => 'bg-ink text-canvas',
+            'oceanic' => 'bg-oceanic-dark text-canvas',
+            'gold' => 'bg-warm-gold text-ink',
+            'soft-smoke' => 'bg-soft-smoke text-ink',
+            'brand-accent' => 'bg-(--color-brand-accent) text-canvas',
+          ];
+          $bgClass = $map[$bg] ?? 'bg-transparent text-ink';
+      }
+    ?>
+    <section class="grid w-full <?= $bgClass ?> py-12" id="<?= $layout->id() ?>">
       <?php foreach ($layout->columns() as $column): ?>
-        <div class="column w-full" style="--span:<?= $column->span() ?>">
+        <div class="column w-full px-4 md:px-16" style="--span:<?= $column->span() ?>">
           <div class="blocks w-full space-y-24">
             <?php foreach ($column->blocks() as $block): ?>
               <div class="block-wrapper relative mt-12 mb-12 w-full">
-                <div class="absolute -top-6 left-4 md:left-16 z-50 bg-canvas px-2 text-xs font-mono text-ink/50 uppercase tracking-wider tech-border">
-                  <?= $block->type() ?>
+                <div class="absolute -top-6 left-0 z-50 bg-canvas px-2 text-xs font-mono text-ink/50 uppercase tracking-wider tech-border flex gap-4">
+                  <span><?= $block->type() ?></span>
+                  <?php if ($block->type() === 'hero-content'): ?>
+                    <span class="text-brand-accent">Align: <?= $block->alignment()->or('left') ?></span>
+                    <span class="text-brand-accent">Theme: <?= $block->theme()->or('transparent') ?></span>
+                    <span class="text-brand-accent">Tint: <?= $block->backdrop_tint()->or('transparent') ?></span>
+                  <?php endif ?>
                 </div>
                 <?= $block ?>
               </div>

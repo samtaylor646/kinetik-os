@@ -18,7 +18,7 @@ fields:
         type: text
         label: Button Label
       url:
-        type: url
+        type: text
         label: Button URL
       style:
         type: select

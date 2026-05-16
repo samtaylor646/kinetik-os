@@ -79,4 +79,12 @@ While we avoid the Starterkit's global CSS/JS, the following structural elements
 * \[ \] **Motion-G:** Any block utilizing needsGsap() must have an associated entrance.js module.  
 * \[ \] **Logic-A:** Custom blocks must be keyboard-navigable and screen-reader tested.
 
+## **6\. CONTENT CREATOR UX (THE "SQUARESPACE/WEBFLOW" STANDARD)**
+
+To ensure a smoother transition to Kirby CMS for content creator end users, our UI/UX within the Panel must strive to emulate the granular, intuitive controls found in visual site builders like Webflow, WordPress, and Squarespace. 
+
+* **Granular Media Controls:** Provide explicit blueprint fields for visual behaviors (e.g., background size: cover/contain/auto, media positioning: center/top/bottom) rather than hardcoding them, giving content editors absolute control.
+* **Familiar Paradigms:** Adopt familiar terminology and UI grouping (e.g., "Dimensions & Alignment", "Background Style", "Advanced Settings") within the layout builder and block editors.
+* **Visual Parity:** Field configurations in the backend must instantly and accurately reflect changes on the frontend, respecting user intent.
+
 **END OF DOCUMENT**

@@ -22,7 +22,7 @@ fields:
         label: Alt Text
         help: Describe the logo for screen readers
       link:
-        type: url
+        type: text
         label: Link (Optional)
         help: Where should this logo link to?
   enable_animation:

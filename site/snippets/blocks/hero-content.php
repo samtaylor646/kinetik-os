@@ -11,6 +11,18 @@ $alignClass = match($align) {
     default  => 'text-left mr-auto items-start',
 };
 
+// Theme Logic
+$theme = $block->theme()->value();
+$themeClass = match($theme) {
+    'canvas' => 'bg-canvas text-ink p-8 md:p-16 rounded-xl shadow-lg',
+    'ink' => 'bg-ink text-canvas p-8 md:p-16 rounded-xl shadow-lg',
+    'oceanic' => 'bg-oceanic-dark text-canvas p-8 md:p-16 rounded-xl shadow-lg',
+    'gold' => 'bg-warm-gold text-ink p-8 md:p-16 rounded-xl shadow-lg',
+    'soft-smoke' => 'bg-soft-smoke text-ink p-8 md:p-16 rounded-xl shadow-lg',
+    'brand-accent' => 'bg-(--color-brand-accent) text-canvas p-8 md:p-16 rounded-xl shadow-lg',
+    default => '', // Transparent, inherits from row
+};
+
 // Backdrop Tint Logic
 $tint = $block->backdrop_tint()->value();
 $tintClass = match($tint) {
@@ -28,7 +40,7 @@ $btnAlignClass = match($align) {
     default  => 'justify-start',
 };
 ?>
-<div class="hero-content w-full max-w-4xl <?= $alignClass ?> <?= $tintClass ?>" data-gsap="hero">
+<div class="hero-content w-full max-w-4xl <?= $alignClass ?> <?= $themeClass ?> <?= $tintClass ?>" data-gsap="hero">
     
     <?php if ($block->eyebrow()->isNotEmpty()): ?>
         <span class="block text-label font-bold text-oceanic-accent mb-4 tracking-widest uppercase">

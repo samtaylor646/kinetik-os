@@ -29,14 +29,16 @@ $groupIsOpen = false;
         if ($bg = $attrs->row_bg()->value()) {
           $map = [
             'transparent' => 'bg-transparent',
-            'canvas' => 'bg-[var(--color-canvas)] text-[var(--color-ink)]',
-            'ink' => 'bg-[var(--color-ink)] text-[var(--color-canvas)]',
-            'oceanic' => 'bg-[var(--color-oceanic-dark)] text-[var(--color-canvas)]',
-            'gold' => 'bg-[var(--color-warm-gold)] text-[var(--color-ink)]',
-            'soft-smoke' => 'bg-[var(--color-soft-smoke)] text-[var(--color-ink)]',
-            'brand-accent' => 'bg-[var(--color-brand-accent)] text-[var(--color-canvas)]',
+            'canvas' => 'bg-canvas text-ink',
+            'ink' => 'bg-ink text-canvas',
+            'oceanic' => 'bg-oceanic-dark text-canvas',
+            'gold' => 'bg-warm-gold text-ink',
+            'soft-smoke' => 'bg-soft-smoke text-ink',
+            'brand-accent' => 'bg-(--color-brand-accent) text-canvas',
           ];
-          $classes[] = $map[$bg] ?? 'bg-transparent';
+          if (isset($map[$bg])) {
+            $classes[] = $map[$bg];
+          }
         }
 
         // Custom Class
@@ -58,10 +60,15 @@ $groupIsOpen = false;
       <?php // Background Image/Video Handling ?>
       <?php if ($file = $attrs->background_media()->toFile()): ?>
           <div class="absolute inset-0 z-0 overflow-hidden">
+            <?php 
+              $mediaSize = $attrs->background_media_size()->value() ?: 'cover';
+              $mediaPos = $attrs->background_media_position()->value() ?: 'center';
+              $mediaClasses = "w-full h-full object-{$mediaSize} object-{$mediaPos}";
+            ?>
             <?php if ($file->type() === 'video'): ?>
-               <video src="<?= $file->url() ?>" autoplay loop muted playsinline class="w-full h-full object-cover"></video>
+               <video src="<?= $file->url() ?>" autoplay loop muted playsinline class="<?= $mediaClasses ?>"></video>
             <?php else: ?>
-               <img src="<?= $file->url() ?>" alt="" class="w-full h-full object-cover" />
+               <img src="<?= $file->url() ?>" alt="" class="<?= $mediaClasses ?>" />
             <?php endif; ?>
             
             <?php // Dark Overlay ?>
@@ -92,7 +99,9 @@ $groupIsOpen = false;
             'vh-100' => 'min-h-screen',
             'auto' => 'h-auto'
           ];
-          $innerClasses[] = $map[$minHeight] ?? 'h-auto';
+          if (isset($map[$minHeight])) {
+            $innerClasses[] = $map[$minHeight];
+          }
         }
 
         // Padding
@@ -104,17 +113,21 @@ $groupIsOpen = false;
             'lg' => 'py-16 md:py-24',
             'xl' => 'py-24 md:py-32',
           ];
-          $innerClasses[] = $map[$padding] ?? 'py-12 md:py-20';
+          if (isset($map[$padding])) {
+            $innerClasses[] = $map[$padding];
+          }
         }
 
         // Vertical Alignment inside the row
-        $alignMap = [
-          'start' => 'justify-start', 
-          'center' => 'justify-center', 
-          'end' => 'justify-end'
-        ];
-        $vAlign = $attrs->vertical_align()->value() ?: 'start';
-        $innerClasses[] = $alignMap[$vAlign] ?? 'justify-start';
+        if ($vAlign = $attrs->vertical_align()->value()) {
+          $alignMap = [
+            'center' => 'justify-center', 
+            'end' => 'justify-end'
+          ];
+          if (isset($alignMap[$vAlign])) {
+            $innerClasses[] = $alignMap[$vAlign];
+          }
+        }
       ?>
 
       <div class="<?= implode(' ', $innerClasses) ?>">

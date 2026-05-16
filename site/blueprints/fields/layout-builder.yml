@@ -47,43 +47,48 @@ settings:
         min_height:
           label: Minimum Height (Hero Setting)
           type: select
+          empty: false
           options:
-            auto: Auto (Content Height)
+            "": Inherit Global Baseline (Auto)
             vh-50: Half Screen (50vh)
             vh-75: Large (75vh)
             vh-100: Full Screen Hero (100vh)
-          default: auto
+          default: ""
           width: 1/2
           
         vertical_align:
           label: Vertical Content Alignment
           type: select
+          empty: false
           options:
-            start: Top
+            "": Inherit Global Baseline (Top)
             center: Middle
             end: Bottom
-          default: start
+          default: ""
           width: 1/2
 
         row_padding:
           label: Row Padding (Y)
           type: select
+          empty: false
           options:
+            "": Inherit Global Baseline
             none: None
             sm: Small (Airy-SM)
             md: Medium (Airy-MD)
             lg: Large (Airy-LG)
             xl: Massive (Airy-XL)
-          default: md
+          default: ""
           width: 1/2
 
         row_width:
           label: Row Width Container
           type: select
+          empty: false
           options:
-            contained: Contained (Max-Width)
+            "": Inherit Global Baseline (Contained)
             full: Full Bleed
-          default: contained
+          default: ""
           width: 1/2
 
     background:
@@ -93,15 +98,16 @@ settings:
         row_bg:
           label: Background Color / Theme
           type: select
+          empty: false
           options:
-            transparent: Transparent
+            "": Inherit Context (Transparent)
             canvas: Canvas (Main Background)
             ink: Ink (Dark Text/Background)
             oceanic: Oceanic Dark
             gold: Warm Gold
             soft-smoke: Soft Smoke
             brand-accent: Brand Accent
-          default: transparent
+          default: ""
           width: 1/1
 
         background_media:
@@ -109,6 +115,30 @@ settings:
           type: files
           multiple: false
           query: page.files.filterBy('type', 'in', ['image', 'video'])
+          width: 1/1
+          
+        background_media_size:
+          label: Media Size
+          type: select
+          empty: false
+          options:
+            cover: Cover (Fill Area, Crop)
+            contain: Contain (Show All, Letterbox)
+            auto: Auto (Original Size)
+          default: cover
+          width: 1/2
+
+        background_media_position:
+          label: Media Position
+          type: select
+          empty: false
+          options:
+            center: Center
+            top: Top
+            bottom: Bottom
+            left: Left
+            right: Right
+          default: center
           width: 1/2
           
         background_overlay:

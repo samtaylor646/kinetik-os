@@ -2,8 +2,8 @@ Title: About (Sandbox)
 
 ----
 
-Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"section-header","content":{"eyebrow":"Our Story","heading":"Building the Future","subheading":"We are a collective of passionate creators.","alignment":"center","theme":"light","airy_spacing":"md"}},{"type":"statement-quote","content":{"quote":"Design is not just what it looks like and feels like. Design is how it works.","author":"Steve Jobs","role":"Visionary","theme":"oceanic","airy_spacing":"lg"}},{"type":"asymmetric-columns","content":{"heading":"Our Core Values","text":"<p>We believe in transparency, innovation, and relentless execution.<\/p>","alignment":"left","theme":"light","airy_spacing":"lg","media_blocks":[{"type":"image","content":{"image":["unsplash-1.webp"]}},{"type":"image","content":{"image":["getty-image.webp"]}}]}},{"type":"strategy-card","content":{"icon":"globe-2","title":"Global Reach","summary":"Our products are used by millions worldwide.","details":"From local startups to Fortune 500s, our digital solutions scale across borders and languages.","theme":"light"}}]}]}]
+Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"section-header","content":{"heading":"About Us"}},{"type":"statement-quote","content":{"quote":"We build the future."}},{"type":"asymmetric-columns","content":{"heading":"Our Mission"}},{"type":"quote","content":{"text":"An insightful secondary quote.","citation":"Jane Doe"}},{"type":"data-table","content":{"heading":"Company Stats"}}]}]}]
 
 ----
 
-Uuid: tgmxdcprofcyw0yc
+Uuid: rimh5x59qwxtdupf

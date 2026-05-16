@@ -22,10 +22,18 @@ trait BoutiqueBridge
     {
         $value = $this->value();
         if (empty($value)) {
-            return 'py-airy-md'; // Default fallback
+            return 'pt-airy-md pb-airy-md'; // Default fallback
         }
         
-        return "pt-airy-{$value} pb-airy-{$value}";
+        return match($value) {
+            'sm' => 'pt-airy-sm pb-airy-sm',
+            'md' => 'pt-airy-md pb-airy-md',
+            'lg' => 'pt-airy-lg pb-airy-lg',
+            'xl' => 'pt-airy-xl pb-airy-xl',
+            '2xl' => 'pt-airy-2xl pb-airy-2xl',
+            'massive' => 'pt-airy-massive pb-airy-massive',
+            default => "pt-airy-{$value} pb-airy-{$value}"
+        };
     }
 
     /**
@@ -67,10 +75,10 @@ trait BoutiqueBridge
         $theme = $this->value();
         
         return match($theme) {
-            'oceanic' => 'bg-[var(--color-oceanic-dark)] text-[var(--color-canvas)]',
-            'gold' => 'bg-[var(--color-warm-gold)] text-[var(--color-ink)]',
-            'light' => 'bg-[var(--color-canvas)] text-[var(--color-ink)]',
-            'dark' => 'bg-[var(--color-ink)] text-[var(--color-canvas)]',
+            'oceanic' => 'bg-oceanic-dark text-canvas',
+            'gold' => 'bg-warm-gold text-ink',
+            'light' => 'bg-canvas text-ink',
+            'dark' => 'bg-ink text-canvas',
             'transparent' => 'bg-transparent',
             default => 'bg-transparent', // Default to transparent so layout handles color
         };
