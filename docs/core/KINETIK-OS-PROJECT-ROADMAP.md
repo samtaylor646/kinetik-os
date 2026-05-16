@@ -39,7 +39,7 @@ graph LR
     A[Week 0: Kickoff] --> B[Week 1: DevContainer]
     B --> C[Week 2: Design Tokens]
     C --> D[Week 3: Blocks 1-7]
-    D --> E[Week 4: Blocks 8-13]
+    D --> E[Week 4: Blocks 8-18]
     E --> F[Week 5: Testing]
     F --> G[Week 6: Launch]
 ```
@@ -52,7 +52,7 @@ graph LR
 | **M1: DevContainer Operational** | May 15, 2026 | ⏳ Pending | None |
 | **M2: Design System Complete** | May 22, 2026 | ⏳ Pending | M1 |
 | **M3: 7 Blocks Functional** | May 29, 2026 | ⏳ Pending | M2 |
-| **M4: 13 Blocks Complete** | June 5, 2026 | ⏳ Pending | M3 |
+| **M4: 18 Blocks Complete** | June 5, 2026 | ⏳ Pending | M3 |
 | **M5: Performance Targets Met** | June 12, 2026 | ⏳ Pending | M4 |
 | **M6: Production Deployment** | June 16, 2026 | ⏳ Pending | M5 |
 
@@ -648,7 +648,7 @@ tabs:
 
 **Duration:** 5 days  
 **Lead Agent:** DX-Curator + Logic-A + Motion-G  
-**Goal:** Complete remaining 6 blocks (8-13)
+**Goal:** Complete remaining 11 blocks (8-18)
 
 ### Day 1: CTA Banner + Logo Cloud
 
@@ -767,7 +767,7 @@ Dependencies, performance considerations
 - ✅ Code examples provided
 - ✅ Accessibility notes present
 
-**Milestone:** **M4: 13 Blocks Complete** ✅
+**Milestone:** **M4: 18 Blocks Complete** ✅
 
 ---
 
@@ -1152,7 +1152,7 @@ graph TD
     B --> C[M2: Design System]
     C --> D[M3: 7 Blocks]
     C --> E[Motion Lab]
-    D --> F[M4: 13 Blocks]
+    D --> F[M4: 18 Blocks]
     E --> G[M5: Performance]
     F --> G
     G --> H[M6: Deployment]
@@ -1216,12 +1216,12 @@ graph TD
 
 | Week | Lighthouse | WCAG | Security | Blocks Complete | Status |
 |------|------------|------|----------|-----------------|--------|
-| 1 | N/A | N/A | N/A | 0/13 | ⏳ |
-| 2 | N/A | N/A | Pass | 0/13 | ⏳ |
-| 3 | N/A | Pass | Pass | 7/13 | ⏳ |
-| 4 | N/A | Pass | Pass | 13/13 | ⏳ |
-| 5 | ≥90 | Pass | Pass | 13/13 | ⏳ |
-| 6 | ≥90 | Pass | Pass | 13/13 | ⏳ |
+| 1 | N/A | N/A | N/A | 0/18 | ⏳ |
+| 2 | N/A | N/A | Pass | 0/18 | ⏳ |
+| 3 | N/A | Pass | Pass | 7/18 | ⏳ |
+| 4 | N/A | Pass | Pass | 18/18 | ⏳ |
+| 5 | ≥90 | Pass | Pass | 18/18 | ⏳ |
+| 6 | ≥90 | Pass | Pass | 18/18 | ⏳ |
 
 ---
 

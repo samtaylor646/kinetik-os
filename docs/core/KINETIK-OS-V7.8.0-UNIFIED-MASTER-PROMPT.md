@@ -104,7 +104,7 @@ ROOT/
 │   ├── blueprints/            ← Panel field definitions (YAML)
 │   │   ├── site.yml           ← Global site blueprint
 │   │   ├── pages/             ← Page type blueprints
-│   │   ├── blocks/            ← Custom block blueprints (13-unit library)
+│   │   ├── blocks/            ← Custom block blueprints (18-block architectural implementation)
 │   │   └── fields/            ← Reusable field definitions
 │   ├── config/                ← Kirby configuration
 │   │   ├── config.php         ← Main config (reads .env)
@@ -113,7 +113,7 @@ ROOT/
 │   ├── models/                ← Page models with logic gates
 │   │   └── traits/            ← BoutiqueBridge trait
 │   ├── snippets/              ← Reusable template components
-│   │   ├── blocks/            ← 13 custom blocks (Split Hero, Bento Grid, etc.)
+│   │   ├── blocks/            ← 18 custom blocks (Bento Grid, Hero Content, etc.)
 │   │   ├── header.php         ← Global header (Vite integration)
 │   │   └── footer.php         ← Global footer
 │   └── templates/             ← Page templates
@@ -270,7 +270,7 @@ ROOT/
 
 ---
 
-## SECTION 6: THE HYBRID BLOCK SYSTEM & 13-BLOCK BOUTIQUE LIBRARY
+## SECTION 6: THE HYBRID BLOCK SYSTEM & 18-BLOCK BOUTIQUE LIBRARY
 
 ### 6.1 The Hybrid-Boutique Architecture Strategy
 We use a "Hybrid-Boutique" approach. We avoid the Kirby Starterkit's "all-or-nothing" structure, but we whitelist the following structural components from the Starterkit to be ported:
@@ -285,33 +285,38 @@ To minimize technical debt, we retain and override standard Kirby blocks rather 
 - **list**: Custom SVG bullets.
 - **quote**: Implementation of the "Boutique-Border" left-accent.
 
-### 6.3 Boutique Design Components (Custom)
+### 6.3 Core Layout & Hero Blocks
 
 | Block Name | Purpose | Signature Feature | Agent |
 |------------|---------|-------------------|-------|
-| **Strategy Card** | Data-dense feature box | 2px solid borders, Alpine expand | DX-Curator + Logic-A |
-| **Statement Quote** | High-contrast pull quote | Massive serif font, warm-gold accent | DX-Curator |
-| **Asymmetric Image** | Floating image with caption | GSAP parallax on scroll | Motion-G |
-
-### 6.4 Structural & Functional Components (Custom)
-
-| Block Name | Purpose | Technology | Agent |
-|------------|---------|------------|-------|
-| **Split Hero** | Large header with 50/50 split | `grid grid-cols-2 gap-0` | DX-Curator |
-| **Section Header** | Typography-focused anchor | `text-center py-airy-xl` | DX-Curator |
 | **Bento Grid** | Recursive slot container | `grid auto-rows-auto gap-4` | DX-Curator + Architect-K |
-| **Accordion Group** | Collapsible FAQ/technical info | Alpine.js `x-collapse` | Logic-A |
+| **Asymmetric Columns** | Floating/pinned layouts | GSAP parallax on scroll | Motion-G + Architect-K |
+| **Horizontal Scroll** | GSAP horizontal tracking | `overflow-x-hidden` tracking | Motion-G |
+| **Hero Content** | Advanced hero composition | Large header / split composition | DX-Curator |
 | **CTA Banner** | Full-width conversion strip | Oceanic flood background | DX-Curator |
-| **Data Table** | Responsive technical specs | Horizontal scroll on mobile | Architect-K |
-| **Tabbed Interface** | State-based content switching | Alpine.js state management | Logic-A |
 
-### 6.5 Media Components (Custom)
+### 6.4 Bento Content Variants
 
 | Block Name | Purpose | Technology | Agent |
 |------------|---------|------------|-------|
+| **Bento Feature** | Feature highlights with icons | Lucide SVG server-side | Architect-K |
+| **Bento Media** | Strict media container | Images/videos rendering | Architect-K |
+| **Bento Standard** | Mixed-content block | Text + image layout | DX-Curator |
+| **Bento Stat** | Emphasizing statistics | Large typography values | DX-Curator |
+
+### 6.5 Content, Typography & Interactive Components
+
+| Block Name | Purpose | Technology | Agent |
+|------------|---------|------------|-------|
+| **Section Header** | Typography-focused anchor | `text-center py-airy-xl` | DX-Curator |
+| **Statement Quote** | High-contrast pull quote | Massive serif font, gold accent | DX-Curator |
+| **Strategy Card** | Data-dense feature box | 2px solid borders, Alpine expand | DX-Curator + Logic-A |
 | **Feature Grid** | Icon + description layout | Lucide SVG server-side | Architect-K + DX-Curator |
-| **Logo Cloud** | Partner/client logos | Grayscale-to-color hover | DX-Curator |
+| **Accordion Group** | Collapsible FAQ/technical info | Alpine.js `x-collapse` | Logic-A |
+| **Tabbed Interface** | State-based content switching | Alpine.js state management | Logic-A |
 | **Video Modal** | Full-screen video overlay | GSAP entrance animation | Motion-G |
+| **Data Table** | Responsive technical specs | Horizontal scroll on mobile | Architect-K |
+| **Logo Cloud** | Partner/client logos | Grayscale-to-color hover | DX-Curator |
 
 ---
 

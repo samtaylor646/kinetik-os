@@ -253,7 +253,7 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 
 **Requirements:**
 - Drag-and-drop block ordering
-- 13 pre-built block types available
+- 18 pre-built block types available
 - Block-specific settings (spacing, theme, content)
 - Preview mode before publish
 - Responsive preview (desktop, tablet, mobile)
@@ -487,11 +487,13 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 
 ---
 
-## SECTION 5: THE 13-BLOCK COMPONENT LIBRARY
+## SECTION 5: THE 18-BLOCK COMPONENT LIBRARY
+
+*Note: For the canonical and complete list of all 18 blocks (including Bento grid variants, horizontal scroll, and specialized layout components), refer to `docs/architecture/block-library.md`. The below represents the core structural blocks.*
 
 ### 5.1 Block Specifications
 
-#### Block 1: Split Hero
+#### Block 1: Hero Content
 
 **Purpose:** Large header with 50/50 image/text split  
 **Agent:** DX-Curator  
