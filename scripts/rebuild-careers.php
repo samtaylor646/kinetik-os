@@ -122,7 +122,7 @@ $pages = [
                                 'heading' => 'Engineering & Research',
                                 'headers' => ['col1' => 'Role', 'col2' => 'Location', 'col3' => 'Type', 'col4' => 'Link'],
                                 'table_data' => [
-                                    ['col1' => 'Senior Research Scientist', 'col2' => 'Remote (Global)', 'col3' => 'Full-time', 'col4' => '/sb-jobdetail'],
+                                    ['col1' => 'Job Detail', 'col2' => 'Remote (Global)', 'col3' => 'Full-time', 'col4' => '/sb-jobdetail'],
                                     ['col1' => 'Machine Learning Engineer', 'col2' => 'London / Remote', 'col3' => 'Full-time', 'col4' => '/sb-jobdetail'],
                                     ['col1' => 'Safety Researcher', 'col2' => 'Remote', 'col3' => 'Full-time', 'col4' => '/sb-jobdetail']
                                 ],
@@ -138,7 +138,7 @@ $pages = [
         'slug'     => 'sb-jobdetail',
         'template' => 'sandbox',
         'content'  => [
-            'title'  => 'Senior Research Scientist',
+            'title'  => 'Job Detail',
             'layout' => json_encode([
                 [
                     'columns' => [['width' => '1/1', 'blocks' => [
@@ -146,7 +146,7 @@ $pages = [
                             'type' => 'section-header',
                             'content' => [
                                 'eyebrow' => 'Engineering & Research • Remote (Global) • Full-time',
-                                'heading' => 'Senior Research Scientist',
+                                'heading' => 'Job Detail',
                                 'subheading' => 'Lead cutting-edge research in AI safety and alignment.',
                                 'alignment' => 'left',
                                 'theme' => 'light',
@@ -169,7 +169,7 @@ $pages = [
                             'type' => 'asymmetric-columns',
                             'content' => [
                                 'heading' => 'About the Role',
-                                'text' => '<p>As a Senior Research Scientist, you will be responsible for defining and executing long-term research agendas aimed at making advanced AI systems safer and more reliable.</p>
+                                'text' => '<p>As a Job Detail, you will be responsible for defining and executing long-term research agendas aimed at making advanced AI systems safer and more reliable.</p>
                                 <h3>What you will do</h3>
                                 <ul>
                                     <li>Design and run experiments to evaluate model robustness and interpretability.</li>
@@ -236,7 +236,7 @@ foreach ($pages as $pageData) {
             }
         }
 
-        $page = $page->changeStatus('listed');
+        $page = $page->changeStatus('unlisted');
         echo "Created page: " . $page->id() . "\n";
     } catch (Exception $e) {
         echo "Error creating " . $pageData['slug'] . ": " . $e->getMessage() . "\n";

@@ -1,0 +1,63 @@
+title: Job Detail
+icon: user
+options:
+  changeTemplate: false
+  preview: true
+
+tabs:
+  content:
+    label: Job Details
+    icon: text
+    columns:
+      - width: 2/3
+        sections:
+          jobInfo:
+            type: fields
+            fields:
+              description:
+                label: Job Description
+                type: textarea
+                size: large
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - strikethrough
+                  - ul
+                  - ol
+                  - code
+                  - email
+                  - link
+                  - file
+      - width: 1/3
+        sections:
+          meta:
+            type: fields
+            fields:
+              department:
+                label: Department
+                type: text
+                width: 1/1
+              location:
+                label: Location
+                type: text
+                width: 1/1
+              employmentType:
+                label: Employment Type
+                type: select
+                options:
+                  full-time: Full-time
+                  part-time: Part-time
+                  contract: Contract
+                  freelance: Freelance
+                width: 1/1
+              applyLink:
+                label: Apply Link
+                type: url
+                help: External application URL
+                width: 1/1

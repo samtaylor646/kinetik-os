@@ -1,0 +1,100 @@
+title: Theme Options
+icon: brush
+
+options:
+  changeStatus: false
+  changeTitle: false
+  changeSlug: false
+  changeTemplate: false
+  create: false
+  delete: false
+  duplicate: false
+
+tabs:
+  colors:
+    label: Colors
+    icon: palette
+    fields:
+      theme_colors:
+        label: Custom Theme Colors
+        type: structure
+        help: "Add your unlimited colors here. For example, 'primary-bg' will become '--color-primary-bg' in CSS."
+        fields:
+          color_name:
+            label: Variable Name
+            type: text
+            width: 1/2
+            required: true
+            placeholder: "e.g., primary"
+          color_value:
+            label: Color Value
+            type: color
+            width: 1/2
+            required: true
+
+  typography:
+    label: Typography
+    icon: text
+    fields:
+      font_url:
+        label: Font Provider URL (e.g., Google Fonts)
+        type: url
+        placeholder: "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      base_font:
+        label: Base Font Family
+        type: text
+        width: 1/2
+        placeholder: "'Inter', sans-serif"
+      heading_font:
+        label: Heading Font Family
+        type: text
+        width: 1/2
+        placeholder: "'Inter', sans-serif"
+
+  ui:
+    label: UI & Navigation
+    icon: layout
+    fields:
+      border_radius:
+        label: Global Border Radius
+        type: select
+        options:
+          none: "None"
+          sm: "Small"
+          md: "Medium"
+          lg: "Large"
+          full: "Pill / Full"
+        width: 1/2
+      navbar_height:
+        label: Navbar Height
+        type: text
+        width: 1/2
+        placeholder: "80px"
+      navbar_bg:
+        label: Navbar Background Color
+        type: color
+        width: 1/2
+      navbar_text:
+        label: Navbar Text Color
+        type: color
+        width: 1/2
+
+  advanced:
+    label: Custom Code
+    icon: code
+    fields:
+      custom_css:
+        label: Custom CSS
+        type: textarea
+        font: monospace
+        buttons: false
+      custom_head:
+        label: Header Scripts (<head>)
+        type: textarea
+        font: monospace
+        buttons: false
+      custom_footer:
+        label: Footer Scripts (before </body>)
+        type: textarea
+        font: monospace
+        buttons: false

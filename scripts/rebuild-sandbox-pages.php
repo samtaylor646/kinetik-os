@@ -330,7 +330,7 @@ foreach ($pages as $pageData) {
             }
         }
 
-        $page = $page->changeStatus('listed');
+        $page = $page->changeStatus('unlisted');
         echo "Created page: " . $page->id() . "\n";
     } catch (Exception $e) {
         echo "Error creating " . $pageData['slug'] . ": " . $e->getMessage() . "\n";

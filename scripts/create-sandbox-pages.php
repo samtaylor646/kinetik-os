@@ -106,7 +106,7 @@ foreach ($pages as $pageData) {
 foreach ($pages as $pageData) {
     try {
         $page = $kirby->site()->createChild($pageData);
-        $page->changeStatus('listed');
+        $page->changeStatus('unlisted');
         echo "Created page: " . $page->id() . "\n";
     } catch (Exception $e) {
         echo "Error creating " . $pageData['slug'] . ": " . $e->getMessage() . "\n";

@@ -14,6 +14,7 @@ fields:
     label: Media (Image or Video)
     type: files
     max: 1
+    query: site.find("media").files.add(page.files)
     layout: list
   alt_text:
     label: Contextual Alt Text

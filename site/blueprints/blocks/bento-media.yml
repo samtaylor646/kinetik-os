@@ -10,5 +10,5 @@ fields:
     max: 1
     layout: cards
     size: large
-    query: page.files.template('image')
+    query: site.find("media").files.add(page.files)
     uploads: image

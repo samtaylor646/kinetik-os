@@ -9,6 +9,21 @@ return [
     'debug' => true,
     'url' => $url,
     'panel' => [
-        'install' => true
+        'install' => true,
+        'menu' => [
+            'site',
+            'theme' => [
+                'icon'  => 'brush',
+                'label' => 'Theme',
+                'link'  => 'pages/theme'
+            ],
+            'media' => [
+                'icon'  => 'images',
+                'label' => 'Media',
+                'link'  => 'pages/media'
+            ],
+            'users',
+            'system'
+        ]
     ]
 ];

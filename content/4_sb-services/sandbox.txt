@@ -1,9 +1,0 @@
-Title: Services (Sandbox)
-
-----
-
-Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"section-header","content":{"heading":"Our Services","text":"What we offer."}},{"type":"bento-grid","content":{"layout":"3-col"}},{"type":"accordion-group","content":{"items":[]}},{"type":"list","content":{"text":"- Service 1\\n- Service 2\\n- Service 3"}},{"type":"cta-banner","content":{"heading":"Ready to start?"}}]}]}]
-
-----
-
-Uuid: nucp7irgp54g4lnh

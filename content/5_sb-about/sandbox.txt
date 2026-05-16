@@ -1,9 +1,0 @@
-Title: About (Sandbox)
-
-----
-
-Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"section-header","content":{"heading":"About Us"}},{"type":"statement-quote","content":{"quote":"We build the future."}},{"type":"asymmetric-columns","content":{"heading":"Our Mission"}},{"type":"quote","content":{"text":"An insightful secondary quote.","citation":"Jane Doe"}},{"type":"data-table","content":{"heading":"Company Stats"}}]}]}]
-
-----
-
-Uuid: rimh5x59qwxtdupf

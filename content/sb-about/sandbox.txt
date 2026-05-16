@@ -1,0 +1,9 @@
+Title: About (Sandbox)
+
+----
+
+Layout: [{"attrs":{"min_height":"","vertical_align":"","row_padding":"","row_width":"","row_bg":"","background_media":[],"background_media_size":"","background_media_position":"","background_overlay":"","merge_next":"false","gsap_reveal":"false","custom_id":"","custom_class":""},"columns":[{"blocks":[{"content":{"text":"<p>Welcome to the Kinetik OS Sandbox. This page is built using the robust layout builder and utilizes the Fluid Glass design principles.</p>"},"id":"123","isHidden":false,"type":"text"}],"id":"col1","width":"1/1"}],"id":"94f6e96b-458c-4d31-ba7e-a5e0fbb658b1"}]
+
+----
+
+Uuid: rimh5x59qwxtdupf

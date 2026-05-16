@@ -47,48 +47,43 @@ settings:
         min_height:
           label: Minimum Height (Hero Setting)
           type: select
-          empty: false
+          placeholder: Default
           options:
-            "": Inherit Global Baseline (Auto)
+            auto: Auto (Fit Content)
             vh-50: Half Screen (50vh)
             vh-75: Large (75vh)
             vh-100: Full Screen Hero (100vh)
-          default: ""
           width: 1/2
           
         vertical_align:
           label: Vertical Content Alignment
           type: select
-          empty: false
+          placeholder: Default
           options:
-            "": Inherit Global Baseline (Top)
+            top: Top
             center: Middle
             end: Bottom
-          default: ""
           width: 1/2
 
         row_padding:
           label: Row Padding (Y)
           type: select
-          empty: false
+          placeholder: Default
           options:
-            "": Inherit Global Baseline
             none: None
             sm: Small (Airy-SM)
             md: Medium (Airy-MD)
             lg: Large (Airy-LG)
             xl: Massive (Airy-XL)
-          default: ""
           width: 1/2
 
         row_width:
           label: Row Width Container
           type: select
-          empty: false
+          placeholder: Default
           options:
-            "": Inherit Global Baseline (Contained)
+            contained: Contained
             full: Full Bleed
-          default: ""
           width: 1/2
 
     background:
@@ -98,23 +93,22 @@ settings:
         row_bg:
           label: Background Color / Theme
           type: select
-          empty: false
+          placeholder: Default
           options:
-            "": Inherit Context (Transparent)
+            transparent: Transparent
             canvas: Canvas (Main Background)
             ink: Ink (Dark Text/Background)
             oceanic: Oceanic Dark
             gold: Warm Gold
             soft-smoke: Soft Smoke
             brand-accent: Brand Accent
-          default: ""
           width: 1/1
 
         background_media:
           label: Background Image or Video
           type: files
           multiple: false
-          query: page.files.filterBy('type', 'in', ['image', 'video'])
+          query: site.find("media").files.add(page.files).filterBy('type', 'in', ['image', 'video'])
           width: 1/1
           
         background_media_size:

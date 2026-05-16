@@ -1,0 +1,5 @@
+Uuid: tsbsisomu3kt64os
+
+----
+
+Template: image

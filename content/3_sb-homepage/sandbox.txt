@@ -1,9 +1,0 @@
-Title: Homepage (Sandbox)
-
-----
-
-Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"split-hero","content":{"heading":"Homepage Hero","text":"Welcome to Kinetik OS","theme":"dark"}},{"type":"logo-cloud","content":{"heading":"Trusted By"}},{"type":"section-header","content":{"heading":"Features Overview"}},{"type":"feature-grid","content":{"features":[]}},{"type":"horizontal-scroll","content":{"heading":"Scroll Showcase"}},{"type":"cta-banner","content":{"heading":"Get Started","button_text":"Join Now"}}]}]}]
-
-----
-
-Uuid: 61hzk7vecv6t6zdu

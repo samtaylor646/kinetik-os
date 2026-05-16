@@ -10,7 +10,7 @@ fields:
     max: 1
     layout: cards
     size: tiny
-    query: page.files.template('image')
+    query: site.find("media").files.add(page.files)
     uploads: image
   video_type:
     type: select
@@ -32,7 +32,7 @@ fields:
     max: 1
     layout: cards
     size: tiny
-    query: page.files.template('video')
+    query: site.find("media").files.add(page.files)
     uploads: video
     when:
       video_type: upload

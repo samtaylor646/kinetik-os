@@ -1,0 +1,9 @@
+Title: Homepage (Sandbox)
+
+----
+
+Layout: [{"attrs":{"min_height":"","vertical_align":"","row_padding":"","row_width":"","row_bg":"","background_media":[],"background_media_size":"","background_media_position":"","background_overlay":"","merge_next":"false","gsap_reveal":"false","custom_id":"","custom_class":""},"columns":[{"blocks":[{"content":{"text":"<p>Welcome to the Kinetik OS Sandbox. This page is built using the robust layout builder and utilizes the Fluid Glass design principles.</p>"},"id":"123","isHidden":false,"type":"text"}],"id":"col1","width":"1/1"}],"id":"01148f6d-5df9-4772-b69d-9954be6c87c1"}]
+
+----
+
+Uuid: 61hzk7vecv6t6zdu

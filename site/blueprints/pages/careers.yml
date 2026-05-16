@@ -1,0 +1,39 @@
+title: Careers
+icon: users
+options:
+  changeTemplate: false
+  preview: true
+
+tabs:
+  content:
+    label: Page Layout
+    icon: layout
+    sections:
+      content:
+        type: fields
+        fields:
+          emptyMessage:
+            label: No Jobs Message
+            type: text
+            default: "There are no open positions at this time."
+            help: This message will be displayed when there are no active jobs.
+          layout:
+            extends: fields/layout-builder
+
+  jobs:
+    label: Jobs
+    icon: list-bullet
+    sections:
+      jobs:
+        type: pages
+        headline: Available Positions
+        templates:
+          - job-detail
+        status: all
+        layout: list
+        empty: No available jobs at the moment.
+        image: false
+        info: "{{ page.department }} • {{ page.location }} • {{ page.employmentType }}"
+        create:
+          title: Add Job
+          template: job-detail

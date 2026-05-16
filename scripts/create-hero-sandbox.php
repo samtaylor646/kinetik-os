@@ -35,12 +35,15 @@ function generateUuid() {
 }
 
 foreach ($colors as $themeKey => $themeLabel) {
+    $bgImage = in_array($themeKey, ['ink', 'oceanic', 'brand-accent']) ? 'media/dark-hero-bg.jpg' : 'media/light-hero-bg.jpg';
+    
     foreach ($tints as $tintKey => $tintLabel) {
         $layouts[] = [
             'id' => generateUuid(),
             'attrs' => [
                 'row_bg' => 'transparent',
-                'row_padding' => 'lg'
+                'row_padding' => 'lg',
+                'background_media' => [$bgImage]
             ],
             'columns' => [
                 [
@@ -52,7 +55,7 @@ foreach ($colors as $themeKey => $themeLabel) {
                             'isHidden' => false,
                             'type' => 'hero-content',
                             'content' => [
-                                'eyebrow' => "Theme: $themeLabel | Tint: $tintLabel",
+                                'eyebrow' => '',
                                 'heading' => "$themeLabel & $tintLabel",
                                 'subheading' => "This is a hero content block demonstrating the $themeLabel block-level theme color option with $tintLabel backdrop tint.",
                                 'alignment' => 'left',
@@ -88,7 +91,7 @@ if ($existing = $kirby->page('sb-hero')) {
 
 try {
     $page = $kirby->site()->createChild($pageData);
-    $page = $page->changeStatus('listed');
+    $page = $page->changeStatus('unlisted');
     echo "Created page: " . $page->id() . "\n";
 } catch (Exception $e) {
     if (method_exists($e, 'errors')) {

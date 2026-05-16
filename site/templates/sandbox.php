@@ -9,6 +9,21 @@
   </div>
   
   <?php foreach ($page->layout()->toLayouts() as $layout): ?>
+    <?php foreach ($layout->columns() as $column): ?>
+      <?php foreach ($column->blocks() as $block): ?>
+        <section class="w-full bg-canvas py-2 tech-border-b">
+          <div class="px-4 md:px-16 mx-auto flex gap-4 text-xs font-mono text-ink/50 uppercase tracking-wider">
+            <span><?= $block->type() ?></span>
+            <?php if ($block->type() === 'hero-content'): ?>
+              <span class="text-brand-accent">Align: <?= $block->alignment()->or('left') ?></span>
+              <span class="text-brand-accent">Theme: <?= $block->theme()->or('transparent') ?></span>
+              <span class="text-brand-accent">Tint: <?= $block->backdrop_tint()->or('transparent') ?></span>
+            <?php endif ?>
+          </div>
+        </section>
+      <?php endforeach ?>
+    <?php endforeach ?>
+
     <?php
       $bgClass = 'bg-transparent text-ink';
       if ($bg = $layout->attrs()->row_bg()->value()) {
@@ -29,14 +44,6 @@
           <div class="blocks w-full space-y-24">
             <?php foreach ($column->blocks() as $block): ?>
               <div class="block-wrapper relative mt-12 mb-12 w-full">
-                <div class="absolute -top-6 left-0 z-50 bg-canvas px-2 text-xs font-mono text-ink/50 uppercase tracking-wider tech-border flex gap-4">
-                  <span><?= $block->type() ?></span>
-                  <?php if ($block->type() === 'hero-content'): ?>
-                    <span class="text-brand-accent">Align: <?= $block->alignment()->or('left') ?></span>
-                    <span class="text-brand-accent">Theme: <?= $block->theme()->or('transparent') ?></span>
-                    <span class="text-brand-accent">Tint: <?= $block->backdrop_tint()->or('transparent') ?></span>
-                  <?php endif ?>
-                </div>
                 <?= $block ?>
               </div>
             <?php endforeach ?>

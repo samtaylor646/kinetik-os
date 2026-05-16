@@ -1,0 +1,92 @@
+Title: Theme Options
+
+----
+
+Theme-colors:
+
+- 
+  color_name: oceanic-dark
+  color_value: '#005b6d'
+- 
+  color_name: oceanic-accent
+  color_value: '#007489'
+- 
+  color_name: oceanic-secondary
+  color_value: '#218993'
+- 
+  color_name: oceanic-subtle
+  color_value: '#7a9fa7'
+- 
+  color_name: warm-gold
+  color_value: '#d4c19c'
+- 
+  color_name: slate-teal
+  color_value: '#4a6163'
+- 
+  color_name: liberty-blue
+  color_value: '#2e4a62'
+- 
+  color_name: heritage-red
+  color_value: '#8b3e2f'
+- 
+  color_name: frost-mint
+  color_value: '#e2f0e9'
+- 
+  color_name: white
+  color_value: '#ffffff'
+- 
+  color_name: black
+  color_value: '#000000'
+- 
+  color_name: ink
+  color_value: '#0f151b'
+- 
+  color_name: canvas
+  color_value: '#faf9f6'
+- 
+  color_name: soft-smoke
+  color_value: '#f0f0f0'
+
+----
+
+Font-url: https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap
+
+----
+
+Base-font: 'Inter', system-ui, -apple-system, sans-serif
+
+----
+
+Heading-font: 'Inter', system-ui, -apple-system, sans-serif
+
+----
+
+Border-radius: none
+
+----
+
+Navbar-height: 
+
+----
+
+Navbar-bg: 
+
+----
+
+Navbar-text: 
+
+----
+
+Custom-css: 
+
+----
+
+Custom-head: 
+
+----
+
+Custom-footer: 
+
+----
+
+Uuid: 25yfzteiv9st9rjg

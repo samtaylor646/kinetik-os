@@ -1,0 +1,48 @@
+title: Media Library
+icon: images
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTitle: false
+  changeTemplate: false
+  delete: false
+  preview: false
+tabs:
+  images:
+    label: Images
+    icon: image
+    sections:
+      image_files:
+        type: files
+        headline: Images & SVG
+        layout: cards
+        size: small
+        template: image
+        info: "{{ file.dimensions }} | {{ file.mime }}"
+        image:
+          cover: true
+
+  videos:
+    label: Videos
+    icon: play-circle
+    sections:
+      video_files:
+        type: files
+        headline: Videos
+        layout: cards
+        size: small
+        template: video
+        info: "{{ file.size }} | {{ file.mime }}"
+        image:
+          cover: true
+
+  documents:
+    label: Documents
+    icon: file-text
+    sections:
+      document_files:
+        type: files
+        headline: Documents & Other
+        layout: list
+        template: document
+        info: "{{ file.size }} | {{ file.mime }}"
