@@ -29,8 +29,86 @@ tabs:
           color_value:
             label: Color Value
             type: color
+            alpha: true
             width: 1/2
             required: true
+      color_profiles:
+        label: Color Profiles (Themes)
+        type: structure
+        help: "Create reusable themes by combining your custom colors. These will be available in the Layout Builder."
+        fields:
+          profile_name:
+            label: Profile Name
+            type: text
+            width: 1/4
+            required: true
+            placeholder: "e.g., Dark Hero"
+          profile_id:
+            label: Profile ID
+            type: slug
+            sync: profile_name
+            width: 1/4
+            required: true
+          bg_color:
+            label: Background Color
+            type: select
+            empty: "None (Transparent)"
+            options: query
+            query:
+              fetch: page.theme_colors.toStructure
+              text: "{{ item.color_name }}"
+              value: "{{ item.color_name }}"
+            width: 1/4
+          text_color:
+            label: Text Color
+            type: select
+            empty: "Default"
+            options: query
+            query:
+              fetch: page.theme_colors.toStructure
+              text: "{{ item.color_name }}"
+              value: "{{ item.color_name }}"
+            width: 1/4
+          primary_cta_bg:
+            label: Primary CTA Background
+            type: select
+            empty: "None (Transparent)"
+            options: query
+            query:
+              fetch: page.theme_colors.toStructure
+              text: "{{ item.color_name }}"
+              value: "{{ item.color_name }}"
+            width: 1/4
+          primary_cta_text:
+            label: Primary CTA Text
+            type: select
+            empty: "Default"
+            options: query
+            query:
+              fetch: page.theme_colors.toStructure
+              text: "{{ item.color_name }}"
+              value: "{{ item.color_name }}"
+            width: 1/4
+          secondary_cta_border:
+            label: Secondary CTA Border
+            type: select
+            empty: "None (Transparent)"
+            options: query
+            query:
+              fetch: page.theme_colors.toStructure
+              text: "{{ item.color_name }}"
+              value: "{{ item.color_name }}"
+            width: 1/4
+          secondary_cta_text:
+            label: Secondary CTA Text
+            type: select
+            empty: "Default"
+            options: query
+            query:
+              fetch: page.theme_colors.toStructure
+              text: "{{ item.color_name }}"
+              value: "{{ item.color_name }}"
+            width: 1/4
 
   typography:
     label: Typography

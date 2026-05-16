@@ -46,6 +46,86 @@ Theme-colors:
 - 
   color_name: soft-smoke
   color_value: '#f0f0f0'
+- 
+  color_name: transparent-none
+  color_value: '#ffffff00'
+
+----
+
+Color-profiles:
+
+- 
+  profile_name: Oceanic
+  profile_id: oceanic
+  bg_color: oceanic-dark
+  text_color: canvas
+  primary_cta_bg: slate-teal
+  primary_cta_text: canvas
+  secondary_cta_border: soft-smoke
+  secondary_cta_text: soft-smoke
+- 
+  profile_name: Soft Smoke
+  profile_id: soft-smoke
+  bg_color: soft-smoke
+  text_color: oceanic-dark
+  primary_cta_bg: oceanic-dark
+  primary_cta_text: white
+  secondary_cta_border: oceanic-dark
+  secondary_cta_text: oceanic-dark
+- 
+  profile_name: Brand Accent
+  profile_id: brand-accent
+  bg_color: ""
+  text_color: ""
+  primary_cta_bg: ""
+  primary_cta_text: ""
+  secondary_cta_border: ""
+  secondary_cta_text: ""
+- 
+  profile_name: Warm Gold
+  profile_id: warm-gold
+  bg_color: ""
+  text_color: ""
+  primary_cta_bg: ""
+  primary_cta_text: ""
+  secondary_cta_border: ""
+  secondary_cta_text: ""
+- 
+  profile_name: Light (Canvas)
+  profile_id: light-canvas
+  bg_color: ""
+  text_color: ""
+  primary_cta_bg: ""
+  primary_cta_text: ""
+  secondary_cta_border: ""
+  secondary_cta_text: ""
+- 
+  profile_name: Dark (Ink)
+  profile_id: dark-ink
+  bg_color: ""
+  text_color: ""
+  primary_cta_bg: ""
+  primary_cta_text: ""
+  secondary_cta_border: ""
+  secondary_cta_text: ""
+- 
+  profile_name: Transparent (Light)
+  profile_id: transparent-light
+  bg_color: transparent-none
+  text_color: black
+  primary_cta_bg: ink
+  primary_cta_text: white
+  secondary_cta_border: ink
+  secondary_cta_text: ink
+- 
+  profile_name: Transparent (Dark)
+  profile_id: transparent-dark
+  bg_color: transparent-none
+  text_color: white
+  primary_cta_bg: canvas
+  primary_cta_text: ink
+  secondary_cta_border: canvas
+  secondary_cta_text: canvas
 
 ----
 

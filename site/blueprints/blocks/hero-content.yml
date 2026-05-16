@@ -33,13 +33,11 @@ fields:
     label: Block Theme
     type: select
     placeholder: Default
-    options:
-      canvas: Canvas (Light)
-      ink: Ink (Dark)
-      oceanic: Oceanic Dark
-      gold: Warm Gold
-      soft-smoke: Soft Smoke
-      brand-accent: Brand Accent
+    options: query
+    query:
+      fetch: kirby.page("theme").color_profiles.toStructure
+      text: "{{ item.profile_name }}"
+      value: "{{ item.profile_id }}"
     width: 1/3
 
   backdrop_tint:
@@ -47,9 +45,14 @@ fields:
     type: select
     placeholder: Default
     options:
-      transparent: Transparent
-      frost-light: Frost Light (Light Glass)
-      frost-dark: Frost Dark (Dark Glass)
+      transparent-light: Transparent (Light Text)
+      transparent-dark: Transparent (Dark Text)
+      glass-light-20: Light Glass (20%)
+      glass-light-50: Light Glass (50%)
+      glass-light-80: Light Glass (80%)
+      glass-dark-20: Dark Glass (20%)
+      glass-dark-50: Dark Glass (50%)
+      glass-dark-80: Dark Glass (80%)
       solid-canvas: Solid Canvas
       solid-ink: Solid Ink
     width: 1/3

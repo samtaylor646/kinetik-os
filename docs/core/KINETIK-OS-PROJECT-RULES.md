@@ -1,6 +1,6 @@
 /**
  * Path: /KINETIK-OS-PROJECT-RULES.md
- * Filename: KINETIK-OS-PROJECT-RULES.md | Version: v7.8.0
+ * Filename: KINETIK-OS-PROJECT-RULES.md | Version: v7.8.2
  * Agent: Kinetik-OS (Lead: Security-S / Architect-K / DevOps-V)
  * Status: PRODUCTION CANONICAL
  * Logic: Absolute operational constraints, enforcement protocols, and quality standards
@@ -8,9 +8,9 @@
 
 # KINETIK-OS PROJECT RULES
 
-**Version:** 7.8.0  
+**Version:** 7.8.2  
 **Project:** Westport Partners - Boutique Federal Design System  
-**Updated:** May 04, 2026  
+**Updated:** May 16, 2026  
 **Status:** ULTRA HEAVYWEIGHT ENFORCEMENT
 
 ---
@@ -601,6 +601,54 @@ $title = $block->title();
 
 ---
 
+### ✅ RULE 3.6: PHASE SUMMARIES TRACKING
+
+**Enforcement:** Manual review + Automated check (if applicable)
+
+**Statement:**  
+All phase summary markdown files (e.g., in `docs/phase-summaries/`) MUST include a date and version at the top. When these files are updated or appended, the version MUST be incremented, the date updated, and a clear changelog or description of what changes were made must be appended. This ensures accurate tracking of how many times an individual task was worked on.
+
+**Required Format:**
+```markdown
+# [Phase Summary Title]
+
+**Date:** [YYYY-MM-DD]  
+**Version:** [vX.X.X]
+
+## Changelog
+- **[vX.X.X]** ([YYYY-MM-DD]): Initial summary created.
+- **[vX.X.Y]** ([YYYY-MM-DD]): Appended [specific changes or fixes].
+```
+
+**Consequence of Violation:**
+- Update rejected
+- Architect-K review for proper documentation and tracking
+
+---
+
+### ✅ RULE 3.7: ROO TASK ARCHIVING WORKFLOW
+
+**Enforcement:** Manual (Agent execution upon request)
+
+**Statement:**  
+To prevent memory constraints while preserving operational history across container rebuilds, the project maintains two distinct directories for Roo tasks:
+- `.roo-tasks/`: The active directory for persistent task state.
+- `.roo-tasks-archive/`: The archive directory for completed tasks.
+
+When the user requests to "archive tasks" (e.g., "Archive my roo tasks" or "Archive all but 2 of the latest roo tasks"), the agent MUST:
+1. Access the `.roo-tasks/tasks/` directory.
+2. Sort all task folders by their modification/creation date.
+3. Preserve the 2 most recent task folders exactly where they are.
+4. Move all older, remaining task folders into `.roo-tasks-archive/tasks/` (creating the directory if it doesn't exist).
+5. (Optional but recommended) Update `.roo-tasks/tasks/_index.json` or inform the user that Roo will rebuild the index automatically when reloaded.
+
+**Consequence of Violation:**
+- Task history clutter
+- Context window and memory bloat
+- Workspace performance degradation
+
+---
+
 ## SECTION 4: ADVISORY RULES (BEST PRACTICES)
 
 These rules are guidelines that may be violated with documented justification.
@@ -944,6 +992,8 @@ historical_exceptions:
 2. **Blueprint Validation** - YAML schema compliance
 3. **Accessibility** - WCAG 2.1 AA compliance
 4. **Performance Budgets** - Lighthouse score ≥ 90
+5. **Phase Summaries Tracking** - Phase summaries must have date/version and changelog on updates
+6. **Roo Task Archiving** - Keep 2 latest tasks in active folder, archive the rest
 
 ### Advisory Rules (💡)
 1. **Semantic Versioning** - Follow MAJOR.MINOR.PATCH
@@ -1022,6 +1072,8 @@ if (violations.length > 0) {
 **END OF PROJECT RULES DOCUMENT**
 
 **Version History:**
+- v7.8.2 (2026-05-16): Added RULE 3.7 Roo Task Archiving Workflow
+- v7.8.1 (2026-05-16): Added RULE 3.6 Phase Summaries Tracking
 - v7.8.0 (2026-05-04): Initial consolidated ruleset
 - Future versions will be documented here
 

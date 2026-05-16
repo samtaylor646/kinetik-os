@@ -1,0 +1,67 @@
+Title: Front End Administrator
+
+----
+
+Description:
+
+**Full job description**
+
+**Job Summary**
+We are looking for a Front-End Administrator to manage, optimize, and maintain the front-end experience across our Shopify storefronts. This role sits at the intersection of eCommerce operations, web production, merchandising, analytics, and development. The ideal candidate is highly detail-oriented, comfortable working inside Shopify themes and admin tools, and able to turn business requests into clean, accurate, conversion-focused site updates.
+
+**Key Responsibilities**
+
+- Site administration: Manage day-to-day updates across Shopify storefronts, including product pages, collections, navigation, landing pages, promotions, banners, and content blocks.
+- Theme and front-end updates: Make front-end updates using Shopify theme settings, Liquid, HTML, CSS, and basic JavaScript where needed.
+- Merchandising support: Ensure products, collections, pricing, promotions, subscriptions, and bundles are displayed accurately and consistently.
+- Content publishing: Build and update landing pages, campaign pages, blog content, educational pages, and promotional assets based on approved briefs.
+- Quality assurance: Test site updates across desktop, mobile, browsers, customer types, discounts, and user flows before publishing.
+- App and integration support: Help manage front-end behavior for Shopify apps, including subscriptions, reviews, loyalty, search, product recommendations, analytics, and promotional tools.
+- Analytics and tracking coordination: Partner with marketing and analytics teams to ensure campaign links, pixels, tags, GA4 events, and promotional tracking are implemented correctly.
+- Cross-functional execution: Work with marketing, creative, eCommerce, operations, customer service, and development teams to launch site updates on time and with high accuracy.
+- Documentation: Maintain clear documentation for recurring Shopify processes, publishing workflows, QA checklists, and site-update standards.
+
+**Required Qualifications**
+
+2+ years of experience managing or supporting Shopify or Shopify Plus storefronts.
+Working knowledge of Shopify admin, themes, products, collections, discounts, metafields, and page templates.
+Basic front-end development skills, including HTML, CSS, JavaScript, and Shopify Liquid.
+Strong attention to detail and ability to QA customer-facing web experiences.
+Experience supporting eCommerce promotions, product launches, landing pages, and campaign execution.
+Comfortable working with project management tools and structured intake workflows.
+Ability to troubleshoot front-end issues and clearly communicate technical findings to non-technical teams.
+Strong sense of ownership, urgency, and follow-through.
+
+**Preferred Qualifications**
+
+Experience with Klaviyo, GA4, Google Tag Manager, Recharge or subscription tools, reviews platforms, loyalty tools, and Shopify apps.
+Familiarity with SEO best practices, structured content, schema, and page performance.
+Experience working in DTC, health and wellness, supplements, CPG, or regulated industries.
+Basic understanding of accessibility, responsive design, and conversion rate optimization.
+Experience with GitHub or version-controlled theme workflows is a plus.
+Ideal Candidate Profile
+
+The ideal candidate is equal parts Shopify operator, front-end problem solver, and detail-driven web producer. They are comfortable making hands-on updates, testing carefully, documenting repeatable processes, and helping teams move faster without sacrificing accuracy. They should enjoy working in a fast-paced eCommerce environment where product launches, promotions, and site improvements are happening continuously.
+
+
+Work Location: Remote
+
+----
+
+Department: Admin
+
+----
+
+Location: Remote
+
+----
+
+Employmenttype: contract
+
+----
+
+Applylink: 
+
+----
+
+Uuid: joabmmppcif4w0a3
