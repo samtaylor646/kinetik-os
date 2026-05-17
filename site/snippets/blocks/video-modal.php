@@ -38,12 +38,11 @@ if ($type === 'youtube' && $url) {
         <!-- Thumbnail -->
         <div class="relative  overflow-hidden bg-ink aspect-video ">
             <?php if ($thumbnail): ?>
-                <img 
-                    src="<?= $thumbnail->url() ?>" 
-                    alt="<?= $thumbnail->alt()->or('Video thumbnail') ?>" 
-                    class="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity duration-500"
-                    loading="lazy"
-                >
+                <?php snippet('image', [
+                    'file' => $thumbnail,
+                    'alt' => $thumbnail->alt()->or('Video thumbnail'),
+                    'class' => 'w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity duration-500'
+                ]) ?>
             <?php else: ?>
                 <div class="w-full h-full bg-ink"></div>
             <?php endif ?>

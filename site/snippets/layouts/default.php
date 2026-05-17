@@ -68,7 +68,7 @@ $groupIsOpen = false;
             <?php if ($file->type() === 'video'): ?>
                <video src="<?= $file->url() ?>" autoplay loop muted playsinline class="<?= $mediaClasses ?>"></video>
             <?php else: ?>
-               <img src="<?= $file->url() ?>" alt="" class="<?= $mediaClasses ?>" />
+               <?php snippet('image', ['file' => $file, 'class' => $mediaClasses]) ?>
             <?php endif; ?>
             
             <?php // Dark Overlay ?>

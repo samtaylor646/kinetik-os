@@ -11,5 +11,10 @@ declare(strict_types=1);
 ?>
 </main>
 </div>
+<?php if ($theme = page('theme')): ?>
+  <?php if ($theme->custom_footer()->isNotEmpty()): ?>
+    <?= $theme->custom_footer() ?>
+  <?php endif; ?>
+<?php endif; ?>
 </body>
 </html>

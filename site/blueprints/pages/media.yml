@@ -18,7 +18,7 @@ tabs:
         layout: cards
         size: small
         template: image
-        info: "{{ file.dimensions }} | {{ file.mime }}"
+        info: "{{ file.dimensions }}<br>{{ file.niceSize }}<br>{{ file.mime }}"
         image:
           cover: true
 
@@ -32,7 +32,7 @@ tabs:
         layout: cards
         size: small
         template: video
-        info: "{{ file.size }} | {{ file.mime }}"
+        info: "{{ file.niceSize }}<br>{{ file.mime }}"
         image:
           cover: true
 
@@ -45,4 +45,4 @@ tabs:
         headline: Documents & Other
         layout: list
         template: document
-        info: "{{ file.size }} | {{ file.mime }}"
+        info: "{{ file.niceSize }}<br>{{ file.mime }}"

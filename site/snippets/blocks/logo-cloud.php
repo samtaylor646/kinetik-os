@@ -29,12 +29,11 @@ $animType = $block->animation_type()->value();
                                         <a href="<?= $item->link()->toUrl() ?>" target="_blank" rel="noopener noreferrer" class="block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-oceanic-accent">
                                     <?php endif; ?>
                                     
-                                    <img 
-                                        src="<?= $logo->url() ?>" 
-                                        alt="<?= $item->alt_text()->or($logo->alt())->or('Partner Logo')->html() ?>" 
-                                        class="w-full h-auto max-h-[80px] object-contain"
-                                        loading="lazy"
-                                    >
+                                    <?php snippet('image', [
+                                        'file' => $logo,
+                                        'alt' => $item->alt_text()->or($logo->alt())->or('Partner Logo')->html(),
+                                        'class' => 'w-full h-auto max-h-[80px] object-contain'
+                                    ]) ?>
                                     
                                     <?php if ($item->link()->isNotEmpty()): ?>
                                         </a>
@@ -53,12 +52,11 @@ $animType = $block->animation_type()->value();
                                         <a href="<?= $item->link()->toUrl() ?>" target="_blank" rel="noopener noreferrer" tabindex="-1" class="block w-full focus:outline-none">
                                     <?php endif; ?>
                                     
-                                    <img 
-                                        src="<?= $logo->url() ?>" 
-                                        alt="<?= $item->alt_text()->or($logo->alt())->or('Partner Logo')->html() ?>" 
-                                        class="w-full h-auto max-h-[80px] object-contain"
-                                        loading="lazy"
-                                    >
+                                    <?php snippet('image', [
+                                        'file' => $logo,
+                                        'alt' => $item->alt_text()->or($logo->alt())->or('Partner Logo')->html(),
+                                        'class' => 'w-full h-auto max-h-[80px] object-contain'
+                                    ]) ?>
                                     
                                     <?php if ($item->link()->isNotEmpty()): ?>
                                         </a>

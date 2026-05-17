@@ -17,6 +17,7 @@ declare(strict_types=1);
   <title><?= $page->title() ?></title>
   <?= vite()->css('src/main.js') ?>
   <?= vite()->js('src/main.js') ?>
+  <?php snippet('theme-variables') ?>
 </head>
 <body class="bg-canvas text-ink antialiased">
 <div id="lenis-wrapper" data-lenis-container>

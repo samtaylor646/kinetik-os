@@ -32,7 +32,7 @@ if ($media) {
           <video src="<?= $media->url() ?>" aria-hidden="true" class="w-full h-full object-cover" autoplay muted loop playsinline></video>
         <?php endif ?>
       <?php else: ?>
-        <img src="<?= $media->url() ?>" alt="<?= $altText ?>" class="w-full h-full object-cover">
+        <?php snippet('image', ['file' => $media, 'alt' => $altText, 'class' => 'w-full h-full object-cover']) ?>
       <?php endif ?>
     </figure>
   <?php endif ?>

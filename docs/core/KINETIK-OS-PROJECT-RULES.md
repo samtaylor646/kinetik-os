@@ -1,6 +1,6 @@
 /**
  * Path: /KINETIK-OS-PROJECT-RULES.md
- * Filename: KINETIK-OS-PROJECT-RULES.md | Version: v7.8.2
+ * Filename: KINETIK-OS-PROJECT-RULES.md | Version: v7.8.3
  * Agent: Kinetik-OS (Lead: Security-S / Architect-K / DevOps-V)
  * Status: PRODUCTION CANONICAL
  * Logic: Absolute operational constraints, enforcement protocols, and quality standards
@@ -8,9 +8,9 @@
 
 # KINETIK-OS PROJECT RULES
 
-**Version:** 7.8.2  
+**Version:** 7.8.3  
 **Project:** Westport Partners - Boutique Federal Design System  
-**Updated:** May 16, 2026  
+**Updated:** May 17, 2026  
 **Status:** ULTRA HEAVYWEIGHT ENFORCEMENT
 
 ---
@@ -647,6 +647,27 @@ When the user requests to "archive tasks" (e.g., "Archive my roo tasks" or "Arch
 - Context window and memory bloat
 - Workspace performance degradation
 
+### ✅ RULE 3.8: RESPONSIVE IMAGE ENFORCEMENT
+
+**Enforcement:** Manual Review + Automated (template linting)
+
+**Statement:**  
+All static images rendered in templates or snippets MUST utilize the central `snippet('image', ...)` component to ensure automatic WebP conversion and responsive `srcset` generation. Direct `<img>` tags for standard media files are prohibited to maintain performance budgets.
+
+**Required:**
+```php
+✅ <?php snippet('image', ['file' => $image, 'class' => 'w-full']) ?>
+```
+
+**Prohibited:**
+```php
+❌ <img src="<?= $image->url() ?>" class="w-full">
+```
+
+**Exceptions:**
+- Vector graphics (`.svg` files) which handle their own scaling.
+- Explicit inline data-URIs or non-file based image elements.
+
 ---
 
 ## SECTION 4: ADVISORY RULES (BEST PRACTICES)
@@ -994,6 +1015,7 @@ historical_exceptions:
 4. **Performance Budgets** - Lighthouse score ≥ 90
 5. **Phase Summaries Tracking** - Phase summaries must have date/version and changelog on updates
 6. **Roo Task Archiving** - Keep 2 latest tasks in active folder, archive the rest
+7. **Responsive Image Enforcement** - All static images must use the `snippet('image', ...)` helper
 
 ### Advisory Rules (💡)
 1. **Semantic Versioning** - Follow MAJOR.MINOR.PATCH
@@ -1072,6 +1094,7 @@ if (violations.length > 0) {
 **END OF PROJECT RULES DOCUMENT**
 
 **Version History:**
+- v7.8.3 (2026-05-17): Added RULE 3.8 Responsive Image Enforcement
 - v7.8.2 (2026-05-16): Added RULE 3.7 Roo Task Archiving Workflow
 - v7.8.1 (2026-05-16): Added RULE 3.6 Phase Summaries Tracking
 - v7.8.0 (2026-05-04): Initial consolidated ruleset

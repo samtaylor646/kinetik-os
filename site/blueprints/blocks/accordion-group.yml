@@ -1,5 +1,7 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bnomei/kirby-schema/main/kirby5-blueprints.schema.json
 name: Accordion Group
 icon: list-bullet
+blueprint: block
 preview: fields
 
 fields:

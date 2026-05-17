@@ -7,6 +7,6 @@ $image = $block->image()->toFile();
 ?>
 <?php if ($image): ?>
   <figure class="absolute inset-0 w-full h-full m-0 p-0 overflow-hidden">
-    <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>" class="absolute inset-0 w-full h-full object-cover m-0 p-0">
+    <?php snippet('image', ['file' => $image, 'class' => 'absolute inset-0 w-full h-full object-cover m-0 p-0']) ?>
   </figure>
 <?php endif ?>

@@ -11,6 +11,10 @@ $alignClass = match($align) {
     default  => 'text-left mr-auto items-start flex flex-col',
 };
 
+// Boxed Layout
+$isBoxed = $block->boxed_layout()->toBool(true);
+$boxClasses = $isBoxed ? 'p-8 md:p-16 rounded-2xl shadow-2xl' : '';
+
 // Theme Profile Logic
 $themeId = $block->theme()->value();
 $themePage = page('theme');
@@ -18,67 +22,60 @@ $siteThemeProfiles = $themePage ? $themePage->color_profiles()->toStructure() : 
 $selectedProfile = $siteThemeProfiles->findBy('profile_id', $themeId);
 
 $inlineStyles = [];
-$themeClass = '';
+$bgClass = '';
 
-if ($selectedProfile && $selectedProfile->isNotEmpty()) {
-    $themeClass = 'p-8 md:p-16 rounded-2xl shadow-2xl';
-    
-    $bg = $selectedProfile->bg_color()->value();
-    $text = $selectedProfile->text_color()->value();
-    $pCtaBg = $selectedProfile->primary_cta_bg()->value();
-    $pCtaText = $selectedProfile->primary_cta_text()->value();
-    $sCtaBorder = $selectedProfile->secondary_cta_border()->value();
-    $sCtaText = $selectedProfile->secondary_cta_text()->value();
+if ($isBoxed) {
+    if ($selectedProfile && $selectedProfile->isNotEmpty()) {
+        $bg = $selectedProfile->bg_color()->value();
+        $text = $selectedProfile->text_color()->value();
+        $pCtaBg = $selectedProfile->primary_cta_bg()->value();
+        $pCtaText = $selectedProfile->primary_cta_text()->value();
+        $sCtaBorder = $selectedProfile->secondary_cta_border()->value();
+        $sCtaText = $selectedProfile->secondary_cta_text()->value();
 
-    if ($bg) $inlineStyles[] = "--hero-bg: var(--color-{$bg})";
-    if ($text) $inlineStyles[] = "--hero-text: var(--color-{$text})";
-    if ($pCtaBg) $inlineStyles[] = "--hero-cta-bg: var(--color-{$pCtaBg})";
-    if ($pCtaText) $inlineStyles[] = "--hero-cta-text: var(--color-{$pCtaText})";
-    if ($sCtaBorder) $inlineStyles[] = "--hero-scta-border: var(--color-{$sCtaBorder})";
-    if ($sCtaText) $inlineStyles[] = "--hero-scta-text: var(--color-{$sCtaText})";
-    
-    // Fallbacks if some colors are missing from profile
-    if (!$pCtaBg && $text) $inlineStyles[] = "--hero-cta-bg: var(--color-{$text})";
-    if (!$pCtaText && $bg) $inlineStyles[] = "--hero-cta-text: var(--color-{$bg})";
+        if ($bg) $inlineStyles[] = "--hero-bg: var(--color-{$bg})";
+        if ($text) $inlineStyles[] = "--hero-text: var(--color-{$text})";
+        if ($pCtaBg) $inlineStyles[] = "--hero-cta-bg: var(--color-{$pCtaBg})";
+        if ($pCtaText) $inlineStyles[] = "--hero-cta-text: var(--color-{$pCtaText})";
+        if ($sCtaBorder) $inlineStyles[] = "--hero-scta-border: var(--color-{$sCtaBorder})";
+        if ($sCtaText) $inlineStyles[] = "--hero-scta-text: var(--color-{$sCtaText})";
+        
+        // Fallbacks
+        if (!$pCtaBg && $text) $inlineStyles[] = "--hero-cta-bg: var(--color-{$text})";
+        if (!$pCtaText && $bg) $inlineStyles[] = "--hero-cta-text: var(--color-{$bg})";
+    }
+
+    // Opacity Logic
+    $bgOpacity = $block->bg_opacity()->value();
+    if ($bgOpacity === '') $bgOpacity = '100';
+
+    if ($selectedProfile && $selectedProfile->isNotEmpty()) {
+        // We have a theme
+        if ($bgOpacity === '100') {
+            $bgClass = 'bg-[var(--hero-bg)] text-[var(--hero-text)]';
+        } elseif ($bgOpacity === '0') {
+            $bgClass = 'bg-transparent text-[var(--hero-text)]';
+        } else {
+            // Use color-mix for opacity
+            $inlineStyles[] = "background-color: color-mix(in srgb, var(--hero-bg) {$bgOpacity}%, transparent)";
+            $bgClass = 'backdrop-blur-xl text-[var(--hero-text)]';
+        }
+    } else {
+        // No theme selected, use default canvas/ink
+        if ($bgOpacity === '100') {
+            $bgClass = 'bg-canvas text-ink';
+        } elseif ($bgOpacity === '0') {
+            $bgClass = 'bg-transparent';
+        } else {
+            $inlineStyles[] = "background-color: color-mix(in srgb, var(--color-canvas) {$bgOpacity}%, transparent)";
+            $bgClass = 'backdrop-blur-xl text-ink';
+        }
+    }
 }
 
 $styleAttr = !empty($inlineStyles) ? 'style="' . implode('; ', $inlineStyles) . '"' : '';
 
-$tint = $block->backdrop_tint()->value();
-
-// Base classes for a boxed hero
-$isBoxed = $selectedProfile || ($tint && !in_array($tint, ['transparent-light', 'transparent-dark']));
-$boxClasses = $isBoxed ? 'p-8 md:p-16 rounded-2xl shadow-2xl' : '';
-
-$tintBgClass = match($tint) {
-    'glass-light-20' => 'bg-canvas/20 backdrop-blur-xl',
-    'glass-light-50' => 'bg-canvas/50 backdrop-blur-xl',
-    'glass-light-80' => 'bg-canvas/80 backdrop-blur-xl',
-    'glass-dark-20'  => 'bg-ink/20 backdrop-blur-xl',
-    'glass-dark-50'  => 'bg-ink/50 backdrop-blur-xl',
-    'glass-dark-80'  => 'bg-ink/80 backdrop-blur-xl',
-    'solid-canvas' => 'bg-canvas',
-    'solid-ink'    => 'bg-ink',
-    'transparent-light', 'transparent-dark' => '',
-    default        => '', // Inherits from layout row or theme profile
-};
-
-$tintTextClass = match($tint) {
-    'glass-light-20', 'glass-light-50', 'glass-light-80', 'solid-canvas', 'transparent-dark' => 'text-ink',
-    'glass-dark-20', 'glass-dark-50', 'glass-dark-80', 'solid-ink', 'transparent-light'   => 'text-canvas',
-    default => '',
-};
-
-// If a profile is applied, we'll use these custom properties for colors
-// Otherwise we'll let it inherit from the parent container or tint
-$themeBgClass = $selectedProfile ? 'bg-[var(--hero-bg)]' : '';
-$themeTextClass = $selectedProfile ? 'text-[var(--hero-text)]' : '';
-
-// Tint background overrides theme background, but theme text overrides tint text
-$finalBgClass = $tintBgClass ?: $themeBgClass;
-$finalTextClass = $themeTextClass ?: $tintTextClass;
-
-$finalContainerClass = trim("$boxClasses $finalBgClass $finalTextClass");
+$finalContainerClass = trim("$boxClasses $bgClass");
 
 // Button Alignment
 $btnAlignClass = match($align) {
@@ -112,7 +109,7 @@ $btnAlignClass = match($align) {
             <?php if ($block->primary_cta_text()->isNotEmpty()): ?>
                 <a href="<?= $block->primary_cta_link()->toUrl() ?>" 
                    class="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl"
-                   style="<?= $selectedProfile ? 'background-color: var(--hero-cta-bg); color: var(--hero-cta-text);' : 'background-color: var(--color-ink); color: var(--color-canvas);' ?>">
+                   style="<?= ($isBoxed && $selectedProfile && $selectedProfile->isNotEmpty()) ? 'background-color: var(--hero-cta-bg); color: var(--hero-cta-text);' : 'background-color: var(--color-ink); color: var(--color-canvas);' ?>">
                     <?= $block->primary_cta_text()->html() ?>
                 </a>
             <?php endif; ?>
@@ -120,7 +117,7 @@ $btnAlignClass = match($align) {
             <?php if ($block->secondary_cta_text()->isNotEmpty()): ?>
                 <a href="<?= $block->secondary_cta_link()->toUrl() ?>" 
                    class="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-lg border-2 transition-all duration-300 hover:scale-105"
-                   style="<?= $selectedProfile ? 'border-color: var(--hero-scta-border, currentColor); color: var(--hero-scta-text, currentColor);' : 'border-color: currentColor; color: currentColor;' ?>">
+                   style="<?= ($isBoxed && $selectedProfile && $selectedProfile->isNotEmpty()) ? 'border-color: var(--hero-scta-border, currentColor); color: var(--hero-scta-text, currentColor);' : 'border-color: currentColor; color: currentColor;' ?>">
                     <?= $block->secondary_cta_text()->html() ?>
                 </a>
             <?php endif; ?>

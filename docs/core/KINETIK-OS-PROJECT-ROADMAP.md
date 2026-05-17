@@ -48,11 +48,12 @@ graph LR
 
 | Milestone | Target Date | Status | Dependencies |
 |-----------|-------------|--------|--------------|
-| **M0: Project Kickoff** | May 4, 2026 | ⏳ Pending | Stakeholder approval |
-| **M1: DevContainer Operational** | May 15, 2026 | ⏳ Pending | None |
-| **M2: Design System Complete** | May 22, 2026 | ⏳ Pending | M1 |
-| **M3: 7 Blocks Functional** | May 29, 2026 | ⏳ Pending | M2 |
-| **M4: 18 Blocks Complete** | June 5, 2026 | ⏳ Pending | M3 |
+| **M0: Project Kickoff** | May 4, 2026 | ✅ Done | Stakeholder approval |
+| **M1: DevContainer Operational** | May 15, 2026 | ✅ Done | None |
+| **M2: Design System Complete** | May 22, 2026 | ✅ Done | M1 |
+| **M2.5: Compositional Layout Builder** | May 25, 2026 | ✅ Done | M2 |
+| **M3: 7 Blocks Functional** | May 29, 2026 | ✅ Done | M2.5 |
+| **M4: 18 Blocks Complete** | June 5, 2026 | 🟡 Partially Complete (Motion/Bento pending) | M3 |
 | **M5: Performance Targets Met** | June 12, 2026 | ⏳ Pending | M4 |
 | **M6: Production Deployment** | June 16, 2026 | ⏳ Pending | M5 |
 
@@ -1216,10 +1217,10 @@ graph TD
 
 | Week | Lighthouse | WCAG | Security | Blocks Complete | Status |
 |------|------------|------|----------|-----------------|--------|
-| 1 | N/A | N/A | N/A | 0/18 | ⏳ |
-| 2 | N/A | N/A | Pass | 0/18 | ⏳ |
-| 3 | N/A | Pass | Pass | 7/18 | ⏳ |
-| 4 | N/A | Pass | Pass | 18/18 | ⏳ |
+| 1 | N/A | N/A | N/A | 0/18 | ✅ Done |
+| 2 | N/A | N/A | Pass | 0/18 | ✅ Done |
+| 3 | N/A | Pass | Pass | 7/18 | ✅ Done |
+| 4 | N/A | Pass | Pass | 13/18 | 🟡 In Progress |
 | 5 | ≥90 | Pass | Pass | 18/18 | ⏳ |
 | 6 | ≥90 | Pass | Pass | 18/18 | ⏳ |
 

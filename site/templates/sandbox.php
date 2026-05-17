@@ -56,7 +56,7 @@
                 <source src="<?= $file->url() ?>" type="<?= $file->mime() ?>">
               </video>
             <?php else: ?>
-              <img src="<?= $file->url() ?>" alt="" class="<?= $mediaClasses ?>">
+              <?php snippet('image', ['file' => $file, 'class' => $mediaClasses]) ?>
             <?php endif; ?>
 
             <?php if ($overlayOpacity > 0): ?>

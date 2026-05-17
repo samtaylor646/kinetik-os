@@ -10,7 +10,8 @@
     "test": "vitest",
     "test:e2e": "playwright test",
     "lint:css": "stylelint 'src/**/*.css'",
-    "lighthouse:ci": "lighthouse-ci"
+    "lighthouse:ci": "lighthouse-ci",
+    "archive-tasks": "node scripts/archive_tasks.js"
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.15.12",

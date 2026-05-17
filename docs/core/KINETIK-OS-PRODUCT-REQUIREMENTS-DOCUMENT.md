@@ -288,6 +288,18 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 
 ### 3.2 Design System
 
+#### FR-4a: Fluid Glass Aesthetics
+**Priority:** P0 (Critical)  
+**Agent:** DX-Curator
+
+**Requirements:**
+- Uncompromising geometric precision
+- Hard edges: `rounded-none` must be applied globally
+- 1px hairline borders (`border-ink`) to separate layout elements
+- High-contrast typography with heavy reliance on mathematical grid structures
+- Sharp architectural delineations over loose padding
+- **Note:** This represents the premium editorial "Fluid Glass" aesthetic; absolutely no soft borders or rounded corners permitted.
+
 #### FR-4: Tailwind 4 Token System
 
 **Priority:** P0 (Critical)  
@@ -505,14 +517,12 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 - Body text (textarea)
 - CTA button text (text)
 - CTA button link (url)
-- Image (files)
-- Image position (select: left/right)
-- Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
+- **Note: The Compositional Layout Builder Architecture:** Hero Content no longer handles its own background media or column structure. These are handled by the parent Layout Row. The block itself purely handles typography and internal glass-box styling.
 - Responsive: Stacks vertically on mobile (< 768px)
-- Image: Cover, centered, no distortion
 - Typography: H1 for heading, H2 for subheading
 - GSAP: Fade-in on scroll trigger
 
@@ -523,12 +533,12 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 **Priority:** P0
 
 **Fields:**
-- Grid layout (select: 2-col/3-col/asymmetric)
 - Blocks (layout field: nested blocks)
-- Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
+- **Note: The Compositional Layout Builder Architecture:** Bento Grid utilizes strict `col-span` and `row-span` logic defined by the parent layout architecture, rather than monolithic predefined selects.
 - CSS Grid with responsive breakpoints
 - Supports any block type as child
 - Auto-fit columns on tablet/mobile
@@ -547,7 +557,8 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 - Expandable content (textarea)
 - Enable expand (toggle)
 - Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
 - 2px solid border (var(--color-ink))
@@ -566,7 +577,8 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 - Attribution (text)
 - Font size (select: 2xl/3xl/4xl/5xl)
 - Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
 - Serif font (var(--font-serif))
@@ -587,7 +599,8 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
   - Icon (select: Lucide icon name)
 - Columns (select: 2/3/4)
 - Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
 - Server-side SVG injection via toIcon()
@@ -595,23 +608,21 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 - Icon size: 48px × 48px
 - Hover effect: Icon scales 1.1x
 
-#### Block 6: Asymmetric Image
+#### Block 6: Asymmetric Columns
 
-**Purpose:** Floating image with caption  
-**Agent:** Motion-G  
+**Purpose:** Floating/pinned architectural layout container (typography vs media)  
+**Agent:** Motion-G + DX-Curator  
 **Priority:** P1
 
 **Fields:**
-- Image (files)
-- Caption (text)
-- Image position (select: left/right)
+- Blocks (layout field: nested blocks)
 - Float offset (select: sm/md/lg)
-- Spacing (select: md/xl/massive)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
-- Parallax effect: Image moves slower than scroll
+- Parallax effect: Container moves slower than scroll
 - GSAP ScrollTrigger with `scrub: true`
-- Caption: Small italic font, soft-smoke background
 - Responsive: Full-width on mobile
 
 #### Block 7: Accordion Group
@@ -626,7 +637,8 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
   - Answer (textarea)
 - Allow multiple open (toggle)
 - Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
 - Alpine.js x-collapse directive
@@ -647,7 +659,8 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 - Button text (text)
 - Button link (url)
 - Button style (select: primary/secondary/ghost)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
 - Oceanic-dark background (default)
@@ -667,7 +680,8 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 - Rows (structure: repeatable structure of cells)
 - Enable horizontal scroll (toggle)
 - Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
 - Minimalist design (no borders except header)
@@ -686,7 +700,8 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
   - Tab title (text)
   - Tab content (textarea)
 - Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
 - Alpine.js state management
@@ -707,7 +722,8 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 - Alignment (select: left/center/right)
 - Heading level (select: h1/h2/h3)
 - Spacing (select: md/xl/massive)
-- Theme (select: oceanic/gold/light/dark)
+- Color Profile (relation field querying global Theme)
+- Fluid Glass Opacity (blur/opacity controls)
 
 **Technical Requirements:**
 - Overline: Small caps, tracked out, warm-gold color
@@ -752,6 +768,26 @@ Kinetik-OS V7.8.0 is an **ultra-heavyweight, boutique federal design system** th
 - Close button: Top-right corner, ARIA label
 - Keyboard: Escape key closes modal
 - Video: Pause on close, reset to start
+
+#### Block 14: Horizontal Scroll
+**Status: Specification Pending (Motion/Layout Update)**  
+**Purpose:** GSAP-driven horizontal scroll sections tracking vertical scroll.
+
+#### Block 15: Bento Feature
+**Status: Specification Pending (Motion/Layout Update)**  
+**Purpose:** Bento block specifically structured for feature highlights with icons.
+
+#### Block 16: Bento Media
+**Status: Specification Pending (Motion/Layout Update)**  
+**Purpose:** Strict media container for Bento layouts (images/videos).
+
+#### Block 17: Bento Standard
+**Status: Specification Pending (Motion/Layout Update)**  
+**Purpose:** Standard mixed-content block for Bento grids.
+
+#### Block 18: Bento Stat
+**Status: Specification Pending (Motion/Layout Update)**  
+**Purpose:** Data-focused Bento block for emphasizing statistics and metrics.
 
 ---
 

@@ -1,0 +1,19 @@
+Kinetik-OS Development 
+
+
+Start php local host: 
+
+php -S 0.0.0.0:8000 -t public kirby/router.php
+
+
+
+DEVELOPMENT
+Start Dev: npm run dev
+
+
+In AI Roo:
+Archive the tasks
+run npm run archive-tasks
+
+In terminal:
+run node scripts/archive_tasks.js
