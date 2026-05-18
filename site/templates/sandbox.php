@@ -13,7 +13,7 @@ declare(strict_types=1);
 <?php snippet('header') ?>
 
 <main class="sandbox-page w-full">
-  <div class="px-4 md:px-16 max-w-[1600px] mx-auto py-8">
+  <div class="px-4 md:px-16 max-w-400 mx-auto py-8">
     <div class="flex items-center justify-between border-b border-ink/10 pb-4 mb-12">
       <h1 class="text-4xl font-bold">Sandbox - Block Testing Environment</h1>
       <button onclick="exportSandboxToCSV()" class="flex items-center gap-2 text-sm font-bold tracking-wider uppercase text-brand-accent hover:text-ink transition-colors cursor-pointer bg-brand-accent/10 hover:bg-ink/5 px-4 py-2 rounded-full">
