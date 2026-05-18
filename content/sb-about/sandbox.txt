@@ -2,8 +2,8 @@ Title: About (Sandbox)
 
 ----
 
-Layout: [{"attrs":{"min_height":"","vertical_align":"","row_padding":"","row_width":"","row_bg":"","background_media":[],"background_media_size":"","background_media_position":"","background_overlay":"","merge_next":"false","gsap_reveal":"false","custom_id":"","custom_class":""},"columns":[{"blocks":[{"content":{"text":"<p>Welcome to the Kinetik OS Sandbox. This page is built using the robust layout builder and utilizes the Fluid Glass design principles.</p>"},"id":"123","isHidden":false,"type":"text"}],"id":"col1","width":"1/1"}],"id":"94f6e96b-458c-4d31-ba7e-a5e0fbb658b1"}]
+Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"section-header","content":{"eyebrow":"Our Story","heading":"Building the Future","subheading":"We are a collective of passionate creators.","alignment":"center","theme":"light","airy_spacing":"md"}},{"type":"statement-quote","content":{"quote":"Design is not just what it looks like and feels like. Design is how it works.","author":"Steve Jobs","role":"Visionary","theme":"oceanic","airy_spacing":"lg"}},{"type":"asymmetric-columns","content":{"heading":"Our Core Values","text":"<p>We believe in transparency, innovation, and relentless execution.<\/p>","alignment":"left","theme":"light","airy_spacing":"lg","media_blocks":[{"type":"image","content":{"image":["unsplash-1.webp"]}},{"type":"image","content":{"image":["getty-image.webp"]}}]}},{"type":"strategy-card","content":{"icon":"globe-2","title":"Global Reach","summary":"Our products are used by millions worldwide.","details":"From local startups to Fortune 500s, our digital solutions scale across borders and languages.","theme":"light"}}]}]}]
 
 ----
 
-Uuid: rimh5x59qwxtdupf
+Uuid: fnik2fvi8drroyuy

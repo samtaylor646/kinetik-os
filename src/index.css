@@ -14,53 +14,97 @@
 
 @theme {
   /* PRIMARY STRATEGY: OCEANIC */
-  --color-oceanic-dark: #005B6D;      /* Primary brand, high contrast */
-  --color-oceanic-accent: #007489;    /* Interactive elements */
-  --color-oceanic-secondary: #218993; /* Secondary actions */
-  --color-oceanic-subtle: #7A9FA7;    /* Muted text, borders */
+  --color-oceanic-dark: #005B6D;      
+  --color-oceanic-accent: #007489;    
+  --color-oceanic-secondary: #218993; 
+  --color-oceanic-subtle: #7A9FA7;    
 
-  /* VERIFIED ACCENTS */
-  --color-warm-gold: #D4C19C;         /* Premium highlights */
-  --color-slate-teal: #4A6163;        /* Neutral complement */
-  --color-liberty-blue: #2E4A62;      /* Federal aesthetic */
-  --color-heritage-red: #8B3E2F;      /* Alert, emphasis */
-  --color-frost-mint: #E2F0E9;        /* Success, subtle bg */
+  /* VERIFIED ACCENTS (From old color sheet) */
+  --color-warm-gold: #D4C19C;         
+  --color-warm-gold-90: #D8C7A6;
+  --color-warm-gold-70: #E1D4BB;
+  --color-warm-gold-50: #E9E0CE;
+  --color-warm-gold-30: #F2EDE2;
+  --color-warm-gold-10: #FAF9F5;
+
+  --color-slate-teal: #4A6163;        
+  --color-slate-teal-90: #5C7173;
+  --color-slate-teal-70: #809092;
+  --color-slate-teal-50: #A5B0B1;
+  --color-slate-teal-30: #C9D0D1;
+  --color-slate-teal-10: #EDF0F0;
+
+  --color-liberty-blue: #2E4A62;      
+  --color-liberty-blue-90: #435C72;
+  --color-liberty-blue-70: #6D8091;
+  --color-liberty-blue-50: #97A5B1;
+  --color-liberty-blue-30: #C1C9D0;
+  --color-liberty-blue-10: #EAECEF;
+
+  --color-heritage-red: #8B3E2F;      
+  --color-heritage-red-90: #975144;
+  --color-heritage-red-70: #AE786D;
+  --color-heritage-red-50: #C59F97;
+  --color-heritage-red-30: #DCC5C1;
+  --color-heritage-red-10: #F3ECEB;
+
+  --color-frost-mint: #E2F0E9;        
+  --color-frost-mint-90: #E5F2EC;
+  --color-frost-mint-70: #EBF5F0;
+  --color-frost-mint-50: #F1F8F4;
+  --color-frost-mint-30: #F6FBF9;
+  --color-frost-mint-10: #FCFDFD;
 
   /* UI FOUNDATION */
   --color-white: #FFFFFF;
   --color-black: #000000;
   --color-transparent: transparent;
-  --color-ink: #0F151B;               /* Primary text */
-  --color-canvas: #FAF9F6;            /* Page background */
-  --color-soft-smoke: #F0F0F0;        /* Subtle dividers */
+  
+  --color-ink: #0F151B;               
+  --color-ink-90: #272C32;
+  --color-ink-70: #575B5F;
+  --color-ink-50: #878A8D;
+  --color-ink-30: #B7B8BA;
+  --color-ink-10: #E7E8E8;
+
+  --color-canvas: #FAF9F6;            
+  --color-canvas-90: #FBFBFA;
+  --color-canvas-70: #FCFCFB;
+  --color-canvas-50: #FDFDFC;
+  --color-canvas-30: #FEFEFD;
+  --color-canvas-10: #FFFFFF;
+
+  --color-soft-smoke: #F0F0F0;        
+  --color-smoke: #E5E7E9;
+  --color-smoke-90: #E8E9EA;
+  --color-smoke-70: #EDEEF0;
+  --color-smoke-50: #F2F3F4;
 
   /* AIRY SPACING (FEDERAL SCALE) */
-  --spacing-airy-sm: 2rem;            /* 32px - Compact sections */
-  --spacing-airy-md: 4rem;            /* 64px - Standard vertical rhythm */
-  --spacing-airy-lg: 6rem;            /* 96px - Generous breathing room */
-  --spacing-airy-xl: 10rem;           /* 160px - Statement sections */
-  --spacing-airy-2xl: 14rem;          /* 224px - Hero padding */
-  --spacing-airy-massive: 20rem;      /* 320px - Ultra-premium spacing */
+  --spacing-airy-sm: 2rem;            
+  --spacing-airy-md: 4rem;            
+  --spacing-airy-lg: 6rem;            
+  --spacing-airy-xl: 10rem;           
+  --spacing-airy-2xl: 14rem;          
+  --spacing-airy-massive: 20rem;      
 
-  /* TYPOGRAPHY SCALE (STRATEGY-2 INSPIRED) */
-  --text-xs: 0.75rem;            /* 12px - Metadata */
-  --text-sm: 0.9rem;             /* 14px - Label */
-  --text-base: 1rem;             /* 16px - Body text */
-  --text-lg: 1.125rem;           /* 18px - Lead paragraph */
-  --text-xl: 1.25rem;            /* 20px - Subheading */
-  --text-2xl: 1.5rem;            /* 24px - Section title */
-  --text-3xl: 1.8rem;            /* 28px - Display text clamp min */
-  --text-4xl: 2.5rem;            /* 40px - Hero title clamp min */
-  --text-5xl: 3.2rem;            /* 51px - Display text max */
-  --text-6xl: 5.5rem;            /* 88px - Hero title max */
+  /* TYPOGRAPHY SCALE */
+  --text-xs: 0.75rem;            
+  --text-sm: 0.9rem;             
+  --text-base: 1rem;             
+  --text-lg: 1.125rem;           
+  --text-xl: 1.25rem;            
+  --text-2xl: 1.5rem;            
+  --text-3xl: 1.8rem;            
+  --text-4xl: 2.5rem;            
+  --text-5xl: 3.2rem;            
+  --text-6xl: 5.5rem;            
 
   /* FONT FAMILIES */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Georgia', 'Times New Roman', serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', 'Consolas', monospace;
 }
 
-/* Base resets & utilities */
 body {
   font-family: var(--font-sans);
   color: var(--color-ink);
@@ -78,7 +122,7 @@ body {
   
   .text-label {
     font-family: var(--font-mono);
-    font-size: var(--font-size-xs);
+    font-size: var(--text-xs);
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -99,9 +143,8 @@ body {
   }
 }
 
-/* Fluid.Glass / Brutalist Components */
 .tech-border {
-  border: 1px solid rgba(15, 21, 27, 0.1); /* Based on ink */
+  border: 1px solid rgba(15, 21, 27, 0.1);
 }
 .dark .tech-border,
 .dark.tech-border {
@@ -112,7 +155,6 @@ body {
   font-family: var(--font-mono);
 }
 
-/* Motion Lab CSS Variables for GSAP (populated later via site blueprint) */
 :root {
   --kinetik-duration: 1.2s;
   --kinetik-ease: power3.out;

@@ -59,33 +59,37 @@ Color-profiles:
   profile_id: oceanic
   bg_color: oceanic-dark
   text_color: canvas
-  primary_cta_bg: slate-teal
-  primary_cta_text: canvas
-  secondary_cta_border: soft-smoke
-  secondary_cta_text: soft-smoke
+  text_color_accent: oceanic-subtle
+  primary_cta_bg: canvas
+  primary_cta_text: oceanic-dark
+  secondary_cta_border: canvas
+  secondary_cta_text: canvas
+- 
+  profile_name: Oceanic Accent
+  profile_id: oceanic-accent
+  bg_color: oceanic-accent
+  text_color: canvas
+  text_color_accent: frost-mint
+  primary_cta_bg: oceanic-accent
+  primary_cta_text: oceanic-accent
+  secondary_cta_border: oceanic-accent
+  secondary_cta_text: oceanic-accent
 - 
   profile_name: Soft Smoke
   profile_id: soft-smoke
   bg_color: soft-smoke
-  text_color: oceanic-dark
+  text_color: canvas
+  text_color_accent: oceanic-subtle
   primary_cta_bg: oceanic-dark
   primary_cta_text: white
   secondary_cta_border: oceanic-dark
   secondary_cta_text: oceanic-dark
 - 
-  profile_name: Brand Accent
-  profile_id: brand-accent
-  bg_color: ""
-  text_color: ""
-  primary_cta_bg: ""
-  primary_cta_text: ""
-  secondary_cta_border: ""
-  secondary_cta_text: ""
-- 
   profile_name: Warm Gold
   profile_id: warm-gold
   bg_color: ""
   text_color: ""
+  text_color_accent: ""
   primary_cta_bg: ""
   primary_cta_text: ""
   secondary_cta_border: ""
@@ -95,6 +99,7 @@ Color-profiles:
   profile_id: light-canvas
   bg_color: ""
   text_color: ""
+  text_color_accent: ""
   primary_cta_bg: ""
   primary_cta_text: ""
   secondary_cta_border: ""
@@ -104,6 +109,7 @@ Color-profiles:
   profile_id: dark-ink
   bg_color: ""
   text_color: ""
+  text_color_accent: ""
   primary_cta_bg: ""
   primary_cta_text: ""
   secondary_cta_border: ""
@@ -113,6 +119,7 @@ Color-profiles:
   profile_id: transparent-light
   bg_color: transparent-none
   text_color: black
+  text_color_accent: ""
   primary_cta_bg: ink
   primary_cta_text: white
   secondary_cta_border: ink
@@ -122,6 +129,7 @@ Color-profiles:
   profile_id: transparent-dark
   bg_color: transparent-none
   text_color: white
+  text_color_accent: ""
   primary_cta_bg: canvas
   primary_cta_text: ink
   secondary_cta_border: canvas

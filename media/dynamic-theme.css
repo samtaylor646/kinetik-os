@@ -1,0 +1,101 @@
+/* DYNAMIC THEME CSS - AUTO GENERATED */
+
+:root {
+  --color-oceanic-dark: &#x23;005b6d;
+  --color-oceanic-accent: &#x23;007489;
+  --color-oceanic-secondary: &#x23;218993;
+  --color-oceanic-subtle: &#x23;7a9fa7;
+  --color-warm-gold: &#x23;d4c19c;
+  --color-slate-teal: &#x23;4a6163;
+  --color-liberty-blue: &#x23;2e4a62;
+  --color-heritage-red: &#x23;8b3e2f;
+  --color-frost-mint: &#x23;e2f0e9;
+  --color-white: &#x23;ffffff;
+  --color-black: &#x23;000000;
+  --color-ink: &#x23;0f151b;
+  --color-canvas: &#x23;faf9f6;
+  --color-soft-smoke: &#x23;f0f0f0;
+  --color-transparent-none: &#x23;ffffff00;
+}
+
+.theme-profile-oceanic {
+  --profile-bg: var(--color-oceanic-dark);
+  background-color: var(--profile-bg);
+  --profile-text: var(--color-canvas);
+  color: var(--profile-text);
+  --profile-text-accent: var(--color-oceanic-subtle);
+  --profile-pcta-bg: var(--color-canvas);
+  --profile-pcta-text: var(--color-oceanic-dark);
+  --profile-scta-border: var(--color-canvas);
+  --profile-scta-text: var(--color-canvas);
+}
+
+.theme-profile-oceanic-accent {
+  --profile-bg: var(--color-oceanic-accent);
+  background-color: var(--profile-bg);
+  --profile-text: var(--color-canvas);
+  color: var(--profile-text);
+  --profile-text-accent: var(--color-frost-mint);
+  --profile-pcta-bg: var(--color-oceanic-accent);
+  --profile-pcta-text: var(--color-oceanic-accent);
+  --profile-scta-border: var(--color-oceanic-accent);
+  --profile-scta-text: var(--color-oceanic-accent);
+}
+
+.theme-profile-soft-smoke {
+  --profile-bg: var(--color-soft-smoke);
+  background-color: var(--profile-bg);
+  --profile-text: var(--color-canvas);
+  color: var(--profile-text);
+  --profile-text-accent: var(--color-oceanic-subtle);
+  --profile-pcta-bg: var(--color-oceanic-dark);
+  --profile-pcta-text: var(--color-white);
+  --profile-scta-border: var(--color-oceanic-dark);
+  --profile-scta-text: var(--color-oceanic-dark);
+}
+
+.theme-profile-warm-gold {
+}
+
+.theme-profile-light-canvas {
+}
+
+.theme-profile-dark-ink {
+}
+
+.theme-profile-transparent-light {
+  --profile-bg: var(--color-transparent-none);
+  background-color: var(--profile-bg);
+  --profile-text: var(--color-black);
+  color: var(--profile-text);
+  --profile-pcta-bg: var(--color-ink);
+  --profile-pcta-text: var(--color-white);
+  --profile-scta-border: var(--color-ink);
+  --profile-scta-text: var(--color-ink);
+}
+
+.theme-profile-transparent-dark {
+  --profile-bg: var(--color-transparent-none);
+  background-color: var(--profile-bg);
+  --profile-text: var(--color-white);
+  color: var(--profile-text);
+  --profile-pcta-bg: var(--color-canvas);
+  --profile-pcta-text: var(--color-ink);
+  --profile-scta-border: var(--color-canvas);
+  --profile-scta-text: var(--color-canvas);
+}
+
+.theme-bg-opacity-100 { background-color: var(--profile-bg) !important; }
+.overlay-opacity-100 { background-color: rgb(0 0 0 / 1); }
+.theme-bg-opacity-90 { background-color: color-mix(in srgb, var(--profile-bg) 90%, transparent) !important; }
+.overlay-opacity-90 { background-color: rgb(0 0 0 / 0.9); }
+.theme-bg-opacity-70 { background-color: color-mix(in srgb, var(--profile-bg) 70%, transparent) !important; }
+.overlay-opacity-70 { background-color: rgb(0 0 0 / 0.7); }
+.theme-bg-opacity-50 { background-color: color-mix(in srgb, var(--profile-bg) 50%, transparent) !important; }
+.overlay-opacity-50 { background-color: rgb(0 0 0 / 0.5); }
+.theme-bg-opacity-30 { background-color: color-mix(in srgb, var(--profile-bg) 30%, transparent) !important; }
+.overlay-opacity-30 { background-color: rgb(0 0 0 / 0.3); }
+.theme-bg-opacity-10 { background-color: color-mix(in srgb, var(--profile-bg) 10%, transparent) !important; }
+.overlay-opacity-10 { background-color: rgb(0 0 0 / 0.1); }
+.theme-bg-opacity-0 { background-color: transparent !important; }
+.overlay-opacity-0 { background-color: transparent; }

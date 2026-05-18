@@ -1,0 +1,14 @@
+/**
+ * Path: /workspaces/kinetik-os/assets/css/panel.css
+ * Filename: panel.css | Version: v1.0.7
+ * Agent: DX-Curator
+ * Status: Production
+ * Logic: Custom styling for Kirby CMS Panel, adding lime green border to active menu items.
+ */
+
+.k-panel-menu-button[aria-current="true"],
+.k-panel-menu-button[aria-current="page"],
+.k-panel-menu .k-button[aria-current="true"],
+.k-panel-menu .k-button[aria-current="page"] {
+    box-shadow: inset 2px 0 0 var(--color-positive, var(--color-green, #32CD32)) !important;
+}

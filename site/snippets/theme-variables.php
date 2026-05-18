@@ -8,7 +8,8 @@ if (!$theme) return;
 // Inject Theme Colors dynamically
 foreach ($theme->theme_colors()->toStructure() as $color) {
     if ($color->color_name()->isNotEmpty() && $color->color_value()->isNotEmpty()) {
-        echo '  --color-' . esc($color->color_name(), 'attr') . ': ' . esc($color->color_value(), 'attr') . ';' . "\n";
+        // Output raw color value so # isn't converted to HTML entity &#x23;
+        echo '  --color-' . esc($color->color_name(), 'attr') . ': ' . $color->color_value()->value() . ';' . "\n";
     }
 }
 
@@ -69,10 +70,10 @@ if ($radius === 'none') {
 
 // Typography
 if ($theme->base_font()->isNotEmpty()) {
-    echo "  --font-sans: " . esc($theme->base_font(), 'attr') . " !important;\n";
+    echo "  --font-sans: " . $theme->base_font()->value() . " !important;\n";
 }
 if ($theme->heading_font()->isNotEmpty()) {
-    echo "  --font-heading: " . esc($theme->heading_font(), 'attr') . " !important;\n";
+    echo "  --font-heading: " . $theme->heading_font()->value() . " !important;\n";
 }
 ?>
 }

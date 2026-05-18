@@ -24,12 +24,12 @@ if (is_dir($iconsDir)) {
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-        <input type="text" id="icon-search" placeholder="Search icons..." class="w-full text-lg border-2 border-ink/10 rounded-xl hover:border-ink/20 bg-transparent text-ink focus:outline-none focus:border-oceanic focus:ring-1 focus:ring-oceanic transition-colors" style="padding: 20px 20px 20px 50px;">
+        <input type="text" id="icon-search" placeholder="Search icons..." class="w-full text-lg border-2 border-ink/10 rounded-none hover:border-ink/20 bg-transparent text-ink focus:outline-none focus:border-oceanic focus:ring-1 focus:ring-oceanic transition-colors" style="padding: 20px 20px 20px 50px;">
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6" id="icon-grid">
         <?php foreach ($icons as $icon): ?>
-            <div class="icon-card relative flex flex-col items-center justify-center p-6 border border-ink/10 rounded-xl hover:border-ink/30 hover:bg-ink/5 transition-all cursor-pointer group" data-name="<?= esc($icon['name'], 'attr') ?>" title="Click to copy name: <?= esc($icon['name'], 'attr') ?>">
+            <div class="icon-card relative flex flex-col items-center justify-center p-6 border border-ink/10 rounded-none hover:border-ink/30 hover:bg-ink/5 transition-all cursor-pointer group" data-name="<?= esc($icon['name'], 'attr') ?>" title="Click to copy name: <?= esc($icon['name'], 'attr') ?>">
                 <div class="w-8 h-8 mb-4 text-ink flex items-center justify-center transition-transform group-hover:scale-110">
                     <?= file_get_contents($icon['path']) ?>
                 </div>
@@ -37,8 +37,8 @@ if (is_dir($iconsDir)) {
                     <?= esc($icon['name']) ?>
                 </span>
                 
-                <div class="absolute inset-0 flex items-center justify-center bg-canvas/90 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl backdrop-blur-sm">
-                    <span class="copy-text text-xs font-bold text-oceanic px-3 py-1 border border-oceanic/30 rounded bg-oceanic/10">Copy</span>
+                <div class="absolute inset-0 flex items-center justify-center bg-canvas/90 opacity-0 group-hover:opacity-100 transition-opacity rounded-none backdrop-blur-sm">
+                    <span class="copy-text text-xs font-bold text-oceanic px-3 py-1 border border-oceanic/30 rounded-none bg-oceanic/10">Copy</span>
                 </div>
             </div>
         <?php endforeach; ?>

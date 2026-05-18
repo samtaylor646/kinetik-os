@@ -41,11 +41,21 @@ fields:
     text: 
       - "Off"
       - "On"
-    help: Disabling removes padding and shadows.
+    help: Disabling removes the box and forces the text to inherit colors from the parent Row's theme.
+    width: 1/4
+
+  enable_shadow:
+    label: Box Shadow
+    type: toggle
+    default: false
+    text:
+      - "Off"
+      - "On"
+    help: Adds a box shadow to the box.
     width: 1/4
 
   theme:
-    label: Color Profile
+    label: Color Profile (Boxed)
     type: select
     placeholder: Inherit
     options: query
@@ -53,20 +63,23 @@ fields:
       fetch: kirby.page("theme").color_profiles.toStructure
       text: "{{ item.profile_name }}"
       value: "{{ item.profile_id }}"
+    help: Applies only when Boxed Layout is 'On'. Otherwise, colors are inherited from the parent Row.
     width: 1/4
 
   bg_opacity:
-    label: Background Opacity
+    label: Background Opacity %
     type: select
     default: "100"
     options:
-      "100": Solid (100%)
-      "80": Glass (80%)
-      "50": Glass (50%)
-      "20": Glass (20%)
-      "0": Transparent (0%)
-    width: 1/4
-    help: Low opacity adds blur.
+      "100": "100"
+      "90": "90"
+      "70": "70"
+      "50": "50"
+      "30": "30"
+      "10": "10"
+      "0": "0"
+    width: 1/1
+    help: Adjust the background opacity. Glass variants include backdrop blur.
 
   cta_line:
     type: line

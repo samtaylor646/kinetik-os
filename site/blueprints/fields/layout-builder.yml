@@ -39,137 +39,141 @@ fieldsets:
   - code
   - gallery
 settings:
-  tabs:
-    dimensions:
-      label: Dimensions & Alignment
-      icon: ruler
-      fields:
-        min_height:
-          label: Minimum Height (Hero Setting)
-          type: select
-          placeholder: Default
-          options:
-            auto: Auto (Fit Content)
-            vh-50: Half Screen (50vh)
-            vh-75: Large (75vh)
-            vh-100: Full Screen Hero (100vh)
-          width: 1/2
-          
-        vertical_align:
-          label: Vertical Content Alignment
-          type: select
-          placeholder: Default
-          options:
-            top: Top
-            center: Middle
-            end: Bottom
-          width: 1/2
+  fields:
+    dimensions_header:
+      type: headline
+      label: Dimensions
 
-        row_padding:
-          label: Row Padding (Y)
-          type: select
-          placeholder: Default
-          options:
-            none: None
-            sm: Small (Airy-SM)
-            md: Medium (Airy-MD)
-            lg: Large (Airy-LG)
-            xl: Massive (Airy-XL)
-          width: 1/2
+    min_height:
+      label: Minimum Height (Hero Setting)
+      type: select
+      placeholder: Default
+      options:
+        auto: Auto (Fit Content)
+        vh-50: Half Screen (50vh)
+        vh-75: Large (75vh)
+        vh-100: Full Screen Hero (100vh)
+      width: 1/2
+      
+    vertical_align:
+      label: Vertical Content Alignment
+      type: select
+      placeholder: Default
+      options:
+        top: Top
+        center: Middle
+        end: Bottom
+      width: 1/2
 
-        row_width:
-          label: Row Width Container
-          type: select
-          placeholder: Default
-          options:
-            contained: Contained
-            full: Full Bleed
-          width: 1/2
+    row_padding:
+      label: Row Padding (Y)
+      type: select
+      placeholder: Default
+      options:
+        none: None
+        sm: Small (Airy-SM)
+        md: Medium (Airy-MD)
+        lg: Large (Airy-LG)
+        xl: Massive (Airy-XL)
+      width: 1/2
 
-    background:
-      label: Background Style
-      icon: image
-      fields:
-        row_bg:
-          label: Background Color / Theme
-          type: select
-          placeholder: Default
-          options:
-            transparent: Transparent
-            canvas: Canvas (Main Background)
-            ink: Ink (Dark Text/Background)
-            oceanic: Oceanic Dark
-            gold: Warm Gold
-            soft-smoke: Soft Smoke
-            brand-accent: Brand Accent
-          width: 1/1
+    row_width:
+      label: Row Width Container
+      type: select
+      placeholder: Default
+      options:
+        contained: Contained
+        full: Full Bleed
+      width: 1/2
 
-        background_media:
-          label: Background Image or Video
-          type: files
-          multiple: false
-          query: site.find("media").files.add(page.files).filterBy('type', 'in', ['image', 'video'])
-          width: 1/1
-          
-        background_media_size:
-          label: Media Size
-          type: select
-          empty: false
-          options:
-            cover: Cover (Fill Area, Crop)
-            contain: Contain (Show All, Letterbox)
-            auto: Auto (Original Size)
-          default: cover
-          width: 1/2
+    background_header:
+      type: headline
+      label: Background
 
-        background_media_position:
-          label: Media Position
-          type: select
-          empty: false
-          options:
-            center: Center
-            top: Top
-            bottom: Bottom
-            left: Left
-            right: Right
-          default: center
-          width: 1/2
-          
-        background_overlay:
-          label: Image/Video Dark Overlay (%)
-          type: range
-          min: 0
-          max: 100
-          step: 5
-          default: 0
-          tooltip:
-            before: Opacity
-            after: "%"
-          width: 1/2
+    merge_next:
+      label: Extend Background to Next Row
+      type: toggle
+      default: false
+      width: 1/1
+      help: If enabled, this row and the row directly beneath it will be grouped into the same background section (perfect for complex Heroes without nesting).
 
-    advanced:
-      label: Advanced & Motion
-      icon: bolt
-      fields:
-        merge_next:
-          label: Extend Background to Next Row
-          type: toggle
-          default: false
-          width: 1/1
-          help: If enabled, this row and the row directly beneath it will be grouped into the same background section (perfect for complex Heroes without nesting).
+    row_bg:
+      label: Background Color / Theme
+      type: select
+      placeholder: Default
+      options:
+        transparent: Transparent
+        canvas: Canvas (Main Background)
+        ink: Ink (Dark Text/Background)
+        oceanic: Oceanic Dark
+        gold: Warm Gold
+        soft-smoke: Soft Smoke
+        brand-accent: Brand Accent
+      width: 1/1
 
-        gsap_reveal:
-          label: GSAP Scroll Reveal
-          type: toggle
-          default: false
-          width: 1/1
+    background_media:
+      label: Background Image or Video
+      type: files
+      multiple: false
+      query: site.find("media").files.add(page.files).filterBy('type', 'in', ['image', 'video'])
+      width: 1/1
+      
+    background_media_size:
+      label: Media Size
+      type: select
+      empty: false
+      options:
+        cover: Cover (Fill Area, Crop)
+        contain: Contain (Show All, Letterbox)
+        auto: Auto (Original Size)
+      default: cover
+      width: 1/2
 
-        custom_id:
-          label: Custom ID (Anchor)
-          type: text
-          width: 1/2
+    background_media_position:
+      label: Media Position
+      type: select
+      empty: false
+      options:
+        center: Center
+        top: Top
+        bottom: Bottom
+        left: Left
+        right: Right
+      default: center
+      width: 1/2
+      
+    background_overlay:
+      label: Image/Video Dark Overlay %
+      type: range
+      min: 0
+      max: 100
+      step: 10
+      default: 0
+      tooltip:
+        before: Opacity
+        after: "%"
+      width: 1/1
 
-        custom_class:
-          label: Custom CSS Class
-          type: text
-          width: 1/2
+    advanced_header:
+      type: headline
+      label: Advanced
+
+    custom_id:
+      label: Custom ID (Anchor)
+      type: text
+      width: 1/2
+
+    custom_class:
+      label: Custom CSS Class
+      type: text
+      width: 1/2
+
+    motion_header:
+      type: headline
+      label: Motion
+
+    gsap_reveal:
+      label: GSAP Scroll Reveal
+      type: toggle
+      default: false
+      width: 1/1

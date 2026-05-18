@@ -50,6 +50,7 @@ $groupIsOpen = false;
         if ($attrs->gsap_reveal()->isTrue()) {
           $dataAttributes[] = 'data-motion="reveal"';
         }
+        $dataAttributes[] = 'data-scroll-section';
         
         // Custom ID
         $idAttr = $attrs->custom_id()->isNotEmpty() ? 'id="' . esc($attrs->custom_id(), 'attr') . '"' : '';
@@ -75,9 +76,8 @@ $groupIsOpen = false;
             <?php 
               $overlayValue = (int)$attrs->background_overlay()->value();
               if ($overlayValue > 0): 
-                $opacity = $overlayValue / 100;
             ?>
-              <div class="absolute inset-0 bg-black" style="opacity: <?= $opacity ?>;"></div>
+              <div class="absolute inset-0 overlay-opacity-<?= $overlayValue ?>"></div>
             <?php endif; ?>
           </div>
       <?php endif; ?>
@@ -90,6 +90,7 @@ $groupIsOpen = false;
       <?php
         // The inner container logic runs for EVERY layout row, whether grouped or not
         $innerClasses = ['w-full', 'layout-inner', 'flex', 'flex-col'];
+
         
         // Min Height
         if ($minHeight = $attrs->min_height()->value()) {
@@ -202,3 +203,4 @@ $groupIsOpen = false;
     </div></section>
   <?php endif; ?>
 </div>
+

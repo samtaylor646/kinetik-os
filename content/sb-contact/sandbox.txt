@@ -2,8 +2,8 @@ Title: Contact (Sandbox)
 
 ----
 
-Layout: [{"attrs":{"min_height":"","vertical_align":"","row_padding":"","row_width":"","row_bg":"","background_media":[],"background_media_size":"","background_media_position":"","background_overlay":"","merge_next":"false","gsap_reveal":"false","custom_id":"","custom_class":""},"columns":[{"blocks":[{"content":{"text":"<p>Welcome to the Kinetik OS Sandbox. This page is built using the robust layout builder and utilizes the Fluid Glass design principles.</p>"},"id":"123","isHidden":false,"type":"text"}],"id":"col1","width":"1/1"}],"id":"418257a8-227d-4bf4-b207-53e11afc6e62"}]
+Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"section-header","content":{"eyebrow":"Get In Touch","heading":"Let's Talk","subheading":"We'd love to hear from you. Drop us a line.","alignment":"left","theme":"light","airy_spacing":"sm"}},{"type":"bento-grid","content":{"layout_type":"quadrant","theme":"dark","items":[{"type":"bento-standard","content":{"title":"New York","text":"123 Broadway St.\\nNY, NY 10001"}},{"type":"bento-standard","content":{"title":"London","text":"45 High Holborn\\nLondon, UK"}},{"type":"bento-standard","content":{"title":"Email","text":"hello@kinetikos.com"}},{"type":"bento-standard","content":{"title":"Phone","text":"+1 (555) 123-4567"}}]}}]}]}]
 
 ----
 
-Uuid: mwn50d0ceov3vh76
+Uuid: yzplvl5od70l1dym

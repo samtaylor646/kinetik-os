@@ -60,7 +60,17 @@ tabs:
               value: "{{ item.color_name }}"
             width: 1/4
           text_color:
-            label: Text Color
+            label: Text Color (Base)
+            type: select
+            empty: "Default"
+            options: query
+            query:
+              fetch: page.theme_colors.toStructure
+              text: "{{ item.color_name }}"
+              value: "{{ item.color_name }}"
+            width: 1/4
+          text_color_accent:
+            label: Text Color (Accent)
             type: select
             empty: "Default"
             options: query

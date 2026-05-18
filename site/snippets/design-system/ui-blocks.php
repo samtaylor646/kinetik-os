@@ -3,7 +3,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12 pb-32">
   
   <!-- Light / Canvas Block -->
-  <div class="bg-white tech-border p-12 flex flex-col h-full shadow-sm">
+  <div class="bg-white tech-border p-12 flex flex-col h-full shadow-none">
     <div class="flex justify-between items-center border-b border-ink/10 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-ink/40">Theme: Light Canvas</span>
       <span class="h-3 w-3 bg-oceanic-dark"></span>
@@ -17,7 +17,7 @@
   </div>
 
   <!-- Dark / Ink Block -->
-  <div class="bg-ink dark tech-border p-12 flex flex-col h-full text-white shadow-xl">
+  <div class="bg-ink dark tech-border p-12 flex flex-col h-full text-white shadow-none">
     <div class="flex justify-between items-center border-b border-white/10 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-white/40">Theme: Dark Ink</span>
       <span class="h-3 w-3 bg-warm-gold"></span>
@@ -30,7 +30,7 @@
   </div>
 
   <!-- Oceanic Block -->
-  <div class="bg-oceanic-dark dark tech-border p-12 flex flex-col h-full text-white shadow-xl">
+  <div class="bg-oceanic-dark dark tech-border p-12 flex flex-col h-full text-white shadow-none">
     <div class="flex justify-between items-center border-b border-white/20 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-white/50">Theme: Oceanic Prime</span>
       <span class="h-3 w-3 bg-white"></span>
@@ -43,7 +43,7 @@
   </div>
 
   <!-- Oceanic Accent Block -->
-  <div class="bg-oceanic-accent dark tech-border p-12 flex flex-col h-full text-white shadow-xl">
+  <div class="bg-oceanic-accent dark tech-border p-12 flex flex-col h-full text-white shadow-none">
     <div class="flex justify-between items-center border-b border-white/20 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-white/50">Theme: Oceanic Accent</span>
       <span class="h-3 w-3 bg-white"></span>
@@ -56,7 +56,7 @@
   </div>
 
   <!-- Slate Teal Block -->
-  <div class="bg-slate-teal dark tech-border p-12 flex flex-col h-full text-white shadow-xl">
+  <div class="bg-slate-teal dark tech-border p-12 flex flex-col h-full text-white shadow-none">
     <div class="flex justify-between items-center border-b border-white/20 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-white/50">Theme: Slate Teal</span>
       <span class="h-3 w-3 bg-warm-gold"></span>
@@ -69,7 +69,7 @@
   </div>
 
   <!-- Liberty Blue Block -->
-  <div class="bg-liberty-blue dark tech-border p-12 flex flex-col h-full text-white shadow-xl">
+  <div class="bg-liberty-blue dark tech-border p-12 flex flex-col h-full text-white shadow-none">
     <div class="flex justify-between items-center border-b border-white/20 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-white/50">Theme: Liberty Blue</span>
       <span class="h-3 w-3 bg-frost-mint"></span>
@@ -82,7 +82,7 @@
   </div>
 
   <!-- Heritage Red Block -->
-  <div class="bg-heritage-red dark tech-border p-12 flex flex-col h-full text-white shadow-xl">
+  <div class="bg-heritage-red dark tech-border p-12 flex flex-col h-full text-white shadow-none">
     <div class="flex justify-between items-center border-b border-white/20 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-white/50">Theme: Heritage Red</span>
       <span class="h-3 w-3 bg-white"></span>
@@ -95,7 +95,7 @@
   </div>
 
   <!-- Warm Gold Block -->
-  <div class="bg-warm-gold tech-border p-12 flex flex-col h-full shadow-sm">
+  <div class="bg-warm-gold tech-border p-12 flex flex-col h-full shadow-none">
     <div class="flex justify-between items-center border-b border-ink/10 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-ink/40">Theme: Warm Gold</span>
       <span class="h-3 w-3 bg-ink"></span>
@@ -108,7 +108,7 @@
   </div>
 
   <!-- Frost Mint Block -->
-  <div class="bg-frost-mint tech-border p-12 flex flex-col h-full shadow-sm">
+  <div class="bg-frost-mint tech-border p-12 flex flex-col h-full shadow-none">
     <div class="flex justify-between items-center border-b border-ink/10 pb-6 mb-10">
       <span class="mono text-xs uppercase tracking-[0.2em] text-ink/40">Theme: Frost Mint</span>
       <span class="h-3 w-3 bg-slate-teal"></span>

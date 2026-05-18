@@ -2,8 +2,8 @@ Title: Services (Sandbox)
 
 ----
 
-Layout: [{"attrs":{"min_height":"","vertical_align":"","row_padding":"","row_width":"","row_bg":"","background_media":[],"background_media_size":"","background_media_position":"","background_overlay":"","merge_next":"false","gsap_reveal":"false","custom_id":"","custom_class":""},"columns":[{"blocks":[{"content":{"text":"<p>Welcome to the Kinetik OS Sandbox. This page is built using the robust layout builder and utilizes the Fluid Glass design principles.</p>"},"id":"123","isHidden":false,"type":"text"}],"id":"col1","width":"1/1"}],"id":"294fa1f5-b905-43d8-a2a5-0e2c83cad0a5"}]
+Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"section-header","content":{"eyebrow":"Our Offerings","heading":"Comprehensive Solutions","subheading":"Tailored services to meet the demands of modern enterprises.","alignment":"left","theme":"dark","airy_spacing":"md"}},{"type":"bento-grid","content":{"layout_type":"feature_showcase","theme":"light","items":[{"type":"bento-standard","content":{"title":"Cloud Migration","text":"Seamlessly move to the cloud."}},{"type":"bento-stat","content":{"value":"99.9%","label":"Uptime Guarantee"}},{"type":"bento-media","content":{"image":["unsplash-2.webp"],"caption":"Global Infrastructure"}}]}},{"type":"data-table","content":{"heading":"Service Tiers","headers":{"col1":"Plan","col2":"Features","col3":"Support","col4":"Price"},"table_data":[{"col1":"Basic","col2":"Core CMS","col3":"Email","col4":"$500\/mo"},{"col1":"Pro","col2":"E-Commerce","col3":"Priority","col4":"$1500\/mo"},{"col1":"Enterprise","col2":"Custom SLA","col3":"24\/7 Phone","col4":"Custom"}],"airy_spacing":"md"}},{"type":"accordion-group","content":{"allow_multiple":"true","theme":"light","airy_spacing":"lg","items":[{"title":"How long does a project take?","content":[{"type":"text","content":{"text":"Typically 4-8 weeks depending on scope."}}]},{"title":"Do you offer ongoing support?","content":[{"type":"text","content":{"text":"Yes, we have custom retainer plans."}}]}]}}]}]}]
 
 ----
 
-Uuid: nucp7irgp54g4lnh
+Uuid: xpzln0fjurlqpyqw
