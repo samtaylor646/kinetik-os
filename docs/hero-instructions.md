@@ -26,10 +26,10 @@ This section controls how the block looks and interacts with the background.
 We have dramatically simplified how colors and "glass" effects work.
 
 1.  **Color Profile:** Select a theme from the dropdown (these are managed in your global Theme settings). This profile dictates the background color of the box, the text colors, and the button colors.
-2.  **Background Opacity:** Decide how solid or transparent you want the background of the box to be. 
-    *   **Solid (100%):** The background color is fully opaque.
-    *   **Glass (80%, 50%, 20%):** The background color becomes partially transparent, and a modern "glass blur" effect is automatically applied behind the text. This is perfect for maintaining brand colors while allowing a background image or video to peek through.
-    *   **Transparent (0%):** The background color is completely removed, but the text and button colors from your chosen Color Profile are still applied.
+2.  **Background Opacity:** Decide how solid or transparent you want the background of the box to be using the 10-step opacity slider (100, 90, 70, 50, 30, 10, 0). 
+    *   **Solid (100):** The background color is fully opaque.
+    *   **Glass (90, 70, 50, 30, 10):** The background color becomes partially transparent, and a modern "glass blur" effect is automatically applied behind the text. This is perfect for maintaining brand colors while allowing a background image or video to peek through.
+    *   **Transparent (0):** The background color is completely removed, but the text and button colors from your chosen Color Profile are still applied.
 
 ### Pro-Tips for Editors
 *   **Legibility over Videos:** If you have a chaotic background video, keep **Boxed Layout** turned On and choose a **Glass** opacity. This ensures the text is always easy to read while keeping the motion visible.

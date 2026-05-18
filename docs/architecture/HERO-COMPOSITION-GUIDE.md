@@ -14,7 +14,7 @@ A full-screen, dramatic hero with a background image and centered text.
 * **Vertical Alignment:** `Middle`
 * **Row Padding:** `None` (or `Medium` to keep text off edges on mobile)
 * **Background Image:** [Select your image]
-* **Image Dark Overlay:** `Medium Dim (50%)` (Ensures text is legible)
+* **Image Dark Overlay:** `50` (Ensures text is legible, using the new 10-step opacity engine)
 * **Background Color / Theme:** `Transparent`
 
 **Blocks to Add (inside the 1/1 column):**
@@ -32,7 +32,7 @@ A highly converting professional hero with text on the left, and an image/video 
 * **Layout Grid:** `1/2, 1/2`
 * **Minimum Height:** `Large (75vh)`
 * **Vertical Alignment:** `Middle`
-* **Background Color / Theme:** `Oceanic Dark` or `Warm Gold`
+* **Background Color / Theme:** `Theme Profile: Oceanic` or `Theme Profile: Gold`
 * **Row Padding:** `Large (Airy-LG)`
 
 **Blocks to Add:**
@@ -55,7 +55,7 @@ A clean, text-driven hero with no heavy imagery. Relies on the "Airy" spacing sc
 * **Minimum Height:** `Auto (Content Height)`
 * **Row Padding:** `Massive (Airy-XL)`
 * **Vertical Alignment:** `Top`
-* **Background Color / Theme:** `Soft Smoke`
+* **Background Color / Theme:** `Theme Profile: Soft Smoke`
 
 **Blocks to Add:**
 * **Left Column (2/3):**
@@ -87,6 +87,6 @@ If you want a huge Hero section where the top half is a video with text, and the
 ---
 
 ### Pro-Tips for the DX-Curator:
-* **Text Legibility:** If you set a `Background Image`, always set the `Image Dark Overlay` to Light, Medium, or Heavy. The text color will automatically invert to white.
+* **Text Legibility:** If you set a `Background Image`, always set the `Image Dark Overlay` using the 10-step opacity slider (e.g., 30, 50, or 70). The text color will automatically invert to white.
 * **Motion:** Go to the Advanced tab and toggle `GSAP Scroll Reveal` to add a cinematic entrance to the hero content.
 * **Copy & Paste:** Once you build a perfect Hero layout, click the three dots on the Layout Row and select **Copy**. You can paste this entire pre-configured hero onto any other page!
