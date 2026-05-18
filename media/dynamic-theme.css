@@ -1,21 +1,28 @@
+/**
+ * Path: /media/dynamic-theme.css
+ * Filename: dynamic-theme.css | Version: v1.0.0
+ * Agent: DX-Curator
+ * Status: Production
+ * Logic: Defines core global design tokens and theming logic for Tailwind and GSAP.
+ */
 /* DYNAMIC THEME CSS - AUTO GENERATED */
 
 :root {
-  --color-oceanic-dark: &#x23;005b6d;
-  --color-oceanic-accent: &#x23;007489;
-  --color-oceanic-secondary: &#x23;218993;
-  --color-oceanic-subtle: &#x23;7a9fa7;
-  --color-warm-gold: &#x23;d4c19c;
-  --color-slate-teal: &#x23;4a6163;
-  --color-liberty-blue: &#x23;2e4a62;
-  --color-heritage-red: &#x23;8b3e2f;
-  --color-frost-mint: &#x23;e2f0e9;
-  --color-white: &#x23;ffffff;
-  --color-black: &#x23;000000;
-  --color-ink: &#x23;0f151b;
-  --color-canvas: &#x23;faf9f6;
-  --color-soft-smoke: &#x23;f0f0f0;
-  --color-transparent-none: &#x23;ffffff00;
+  --color-oceanic-dark: #005b6d;
+  --color-oceanic-accent: #007489;
+  --color-oceanic-secondary: #218993;
+  --color-oceanic-subtle: #7a9fa7;
+  --color-warm-gold: #d4c19c;
+  --color-slate-teal: #4a6163;
+  --color-liberty-blue: #2e4a62;
+  --color-heritage-red: #8b3e2f;
+  --color-frost-mint: #e2f0e9;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-ink: #0f151b;
+  --color-canvas: #faf9f6;
+  --color-soft-smoke: #f0f0f0;
+  --color-transparent-none: #ffffff00;
 }
 
 .theme-profile-oceanic {

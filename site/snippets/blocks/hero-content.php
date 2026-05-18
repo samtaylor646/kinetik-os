@@ -1,8 +1,13 @@
 <?php
 /**
  * Path: /site/snippets/blocks/hero-content.php
+ * Filename: hero-content.php | Version: v7.8.0
+ * Agent: Architect-K
+ * Status: Production
+ * Logic: Renders the Hero Content block with dynamic theming, boxed layouts, and CTAs.
  * @var \Kirby\Cms\Block $block
  */
+declare(strict_types=1);
 
 $align = $block->alignment()->value();
 $alignClass = match($align) {
@@ -17,9 +22,11 @@ $hasShadow = $block->enable_shadow()->toBool(false);
 
 $boxClasses = '';
 if ($isBoxed) {
-    $boxClasses = 'p-8 md:p-16 border border-ink/10 rounded-none';
+    $boxClasses = 'p-8 md:p-16 rounded-none';
     if ($hasShadow) {
-        $boxClasses .= ' shadow-[8px_8px_0px_rgba(0,0,0,1)]';
+        $boxClasses .= ' shadow-brutalist-glass border-none backdrop-saturate-150';
+    } else {
+        $boxClasses .= ' border border-ink/10';
     }
 }
 
@@ -27,13 +34,15 @@ if ($isBoxed) {
 $themeId = $block->theme()->value();
 
 $containerClasses = [];
-$opacityField = $block->content()->get('bg_opacity')->exists() ? $block->content()->get('bg_opacity') : $block->content()->get('bg_tint');
-$opacity = $opacityField->exists() && $opacityField->value() !== '' ? $opacityField->value() : '100';
+$bgOpacity = $block->bg_opacity()->value();
+$bgTint = $block->bg_tint()->value();
+
+$opacity = $bgOpacity !== '' ? $bgOpacity : ($bgTint !== '' ? $bgTint : '100');
 
 // Map legacy values
 if ($opacity === 'base' || $opacity === 'Solid (100%)') $opacity = '100';
 elseif ($opacity === 'Transparent (0%)') $opacity = '0';
-elseif (preg_match('/\((\d+)%\)/', $opacity, $matches)) {
+elseif (preg_match('/(\d+)/', $opacity, $matches)) {
     $opacity = $matches[1];
 }
 
@@ -49,8 +58,6 @@ if ($isBoxed && $themeId) {
     }
 }
 
-
-
 $finalContainerClass = trim("$boxClasses " . implode(' ', $containerClasses ?? []));
 
 // Button Alignment
@@ -63,7 +70,7 @@ $btnAlignClass = match($align) {
 <div class="hero-content w-full max-w-5xl <?= $alignClass ?> <?= $finalContainerClass ?>" data-gsap="hero">
     
     <?php if ($block->eyebrow()->isNotEmpty()): ?>
-        <span class="block text-sm md:text-base font-bold tracking-[0.2em] uppercase mb-4 md:mb-6" style="color: var(--profile-text-accent, inherit);">
+        <span class="block text-sm md:text-base font-bold tracking-[0.2em] uppercase mb-4 md:mb-6 text-[color:var(--profile-text-accent,inherit)]">
             <?= $block->eyebrow()->html() ?>
         </span>
     <?php endif; ?>
@@ -84,16 +91,14 @@ $btnAlignClass = match($align) {
         <div class="flex flex-col sm:flex-row flex-wrap gap-4 md:gap-6 mt-4 w-full sm:w-auto <?= $btnAlignClass ?>">
             <?php if ($block->primary_cta_text()->isNotEmpty()): ?>
                 <a href="<?= $block->primary_cta_link()->toUrl() ?>" 
-                   class="inline-flex items-center justify-center px-8 py-4 rounded-none font-bold text-lg transition-all duration-300 hover:scale-105"
-                   style="background-color: var(--profile-pcta-bg, var(--color-ink)); color: var(--profile-pcta-text, var(--color-canvas));">
+                   class="inline-flex items-center justify-center px-8 py-4 rounded-none font-bold text-lg transition-all duration-300 hover:scale-105 bg-[var(--profile-pcta-bg,var(--color-ink))] text-[color:var(--profile-pcta-text,var(--color-canvas))]">
                     <?= $block->primary_cta_text()->html() ?>
                 </a>
             <?php endif; ?>
 
             <?php if ($block->secondary_cta_text()->isNotEmpty()): ?>
                 <a href="<?= $block->secondary_cta_link()->toUrl() ?>" 
-                   class="inline-flex items-center justify-center px-8 py-4 rounded-none font-bold text-lg border transition-all duration-300 hover:scale-105"
-                   style="border-color: var(--profile-scta-border, currentColor); color: var(--profile-scta-text, currentColor);">
+                   class="inline-flex items-center justify-center px-8 py-4 rounded-none font-bold text-lg border transition-all duration-300 hover:scale-105 border-[var(--profile-scta-border,currentColor)] text-[color:var(--profile-scta-text,currentColor)]">
                     <?= $block->secondary_cta_text()->html() ?>
                 </a>
             <?php endif; ?>

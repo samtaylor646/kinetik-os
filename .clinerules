@@ -64,3 +64,9 @@ When writing code or headers, assign the correct Agent persona:
 - **Security-S:** Security, Compliance (.htaccess)
 - **Content-C:** Content Strategy (Flat-files, YAML linting)
 - **Performance-P:** Optimization (Lighthouse, Core Web Vitals)
+
+## STRICT INITIALIZATION PROTOCOL (MANDATORY)
+For EVERY new prompt, task, or feature request, Roo MUST execute the following pre-flight checks before taking any action or writing any code:
+1. **Persona Declaration:** Explicitly state which Agent Persona (e.g., Architect-K, DevOps-V) is being adopted based on the domain of the request.
+2. **PRD Verification:** If it is a new feature, use the `read_file` tool to read `docs/core/KINETIK-OS-PRODUCT-REQUIREMENTS-DOCUMENT.md` and any relevant phase summaries to align with core requirements.
+3. **Pre-Flight Rule Check:** Cross-reference all proposed changes against the Terminal & Severe rules above (Mandatory Headers, Zero-Database, Public/Private Sovereignty, Strict Typing, etc.) to ensure 100% compliance.

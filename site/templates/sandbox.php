@@ -1,4 +1,13 @@
 <?php
+/**
+ * Path: /site/templates/sandbox.php
+ * Filename: sandbox.php | Version: v1.0.0
+ * Agent: Architect-K
+ * Status: Production
+ * Logic: Renders the Sandbox Block Testing Environment.
+ */
+declare(strict_types=1);
+
 /** @var \Kirby\Cms\Page $page */
 ?>
 <?php snippet('header') ?>
@@ -84,9 +93,13 @@
               <?php 
                 $opacityMap = [
                   '100' => 'Solid (100%)',
+                  '90' => 'Glass (90%)',
                   '80' => 'Glass (80%)',
+                  '70' => 'Glass (70%)',
                   '50' => 'Glass (50%)',
+                  '30' => 'Glass (30%)',
                   '20' => 'Glass (20%)',
+                  '10' => 'Glass (10%)',
                   '0' => 'Transparent (0%)',
                 ];
                 $bgOpacityVal = $block->bg_opacity()->value();

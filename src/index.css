@@ -88,6 +88,13 @@
   --spacing-airy-2xl: 14rem;          
   --spacing-airy-massive: 20rem;      
 
+  /* SHADOWS */
+  --shadow-brutalist-glass: 
+    0 4px 12px -2px color-mix(in srgb, var(--profile-text, var(--color-ink)) 5%, transparent),
+    0 12px 32px -4px color-mix(in srgb, var(--profile-text, var(--color-ink)) 10%, transparent),
+    inset 1px 1px 0px 0px color-mix(in srgb, var(--color-white) 8%, transparent),
+    inset -1px -1px 0px 0px color-mix(in srgb, var(--profile-text, var(--color-ink)) 8%, transparent);
+
   /* TYPOGRAPHY SCALE */
   --text-xs: 0.75rem;            
   --text-sm: 0.9rem;             
