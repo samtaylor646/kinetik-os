@@ -66,6 +66,26 @@ $btnAlignClass = match($align) {
     'right'  => 'justify-end',
     default  => 'justify-start',
 };
+
+// Primary CTA Href Logic
+$primaryHref = '';
+if ($block->primary_link_type()->value() === 'page' && $block->primary_cta_page()->isNotEmpty()) {
+    $primaryHref = $block->primary_cta_page()->toPage()->url();
+} elseif ($block->primary_link_type()->value() === 'anchor') {
+    $primaryHref = $block->primary_cta_anchor()->value();
+} else {
+    $primaryHref = $block->primary_cta_link()->toUrl();
+}
+
+// Secondary CTA Href Logic
+$secondaryHref = '';
+if ($block->secondary_link_type()->value() === 'page' && $block->secondary_cta_page()->isNotEmpty()) {
+    $secondaryHref = $block->secondary_cta_page()->toPage()->url();
+} elseif ($block->secondary_link_type()->value() === 'anchor') {
+    $secondaryHref = $block->secondary_cta_anchor()->value();
+} else {
+    $secondaryHref = $block->secondary_cta_link()->toUrl();
+}
 ?>
 <div class="hero-content w-full max-w-5xl <?= $alignClass ?> <?= $finalContainerClass ?>" data-gsap="hero">
     
@@ -90,14 +110,14 @@ $btnAlignClass = match($align) {
     <?php if ($block->primary_cta_text()->isNotEmpty() || $block->secondary_cta_text()->isNotEmpty()): ?>
         <div class="flex flex-col sm:flex-row flex-wrap gap-4 md:gap-6 mt-4 w-full sm:w-auto <?= $btnAlignClass ?>">
             <?php if ($block->primary_cta_text()->isNotEmpty()): ?>
-                <a href="<?= $block->primary_cta_link()->toUrl() ?>" 
+                <a href="<?= $primaryHref ?>" 
                    class="inline-flex items-center justify-center px-8 py-4 rounded-none font-bold text-lg transition-all duration-300 hover:scale-105 bg-(--profile-pcta-bg,var(--color-ink)) text-(--profile-pcta-text,var(--color-canvas))">
                     <?= $block->primary_cta_text()->html() ?>
                 </a>
             <?php endif; ?>
 
             <?php if ($block->secondary_cta_text()->isNotEmpty()): ?>
-                <a href="<?= $block->secondary_cta_link()->toUrl() ?>" 
+                <a href="<?= $secondaryHref ?>" 
                    class="inline-flex items-center justify-center px-8 py-4 rounded-none font-bold text-lg border transition-all duration-300 hover:scale-105 border-(--profile-scta-border,currentColor) text-(--profile-scta-text,currentColor)">
                     <?= $block->secondary_cta_text()->html() ?>
                 </a>

@@ -2,6 +2,10 @@
 
 **Date:** May 13, 2026
 **Agent:** Roo (Architect / Code)
+**Version:** 1.1.0
+
+## Changelog
+- **v1.1.0 (May 20, 2026)**: Added conditional Link Type selection (URL, Page, Anchor) to the Hero Content Block (`hero-content.yml` and `hero-content.php`).
 
 ## Overview
 We successfully transitioned from monolithic, rigid Hero blocks to a highly flexible, compositional **Layout Builder** approach. This aligns with the "Boutique Federal Design System" PRD requirements and mirrors advanced visual builders like Zero One.

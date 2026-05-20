@@ -11,3 +11,8 @@ This ledger tracks intentional deviations from the core PRD and architectural ad
 * **Event:** Transitioned from monolithic `/docs/core/` to `.roo/memory/` state machine.
 * **Driver:** Context window bloat and agent attention dilution.
 * **Resolution:** Core PRD, Roadmap, and Rules moved to cold storage. Roo execution now governed by `system_prompt.md` execution loop.
+
+### [2026-05-20] - Hero Block Conditional Links
+* **Event:** Refactored Hero Content Block (`hero-content.yml` and `hero-content.php`) to use conditional fields for CTA links.
+* **Driver:** Need for flexible link targeting (Internal Page, External URL, or On-page Anchor) via a unified UI.
+* **Resolution:** Replaced basic URL fields with a `link_type` selector and conditional `when:` fields (`pages`, `url`, `text`) for precise routing and internal UUID tracking.

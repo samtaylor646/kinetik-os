@@ -88,17 +88,73 @@ fields:
     type: text
     width: 1/2
 
+  primary_link_type:
+    label: Primary Link Type
+    type: select
+    default: url
+    options:
+      url: External URL
+      page: Internal Page
+      anchor: Anchor Point
+    width: 1/4
+
   primary_cta_link:
-    label: Primary Button Link
+    label: Primary URL
     type: url
-    width: 1/2
+    width: 1/4
+    when:
+      primary_link_type: url
+
+  primary_cta_page:
+    label: Primary Page
+    type: pages
+    max: 1
+    width: 1/4
+    when:
+      primary_link_type: page
+
+  primary_cta_anchor:
+    label: Primary Anchor (#)
+    type: text
+    width: 1/4
+    help: "e.g., #contact"
+    when:
+      primary_link_type: anchor
 
   secondary_cta_text:
     label: Secondary Button Text
     type: text
     width: 1/2
 
+  secondary_link_type:
+    label: Secondary Link Type
+    type: select
+    default: url
+    options:
+      url: External URL
+      page: Internal Page
+      anchor: Anchor Point
+    width: 1/4
+
   secondary_cta_link:
-    label: Secondary Button Link
+    label: Secondary URL
     type: url
-    width: 1/2
+    width: 1/4
+    when:
+      secondary_link_type: url
+
+  secondary_cta_page:
+    label: Secondary Page
+    type: pages
+    max: 1
+    width: 1/4
+    when:
+      secondary_link_type: page
+
+  secondary_cta_anchor:
+    label: Secondary Anchor (#)
+    type: text
+    width: 1/4
+    help: "e.g., #contact"
+    when:
+      secondary_link_type: anchor
