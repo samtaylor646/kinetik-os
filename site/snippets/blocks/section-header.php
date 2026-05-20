@@ -9,7 +9,7 @@ $spacingClass = $block->airy_spacing()->toAiry();
 $alignClass = $block->alignment()->value() === 'center' ? 'text-center mx-auto' : 'text-left';
 ?>
 <header class="<?= $themeClass ?> <?= $spacingClass ?> section-header" data-gsap="section">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full">
         <div class="max-w-4xl <?= $alignClass ?>">
             <?php if ($block->eyebrow()->isNotEmpty()): ?>
                 <span class="block text-label text-oceanic-accent mb-4">

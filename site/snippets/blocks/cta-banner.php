@@ -6,7 +6,7 @@
  * @var \Kirby\Cms\Block $block
  */
 ?>
-<section class="<?= $block->airy_spacing()->toAiry() ?> <?= $block->theme()->toTheme() ?> flex flex-col items-center justify-center text-center px-4">
+<section class="<?= $block->airy_spacing()->toAiry() ?> <?= $block->theme()->toTheme() ?> flex flex-col items-center justify-center text-center">
     <div class="max-w-3xl mx-auto space-y-airy-sm">
         <?php if ($block->heading()->isNotEmpty()): ?>
             <h2 class="display-text"><?= $block->heading()->html() ?></h2>

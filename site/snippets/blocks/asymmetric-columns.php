@@ -10,7 +10,7 @@ $alignment = $block->alignment()->value();
 $flexDirection = $alignment === 'left' ? 'lg:flex-row' : 'lg:flex-row-reverse';
 ?>
 <section class="<?= $themeClass ?> <?= $spacingClass ?> asymmetric-split relative" data-scroll-section>
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="w-full relative">
         <div class="flex flex-col <?= $flexDirection ?> gap-8 lg:gap-16 items-start relative">
             
             <!-- Sticky Typography Column -->

@@ -26,12 +26,12 @@ fields:
   theme:
     label: Block Theme
     type: select
-    options:
-      light: Light (Canvas)
-      oceanic: Oceanic Dark
-      dark: Dark (Ink)
-    default: light
-    
+    placeholder: Default / Inherit
+    options: query
+    query:
+      fetch: kirby.page("theme").color_profiles.toStructure
+      text: "{{ item.profile_name }}"
+      value: "{{ item.profile_id }}"
   airy_spacing:
     label: Airy Spacing
     type: select

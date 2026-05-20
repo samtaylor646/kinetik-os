@@ -1,8 +1,8 @@
-Title: Employment (Sandbox)
+Title: Tab and Video Sandbox.
 
 ----
 
-Layout: [{"columns":[{"width":"1\/1","blocks":[{"type":"split-hero","content":{"heading":"Join Our Team","subheading":"Work with the brightest minds in the industry.","image":["unsplash-2.webp"],"video_fit":"cover","video_overlay_opacity":"0","cta_text":"View Openings","cta_link":"https:\/\/example.com\/openings","theme":"dark","airy_spacing":"md"}},{"type":"tabbed-interface","content":{"airy_spacing":"md","tabs":[{"title":"Engineering","content":"We are looking for full-stack developers fluent in Vue, PHP, and Rust.","icon":"code"},{"title":"Design","content":"UI\/UX designers who understand systems and human psychology.","icon":"pen-tool"},{"title":"Marketing","content":"Growth hackers and content creators.","icon":"megaphone"}]}},{"type":"video-modal","content":{"thumbnail":["unsplash-1.webp"],"video_type":"upload","video_file":["croagh-2.mp4"],"caption":"A look inside our headquarters.","airy_spacing":"lg"}}]}]}]
+Layout: [{"attrs":{"min_height":"auto","vertical_align":"top","row_padding":"none","row_width":"full","merge_next":"false","row_bg":"canvas","background_media":[],"background_media_size":"cover","background_media_position":"center","background_overlay":0,"custom_id":"","custom_class":"","gsap_reveal":"false"},"columns":[{"blocks":[{"content":{"tabs":[{"title":"Engineering","content":"We are looking for full-stack developers fluent in **Vue, PHP, and Rust**","icon":"computer.svg"},{"title":"Design","content":"UI/UX designers who understand systems and human psychology.","icon":"paintbrush.svg"},{"title":"Marketing","content":"Growth hackers and content creators.","icon":"area-chart.svg"}],"airy_spacing":"sm","theme":"oceanic"},"id":"1b4d3e85-3945-4651-bdd0-5d5597bb21fa","isHidden":false,"type":"tabbed-interface"}],"id":"d1b9def3-66a0-4a11-97f0-7633f70ae27e","width":"1/1"}],"id":"ec0cf5ba-95fc-45f4-98df-093977901ee5"}]
 
 ----
 

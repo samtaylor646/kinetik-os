@@ -32,7 +32,7 @@ if ($type === 'youtube' && $url) {
     }
 }
 ?>
-<section class="<?= $block->airy_spacing()->toAiry() ?> px-4" x-data="{ modalOpen: false }">
+<section class="<?= $block->airy_spacing()->toAiry() ?>" x-data="{ modalOpen: false }">
     <div class="max-w-5xl mx-auto relative group cursor-pointer" @click="modalOpen = true" @keydown.enter="modalOpen = true" tabindex="0" role="button" aria-label="Play Video">
         
         <!-- Thumbnail -->

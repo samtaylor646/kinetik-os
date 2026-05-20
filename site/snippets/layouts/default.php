@@ -134,7 +134,7 @@ $groupIsOpen = false;
       <div class="<?= implode(' ', $innerClasses) ?>">
         <?php // Container Width ?>
         <?php 
-          $widthClass = $attrs->row_width()->value() === 'full' ? 'w-full px-4' : 'container mx-auto px-4 sm:px-6 lg:px-8';
+          $widthClass = $attrs->row_width()->value() === 'full' ? 'w-full' : 'container mx-auto px-4 sm:px-6 lg:px-8';
         ?>
 
         <div class="<?= $widthClass ?> w-full">

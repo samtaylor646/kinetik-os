@@ -19,6 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 // Import styles
 import './index.css';
 import { sectionEntrance } from './motion.js';
+import { initLoader } from './loader.js';
 
 // Register Alpine plugins
 Alpine.plugin(intersect);
@@ -34,6 +35,11 @@ Alpine.directive('motion-entrance', (el) => {
 });
 
 window.sectionEntrance = sectionEntrance;
+
+// Initialize Global Loader ONLY after Alpine is ready
+document.addEventListener('alpine:init', () => {
+  initLoader();
+});
 
 // Start Alpine
 Alpine.start();

@@ -26,6 +26,7 @@ trait BoutiqueBridge
         }
         
         return match($value) {
+            'none' => 'py-0',
             'sm' => 'pt-airy-sm pb-airy-sm',
             'md' => 'pt-airy-md pb-airy-md',
             'lg' => 'pt-airy-lg pb-airy-lg',

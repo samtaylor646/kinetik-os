@@ -15,7 +15,7 @@ $gridClass = match($columns) {
 };
 ?>
 <section class="<?= $themeClass ?> <?= $spacingClass ?> feature-grid" data-gsap="section">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full">
         <div class="grid grid-cols-1 <?= $gridClass ?> gap-airy-sm sm:gap-airy-md">
             <?php foreach ($block->features()->toStructure() as $feature): ?>
                 <div class="feature-item p-8 tech-border bg-white dark:bg-white/5 transition-transform hover:-translate-y-1">

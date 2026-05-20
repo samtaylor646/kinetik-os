@@ -29,14 +29,14 @@ fields:
           secondary: Secondary
           ghost: Ghost
   theme:
-    type: select
     label: Theme
-    default: oceanic
-    options:
-      oceanic: Oceanic Dark
-      gold: Warm Gold
-      light: Light (Canvas)
-      dark: Dark (Ink)
+    type: select
+    placeholder: Default / Inherit
+    options: query
+    query:
+      fetch: kirby.page("theme").color_profiles.toStructure
+      text: "{{ item.profile_name }}"
+      value: "{{ item.profile_id }}"
   airy_spacing:
     type: select
     label: Airy Spacing

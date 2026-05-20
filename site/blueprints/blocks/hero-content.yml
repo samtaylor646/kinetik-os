@@ -57,7 +57,7 @@ fields:
   theme:
     label: Color Profile (Boxed)
     type: select
-    placeholder: Inherit
+    placeholder: Default / Inherit
     options: query
     query:
       fetch: kirby.page("theme").color_profiles.toStructure
@@ -65,7 +65,6 @@ fields:
       value: "{{ item.profile_id }}"
     help: Applies only when Boxed Layout is 'On'. Otherwise, colors are inherited from the parent Row.
     width: 1/4
-
   bg_opacity:
     label: Background Opacity %
     type: select

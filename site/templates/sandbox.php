@@ -89,36 +89,51 @@ declare(strict_types=1);
         <section class="w-full bg-canvas py-2 tech-border-b">
           <div class="px-4 md:px-16 mx-auto flex gap-4 text-xs font-mono text-ink/50 uppercase tracking-wider items-center flex-wrap">
             <span class="font-bold text-ink"><?= $block->type() ?></span>
-            <?php if ($block->type() === 'hero-content'): ?>
-              <?php 
-                $opacityMap = [
-                  '100' => 'Solid (100%)',
-                  '90' => 'Glass (90%)',
-                  '80' => 'Glass (80%)',
-                  '70' => 'Glass (70%)',
-                  '50' => 'Glass (50%)',
-                  '30' => 'Glass (30%)',
-                  '20' => 'Glass (20%)',
-                  '10' => 'Glass (10%)',
-                  '0' => 'Transparent (0%)',
-                ];
-                $bgOpacityVal = $block->bg_opacity()->value();
-                if (preg_match('/(\d+)/', $bgOpacityVal, $matches)) {
-                    $bgOpacityVal = $matches[1];
+            <?php 
+                $fieldsToDisplay = [];
+                
+                // Common Theme & Spacing
+                if ($block->theme()->isNotEmpty()) {
+                    $fieldsToDisplay[] = 'Theme: ' . ucfirst($block->theme()->value());
                 }
-                $bgOpacity = $opacityMap[$bgOpacityVal] ?? 'Solid (100%)';
-              ?>
-              <span class="text-ink/30">|</span>
-              <span class="text-brand-accent">Content Alignment: <?= ucfirst($block->alignment()->or('left')->value()) ?></span>
-              <span class="text-ink/30">|</span>
-              <span class="text-brand-accent">Box Layout: <?= $block->boxed_layout()->toBool() ? 'On' : 'Off' ?></span>
-              <span class="text-ink/30">|</span>
-              <span class="text-brand-accent">Box Shadow: <?= $block->enable_shadow()->toBool() ? 'On' : 'Off' ?></span>
-              <span class="text-ink/30">|</span>
-              <span class="text-brand-accent">Color Profile: <?= ucfirst($block->theme()->or('inherit')->value()) ?></span>
-              <span class="text-ink/30">|</span>
-              <span class="text-brand-accent">Background Opacity: <?= $bgOpacity ?></span>
-            <?php endif ?>
+                if ($block->airy_spacing()->isNotEmpty()) {
+                    $fieldsToDisplay[] = 'Spacing: ' . ucfirst($block->airy_spacing()->value());
+                }
+                if ($block->alignment()->isNotEmpty()) {
+                    $fieldsToDisplay[] = 'Alignment: ' . ucfirst($block->alignment()->value());
+                }
+                
+                // Hero Content Specifics
+                if ($block->type() === 'hero-content') {
+                    $fieldsToDisplay[] = 'Box Layout: ' . ($block->boxed_layout()->toBool() ? 'On' : 'Off');
+                    $fieldsToDisplay[] = 'Box Shadow: ' . ($block->enable_shadow()->toBool() ? 'On' : 'Off');
+                    
+                    $opacityMap = [
+                        '100' => 'Solid (100%)', '90' => 'Glass (90%)', '80' => 'Glass (80%)',
+                        '70' => 'Glass (70%)', '50' => 'Glass (50%)', '30' => 'Glass (30%)',
+                        '20' => 'Glass (20%)', '10' => 'Glass (10%)', '0' => 'Transparent (0%)',
+                    ];
+                    $bgOpacityVal = $block->bg_opacity()->value();
+                    if (preg_match('/(\d+)/', $bgOpacityVal, $matches)) {
+                        $bgOpacityVal = $matches[1];
+                    }
+                    if ($bgOpacityVal !== '') {
+                        $fieldsToDisplay[] = 'Bg Opacity: ' . ($opacityMap[$bgOpacityVal] ?? 'Solid (100%)');
+                    }
+                }
+                
+                // Other Specifics
+                if ($block->allow_multiple()->isNotEmpty()) {
+                    $fieldsToDisplay[] = 'Allow Multiple: ' . ($block->allow_multiple()->toBool() ? 'Yes' : 'No');
+                }
+                if ($block->video_type()->isNotEmpty()) {
+                    $fieldsToDisplay[] = 'Video: ' . ucfirst($block->video_type()->value());
+                }
+            ?>
+            <?php foreach ($fieldsToDisplay as $fieldSetting): ?>
+                <span class="text-ink/30">|</span>
+                <span class="text-brand-accent"><?= $fieldSetting ?></span>
+            <?php endforeach ?>
             <button onclick="navigator.clipboard.writeText(Array.from(this.parentElement.querySelectorAll('span:not(.text-ink\\/30)')).map(s => s.innerText.trim()).join(', ')); alert('Block Settings copied to clipboard!');" class="ml-auto text-brand-accent hover:text-ink transition-colors cursor-pointer font-bold shrink-0 flex items-center gap-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
               COPY

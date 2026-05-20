@@ -8,7 +8,7 @@
 $rows = $block->table_data()->toStructure();
 $headers = $block->headers()->toStructure()->first();
 ?>
-<section class="<?= $block->airy_spacing()->toAiry() ?> bg-canvas px-4">
+<section class="<?= $block->airy_spacing()->toAiry() ?> bg-canvas">
     <div class="max-w-5xl mx-auto">
         <?php if ($block->heading()->isNotEmpty()): ?>
             <h3 class="display-text mb-8 text-ink"><?= $block->heading()->html() ?></h3>

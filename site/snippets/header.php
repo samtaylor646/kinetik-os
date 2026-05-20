@@ -26,5 +26,8 @@ declare(strict_types=1);
   <?php endif; ?>
 </head>
 <body class="bg-canvas text-ink antialiased">
+<?php if ($page->isHomePage()): ?>
+  <?php snippet('loading-screen') ?>
+<?php endif; ?>
 <div id="lenis-wrapper" data-lenis-container>
 <main id="main-content">

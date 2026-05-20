@@ -14,3 +14,12 @@ fields:
   text:
     label: Additional Context
     type: text
+  theme:
+    label: Theme
+    type: select
+    placeholder: Default / Inherit
+    options: query
+    query:
+      fetch: kirby.page("theme").color_profiles.toStructure
+      text: "{{ item.profile_name }}"
+      value: "{{ item.profile_id }}"

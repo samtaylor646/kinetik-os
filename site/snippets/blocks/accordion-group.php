@@ -9,7 +9,7 @@ $spacingClass = $block->airy_spacing()->toAiry();
 $allowMultiple = $block->allow_multiple()->toBool() ? 'true' : 'false';
 ?>
 <section class="<?= $themeClass ?> <?= $spacingClass ?> accordion-group" data-gsap="section">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full">
         <div class="max-w-3xl mx-auto" 
              x-data="{ 
                  activeItem: null, 

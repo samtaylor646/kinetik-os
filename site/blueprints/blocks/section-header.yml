@@ -28,13 +28,12 @@ fields:
   theme:
     label: Theme
     type: select
-    options:
-      transparent: Transparent (Inherit Row Color)
-      light: Light (Canvas)
-      oceanic: Oceanic Dark
-      dark: Dark (Ink)
-    default: transparent
-
+    placeholder: Default / Inherit
+    options: query
+    query:
+      fetch: kirby.page("theme").color_profiles.toStructure
+      text: "{{ item.profile_name }}"
+      value: "{{ item.profile_id }}"
   airy_spacing:
     label: Airy Spacing
     type: select

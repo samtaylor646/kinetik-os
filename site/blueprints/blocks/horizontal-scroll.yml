@@ -16,11 +16,10 @@ tabs:
       theme:
         label: Section Theme
         type: select
-        options:
-          light: Light (Canvas)
-          oceanic: Oceanic Prime
-          dark: Dark (Ink)
-          accent: Oceanic Accent
-          slate: Slate Teal
-        default: light
+        placeholder: Default / Inherit
+        options: query
+        query:
+          fetch: kirby.page("theme").color_profiles.toStructure
+          text: "{{ item.profile_name }}"
+          value: "{{ item.profile_id }}"
         help: Select a background theme for the scroll section.

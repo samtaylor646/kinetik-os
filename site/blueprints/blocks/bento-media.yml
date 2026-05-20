@@ -12,3 +12,12 @@ fields:
     size: large
     query: site.find("media").files.add(page.files)
     uploads: image
+  theme:
+    label: Theme
+    type: select
+    placeholder: Default / Inherit
+    options: query
+    query:
+      fetch: kirby.page("theme").color_profiles.toStructure
+      text: "{{ item.profile_name }}"
+      value: "{{ item.profile_id }}"

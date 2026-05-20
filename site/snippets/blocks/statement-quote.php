@@ -8,7 +8,7 @@ $themeClass = $block->theme()->toTheme();
 $spacingClass = $block->airy_spacing()->toAiry();
 ?>
 <section class="<?= $themeClass ?> <?= $spacingClass ?> statement-quote" data-gsap="section">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full">
         <div class="max-w-5xl mx-auto text-center relative">
             <span class="absolute top-0 left-0 -ml-4 sm:-ml-8 -mt-6 sm:-mt-10 text-6xl sm:text-8xl text-oceanic-accent opacity-20" aria-hidden="true">&ldquo;</span>
             

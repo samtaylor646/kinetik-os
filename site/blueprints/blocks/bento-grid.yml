@@ -16,18 +16,12 @@ fields:
   theme:
     label: Block Theme
     type: select
-    options:
-      light: Light (Canvas)
-      oceanic: Oceanic Prime
-      dark: Dark (Ink)
-      accent: Oceanic Accent
-      slate: Slate Teal
-      liberty: Liberty Blue
-      heritage: Heritage Red
-      gold: Warm Gold
-      frost: Frost Mint
-    default: light
-    
+    placeholder: Default / Inherit
+    options: query
+    query:
+      fetch: kirby.page("theme").color_profiles.toStructure
+      text: "{{ item.profile_name }}"
+      value: "{{ item.profile_id }}"
   items:
     label: Grid Cells
     type: blocks

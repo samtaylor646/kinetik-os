@@ -100,15 +100,12 @@ settings:
     row_bg:
       label: Background Color / Theme
       type: select
-      placeholder: Default
-      options:
-        transparent: Transparent
-        canvas: Canvas (Main Background)
-        ink: Ink (Dark Text/Background)
-        oceanic: Oceanic Dark
-        gold: Warm Gold
-        soft-smoke: Soft Smoke
-        brand-accent: Brand Accent
+      placeholder: Default / Inherit
+      options: query
+      query:
+        fetch: kirby.page("theme").color_profiles.toStructure
+        text: "{{ item.profile_name }}"
+        value: "{{ item.profile_id }}"
       width: 1/1
 
     background_media:

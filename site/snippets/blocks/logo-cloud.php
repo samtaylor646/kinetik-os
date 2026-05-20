@@ -10,7 +10,7 @@ $themeClass = $block->theme()->toTheme();
 $isAnimated = $block->enable_animation()->toBool();
 $animType = $block->animation_type()->value();
 ?>
-<section class="<?= $block->airy_spacing()->toAiry() ?> <?= $themeClass ?> px-4 overflow-hidden">
+<section class="<?= $block->airy_spacing()->toAiry() ?> <?= $themeClass ?> overflow-hidden">
     <div class="<?= $isAnimated ? 'max-w-[100vw]' : 'max-w-6xl' ?> mx-auto">
         <?php if ($block->heading()->isNotEmpty()): ?>
             <h3 class="text-center text-label mb-12">

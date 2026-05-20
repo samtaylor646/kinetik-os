@@ -24,6 +24,7 @@ fields:
     label: Airy Spacing
     default: md
     options:
+      none: None
       sm: Small (sm)
       md: Medium (md)
       lg: Large (lg)
@@ -32,13 +33,10 @@ fields:
   theme:
     label: Block Theme
     type: select
-    options:
-      transparent: Inherit from Layout (Default)
-      canvas: Canvas (Light)
-      ink: Ink (Dark)
-      oceanic: Oceanic Dark
-      gold: Warm Gold
-      soft-smoke: Soft Smoke
-      brand-accent: Brand Accent
-    default: transparent
+    placeholder: Default / Inherit
+    options: query
+    query:
+      fetch: kirby.page("theme").color_profiles.toStructure
+      text: "{{ item.profile_name }}"
+      value: "{{ item.profile_id }}"
     width: 1/1
