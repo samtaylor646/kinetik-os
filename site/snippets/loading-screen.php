@@ -1,6 +1,4 @@
 <?php
-declare(strict_types=1);
-
 /**
  * Path: /site/snippets/loading-screen.php
  * Filename: loading-screen.php | Version: v1.5.0
@@ -8,6 +6,7 @@ declare(strict_types=1);
  * Status: Production
  * Logic: Global loading overlay matching width and specific oceanic theme
  */
+declare(strict_types=1);
 ?>
 <div id="global-loader" class="fixed inset-0 z-[9999] bg-oceanic-dark flex flex-col items-center justify-center">
   <div class="loader-logo w-[60vw] md:w-[42vw] max-w-[700px] flex flex-col items-center justify-center opacity-0">

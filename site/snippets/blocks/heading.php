@@ -16,12 +16,12 @@ $text  = $block->text();
 
 // Typography scale mapping
 $classMap = [
-    'h1' => 'text-5xl font-bold text-oceanic-dark mb-airy-md',
-    'h2' => 'text-4xl font-semibold text-oceanic-dark mb-airy-sm mt-airy-md',
-    'h3' => 'text-3xl font-medium text-oceanic-dark mb-airy-sm mt-airy-md',
-    'h4' => 'text-2xl font-medium text-oceanic-accent mb-airy-sm mt-airy-sm',
-    'h5' => 'text-xl font-medium text-oceanic-secondary mb-2 mt-4',
-    'h6' => 'text-lg font-medium text-oceanic-subtle mb-2 mt-4',
+    'h1' => 'text-5xl font-bold text-oceanic-dark leading-tight',
+    'h2' => 'text-4xl font-semibold text-oceanic-dark leading-tight',
+    'h3' => 'text-3xl font-medium text-oceanic-dark leading-snug',
+    'h4' => 'text-2xl font-medium text-oceanic-accent leading-snug',
+    'h5' => 'text-xl font-medium text-oceanic-secondary leading-normal',
+    'h6' => 'text-lg font-medium text-oceanic-subtle leading-normal',
 ];
 
 $classes = $classMap[(string)$level] ?? $classMap['h2'];

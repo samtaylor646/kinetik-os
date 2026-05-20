@@ -11,6 +11,6 @@ declare(strict_types=1);
  * @var \Kirby\Cms\Block $block
  */
 ?>
-<div class="prose prose-lg prose-oceanic max-w-none py-airy-sm">
+<div class="prose prose-lg prose-oceanic max-w-none">
   <?= $block->text() ?>
 </div>

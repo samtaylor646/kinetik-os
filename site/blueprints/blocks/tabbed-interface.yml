@@ -11,14 +11,32 @@ fields:
         type: text
         label: Tab Title
       content:
-        type: textarea
+        type: layout
         label: Tab Content
+        layouts:
+          - "1/1"
+          - "1/2, 1/2"
+          - "1/3, 2/3"
+          - "2/3, 1/3"
+          - "1/4, 3/4"
+          - "3/4, 1/4"
+          - "1/3, 1/3, 1/3"
+          - "1/4, 1/4, 1/4, 1/4"
       icon:
         type: icon
         max: 1
         folder: "{{ kirby.root('base') }}/assets/icons"
         label: Lucide Icon Name
         help: Optional (e.g., arrow-right, check, etc.)
+  vertical_align:
+    label: Vertical Content Alignment
+    type: select
+    placeholder: Default (Top)
+    options:
+      top: Top
+      center: Middle
+      end: Bottom
+    width: 1/2
   airy_spacing:
     type: select
     label: Airy Spacing
@@ -29,6 +47,7 @@ fields:
       md: Medium (md)
       lg: Large (lg)
       xl: Extra Large (xl)
+    width: 1/2
 
   theme:
     label: Block Theme

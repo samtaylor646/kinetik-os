@@ -122,6 +122,13 @@ declare(strict_types=1);
                     }
                 }
                 
+                // Tabbed Interface Specifics
+                if ($block->type() === 'tabbed-interface') {
+                    if ($block->vertical_align()->isNotEmpty()) {
+                        $fieldsToDisplay[] = 'Align: ' . ucfirst($block->vertical_align()->value());
+                    }
+                }
+
                 // Other Specifics
                 if ($block->allow_multiple()->isNotEmpty()) {
                     $fieldsToDisplay[] = 'Allow Multiple: ' . ($block->allow_multiple()->toBool() ? 'Yes' : 'No');
