@@ -79,11 +79,11 @@ Color-profiles:
   profile_id: soft-smoke
   bg_color: soft-smoke
   text_color: canvas
-  text_color_accent: oceanic-subtle
+  text_color_accent: oceanic-dark
   primary_cta_bg: oceanic-dark
   primary_cta_text: white
-  secondary_cta_border: oceanic-dark
-  secondary_cta_text: oceanic-dark
+  secondary_cta_border: soft-smoke
+  secondary_cta_text: soft-smoke
 - 
   profile_name: Warm Gold
   profile_id: warm-gold

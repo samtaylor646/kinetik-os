@@ -12,6 +12,11 @@
 .env.production
 .env.local
 .env.*.local
+*.pem
+*.key
+*.cert
+/secrets/
+/certs/
 
 # Dependencies
 /node_modules

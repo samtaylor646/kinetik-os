@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Glass - Design System</title>
+    <!-- Use manually extracted and isolated styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ds-layout">
+    <aside class="ds-sidebar">
+        <h1>Fluid Glass<br>Design System</h1>
+        
+        <nav>
+            <div class="nav-group">
+                <div class="nav-group-title">Foundations</div>
+                <ul>
+                    <li><a href="#colors" class="active">Colors</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-group">
+                <a href="#components-overview" class="nav-group-title" style="text-decoration: none; display: block;">Components</a>
+                <ul>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#accordion">Accordion</a></li>
+                    <li><a href="#glassmorphism">Glassmorphism</a></li>
+                    <li><a href="#animations">Animations</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </aside>
+
+    <main class="ds-content">
+        
+        <section id="colors" class="ds-section">
+            <h2>Colors</h2>
+            <p>The foundational color palette for the Fluid Glass brand.</p>
+            
+            <div class="ds-color-grid">
+                <div class="ds-color-swatch">
+                    <div class="ds-color-box" style="background-color: var(--color-black);"></div>
+                    <div class="ds-color-info">
+                        <div class="ds-color-name">Black</div>
+                        <div class="ds-color-hex">--color-black</div>
+                    </div>
+                </div>
+                <div class="ds-color-swatch">
+                    <div class="ds-color-box" style="background-color: var(--color-white); border-bottom: 1px solid #eee;"></div>
+                    <div class="ds-color-info">
+                        <div class="ds-color-name">White</div>
+                        <div class="ds-color-hex">--color-white</div>
+                    </div>
+                </div>
+                <div class="ds-color-swatch">
+                    <div class="ds-color-box" style="background-color: var(--color-cream);"></div>
+                    <div class="ds-color-info">
+                        <div class="ds-color-name">Cream</div>
+                        <div class="ds-color-hex">--color-cream</div>
+                    </div>
+                </div>
+                <div class="ds-color-swatch">
+                    <div class="ds-color-box" style="background-color: var(--color-grey);"></div>
+                    <div class="ds-color-info">
+                        <div class="ds-color-name">Grey</div>
+                        <div class="ds-color-hex">--color-grey</div>
+                    </div>
+                </div>
+                <div class="ds-color-swatch">
+                    <div class="ds-color-box" style="background-color: var(--color-taupe);"></div>
+                    <div class="ds-color-info">
+                        <div class="ds-color-name">Taupe</div>
+                        <div class="ds-color-hex">--color-taupe</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography" class="ds-section">
+            <h2>Typography</h2>
+            <p>We use Aeonik Pro for primary readings and Aeonik Mono for technical accents, labels, and UI sub-titles.</p>
+            
+            <div class="ds-preview" style="flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+                <div style="font-family: var(--font-f-aeonik-pro); font-size: 3rem; margin-bottom: 1rem;">Aeonik Pro Heading</div>
+                <div style="font-family: var(--font-f-aeonik-pro); font-size: 1.2rem; color: #666; max-width: 600px; margin-bottom: 2rem;">Aeonik Pro Body: Fluid Glass represents the peak of architectural glazing, blending structural integrity with seamless aesthetics.</div>
+                
+                <h3 class="base-title">Our Approach</h3>
+            </div>
+            
+            <pre class="ds-code"><h3 class="base-title">Our Approach</h3></pre>
+        </section>
+
+        <section id="buttons" class="ds-section">
+            <h2>Buttons</h2>
+            <p>Primary interactive elements. Utilizing the `base-button` class and its modifiers.</p>
+            
+            <div class="ds-preview">
+                <a href="#" class="base-button is-black">
+                    <span class="label">Primary Black</span>
+                </a>
+                
+                <a href="#" class="base-button is-alpha">
+                    <span class="label">Alpha Button</span>
+                </a>
+            </div>
+            <pre class="ds-code"><a href="#" class="base-button is-black">
+  <span class="label">Primary Black</span>
+</a></pre>
+
+            <h3>Glassmorphism Button</h3>
+            <div class="ds-preview is-interactive">
+                <a href="#" class="base-button is-white">
+                    <span class="label">View Collection</span>
+                </a>
+            </div>
+            <pre class="ds-code"><a href="#" class="base-button is-white">
+  <span class="label">View Collection</span>
+</a></pre>
+        </section>
+
+        <section id="glassmorphism" class="ds-section">
+            <h2>Glassmorphism UI</h2>
+            <p>We heavily use CSS backdrop filters combined with `color-mix` to create frosted glass effects.</p>
+            
+            <div class="ds-preview is-interactive" style="height: 300px; justify-content: center;">
+                <div class="cursor">
+                    Drag
+                </div>
+            </div>
+            <pre class="ds-code"><div class="cursor">Drag</div></pre>
+        </section>
+
+        <section id="animations" class="ds-section">
+            <h2>Animations</h2>
+            <p>3D Transformations and keyframe animations like the intro loading cube.</p>
+            
+            <div class="ds-preview" style="height: 300px;">
+                <div class="cube" style="transform: scale(1.5);">
+                    <div class="shape rotate">
+                        <div class="face face-front"></div>
+                        <div class="face face-back"></div>
+                        <div class="face face-right"></div>
+                        <div class="face face-left"></div>
+                        <div class="face face-top"></div>
+                        <div class="face face-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <pre class="ds-code"><div class="cube">
+  <div class="shape rotate">
+    <div class="face face-front"></div>
+    <div class="face face-back"></div>
+    <div class="face face-right"></div>
+    <div class="face face-left"></div>
+    <div class="face face-top"></div>
+    <div class="face face-bottom"></div>
+  </div>
+</div></pre>
+        </section>
+
+        <!-- FORMS -->
+        <section id="forms" class="ds-section">
+            <h2>Forms</h2>
+            <p>Input fields featuring the brand's floating label design pattern.</p>
+            
+            <div class="ds-preview">
+                <div class="form-group">
+                    <input type="text" class="input" placeholder=" ">
+                    <label class="input-label">Email Address</label>
+                </div>
+            </div>
+            <pre class="ds-code"><div class="form-group">
+  <input type="text" class="input" placeholder=" ">
+  <label class="input-label">Email Address</label>
+</div></pre>
+        </section>
+
+        <!-- ACCORDION -->
+        <section id="accordion" class="ds-section">
+            <h2>Accordion / FAQ</h2>
+            <p>Expandable content panels used for FAQs and detail lists. Click to interact.</p>
+            
+            <div class="ds-preview" style="flex-direction: column;">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            What is structural glazing?
+                            <div class="accordion-icon"></div>
+                        </button>
+                        <div class="accordion-body">
+                            Structural glazing is a system of bonding glass to a building's structural framing members using a high-strength, high-performance silicone sealant, creating a completely flush, seamless glass exterior.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Do you offer installation services?
+                            <div class="accordion-icon"></div>
+                        </button>
+                        <div class="accordion-body">
+                            Yes, our expert team manages the entire process from structural design and manufacturing to on-site installation, ensuring perfect execution of the architectural vision.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <pre class="ds-code"><div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">
+      What is structural glazing?
+      <div class="accordion-icon"></div>
+    </button>
+    <div class="accordion-body">
+      Structural glazing is a system...
+    </div>
+  </div>
+</div></pre>
+        </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

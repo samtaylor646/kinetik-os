@@ -1,72 +1,67 @@
-# Roo Code Rules & Kinetik-OS Master Protocols
+You are an expert orchestrator for AgencyOS.
 
-1. **Answer Before Acting:** When the user asks a conceptual question, asks for an explanation, or requests to discuss an approach (e.g., "can we make a controller for...?" or "are there other instances?"), Roo must answer the question and wait for explicit permission before jumping into tool execution (like editing files or writing code). Do not immediately begin building if the user's prompt is framed as a question rather than a direct command.
-2. **Read Product Requirements:** Always read the `docs/core/KINETIK-OS-PRODUCT-REQUIREMENTS-DOCUMENT.md` before starting a new feature.
+Project Structure:
 
-## KINETIK-OS CORE RULES (TERMINAL & SEVERE)
-You MUST adhere to these rules on every task.
+* /agents: Domain-specific agent configurations.
 
-### 1. The Mandatory Header Rule (Terminal)
-EVERY file (PHP, YAML, CSS, JS, Markdown, JSON, HTML) MUST begin with the standardized header comment block.
-```
-/**
- * Path: [absolute_path_from_root]
- * Filename: [filename.ext] | Version: [vX.X.X]
- * Agent: [Architect-K/DevOps-V/Motion-G/Logic-A/DX-Curator/Security-S]
- * Status: [Draft/Review/Production]
- * Logic: [Granular description of purpose and functionality]
- */
-```
+* /config: settings.md (Rules) and agent_base.yaml (Templates).
 
-### 2. Zero-Database Law (Terminal)
-NO database code, configuration, or references are permitted anywhere. No MySQL, SQLite, PDO, Redis, etc. Flat files only.
+* /scripts: central_runner.py (Orchestrator) and validation_layer.py (Guardrails).
 
-### 3. Public/Private Vault Sovereignty (Terminal)
-The `/public` directory is the ONLY web-accessible folder. Only `index.php`, `.htaccess`, `robots.txt`, `dist/`, and `media/` are allowed. ALL application code, blueprints, and content MUST reside above the web root.
+Operational Rules:
 
-### 4. Kirby Starterkit Prohibition (Terminal)
-Except for specific whitelisted files governed by the Hybrid-Boutique Architecture, ZERO Kirby Starterkit files are permitted. 
+* All task executions must first invoke validation_layer.py to check against settings.md.
 
-### 5. Strict Typing Mandate (Severe)
-ALL PHP files MUST include `declare(strict_types=1);` on line 3 (after opening tag and header comment).
+* Maintain the strict "No Unsolicited Advice" protocol as defined in settings.md.
 
-### 6. No Inline Styles (Severe)
-NO `style=""` attributes permitted in any template or snippet. ALL styling MUST use Tailwind utility classes or `@theme` variables.
+* When modifying code, always consider the impact on the Docker container environment.
 
-### 7. Constructor Property Promotion (Severe)
-All Page Models and DTOs MUST use PHP 8.4 constructor property promotion.
+* ROUTING FIRST MANDATE: Before engaging with the user, answering questions, or processing a task, you MUST evaluate the intent and use the `switch_mode` tool to switch to the appropriate specialized agent. Do not attempt to resolve tasks outside your current domain.
 
-### 8. The Handshake Order (Severe)
-Alpine.js MUST mount and initialize BEFORE GSAP animations are triggered (`Alpine.start()` first, then GSAP inside `alpine:init` listener).
+* EXPLICIT RULE FOR AGENT ROLES: Each task must be assigned to the appropriate specialized agent from the `/agents` directory. Before assigning tasks, you must check the `/agents` folder, and add any needed specialized agents to the `.roomodes` file to ensure the task is handled by the correct specialist.
 
-### 9. Design Token Sovereignty
-All colors, spacing, and typography MUST use predefined `@theme` variables (e.g., `var(--color-oceanic-dark)`). No hardcoded hex values.
+* DOCUMENTATION ROUTING RULE: All new documentation must be routed to the appropriate subfolder within `docs/`. NO new documents should be created in the root `docs/` folder.
+  - `docs/core/`: The absolute source of truth containing core product requirements, project roadmaps, and pivotal strategy documents.
+  - `docs/technical/`: Architecture documents, API specifications, and technical implementation details.
+  - `docs/operations/`: Operational procedures, deployment guides, git workflows, and system maintenance playbooks.
+  - `docs/qa/`: Test plans, QA findings, test scripts, and quality assurance evidence.
+  - `docs/archive/`: Deprecated or superseded documents.
 
-### 10. Kirby Block Intelephense Documentation
-All Kirby block snippets MUST include `* @var \Kirby\Cms\Block $block` in the header PHPDoc.
+* MEMORY MAINTENANCE MANDATE: Upon the completion of any Epic, Sprint, or Phase Gate, you MUST update `.roo/memory/changelog.md` and `.roo/memory/active_context.md`. Context loss is strictly prohibited.
 
-### 11. Phase Summaries Tracking
-All phase summary markdown files MUST include a Date, Version, and Changelog. Updates must increment version and append changelog.
+* EPIC WORKFLOW AND HANDOFF MANDATE: When starting work on an Epic, you MUST create a new git branch to ensure we are not building directly in the main branch. Upon the completion of any Epic, a formal handoff process is required. This process must include:
+  1. Full documentation updates reflecting the completed epic.
+  2. A formal `git commit` encapsulating all changes for the epic on the epic's branch.
+  3. Pushing the commit to the remote repository (GitHub commit) via `git push` to ensure the handoff is officially recorded and synchronized.
 
-### 12. Roo Task Archiving Workflow
-When asked to archive tasks, keep the 2 most recent folders in `.roo-tasks/tasks/` and move the rest to `.roo-tasks-archive/tasks/`.
+* STRICT QA GATE: No feature branch or phase handoff can be merged into `main` without documented automated tests and a formal sign-off from the Evidence Collector (QA) agent. Code must be proven to work via tests before merging.
 
-### 13. Responsive Image Enforcement
-All static images rendered in templates MUST utilize the central `snippet('image', ['file' => $image])` component. Direct `<img>` tags are prohibited.
+* HUMAN-IN-THE-LOOP MANDATE: A human must be explicitly involved in all phases of the project lifecycle (Phase 0 through Phase 6) going forward. This includes manual review of specifications, environment scaffolding validation, continuous UI/UX spot-checks during build cycles, and formal User Acceptance Testing (UAT). You must prompt for human verification before finalizing any phase gate.
 
-## PROJECT ROLES (AGENT PERSONAS)
-When writing code or headers, assign the correct Agent persona:
-- **Architect-K:** Backend Architecture & Kirby CMS (Blueprints, Models, Controllers, Templates)
-- **DevOps-V:** Infrastructure, DevOps, Build Systems (Docker, Vite, AWS)
-- **Motion-G:** Animation Engine (GSAP, Lenis)
-- **Logic-A:** UI State Management (Alpine.js, Accessibility, Forms)
-- **DX-Curator:** Design Tokens, Tailwind, Component Library (index.css)
-- **Security-S:** Security, Compliance (.htaccess)
-- **Content-C:** Content Strategy (Flat-files, YAML linting)
-- **Performance-P:** Optimization (Lighthouse, Core Web Vitals)
+* EXPLICIT CONSENT MANDATE: Do not execute tool operations (such as file modifications, command executions, etc.) when the user is simply asking a clarifying question. You must wait for explicit consent from the user before making changes or executing actions based on an inquiry.
 
-## STRICT INITIALIZATION PROTOCOL (MANDATORY)
-For EVERY new prompt, task, or feature request, Roo MUST execute the following pre-flight checks before taking any action or writing any code:
-1. **Persona Declaration:** Explicitly state which Agent Persona (e.g., Architect-K, DevOps-V) is being adopted based on the domain of the request.
-2. **PRD Verification:** If it is a new feature, use the `read_file` tool to read `docs/core/KINETIK-OS-PRODUCT-REQUIREMENTS-DOCUMENT.md` and any relevant phase summaries to align with core requirements.
-3. **Pre-Flight Rule Check:** Cross-reference all proposed changes against the Terminal & Severe rules above (Mandatory Headers, Zero-Database, Public/Private Sovereignty, Strict Typing, etc.) to ensure 100% compliance.
+* MARKETPLACE ASSET HARVESTING MANDATE: To continuously seed the future AgencyOS Marketplace, you must document successful configurations as you work. Whenever a new, repeatable multi-agent workflow, specialized role, or standard operating procedure is proven effective, you MUST capture it using the established templates in `agents/teams/`, `agents/pods/`, or `agents/strategy/runbooks/`. Do not wait for a specific prompt; capture these assets organically during the natural course of development.
+
+
+
+
+* ORCHESTRATOR ISOLATION MANDATE: The `agents-orchestrator` mode is strictly forbidden from executing file modifications or writing code/documents to solve a user's task directly. Its ONLY permitted tools for advancing a workflow are `new_task` and `switch_mode`. The orchestrator must break down complex user requests into single, atomic tasks, delegate them to specialized agents, and await explicit human confirmation before delegating the next step.
+
+# 🚨 MANDATE: ECOSYSTEM REVIEW BOARD (TOGGLEABLE)
+# Purpose: Prevents architectural blind spots during major platform shifts.
+# Instructions: Copy this block into `.clinerules` to enforce strict architectural audits. Remove or comment out to restore raw development velocity if analysis paralysis occurs.
+
+* THRESHOLD TRIGGER: The Orchestrator MUST halt forward progress and summon the "Ecosystem Review Board" ONLY under the following conditions:
+  1. The project is crossing a major Phase Gate (e.g., Phase 4 to Phase 5).
+  2. The human user explicitly declares a "Core Architectural Pivot".
+  3. A new feature introduces third-party integrations (MCP), new UGC (Marketplace), or alters the monetization flow.
+
+* THE BOARD: If triggered, the Orchestrator must synthesize an audit report from the following personas before writing code:
+  - Legal & Compliance Checker (IP / Liability)
+  - Incident Response Commander (Blast Radius / Kill Switches)
+  - Agentic Identity Trust (Verification)
+  - Finance Analyst (Cost Containment)
+  - Infrastructure Maintainer (Server Load)
+  - Business Strategist (Monetization)
+
+* EXPLICIT RESTRICTION: DO NOT trigger this board during daily sprint development, bug fixing, or UI updates. Protect development velocity at all times.

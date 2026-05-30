@@ -1,0 +1,24 @@
+name: Tab
+icon: list-bullet
+fields:
+  title:
+    type: text
+    label: Tab Title
+  icon:
+    type: icon
+    max: 1
+    folder: "{{ kirby.root('base') }}/assets/icons"
+    label: Lucide Icon Name
+    help: Optional (e.g., arrow-right, check, etc.)
+  content:
+    type: layout
+    label: Tab Content
+    layouts:
+      - "1/1"
+      - "1/2, 1/2"
+      - "1/3, 2/3"
+      - "2/3, 1/3"
+      - "1/4, 3/4"
+      - "3/4, 1/4"
+      - "1/3, 1/3, 1/3"
+      - "1/4, 1/4, 1/4, 1/4"

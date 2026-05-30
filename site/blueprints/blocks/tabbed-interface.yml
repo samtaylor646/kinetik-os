@@ -1,6 +1,5 @@
 name: Tabbed Interface
 icon: list-bullet
-preview: fields
 
 fields:
   tabs:
