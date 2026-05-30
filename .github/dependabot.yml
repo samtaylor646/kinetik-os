@@ -1,0 +1,13 @@
+# Agent: Security Engineer
+# Context: Dependabot configuration for automated dependency updates
+# Last Modified: 2026-05-30
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "weekly"
